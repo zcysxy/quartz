@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"*Almost All* of Probability","created":"2022-09-25T14:40:01","modified":"2025-05-18T16:08:13","cssclasses":""}
+{"publish":true,"title":"*Almost All* of Probability","created":"2022-09-25T14:40:01","modified":"2025-05-18T16:42:57","cssclasses":""}
 ---
 
 
@@ -47,61 +47,812 @@
 
 ## Common Distributions
 
-| Distribution             | Notation                                | Parameters                                           |
-| ------------------------ | --------------------------------------- | ---------------------------------------------------- |
-| [[Uniform Distribution\|Uniform Distribution]] | 
+| Distribution                          | Notation                                                | Parameters                                                  | CDF                                                        | PMF/PDF                                                    | Mean                                                        | Variance                                                   | MGF                                                     | CF                                                     |
+| ------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------ |
+| [[Uniform Distribution\|Uniform Distribution]]              | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
-<div class="markdown-embed-title">
-
-# inline
-
-</div>
 
 
+    - $\mathcal{U}(a,b)$ 
+
+</div></div>
+    | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 
-# Uniform Distribution
 
-The uniform distribution over $[a,b]$ has
+    - $a,b\in\R$ 
 
-- Notation
-    - $\mathcal{U}(a,b)$ - Parameters
-    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
-    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
-    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
-    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
+</div></div>
+        | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ 
+
+</div></div>
+        | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ 
+
+</div></div>
+        | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{a+b}{2}$ 
+
+</div></div>
+        | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{(b-a)^{2}}{12}$ 
+
+</div></div>
+        | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
     - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
+
+</div></div>
+     |                                                        |
+| [[Bernoulli Distribution\|Bernoulli Distribution]]            | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $p\in[0,1]$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $p$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $pq$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $q + pe^{t}$ 
+
+</div></div>
+   |                                                        |
+| [[Binomial Distribution\|Binomial Distribution]]             | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $B(n,p)$ 
+
+</div></div>
+   | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $n \in \mathbb{N}, p\in[0,1]$ 
+
+</div></div>
+       | /                                                          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ 
+
+</div></div>
+       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $np$ 
+
+</div></div>
+       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $npq$ 
+
+</div></div>
+       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $(q + pe^{t})^{n}$ 
+
+</div></div>
+    |                                                        |
+| [[Poisson Distribution\|Poisson Distribution]]              | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\lambda > 0$ 
+
+</div></div>
+        | /                                                          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\displaystyle p(n) = e^{-\lambda} \frac{\lambda ^{n}}{n!}$ 
+
+</div></div>
+        | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\lambda$ 
+
+</div></div>
+        | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\lambda$ 
+
+</div></div>
+        | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\exp(\lambda(e^{t}-1))$ 
+
+</div></div>
+     | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\exp(\lambda(e^{it}-1))$ 
+
+</div></div>
+     |
+| [[Exponential Distribution\|Exponential Distribution]]          | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\lambda > 0$ 
+
+</div></div>
+    | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $1 - e^{-\lambda x}$ 
+
+</div></div>
+    | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\displaystyle f(n) = \begin{cases} \lambda e^{-\lambda x}, \quad &x \ge 0,\\ 0, & x< 0 \end{cases}$ 
+
+</div></div>
+    | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{1}{\lambda}$ 
+
+</div></div>
+    | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{1}{\lambda^{2}}$ 
+
+</div></div>
+    | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\lambda /(\lambda - t), \quad t < \lambda$ 
 
 </div></div>
  | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
-<div class="markdown-embed-title">
-
-# inline naked n-link
-
-</div>
 
 
-
-
-# Uniform Distribution
-
-The uniform distribution over $[a,b]$ has
-
-- Notation
-    - $\mathcal{U}(a,b)$ - Parameters
-    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
-    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
-    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
-    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
-    - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
+    - $\lambda /(\lambda - it)$ 
 
 </div></div>
  |
+| [[Normal Distribution\|Normal Distribution]]               | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\mathcal{N}(\mu, \sigma^{2})$ 
+
+</div></div>
+     | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\mu\in\R, \sigma^{2}\in\R_{+}$ 
+
+</div></div>
+         | /                                                          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$ 
+
+</div></div>
+         | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\mu$ 
+
+</div></div>
+         | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\sigma^{2}$ 
+
+</div></div>
+         | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $e^{\mu t + \sigma^{2}t^{2} /2}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $e^{it\mu - \sigma^{2}t^{2} /2}$ 
+
+</div></div>
+      |
+| [[Gamma Distribution\|Gamma Distribution]]                | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\alpha, \lambda >0$ 
+
+</div></div>
+          | /                                                          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$ 
+
+</div></div>
+          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\alpha /\lambda$ 
+
+</div></div>
+          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\alpha /\lambda^{2}$ 
+
+</div></div>
+          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\left( \frac{\lambda}{\lambda - t} \right)^{\alpha},\quad t <\lambda$ 
+
+</div></div>
+       |                                                        |
+| [[Beta Distribution\|Beta Distribution]]                 | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $a,b >0$ 
+
+</div></div>
+           | /                                                          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$ 
+
+</div></div>
+           | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{a}{a+b}$ 
+
+</div></div>
+           | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{ab}{(a+b)^2(a+b+1)}$ 
+
+</div></div>
+           | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} \int_{0}^{1} x^{a-1}(1-x)^{b-1} e^{tx} \mathrm{d} x$ 
+
+</div></div>
+        |                                                        |
+| [[Chi-Square Distribution\|Chi-Square Distribution]]           | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\chi _{n}^{2}$ 
+
+</div></div>
+ | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $n$ 
+
+</div></div>
+     | /                                                          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ 
+
+</div></div>
+     | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $n$ 
+
+</div></div>
+     | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $2n$ 
+
+</div></div>
+     | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $(1-2t)^{-n/2}$ 
+
+</div></div>
+  |                                                        |
+| [[Wishart Distribution\|Wishart Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| [[t Distribution\|t Distribution]]                    | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $n \in \mathbb{N}$ 
+
+</div></div>
+              | /                                                          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ 
+
+</div></div>
+              | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - 0 
+
+</div></div>
+              | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+- $\frac{n}{n-2}$ 
+
+</div></div>
+              | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - *Undefined* 
+
+</div></div>
+           |                                                        |
+| [[F Distribution\|F Distribution]]                    | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $n,m \in \mathbb{N}$ 
+
+</div></div>
+              | /                                                          | /                                                          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $m/(m-2)$ 
+
+</div></div>
+              | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\displaystyle \frac{2m^{2}(m+n -2)}{n(m-2)^{2}(m-4)}$ 
+
+</div></div>
+              | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - *Undefined* 
+
+</div></div>
+           |                                                        |
+| [[Geometric Distribution\|Geometric Distribution]]            | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $p\in [0,1]$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $F(n) = 1 - q^{n}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $p(n) = pq^{n-1}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $1 /p$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $q /p^{2}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{pe^{t}}{1-qe^{t}}$, $e^{t}< 1 /q$ 
+
+</div></div>
+   |                                                        |
+| [[Hypergeometric Distribution\|Hypergeometric Distribution]]       | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $N\in \mathbb{N}, M,n\in [N]$ 
+
+</div></div>
+ | /                                                          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\displaystyle p(k) = \frac{{M \choose k}{N-M \choose n-k}}{{N \choose k}}$ 
+
+</div></div>
+ | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{nM}{N}$ 
+
+</div></div>
+ | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\displaystyle\frac{nM(N-n)(N-M)}{N^{2}(N-1)}$ 
+
+</div></div>
+ | /                                                       |                                                        |
+| [[Cauchy Distribution\|Cauchy Distribution]]               | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $a$ 
+
+</div></div>
+         | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ 
+
+</div></div>
+         | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ 
+
+</div></div>
+         | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - Doesn't exist 
+
+</div></div>
+         | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - Doesn't exist 
+
+</div></div>
+         | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - Doesn't exist 
+
+</div></div>
+      |                                                        |
+| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - Discrete: $\alpha\in\R_{++}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+        - $F(k)=1-1 /(k+1)^{\alpha }$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
+
+</div></div>
+   |                                                        |
+| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ 
+
+</div></div>
+ | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+        - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ 
+
+</div></div>
+ | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ 
+
+</div></div>
+ | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - Continuous: $\frac{\alpha}{\alpha-1}$ 
+
+</div></div>
+ | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ 
+
+</div></div>
+ | /                                                       |                                                        |
+| [[Dirac Distribution\|Dirac Distribution]]                | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $\delta_{x_0}$ 
+
+</div></div>
+      | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $x_0\in\mathbb{R}$ 
+
+</div></div>
+          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ 
+
+</div></div>
+          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $p(x)=\delta(x-x_0)$ 
+
+</div></div>
+    | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $x_0$ 
+
+</div></div>
+          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $0$ 
+
+</div></div>
+          | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+    - $e^{x_0t}$ 
+
+</div></div>
+       |                                                        |
+| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
 
 ```
 | Distribution                          | Notation                                                | Parameters                                                  | CDF                                                        | PMF/PDF                                                    | Mean                                                        | Variance                                                   | MGF                                                     | CF                                                     |
