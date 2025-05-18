@@ -1,9 +1,9 @@
 ---
-{"publish":true,"title":"Statistics","created":"2023-10-17T21:41:50","modified":"2025-05-15T17:00:46","cssclasses":""}
+{"publish":true,"title":"<i>Some</i> of Statistics","created":"2023-10-17T21:41:50","modified":"2025-05-18T04:03:00","cssclasses":""}
 ---
 
 
-# Statistics
+# *Some* of Statistics
 
 - [c] Statistics Dictionary
 
