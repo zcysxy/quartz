@@ -5,8 +5,16 @@ div.page-header + article > h1:nth-of-type(1) {
     display: none;
 }
 
+code.mermaid svg,
 .table-container>table {
   margin: 1rem auto;
+}
+
+.page>#quartz-body {
+  grid-template:
+    "grid-sidebar-left grid-header grid-sidebar-right"
+    "grid-sidebar-left grid-center grid-sidebar-right"
+    "grid-sidebar-left grid-footer grid-sidebar-right" / 320px auto 0px
 }
 
 /* .page>#quartz-body div.left.sidebar { */
