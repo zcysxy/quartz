@@ -14,8 +14,7 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <p>
-          By <a href="https://zcysxy.github.io">@zcysxy</a> with
-          <a href="https://github.com/jackyzha0/quartz">Quartz</a> © {year}
+          By <a href="https://zcysxy.github.io">@zcysxy</a> with <a href="https://github.com/jackyzha0/quartz">Quartz</a> © {year}
         </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
