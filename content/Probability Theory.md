@@ -65,8 +65,9 @@
 
 The uniform distribution over $[a,b]$ has
 
+$\mathcal{U}(a,b)$ 
 - Notation
-    - $\mathcal{U}(a,b)$ - Parameters
+- Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
@@ -91,8 +92,9 @@ The uniform distribution over $[a,b]$ has
 
 The uniform distribution over $[a,b]$ has
 
+$\mathcal{U}(a,b)$ 
 - Notation
-    - $\mathcal{U}(a,b)$ - Parameters
+- Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
@@ -122,8 +124,9 @@ The uniform distribution over $[a,b]$ has
 
 The uniform distribution over $[a,b]$ has
 
+$\mathcal{U}(a,b)$ 
 - Notation
-    - $\mathcal{U}(a,b)$ - Parameters
+- Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -148,8 +151,9 @@ The uniform distribution over $[a,b]$ has
 
 The uniform distribution over $[a,b]$ has
 
+$\mathcal{U}(a,b)$ 
 - Notation
-    - $\mathcal{U}(a,b)$ - Parameters
+- Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -174,8 +178,9 @@ The uniform distribution over $[a,b]$ has
 
 The uniform distribution over $[a,b]$ has
 
+$\mathcal{U}(a,b)$ 
 - Notation
-    - $\mathcal{U}(a,b)$ - Parameters
+- Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -200,8 +205,9 @@ The uniform distribution over $[a,b]$ has
 
 The uniform distribution over $[a,b]$ has
 
+$\mathcal{U}(a,b)$ 
 - Notation
-    - $\mathcal{U}(a,b)$ - Parameters
+- Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -226,8 +232,9 @@ The uniform distribution over $[a,b]$ has
 
 The uniform distribution over $[a,b]$ has
 
+$\mathcal{U}(a,b)$ 
 - Notation
-    - $\mathcal{U}(a,b)$ - Parameters
+- Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -252,8 +259,9 @@ The uniform distribution over $[a,b]$ has
 
 The uniform distribution over $[a,b]$ has
 
+$\mathcal{U}(a,b)$ 
 - Notation
-    - $\mathcal{U}(a,b)$ - Parameters
+- Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -278,8 +286,9 @@ The uniform distribution over $[a,b]$ has
 
 The uniform distribution over $[a,b]$ has
 
+$\mathcal{U}(a,b)$ 
 - Notation
-    - $\mathcal{U}(a,b)$ - Parameters
+- Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
