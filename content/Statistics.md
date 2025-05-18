@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"*Some* of Statistics","created":"2023-10-17T21:41:50","modified":"2025-05-18T04:03:00","cssclasses":""}
+{"publish":true,"title":"*Sufficient* of Statistics","created":"2023-10-17T21:41:50","modified":"2025-05-18T04:03:00","cssclasses":""}
 ---
 
 
