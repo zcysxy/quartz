@@ -1,3 +1,6 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+div.page-header + article > h1:nth-of-type(1) {
+    display: none;
+}
