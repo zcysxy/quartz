@@ -47,14 +47,14 @@
 
 ## Common Distributions
 
-| Distribution             | Notation                                             | Parameters                                           |
-| ------------------------ | ---------------------------------------------------- | ---------------------------------------------------- |
+| Distribution             | Notation                                | Parameters                                           |
+| ------------------------ | --------------------------------------- | ---------------------------------------------------- |
 | [[Uniform Distribution\|Uniform Distribution]] | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
 
-# inline n-link naked
+# inline
 
 </div>
 
@@ -65,9 +65,8 @@
 
 The uniform distribution over $[a,b]$ has
 
-$\mathcal{U}(a,b)$ 
 - Notation
-- Parameters
+    - $\mathcal{U}(a,b)$ - Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
@@ -92,9 +91,8 @@ $\mathcal{U}(a,b)$
 
 The uniform distribution over $[a,b]$ has
 
-$\mathcal{U}(a,b)$ 
 - Notation
-- Parameters
+    - $\mathcal{U}(a,b)$ - Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
@@ -124,9 +122,8 @@ $\mathcal{U}(a,b)$
 
 The uniform distribution over $[a,b]$ has
 
-$\mathcal{U}(a,b)$ 
 - Notation
-- Parameters
+    - $\mathcal{U}(a,b)$ - Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -151,9 +148,8 @@ $\mathcal{U}(a,b)$
 
 The uniform distribution over $[a,b]$ has
 
-$\mathcal{U}(a,b)$ 
 - Notation
-- Parameters
+    - $\mathcal{U}(a,b)$ - Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -178,9 +174,8 @@ $\mathcal{U}(a,b)$
 
 The uniform distribution over $[a,b]$ has
 
-$\mathcal{U}(a,b)$ 
 - Notation
-- Parameters
+    - $\mathcal{U}(a,b)$ - Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -205,9 +200,8 @@ $\mathcal{U}(a,b)$
 
 The uniform distribution over $[a,b]$ has
 
-$\mathcal{U}(a,b)$ 
 - Notation
-- Parameters
+    - $\mathcal{U}(a,b)$ - Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -232,9 +226,8 @@ $\mathcal{U}(a,b)$
 
 The uniform distribution over $[a,b]$ has
 
-$\mathcal{U}(a,b)$ 
 - Notation
-- Parameters
+    - $\mathcal{U}(a,b)$ - Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -259,9 +252,8 @@ $\mathcal{U}(a,b)$
 
 The uniform distribution over $[a,b]$ has
 
-$\mathcal{U}(a,b)$ 
 - Notation
-- Parameters
+    - $\mathcal{U}(a,b)$ - Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
@@ -286,9 +278,8 @@ $\mathcal{U}(a,b)$
 
 The uniform distribution over $[a,b]$ has
 
-$\mathcal{U}(a,b)$ 
 - Notation
-- Parameters
+    - $\mathcal{U}(a,b)$ - Parameters
     - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
     - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
