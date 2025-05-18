@@ -1,3 +1,4 @@
+import {copyFile} from "node:fs"
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
@@ -12,18 +13,7 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.ConditionalRender({
-      component: Component.Breadcrumbs(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
-    Component.TagList(),
-  ],
-  left: [
-    // Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
+    Component.MobileOnly(Component.Flex({
       components: [
         {
           Component: Component.Search(),
@@ -32,14 +22,40 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
       ],
+    })),
+    Component.ConditionalRender({
+      component: Component.Breadcrumbs(),
+      condition: (page) => page.fileData.slug !== "index",
     }),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+    Component.TagList(),
+    Component.MobileOnly(Component.TableOfContents()),
+  ],
+  left: [
+    // Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
+    Component.DesktopOnly(Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() },
+      ],
+    })),
     // Component.Explorer(),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
-    Component.Graph(),
+    Component.DesktopOnly(Component.Backlinks()),
+    Component.DesktopOnly(Component.Graph()),
   ],
   right: [
   ],
+	afterBody: [
+    Component.MobileOnly(Component.Backlinks()),
+    Component.MobileOnly(Component.Graph()),
+	]
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
