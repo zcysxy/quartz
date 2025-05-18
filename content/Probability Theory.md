@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"*Almost All* of Probability","created":"2022-09-25T14:40:01","modified":"2025-05-18T15:47:20","cssclasses":""}
+{"publish":true,"title":"*Almost All* of Probability","created":"2022-09-25T14:40:01","modified":"2025-05-18T16:03:58","cssclasses":""}
 ---
 
 
@@ -47,14 +47,89 @@
 
 ## Common Distributions
 
-| Distribution                          | Notation                                                | Parameters                                                  | CDF                                                        | PMF/PDF                                                    | Mean                                                        | Variance                                                   | MGF                                                     | CF                                                     |
-| ------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------ |
-| [[Uniform Distribution\|Uniform Distribution]]              | 
+| Distribution             | Notation                                             | Parameters                                           |
+| ------------------------ | ---------------------------------------------------- | ---------------------------------------------------- |
+| [[Uniform Distribution\|Uniform Distribution]] | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
+<div class="markdown-embed-title">
+
+# inline n-link naked
+
+</div>
 
 
-    - $\mathcal{U}(a,b)$ 
+
+
+# Uniform Distribution
+
+The uniform distribution over $[a,b]$ has
+
+- Notation
+    - $\mathcal{U}(a,b)$ - Parameters
+    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
+    - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
+    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
+    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
+    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
+    - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
+
+</div></div>
+ | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+<div class="markdown-embed-title">
+
+# inline naked n-link
+
+</div>
+
+
+
+
+# Uniform Distribution
+
+The uniform distribution over $[a,b]$ has
+
+- Notation
+    - $\mathcal{U}(a,b)$ - Parameters
+    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
+    - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
+    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
+    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
+    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
+    - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
+
+</div></div>
+ |
+
+```
+| Distribution                          | Notation                                                | Parameters                                                  | CDF                                                        | PMF/PDF                                                    | Mean                                                        | Variance                                                   | MGF                                                     | CF                                                     |
+| ------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------ |
+| [[Uniform Distribution]]              | 
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+<div class="markdown-embed-title">
+
+# inline n-link naked
+
+</div>
+
+
+
+
+# Uniform Distribution
+
+The uniform distribution over $[a,b]$ has
+
+- Notation
+    - $\mathcal{U}(a,b)$ - Parameters
+    - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
+    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
+    - $\frac{a+b}{2}$ - [[Variance]]
+    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function|MGF]]
+    - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
 
 </div></div>
     | 
@@ -75,11 +150,11 @@ The uniform distribution over $[a,b]$ has
 
 - Notation
     - $\mathcal{U}(a,b)$ - Parameters
-    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
+    - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
-    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
-    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
-    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
+    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
+    - $\frac{a+b}{2}$ - [[Variance]]
+    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function|MGF]]
     - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
 
 </div></div>
@@ -101,11 +176,11 @@ The uniform distribution over $[a,b]$ has
 
 - Notation
     - $\mathcal{U}(a,b)$ - Parameters
-    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
+    - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
-    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
-    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
-    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
+    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
+    - $\frac{a+b}{2}$ - [[Variance]]
+    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function|MGF]]
     - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
 
 </div></div>
@@ -127,11 +202,11 @@ The uniform distribution over $[a,b]$ has
 
 - Notation
     - $\mathcal{U}(a,b)$ - Parameters
-    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
+    - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
-    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
-    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
-    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
+    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
+    - $\frac{a+b}{2}$ - [[Variance]]
+    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function|MGF]]
     - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
 
 </div></div>
@@ -153,11 +228,11 @@ The uniform distribution over $[a,b]$ has
 
 - Notation
     - $\mathcal{U}(a,b)$ - Parameters
-    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
+    - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
-    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
-    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
-    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
+    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
+    - $\frac{a+b}{2}$ - [[Variance]]
+    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function|MGF]]
     - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
 
 </div></div>
@@ -179,11 +254,11 @@ The uniform distribution over $[a,b]$ has
 
 - Notation
     - $\mathcal{U}(a,b)$ - Parameters
-    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
+    - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
-    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
-    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
-    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
+    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
+    - $\frac{a+b}{2}$ - [[Variance]]
+    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function|MGF]]
     - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
 
 </div></div>
@@ -205,16 +280,16 @@ The uniform distribution over $[a,b]$ has
 
 - Notation
     - $\mathcal{U}(a,b)$ - Parameters
-    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
+    - $a,b\in\R$ - [[Cumulative Distribution Function|CDF]]
     - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
-    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
-    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
-    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
+    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation|Mean]]
+    - $\frac{a+b}{2}$ - [[Variance]]
+    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function|MGF]]
     - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
 
 </div></div>
      |                                                        |
-| [[Bernoulli Distribution\|Bernoulli Distribution]]            | /                                                       | 
+| [[Bernoulli Distribution]]            | /                                                       | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -228,18 +303,18 @@ The uniform distribution over $[a,b]$ has
 
 # Bernoulli Distribution
 
-A [[Random Variable\|Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
+A [[Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
 
 - Parameters
-    - $p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation\|Mean]]
-    - $p$ - [[Variance\|Variance]]
-    - $pq$ - [[Moment Generating Function\|MGF]]
+    - $p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation|Mean]]
+    - $p$ - [[Variance]]
+    - $pq$ - [[Moment Generating Function|MGF]]
     - $q + pe^{t}$ 
 ## Properties
 
-The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\|Binomial Distribution]].
+The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution]].
 
 
 </div></div>
@@ -257,18 +332,18 @@ The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\
 
 # Bernoulli Distribution
 
-A [[Random Variable\|Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
+A [[Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
 
 - Parameters
-    - $p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation\|Mean]]
-    - $p$ - [[Variance\|Variance]]
-    - $pq$ - [[Moment Generating Function\|MGF]]
+    - $p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation|Mean]]
+    - $p$ - [[Variance]]
+    - $pq$ - [[Moment Generating Function|MGF]]
     - $q + pe^{t}$ 
 ## Properties
 
-The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\|Binomial Distribution]].
+The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution]].
 
 
 </div></div>
@@ -286,18 +361,18 @@ The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\
 
 # Bernoulli Distribution
 
-A [[Random Variable\|Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
+A [[Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
 
 - Parameters
-    - $p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation\|Mean]]
-    - $p$ - [[Variance\|Variance]]
-    - $pq$ - [[Moment Generating Function\|MGF]]
+    - $p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation|Mean]]
+    - $p$ - [[Variance]]
+    - $pq$ - [[Moment Generating Function|MGF]]
     - $q + pe^{t}$ 
 ## Properties
 
-The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\|Binomial Distribution]].
+The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution]].
 
 
 </div></div>
@@ -315,18 +390,18 @@ The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\
 
 # Bernoulli Distribution
 
-A [[Random Variable\|Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
+A [[Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
 
 - Parameters
-    - $p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation\|Mean]]
-    - $p$ - [[Variance\|Variance]]
-    - $pq$ - [[Moment Generating Function\|MGF]]
+    - $p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation|Mean]]
+    - $p$ - [[Variance]]
+    - $pq$ - [[Moment Generating Function|MGF]]
     - $q + pe^{t}$ 
 ## Properties
 
-The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\|Binomial Distribution]].
+The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution]].
 
 
 </div></div>
@@ -344,18 +419,18 @@ The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\
 
 # Bernoulli Distribution
 
-A [[Random Variable\|Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
+A [[Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
 
 - Parameters
-    - $p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation\|Mean]]
-    - $p$ - [[Variance\|Variance]]
-    - $pq$ - [[Moment Generating Function\|MGF]]
+    - $p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation|Mean]]
+    - $p$ - [[Variance]]
+    - $pq$ - [[Moment Generating Function|MGF]]
     - $q + pe^{t}$ 
 ## Properties
 
-The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\|Binomial Distribution]].
+The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution]].
 
 
 </div></div>
@@ -373,23 +448,23 @@ The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\
 
 # Bernoulli Distribution
 
-A [[Random Variable\|Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
+A [[Random Variable]] is of Bernoulli distribution if its range is $\{ 0,1 \}$.
 
 - Parameters
-    - $p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation\|Mean]]
-    - $p$ - [[Variance\|Variance]]
-    - $pq$ - [[Moment Generating Function\|MGF]]
+    - $p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(n) = \begin{cases} p, \quad & n=1, ,\\ q\coloneqq 1-p, & n=0.\end{cases}$ - [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \begin{cases} 0, \quad & x<0,\\ q = 1-p, & 0\le x\le 1,\\ 1, & x >1. \end{cases}$ - [[Expectation|Mean]]
+    - $p$ - [[Variance]]
+    - $pq$ - [[Moment Generating Function|MGF]]
     - $q + pe^{t}$ 
 ## Properties
 
-The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\|Binomial Distribution]].
+The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution]].
 
 
 </div></div>
    |                                                        |
-| [[Binomial Distribution\|Binomial Distribution]]             | 
+| [[Binomial Distribution]]             | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -403,14 +478,14 @@ The sum of $n$ iid Bernoulli random variables follows a [[Binomial Distribution\
 
 # Binomial Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
+A discrete [[Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
 
 - Notation
     - $B(n,p)$ - Parameters
-    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation\|Mean]]
-    - $np$ - [[Variance\|Variance]]
-    - $npq$ - [[Moment Generating Function\|MGF]]
+    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation|Mean]]
+    - $np$ - [[Variance]]
+    - $npq$ - [[Moment Generating Function|MGF]]
     - $(q + pe^{t})^{n}$ 
 
 </div></div>
@@ -428,14 +503,14 @@ A discrete [[Random Variable\|Random Variable]] is of binomial distribution if i
 
 # Binomial Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
+A discrete [[Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
 
 - Notation
     - $B(n,p)$ - Parameters
-    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation\|Mean]]
-    - $np$ - [[Variance\|Variance]]
-    - $npq$ - [[Moment Generating Function\|MGF]]
+    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation|Mean]]
+    - $np$ - [[Variance]]
+    - $npq$ - [[Moment Generating Function|MGF]]
     - $(q + pe^{t})^{n}$ 
 
 </div></div>
@@ -453,14 +528,14 @@ A discrete [[Random Variable\|Random Variable]] is of binomial distribution if i
 
 # Binomial Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
+A discrete [[Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
 
 - Notation
     - $B(n,p)$ - Parameters
-    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation\|Mean]]
-    - $np$ - [[Variance\|Variance]]
-    - $npq$ - [[Moment Generating Function\|MGF]]
+    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation|Mean]]
+    - $np$ - [[Variance]]
+    - $npq$ - [[Moment Generating Function|MGF]]
     - $(q + pe^{t})^{n}$ 
 
 </div></div>
@@ -478,14 +553,14 @@ A discrete [[Random Variable\|Random Variable]] is of binomial distribution if i
 
 # Binomial Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
+A discrete [[Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
 
 - Notation
     - $B(n,p)$ - Parameters
-    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation\|Mean]]
-    - $np$ - [[Variance\|Variance]]
-    - $npq$ - [[Moment Generating Function\|MGF]]
+    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation|Mean]]
+    - $np$ - [[Variance]]
+    - $npq$ - [[Moment Generating Function|MGF]]
     - $(q + pe^{t})^{n}$ 
 
 </div></div>
@@ -503,14 +578,14 @@ A discrete [[Random Variable\|Random Variable]] is of binomial distribution if i
 
 # Binomial Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
+A discrete [[Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
 
 - Notation
     - $B(n,p)$ - Parameters
-    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation\|Mean]]
-    - $np$ - [[Variance\|Variance]]
-    - $npq$ - [[Moment Generating Function\|MGF]]
+    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation|Mean]]
+    - $np$ - [[Variance]]
+    - $npq$ - [[Moment Generating Function|MGF]]
     - $(q + pe^{t})^{n}$ 
 
 </div></div>
@@ -528,19 +603,19 @@ A discrete [[Random Variable\|Random Variable]] is of binomial distribution if i
 
 # Binomial Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
+A discrete [[Random Variable]] is of binomial distribution if its range is $\mathbb{N}$ and
 
 - Notation
     - $B(n,p)$ - Parameters
-    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function\|PMF]]
-    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation\|Mean]]
-    - $np$ - [[Variance\|Variance]]
-    - $npq$ - [[Moment Generating Function\|MGF]]
+    - $n \in \mathbb{N}, p\in[0,1]$ - [[Probability Mass Function|PMF]]
+    - $p(k) = {n \choose k} p^{k}(1-p)^{n-k}$ - [[Expectation|Mean]]
+    - $np$ - [[Variance]]
+    - $npq$ - [[Moment Generating Function|MGF]]
     - $(q + pe^{t})^{n}$ 
 
 </div></div>
     |                                                        |
-| [[Poisson Distribution\|Poisson Distribution]]              | /                                                       | 
+| [[Poisson Distribution]]              | /                                                       | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -554,20 +629,20 @@ A discrete [[Random Variable\|Random Variable]] is of binomial distribution if i
 
 # Poisson Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
+A discrete [[Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
 
 - Parameters
-    - $\lambda > 0$ - [[Probability Mass Function\|PMF]]
+    - $\lambda > 0$ - [[Probability Mass Function|PMF]]
     - $\displaystyle p(n) = e^{-\lambda} \frac{\lambda ^{n}}{n!}$     - The important part is $\lambda ^{n} / n!$; $e^{-\lambda}$ is just a constant to make if sum to 1
     - Remember it as the **expansion** of the exponential
-- [[Expectation\|Mean]]
-    - $\lambda$ - [[Variance\|Variance]]
-    - $\lambda$ - [[Moment Generating Function\|MGF]]
-    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\lambda$ - [[Variance]]
+    - $\lambda$ - [[Moment Generating Function|MGF]]
+    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function|CF]]
     - $\exp(\lambda(e^{it}-1))$ 
 ## Poisson Distribution as Approximation to Binomial Distribution
 
-When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution\|Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
+When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
 $
 P(X = k) = {n \choose k} p^{k}(1-p)^{n-k} = \frac{n!}{k!(n-k)!}\left( \frac{np}{n} \right)^{k}\left( 1 - \frac{np}{n} \right)^{n}\left( 1 - p \right)^{-k}
 $
@@ -625,20 +700,20 @@ $
 
 # Poisson Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
+A discrete [[Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
 
 - Parameters
-    - $\lambda > 0$ - [[Probability Mass Function\|PMF]]
+    - $\lambda > 0$ - [[Probability Mass Function|PMF]]
     - $\displaystyle p(n) = e^{-\lambda} \frac{\lambda ^{n}}{n!}$     - The important part is $\lambda ^{n} / n!$; $e^{-\lambda}$ is just a constant to make if sum to 1
     - Remember it as the **expansion** of the exponential
-- [[Expectation\|Mean]]
-    - $\lambda$ - [[Variance\|Variance]]
-    - $\lambda$ - [[Moment Generating Function\|MGF]]
-    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\lambda$ - [[Variance]]
+    - $\lambda$ - [[Moment Generating Function|MGF]]
+    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function|CF]]
     - $\exp(\lambda(e^{it}-1))$ 
 ## Poisson Distribution as Approximation to Binomial Distribution
 
-When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution\|Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
+When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
 $
 P(X = k) = {n \choose k} p^{k}(1-p)^{n-k} = \frac{n!}{k!(n-k)!}\left( \frac{np}{n} \right)^{k}\left( 1 - \frac{np}{n} \right)^{n}\left( 1 - p \right)^{-k}
 $
@@ -696,20 +771,20 @@ $
 
 # Poisson Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
+A discrete [[Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
 
 - Parameters
-    - $\lambda > 0$ - [[Probability Mass Function\|PMF]]
+    - $\lambda > 0$ - [[Probability Mass Function|PMF]]
     - $\displaystyle p(n) = e^{-\lambda} \frac{\lambda ^{n}}{n!}$     - The important part is $\lambda ^{n} / n!$; $e^{-\lambda}$ is just a constant to make if sum to 1
     - Remember it as the **expansion** of the exponential
-- [[Expectation\|Mean]]
-    - $\lambda$ - [[Variance\|Variance]]
-    - $\lambda$ - [[Moment Generating Function\|MGF]]
-    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\lambda$ - [[Variance]]
+    - $\lambda$ - [[Moment Generating Function|MGF]]
+    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function|CF]]
     - $\exp(\lambda(e^{it}-1))$ 
 ## Poisson Distribution as Approximation to Binomial Distribution
 
-When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution\|Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
+When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
 $
 P(X = k) = {n \choose k} p^{k}(1-p)^{n-k} = \frac{n!}{k!(n-k)!}\left( \frac{np}{n} \right)^{k}\left( 1 - \frac{np}{n} \right)^{n}\left( 1 - p \right)^{-k}
 $
@@ -767,20 +842,20 @@ $
 
 # Poisson Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
+A discrete [[Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
 
 - Parameters
-    - $\lambda > 0$ - [[Probability Mass Function\|PMF]]
+    - $\lambda > 0$ - [[Probability Mass Function|PMF]]
     - $\displaystyle p(n) = e^{-\lambda} \frac{\lambda ^{n}}{n!}$     - The important part is $\lambda ^{n} / n!$; $e^{-\lambda}$ is just a constant to make if sum to 1
     - Remember it as the **expansion** of the exponential
-- [[Expectation\|Mean]]
-    - $\lambda$ - [[Variance\|Variance]]
-    - $\lambda$ - [[Moment Generating Function\|MGF]]
-    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\lambda$ - [[Variance]]
+    - $\lambda$ - [[Moment Generating Function|MGF]]
+    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function|CF]]
     - $\exp(\lambda(e^{it}-1))$ 
 ## Poisson Distribution as Approximation to Binomial Distribution
 
-When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution\|Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
+When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
 $
 P(X = k) = {n \choose k} p^{k}(1-p)^{n-k} = \frac{n!}{k!(n-k)!}\left( \frac{np}{n} \right)^{k}\left( 1 - \frac{np}{n} \right)^{n}\left( 1 - p \right)^{-k}
 $
@@ -838,20 +913,20 @@ $
 
 # Poisson Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
+A discrete [[Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
 
 - Parameters
-    - $\lambda > 0$ - [[Probability Mass Function\|PMF]]
+    - $\lambda > 0$ - [[Probability Mass Function|PMF]]
     - $\displaystyle p(n) = e^{-\lambda} \frac{\lambda ^{n}}{n!}$     - The important part is $\lambda ^{n} / n!$; $e^{-\lambda}$ is just a constant to make if sum to 1
     - Remember it as the **expansion** of the exponential
-- [[Expectation\|Mean]]
-    - $\lambda$ - [[Variance\|Variance]]
-    - $\lambda$ - [[Moment Generating Function\|MGF]]
-    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\lambda$ - [[Variance]]
+    - $\lambda$ - [[Moment Generating Function|MGF]]
+    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function|CF]]
     - $\exp(\lambda(e^{it}-1))$ 
 ## Poisson Distribution as Approximation to Binomial Distribution
 
-When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution\|Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
+When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
 $
 P(X = k) = {n \choose k} p^{k}(1-p)^{n-k} = \frac{n!}{k!(n-k)!}\left( \frac{np}{n} \right)^{k}\left( 1 - \frac{np}{n} \right)^{n}\left( 1 - p \right)^{-k}
 $
@@ -909,20 +984,20 @@ $
 
 # Poisson Distribution
 
-A discrete [[Random Variable\|Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
+A discrete [[Random Variable]] is of Poisson distribution if its range is $\mathbb{N}_0$, and
 
 - Parameters
-    - $\lambda > 0$ - [[Probability Mass Function\|PMF]]
+    - $\lambda > 0$ - [[Probability Mass Function|PMF]]
     - $\displaystyle p(n) = e^{-\lambda} \frac{\lambda ^{n}}{n!}$     - The important part is $\lambda ^{n} / n!$; $e^{-\lambda}$ is just a constant to make if sum to 1
     - Remember it as the **expansion** of the exponential
-- [[Expectation\|Mean]]
-    - $\lambda$ - [[Variance\|Variance]]
-    - $\lambda$ - [[Moment Generating Function\|MGF]]
-    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\lambda$ - [[Variance]]
+    - $\lambda$ - [[Moment Generating Function|MGF]]
+    - $\exp(\lambda(e^{t}-1))$ - [[Characteristic Function|CF]]
     - $\exp(\lambda(e^{it}-1))$ 
 ## Poisson Distribution as Approximation to Binomial Distribution
 
-When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution\|Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
+When $n$ is large and $p$ is small, Poisson distribution can be an approximation of a [[Binomial Distribution]]. This is because for $X\sim \operatorname{Binom}(n,p)$, we have
 $
 P(X = k) = {n \choose k} p^{k}(1-p)^{n-k} = \frac{n!}{k!(n-k)!}\left( \frac{np}{n} \right)^{k}\left( 1 - \frac{np}{n} \right)^{n}\left( 1 - p \right)^{-k}
 $
@@ -967,7 +1042,7 @@ $
 
 </div></div>
      |
-| [[Exponential Distribution\|Exponential Distribution]]          | /                                                       | 
+| [[Exponential Distribution]]          | /                                                       | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -981,22 +1056,22 @@ $
 
 # Exponential Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of exponential distribution if it has
+A continuous [[Random Variable]] is of exponential distribution if it has
 
 - Parameters
     - $\lambda > 0$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(n) = \begin{cases} \lambda e^{-\lambda x}, \quad &x \ge 0,\\ 0, & x< 0 \end{cases}$     - The important part is $e^{-\lambda x}$; $\lambda$ is just a constant to make if integral to 1
-- [[Cumulative Distribution Function\|CDF]]
-    - $1 - e^{-\lambda x}$ - [[Expectation\|Mean]]
-    - $\frac{1}{\lambda}$ - [[Variance\|Variance]]
-    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function\|MGF]]
-    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function\|CF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $1 - e^{-\lambda x}$ - [[Expectation|Mean]]
+    - $\frac{1}{\lambda}$ - [[Variance]]
+    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function|MGF]]
+    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function|CF]]
     - $\lambda /(\lambda - it)$ 
-By the uniqueness of [[Moment Generating Function\|MGF]], exponential distribution is [[Gamma Distribution\|Gamma Distribution]] with parameter $(1,\lambda)$.
+By the uniqueness of [[Moment Generating Function|MGF]], exponential distribution is [[Gamma Distribution]] with parameter $(1,\lambda)$.
 
 ## Exponential Distribution and Poisson Distribution
 
-Exponential distribution and [[Poisson Distribution\|Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
+Exponential distribution and [[Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
 $
 P(Y > t) = P(X = 0) = e^{-\lambda t} \frac{(\lambda t)^{0}}{0!} = e^{-\lambda t}.
 $
@@ -1005,7 +1080,7 @@ Then $P(Y \le t) = 1 - e^{-\lambda t}$, i.e., $Y \sim \exp(\lambda)$.
 
 ## Exponential Distribution and Geometric Distribution
 
-Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution\|Geometric Distribution]]:
+Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution]]:
 $
 F_{\exp }(n \delta  ) = 1-e^{-\lambda n \delta  } = 1 - (e^{-\lambda \delta })^{n} = F_{\mathrm{geo}}(n),
 $
@@ -1014,7 +1089,7 @@ Intuitively, the exponential distribution corresponds to a limit of a situation 
 
 ## Memoryless
 
-We say a nonnegative [[Random Variable\|Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
+We say a nonnegative [[Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
 $
 P(X \ge n+k | X \ge n) = P(X \ge k).
 $
@@ -1040,22 +1115,22 @@ $
 
 # Exponential Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of exponential distribution if it has
+A continuous [[Random Variable]] is of exponential distribution if it has
 
 - Parameters
     - $\lambda > 0$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(n) = \begin{cases} \lambda e^{-\lambda x}, \quad &x \ge 0,\\ 0, & x< 0 \end{cases}$     - The important part is $e^{-\lambda x}$; $\lambda$ is just a constant to make if integral to 1
-- [[Cumulative Distribution Function\|CDF]]
-    - $1 - e^{-\lambda x}$ - [[Expectation\|Mean]]
-    - $\frac{1}{\lambda}$ - [[Variance\|Variance]]
-    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function\|MGF]]
-    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function\|CF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $1 - e^{-\lambda x}$ - [[Expectation|Mean]]
+    - $\frac{1}{\lambda}$ - [[Variance]]
+    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function|MGF]]
+    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function|CF]]
     - $\lambda /(\lambda - it)$ 
-By the uniqueness of [[Moment Generating Function\|MGF]], exponential distribution is [[Gamma Distribution\|Gamma Distribution]] with parameter $(1,\lambda)$.
+By the uniqueness of [[Moment Generating Function|MGF]], exponential distribution is [[Gamma Distribution]] with parameter $(1,\lambda)$.
 
 ## Exponential Distribution and Poisson Distribution
 
-Exponential distribution and [[Poisson Distribution\|Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
+Exponential distribution and [[Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
 $
 P(Y > t) = P(X = 0) = e^{-\lambda t} \frac{(\lambda t)^{0}}{0!} = e^{-\lambda t}.
 $
@@ -1064,7 +1139,7 @@ Then $P(Y \le t) = 1 - e^{-\lambda t}$, i.e., $Y \sim \exp(\lambda)$.
 
 ## Exponential Distribution and Geometric Distribution
 
-Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution\|Geometric Distribution]]:
+Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution]]:
 $
 F_{\exp }(n \delta  ) = 1-e^{-\lambda n \delta  } = 1 - (e^{-\lambda \delta })^{n} = F_{\mathrm{geo}}(n),
 $
@@ -1073,7 +1148,7 @@ Intuitively, the exponential distribution corresponds to a limit of a situation 
 
 ## Memoryless
 
-We say a nonnegative [[Random Variable\|Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
+We say a nonnegative [[Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
 $
 P(X \ge n+k | X \ge n) = P(X \ge k).
 $
@@ -1099,22 +1174,22 @@ $
 
 # Exponential Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of exponential distribution if it has
+A continuous [[Random Variable]] is of exponential distribution if it has
 
 - Parameters
     - $\lambda > 0$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(n) = \begin{cases} \lambda e^{-\lambda x}, \quad &x \ge 0,\\ 0, & x< 0 \end{cases}$     - The important part is $e^{-\lambda x}$; $\lambda$ is just a constant to make if integral to 1
-- [[Cumulative Distribution Function\|CDF]]
-    - $1 - e^{-\lambda x}$ - [[Expectation\|Mean]]
-    - $\frac{1}{\lambda}$ - [[Variance\|Variance]]
-    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function\|MGF]]
-    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function\|CF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $1 - e^{-\lambda x}$ - [[Expectation|Mean]]
+    - $\frac{1}{\lambda}$ - [[Variance]]
+    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function|MGF]]
+    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function|CF]]
     - $\lambda /(\lambda - it)$ 
-By the uniqueness of [[Moment Generating Function\|MGF]], exponential distribution is [[Gamma Distribution\|Gamma Distribution]] with parameter $(1,\lambda)$.
+By the uniqueness of [[Moment Generating Function|MGF]], exponential distribution is [[Gamma Distribution]] with parameter $(1,\lambda)$.
 
 ## Exponential Distribution and Poisson Distribution
 
-Exponential distribution and [[Poisson Distribution\|Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
+Exponential distribution and [[Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
 $
 P(Y > t) = P(X = 0) = e^{-\lambda t} \frac{(\lambda t)^{0}}{0!} = e^{-\lambda t}.
 $
@@ -1123,7 +1198,7 @@ Then $P(Y \le t) = 1 - e^{-\lambda t}$, i.e., $Y \sim \exp(\lambda)$.
 
 ## Exponential Distribution and Geometric Distribution
 
-Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution\|Geometric Distribution]]:
+Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution]]:
 $
 F_{\exp }(n \delta  ) = 1-e^{-\lambda n \delta  } = 1 - (e^{-\lambda \delta })^{n} = F_{\mathrm{geo}}(n),
 $
@@ -1132,7 +1207,7 @@ Intuitively, the exponential distribution corresponds to a limit of a situation 
 
 ## Memoryless
 
-We say a nonnegative [[Random Variable\|Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
+We say a nonnegative [[Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
 $
 P(X \ge n+k | X \ge n) = P(X \ge k).
 $
@@ -1158,22 +1233,22 @@ $
 
 # Exponential Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of exponential distribution if it has
+A continuous [[Random Variable]] is of exponential distribution if it has
 
 - Parameters
     - $\lambda > 0$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(n) = \begin{cases} \lambda e^{-\lambda x}, \quad &x \ge 0,\\ 0, & x< 0 \end{cases}$     - The important part is $e^{-\lambda x}$; $\lambda$ is just a constant to make if integral to 1
-- [[Cumulative Distribution Function\|CDF]]
-    - $1 - e^{-\lambda x}$ - [[Expectation\|Mean]]
-    - $\frac{1}{\lambda}$ - [[Variance\|Variance]]
-    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function\|MGF]]
-    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function\|CF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $1 - e^{-\lambda x}$ - [[Expectation|Mean]]
+    - $\frac{1}{\lambda}$ - [[Variance]]
+    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function|MGF]]
+    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function|CF]]
     - $\lambda /(\lambda - it)$ 
-By the uniqueness of [[Moment Generating Function\|MGF]], exponential distribution is [[Gamma Distribution\|Gamma Distribution]] with parameter $(1,\lambda)$.
+By the uniqueness of [[Moment Generating Function|MGF]], exponential distribution is [[Gamma Distribution]] with parameter $(1,\lambda)$.
 
 ## Exponential Distribution and Poisson Distribution
 
-Exponential distribution and [[Poisson Distribution\|Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
+Exponential distribution and [[Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
 $
 P(Y > t) = P(X = 0) = e^{-\lambda t} \frac{(\lambda t)^{0}}{0!} = e^{-\lambda t}.
 $
@@ -1182,7 +1257,7 @@ Then $P(Y \le t) = 1 - e^{-\lambda t}$, i.e., $Y \sim \exp(\lambda)$.
 
 ## Exponential Distribution and Geometric Distribution
 
-Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution\|Geometric Distribution]]:
+Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution]]:
 $
 F_{\exp }(n \delta  ) = 1-e^{-\lambda n \delta  } = 1 - (e^{-\lambda \delta })^{n} = F_{\mathrm{geo}}(n),
 $
@@ -1191,7 +1266,7 @@ Intuitively, the exponential distribution corresponds to a limit of a situation 
 
 ## Memoryless
 
-We say a nonnegative [[Random Variable\|Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
+We say a nonnegative [[Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
 $
 P(X \ge n+k | X \ge n) = P(X \ge k).
 $
@@ -1217,22 +1292,22 @@ $
 
 # Exponential Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of exponential distribution if it has
+A continuous [[Random Variable]] is of exponential distribution if it has
 
 - Parameters
     - $\lambda > 0$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(n) = \begin{cases} \lambda e^{-\lambda x}, \quad &x \ge 0,\\ 0, & x< 0 \end{cases}$     - The important part is $e^{-\lambda x}$; $\lambda$ is just a constant to make if integral to 1
-- [[Cumulative Distribution Function\|CDF]]
-    - $1 - e^{-\lambda x}$ - [[Expectation\|Mean]]
-    - $\frac{1}{\lambda}$ - [[Variance\|Variance]]
-    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function\|MGF]]
-    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function\|CF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $1 - e^{-\lambda x}$ - [[Expectation|Mean]]
+    - $\frac{1}{\lambda}$ - [[Variance]]
+    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function|MGF]]
+    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function|CF]]
     - $\lambda /(\lambda - it)$ 
-By the uniqueness of [[Moment Generating Function\|MGF]], exponential distribution is [[Gamma Distribution\|Gamma Distribution]] with parameter $(1,\lambda)$.
+By the uniqueness of [[Moment Generating Function|MGF]], exponential distribution is [[Gamma Distribution]] with parameter $(1,\lambda)$.
 
 ## Exponential Distribution and Poisson Distribution
 
-Exponential distribution and [[Poisson Distribution\|Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
+Exponential distribution and [[Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
 $
 P(Y > t) = P(X = 0) = e^{-\lambda t} \frac{(\lambda t)^{0}}{0!} = e^{-\lambda t}.
 $
@@ -1241,7 +1316,7 @@ Then $P(Y \le t) = 1 - e^{-\lambda t}$, i.e., $Y \sim \exp(\lambda)$.
 
 ## Exponential Distribution and Geometric Distribution
 
-Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution\|Geometric Distribution]]:
+Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution]]:
 $
 F_{\exp }(n \delta  ) = 1-e^{-\lambda n \delta  } = 1 - (e^{-\lambda \delta })^{n} = F_{\mathrm{geo}}(n),
 $
@@ -1250,7 +1325,7 @@ Intuitively, the exponential distribution corresponds to a limit of a situation 
 
 ## Memoryless
 
-We say a nonnegative [[Random Variable\|Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
+We say a nonnegative [[Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
 $
 P(X \ge n+k | X \ge n) = P(X \ge k).
 $
@@ -1276,22 +1351,22 @@ $
 
 # Exponential Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of exponential distribution if it has
+A continuous [[Random Variable]] is of exponential distribution if it has
 
 - Parameters
     - $\lambda > 0$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(n) = \begin{cases} \lambda e^{-\lambda x}, \quad &x \ge 0,\\ 0, & x< 0 \end{cases}$     - The important part is $e^{-\lambda x}$; $\lambda$ is just a constant to make if integral to 1
-- [[Cumulative Distribution Function\|CDF]]
-    - $1 - e^{-\lambda x}$ - [[Expectation\|Mean]]
-    - $\frac{1}{\lambda}$ - [[Variance\|Variance]]
-    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function\|MGF]]
-    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function\|CF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $1 - e^{-\lambda x}$ - [[Expectation|Mean]]
+    - $\frac{1}{\lambda}$ - [[Variance]]
+    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function|MGF]]
+    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function|CF]]
     - $\lambda /(\lambda - it)$ 
-By the uniqueness of [[Moment Generating Function\|MGF]], exponential distribution is [[Gamma Distribution\|Gamma Distribution]] with parameter $(1,\lambda)$.
+By the uniqueness of [[Moment Generating Function|MGF]], exponential distribution is [[Gamma Distribution]] with parameter $(1,\lambda)$.
 
 ## Exponential Distribution and Poisson Distribution
 
-Exponential distribution and [[Poisson Distribution\|Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
+Exponential distribution and [[Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
 $
 P(Y > t) = P(X = 0) = e^{-\lambda t} \frac{(\lambda t)^{0}}{0!} = e^{-\lambda t}.
 $
@@ -1300,7 +1375,7 @@ Then $P(Y \le t) = 1 - e^{-\lambda t}$, i.e., $Y \sim \exp(\lambda)$.
 
 ## Exponential Distribution and Geometric Distribution
 
-Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution\|Geometric Distribution]]:
+Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution]]:
 $
 F_{\exp }(n \delta  ) = 1-e^{-\lambda n \delta  } = 1 - (e^{-\lambda \delta })^{n} = F_{\mathrm{geo}}(n),
 $
@@ -1309,7 +1384,7 @@ Intuitively, the exponential distribution corresponds to a limit of a situation 
 
 ## Memoryless
 
-We say a nonnegative [[Random Variable\|Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
+We say a nonnegative [[Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
 $
 P(X \ge n+k | X \ge n) = P(X \ge k).
 $
@@ -1335,22 +1410,22 @@ $
 
 # Exponential Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of exponential distribution if it has
+A continuous [[Random Variable]] is of exponential distribution if it has
 
 - Parameters
     - $\lambda > 0$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(n) = \begin{cases} \lambda e^{-\lambda x}, \quad &x \ge 0,\\ 0, & x< 0 \end{cases}$     - The important part is $e^{-\lambda x}$; $\lambda$ is just a constant to make if integral to 1
-- [[Cumulative Distribution Function\|CDF]]
-    - $1 - e^{-\lambda x}$ - [[Expectation\|Mean]]
-    - $\frac{1}{\lambda}$ - [[Variance\|Variance]]
-    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function\|MGF]]
-    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function\|CF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $1 - e^{-\lambda x}$ - [[Expectation|Mean]]
+    - $\frac{1}{\lambda}$ - [[Variance]]
+    - $\frac{1}{\lambda^{2}}$ - [[Moment Generating Function|MGF]]
+    - $\lambda /(\lambda - t), \quad t < \lambda$ - [[Characteristic Function|CF]]
     - $\lambda /(\lambda - it)$ 
-By the uniqueness of [[Moment Generating Function\|MGF]], exponential distribution is [[Gamma Distribution\|Gamma Distribution]] with parameter $(1,\lambda)$.
+By the uniqueness of [[Moment Generating Function|MGF]], exponential distribution is [[Gamma Distribution]] with parameter $(1,\lambda)$.
 
 ## Exponential Distribution and Poisson Distribution
 
-Exponential distribution and [[Poisson Distribution\|Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
+Exponential distribution and [[Poisson Distribution]] are similar in many ways. Actually, **the waiting times for poisson distribution is an exponential distribution with parameter lambda**. Actually, let $Y$ be the waiting time, let $\lambda$ be the average number of arrivals per time. For $t \ge 0$, let $X \sim \operatorname{Poisson}(\lambda t)$. We know that
 $
 P(Y > t) = P(X = 0) = e^{-\lambda t} \frac{(\lambda t)^{0}}{0!} = e^{-\lambda t}.
 $
@@ -1359,7 +1434,7 @@ Then $P(Y \le t) = 1 - e^{-\lambda t}$, i.e., $Y \sim \exp(\lambda)$.
 
 ## Exponential Distribution and Geometric Distribution
 
-Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution\|Geometric Distribution]]:
+Exponential distribution can be viewed as the "limit", or a continuous version, of a [[Geometric Distribution]]:
 $
 F_{\exp }(n \delta  ) = 1-e^{-\lambda n \delta  } = 1 - (e^{-\lambda \delta })^{n} = F_{\mathrm{geo}}(n),
 $
@@ -1368,7 +1443,7 @@ Intuitively, the exponential distribution corresponds to a limit of a situation 
 
 ## Memoryless
 
-We say a nonnegative [[Random Variable\|Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
+We say a nonnegative [[Random Variable]] $X$ is memoryless, if for $n,k\ge{0}$
 $
 P(X \ge n+k | X \ge n) = P(X \ge k).
 $
@@ -1381,7 +1456,7 @@ $
 
 </div></div>
  |
-| [[Normal Distribution\|Normal Distribution]]               | 
+| [[Normal Distribution]]               | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -1395,18 +1470,18 @@ $
 
 # Normal Distribution
 
-A [[Random Variable\|Random Variable]] is said to be normally distributed if it has
+A [[Random Variable]] is said to be normally distributed if it has
 
 - Notation
     - $\mathcal{N}(\mu, \sigma^{2})$ - Parameters
     - $\mu\in\R, \sigma^{2}\in\R_{+}$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$     - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$
-- [[Expectation\|Mean]]
-    - $\mu$ - [[Variance\|Variance]]
-    - $\sigma^{2}$ - [[Moment Generating Function\|MGF]]
-    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\mu$ - [[Variance]]
+    - $\sigma^{2}$ - [[Moment Generating Function|MGF]]
+    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function|CF]]
     - $e^{it\mu - \sigma^{2}t^{2} /2}$ 
-Because of the [[Central Limit Theorem\|Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
+Because of the [[Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
 
 ## Equivalent Definitions for Multivariate Normal Distribution
 
@@ -1425,7 +1500,7 @@ These two alternative definitions cover *degenerate* normal distribution, i.e., 
 #### First Alternative
 
 By change of variables, we can see that the definition via PDF implies the first alternative definition. We now show that if $D$ is not singular, $X=DW+\mu$ is a nondegenerate normal r.v. with a PDF of the form above.
-By the relationship of [[Derived Distribution\|Derived Distribution]], we have
+By the relationship of [[Derived Distribution]], we have
 $
 f_{X}(x) = f_{W}(D^{-1}x) \cdot | D^{-1}|.
 $
@@ -1441,7 +1516,7 @@ and $DD^T$ is the covariance of $X$.
 The relationship from the first alternative definition to the second is direct. Now suppose $a^TX$ is normal for any vector $a$.
 
 > [!error] Wrong
-> We inspect the [[Moment Generating Function\|MGF]] of $X$:
+> We inspect the [[Moment Generating Function|MGF]] of $X$:
 > $
 > M_{X}(s) = M_{s^TX}(1) = \exp(s^T\mathbb{E}[X] + s^T\Var(X)s/2),
 > $
@@ -1453,7 +1528,7 @@ To rigorously prove the equivalence, we consider two cases.
 
 **Case I.** $V = D^{2} = \Cov(X,X) \succ 0$. Thus, $D$ is invertible and we let $W = D^{-1}(X-\mu)$. We want to show that $W$ is standard normal, and thus $X = DW +\mu$ satisfies the first alternative definition.
 We first have $\mathbb{E}[W] = 0$ and $\Var(W) = D^{-1}\Var(X)D^{-T} = D^{-1}D^{2}D^{-1} = I$.
-We then inspect the [[Moment Generating Function\|MGF]] (transform) of $W$:
+We then inspect the [[Moment Generating Function|MGF]] (transform) of $W$:
 $
 \begin{aligned}
 M_{W}(s) =& \mathbb{E}[\exp(s^{T}W)] \\
@@ -1480,35 +1555,35 @@ X = \begin{bmatrix} Y\\Z \end{bmatrix}
 
 ## Properties
 
-- (**Affine transformation**). The [[Affine Transformation\|Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
+- (**Affine transformation**). The [[Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
     - As a special case, any sub-vector of a normal random vector is also normal
         - As a special case, any component of a normal random vector is also normal
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$
     - [&] The proof follows the alternative definition 1 above
 - (**Independent Gaussians are jointly Gaussian**). The sum of independent normal random variables is also a normal random variable ^prop-ind-joint
-    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]]
+    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem]]
     - [!] Note that this is generally not true for dependent random variables
-    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
-- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic\|Sufficient Statistic]]. ^prop-suff
+    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[#Independence, Correlation, and Jointly Normal]]
+- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic]]. ^prop-suff
     - In other words, the distribution of a multivariate normal random vector is completely determined by its mean and covariance
-    - [&] See [[Probability Theory#Sufficiency\|#Sufficiency]] for proof
+    - [&] See [[#Sufficiency]] for proof
 - (**Independent iff Uncorrelated**). For a multivariate normal random vector, its components are independent if and only if they are uncorrelated
-    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[#Independence, Correlation, and Jointly Normal]]
     - [&] For nondegenerate normal random vector, we can also factorize the PDF to show independence.
-    - [!] The statement is not true for general [[Random Variable\|Random Variable]]s for which the mean and variance are not sufficient; see [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [!] The statement is not true for general [[Random Variable]]s for which the mean and variance are not sufficient; see [[#Independence, Correlation, and Jointly Normal]]
 - Hence, if $X\sim \mathcal{N}(\mu,\sigma^{2})$, then $Z = (X - \mu) /\sigma$ is normal with mean 0 and variance 1; $Z$ is said to have a ==standard== or ==unit== normal distribution
     - We write the CDF of a standard normal distribution $\Phi$
 - (**Symmetry**). $\Phi(-x) = 1 - \Phi(x)$
-- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution\|Chi-Square Distribution]])
+- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution]])
 
 ### Proofs
 
 #### Sufficiency
 
-Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function\|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
+Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
 
-For general normal random vectors, we can seek help from the [[Moment Generating Function\|MGF]]. Note that a MGF also completely determines a distribution.
-We use the second alternative definition. For a random vector, its [[Moment Generating Function\|MGF]] is the multivariate transform:
+For general normal random vectors, we can seek help from the [[Moment Generating Function|MGF]]. Note that a MGF also completely determines a distribution.
+We use the second alternative definition. For a random vector, its [[Moment Generating Function|MGF]] is the multivariate transform:
 $
 M_{X}(s) = \mathbb{E}[\exp(s^TX)] = M_{s^TX}(1) = \exp(s^T\mu + s^TVs/2),
 $
@@ -1527,13 +1602,13 @@ As we can see, the mean and variance are sufficient to determine the MGF, and th
 > [!rmk] Independent normal components implies jointly normal.
 >
 > The above statement becomes true once we impose the independence condition.
-> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]].
+> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem]].
 > By the alternative definition, $X$ is jointly normal.
 
 > [!rmk] Joint normal with zero correlation implies independence.
 >
-> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], $Y$ is jointly normal.
-> Since $X$ and $Y$ have the same mean and covariance, by Property [[Probability Theory#^prop-suff\|#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
+> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[#^prop-ind-joint]], $Y$ is jointly normal.
+> Since $X$ and $Y$ have the same mean and covariance, by Property [[#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
 
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
@@ -1588,7 +1663,7 @@ This also implies, for any function $g$:
 $
 \mathbb{E}[(X-\hat{X})g(Y)] = 0.
 $
-By the [[Conditional Probability#General Definition of Conditional Expectation\|Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
+By the [[Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
 $
 \mathbb{E}[X\given Y] = \hat{X}.
 $
@@ -1617,18 +1692,18 @@ $
 
 # Normal Distribution
 
-A [[Random Variable\|Random Variable]] is said to be normally distributed if it has
+A [[Random Variable]] is said to be normally distributed if it has
 
 - Notation
     - $\mathcal{N}(\mu, \sigma^{2})$ - Parameters
     - $\mu\in\R, \sigma^{2}\in\R_{+}$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$     - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$
-- [[Expectation\|Mean]]
-    - $\mu$ - [[Variance\|Variance]]
-    - $\sigma^{2}$ - [[Moment Generating Function\|MGF]]
-    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\mu$ - [[Variance]]
+    - $\sigma^{2}$ - [[Moment Generating Function|MGF]]
+    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function|CF]]
     - $e^{it\mu - \sigma^{2}t^{2} /2}$ 
-Because of the [[Central Limit Theorem\|Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
+Because of the [[Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
 
 ## Equivalent Definitions for Multivariate Normal Distribution
 
@@ -1647,7 +1722,7 @@ These two alternative definitions cover *degenerate* normal distribution, i.e., 
 #### First Alternative
 
 By change of variables, we can see that the definition via PDF implies the first alternative definition. We now show that if $D$ is not singular, $X=DW+\mu$ is a nondegenerate normal r.v. with a PDF of the form above.
-By the relationship of [[Derived Distribution\|Derived Distribution]], we have
+By the relationship of [[Derived Distribution]], we have
 $
 f_{X}(x) = f_{W}(D^{-1}x) \cdot | D^{-1}|.
 $
@@ -1663,7 +1738,7 @@ and $DD^T$ is the covariance of $X$.
 The relationship from the first alternative definition to the second is direct. Now suppose $a^TX$ is normal for any vector $a$.
 
 > [!error] Wrong
-> We inspect the [[Moment Generating Function\|MGF]] of $X$:
+> We inspect the [[Moment Generating Function|MGF]] of $X$:
 > $
 > M_{X}(s) = M_{s^TX}(1) = \exp(s^T\mathbb{E}[X] + s^T\Var(X)s/2),
 > $
@@ -1675,7 +1750,7 @@ To rigorously prove the equivalence, we consider two cases.
 
 **Case I.** $V = D^{2} = \Cov(X,X) \succ 0$. Thus, $D$ is invertible and we let $W = D^{-1}(X-\mu)$. We want to show that $W$ is standard normal, and thus $X = DW +\mu$ satisfies the first alternative definition.
 We first have $\mathbb{E}[W] = 0$ and $\Var(W) = D^{-1}\Var(X)D^{-T} = D^{-1}D^{2}D^{-1} = I$.
-We then inspect the [[Moment Generating Function\|MGF]] (transform) of $W$:
+We then inspect the [[Moment Generating Function|MGF]] (transform) of $W$:
 $
 \begin{aligned}
 M_{W}(s) =& \mathbb{E}[\exp(s^{T}W)] \\
@@ -1702,35 +1777,35 @@ X = \begin{bmatrix} Y\\Z \end{bmatrix}
 
 ## Properties
 
-- (**Affine transformation**). The [[Affine Transformation\|Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
+- (**Affine transformation**). The [[Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
     - As a special case, any sub-vector of a normal random vector is also normal
         - As a special case, any component of a normal random vector is also normal
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$
     - [&] The proof follows the alternative definition 1 above
 - (**Independent Gaussians are jointly Gaussian**). The sum of independent normal random variables is also a normal random variable ^prop-ind-joint
-    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]]
+    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem]]
     - [!] Note that this is generally not true for dependent random variables
-    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
-- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic\|Sufficient Statistic]]. ^prop-suff
+    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[#Independence, Correlation, and Jointly Normal]]
+- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic]]. ^prop-suff
     - In other words, the distribution of a multivariate normal random vector is completely determined by its mean and covariance
-    - [&] See [[Probability Theory#Sufficiency\|#Sufficiency]] for proof
+    - [&] See [[#Sufficiency]] for proof
 - (**Independent iff Uncorrelated**). For a multivariate normal random vector, its components are independent if and only if they are uncorrelated
-    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[#Independence, Correlation, and Jointly Normal]]
     - [&] For nondegenerate normal random vector, we can also factorize the PDF to show independence.
-    - [!] The statement is not true for general [[Random Variable\|Random Variable]]s for which the mean and variance are not sufficient; see [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [!] The statement is not true for general [[Random Variable]]s for which the mean and variance are not sufficient; see [[#Independence, Correlation, and Jointly Normal]]
 - Hence, if $X\sim \mathcal{N}(\mu,\sigma^{2})$, then $Z = (X - \mu) /\sigma$ is normal with mean 0 and variance 1; $Z$ is said to have a ==standard== or ==unit== normal distribution
     - We write the CDF of a standard normal distribution $\Phi$
 - (**Symmetry**). $\Phi(-x) = 1 - \Phi(x)$
-- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution\|Chi-Square Distribution]])
+- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution]])
 
 ### Proofs
 
 #### Sufficiency
 
-Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function\|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
+Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
 
-For general normal random vectors, we can seek help from the [[Moment Generating Function\|MGF]]. Note that a MGF also completely determines a distribution.
-We use the second alternative definition. For a random vector, its [[Moment Generating Function\|MGF]] is the multivariate transform:
+For general normal random vectors, we can seek help from the [[Moment Generating Function|MGF]]. Note that a MGF also completely determines a distribution.
+We use the second alternative definition. For a random vector, its [[Moment Generating Function|MGF]] is the multivariate transform:
 $
 M_{X}(s) = \mathbb{E}[\exp(s^TX)] = M_{s^TX}(1) = \exp(s^T\mu + s^TVs/2),
 $
@@ -1749,13 +1824,13 @@ As we can see, the mean and variance are sufficient to determine the MGF, and th
 > [!rmk] Independent normal components implies jointly normal.
 >
 > The above statement becomes true once we impose the independence condition.
-> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]].
+> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem]].
 > By the alternative definition, $X$ is jointly normal.
 
 > [!rmk] Joint normal with zero correlation implies independence.
 >
-> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], $Y$ is jointly normal.
-> Since $X$ and $Y$ have the same mean and covariance, by Property [[Probability Theory#^prop-suff\|#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
+> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[#^prop-ind-joint]], $Y$ is jointly normal.
+> Since $X$ and $Y$ have the same mean and covariance, by Property [[#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
 
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
@@ -1810,7 +1885,7 @@ This also implies, for any function $g$:
 $
 \mathbb{E}[(X-\hat{X})g(Y)] = 0.
 $
-By the [[Conditional Probability#General Definition of Conditional Expectation\|Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
+By the [[Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
 $
 \mathbb{E}[X\given Y] = \hat{X}.
 $
@@ -1839,18 +1914,18 @@ $
 
 # Normal Distribution
 
-A [[Random Variable\|Random Variable]] is said to be normally distributed if it has
+A [[Random Variable]] is said to be normally distributed if it has
 
 - Notation
     - $\mathcal{N}(\mu, \sigma^{2})$ - Parameters
     - $\mu\in\R, \sigma^{2}\in\R_{+}$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$     - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$
-- [[Expectation\|Mean]]
-    - $\mu$ - [[Variance\|Variance]]
-    - $\sigma^{2}$ - [[Moment Generating Function\|MGF]]
-    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\mu$ - [[Variance]]
+    - $\sigma^{2}$ - [[Moment Generating Function|MGF]]
+    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function|CF]]
     - $e^{it\mu - \sigma^{2}t^{2} /2}$ 
-Because of the [[Central Limit Theorem\|Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
+Because of the [[Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
 
 ## Equivalent Definitions for Multivariate Normal Distribution
 
@@ -1869,7 +1944,7 @@ These two alternative definitions cover *degenerate* normal distribution, i.e., 
 #### First Alternative
 
 By change of variables, we can see that the definition via PDF implies the first alternative definition. We now show that if $D$ is not singular, $X=DW+\mu$ is a nondegenerate normal r.v. with a PDF of the form above.
-By the relationship of [[Derived Distribution\|Derived Distribution]], we have
+By the relationship of [[Derived Distribution]], we have
 $
 f_{X}(x) = f_{W}(D^{-1}x) \cdot | D^{-1}|.
 $
@@ -1885,7 +1960,7 @@ and $DD^T$ is the covariance of $X$.
 The relationship from the first alternative definition to the second is direct. Now suppose $a^TX$ is normal for any vector $a$.
 
 > [!error] Wrong
-> We inspect the [[Moment Generating Function\|MGF]] of $X$:
+> We inspect the [[Moment Generating Function|MGF]] of $X$:
 > $
 > M_{X}(s) = M_{s^TX}(1) = \exp(s^T\mathbb{E}[X] + s^T\Var(X)s/2),
 > $
@@ -1897,7 +1972,7 @@ To rigorously prove the equivalence, we consider two cases.
 
 **Case I.** $V = D^{2} = \Cov(X,X) \succ 0$. Thus, $D$ is invertible and we let $W = D^{-1}(X-\mu)$. We want to show that $W$ is standard normal, and thus $X = DW +\mu$ satisfies the first alternative definition.
 We first have $\mathbb{E}[W] = 0$ and $\Var(W) = D^{-1}\Var(X)D^{-T} = D^{-1}D^{2}D^{-1} = I$.
-We then inspect the [[Moment Generating Function\|MGF]] (transform) of $W$:
+We then inspect the [[Moment Generating Function|MGF]] (transform) of $W$:
 $
 \begin{aligned}
 M_{W}(s) =& \mathbb{E}[\exp(s^{T}W)] \\
@@ -1924,35 +1999,35 @@ X = \begin{bmatrix} Y\\Z \end{bmatrix}
 
 ## Properties
 
-- (**Affine transformation**). The [[Affine Transformation\|Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
+- (**Affine transformation**). The [[Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
     - As a special case, any sub-vector of a normal random vector is also normal
         - As a special case, any component of a normal random vector is also normal
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$
     - [&] The proof follows the alternative definition 1 above
 - (**Independent Gaussians are jointly Gaussian**). The sum of independent normal random variables is also a normal random variable ^prop-ind-joint
-    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]]
+    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem]]
     - [!] Note that this is generally not true for dependent random variables
-    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
-- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic\|Sufficient Statistic]]. ^prop-suff
+    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[#Independence, Correlation, and Jointly Normal]]
+- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic]]. ^prop-suff
     - In other words, the distribution of a multivariate normal random vector is completely determined by its mean and covariance
-    - [&] See [[Probability Theory#Sufficiency\|#Sufficiency]] for proof
+    - [&] See [[#Sufficiency]] for proof
 - (**Independent iff Uncorrelated**). For a multivariate normal random vector, its components are independent if and only if they are uncorrelated
-    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[#Independence, Correlation, and Jointly Normal]]
     - [&] For nondegenerate normal random vector, we can also factorize the PDF to show independence.
-    - [!] The statement is not true for general [[Random Variable\|Random Variable]]s for which the mean and variance are not sufficient; see [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [!] The statement is not true for general [[Random Variable]]s for which the mean and variance are not sufficient; see [[#Independence, Correlation, and Jointly Normal]]
 - Hence, if $X\sim \mathcal{N}(\mu,\sigma^{2})$, then $Z = (X - \mu) /\sigma$ is normal with mean 0 and variance 1; $Z$ is said to have a ==standard== or ==unit== normal distribution
     - We write the CDF of a standard normal distribution $\Phi$
 - (**Symmetry**). $\Phi(-x) = 1 - \Phi(x)$
-- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution\|Chi-Square Distribution]])
+- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution]])
 
 ### Proofs
 
 #### Sufficiency
 
-Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function\|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
+Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
 
-For general normal random vectors, we can seek help from the [[Moment Generating Function\|MGF]]. Note that a MGF also completely determines a distribution.
-We use the second alternative definition. For a random vector, its [[Moment Generating Function\|MGF]] is the multivariate transform:
+For general normal random vectors, we can seek help from the [[Moment Generating Function|MGF]]. Note that a MGF also completely determines a distribution.
+We use the second alternative definition. For a random vector, its [[Moment Generating Function|MGF]] is the multivariate transform:
 $
 M_{X}(s) = \mathbb{E}[\exp(s^TX)] = M_{s^TX}(1) = \exp(s^T\mu + s^TVs/2),
 $
@@ -1971,13 +2046,13 @@ As we can see, the mean and variance are sufficient to determine the MGF, and th
 > [!rmk] Independent normal components implies jointly normal.
 >
 > The above statement becomes true once we impose the independence condition.
-> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]].
+> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem]].
 > By the alternative definition, $X$ is jointly normal.
 
 > [!rmk] Joint normal with zero correlation implies independence.
 >
-> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], $Y$ is jointly normal.
-> Since $X$ and $Y$ have the same mean and covariance, by Property [[Probability Theory#^prop-suff\|#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
+> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[#^prop-ind-joint]], $Y$ is jointly normal.
+> Since $X$ and $Y$ have the same mean and covariance, by Property [[#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
 
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
@@ -2032,7 +2107,7 @@ This also implies, for any function $g$:
 $
 \mathbb{E}[(X-\hat{X})g(Y)] = 0.
 $
-By the [[Conditional Probability#General Definition of Conditional Expectation\|Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
+By the [[Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
 $
 \mathbb{E}[X\given Y] = \hat{X}.
 $
@@ -2061,18 +2136,18 @@ $
 
 # Normal Distribution
 
-A [[Random Variable\|Random Variable]] is said to be normally distributed if it has
+A [[Random Variable]] is said to be normally distributed if it has
 
 - Notation
     - $\mathcal{N}(\mu, \sigma^{2})$ - Parameters
     - $\mu\in\R, \sigma^{2}\in\R_{+}$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$     - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$
-- [[Expectation\|Mean]]
-    - $\mu$ - [[Variance\|Variance]]
-    - $\sigma^{2}$ - [[Moment Generating Function\|MGF]]
-    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\mu$ - [[Variance]]
+    - $\sigma^{2}$ - [[Moment Generating Function|MGF]]
+    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function|CF]]
     - $e^{it\mu - \sigma^{2}t^{2} /2}$ 
-Because of the [[Central Limit Theorem\|Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
+Because of the [[Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
 
 ## Equivalent Definitions for Multivariate Normal Distribution
 
@@ -2091,7 +2166,7 @@ These two alternative definitions cover *degenerate* normal distribution, i.e., 
 #### First Alternative
 
 By change of variables, we can see that the definition via PDF implies the first alternative definition. We now show that if $D$ is not singular, $X=DW+\mu$ is a nondegenerate normal r.v. with a PDF of the form above.
-By the relationship of [[Derived Distribution\|Derived Distribution]], we have
+By the relationship of [[Derived Distribution]], we have
 $
 f_{X}(x) = f_{W}(D^{-1}x) \cdot | D^{-1}|.
 $
@@ -2107,7 +2182,7 @@ and $DD^T$ is the covariance of $X$.
 The relationship from the first alternative definition to the second is direct. Now suppose $a^TX$ is normal for any vector $a$.
 
 > [!error] Wrong
-> We inspect the [[Moment Generating Function\|MGF]] of $X$:
+> We inspect the [[Moment Generating Function|MGF]] of $X$:
 > $
 > M_{X}(s) = M_{s^TX}(1) = \exp(s^T\mathbb{E}[X] + s^T\Var(X)s/2),
 > $
@@ -2119,7 +2194,7 @@ To rigorously prove the equivalence, we consider two cases.
 
 **Case I.** $V = D^{2} = \Cov(X,X) \succ 0$. Thus, $D$ is invertible and we let $W = D^{-1}(X-\mu)$. We want to show that $W$ is standard normal, and thus $X = DW +\mu$ satisfies the first alternative definition.
 We first have $\mathbb{E}[W] = 0$ and $\Var(W) = D^{-1}\Var(X)D^{-T} = D^{-1}D^{2}D^{-1} = I$.
-We then inspect the [[Moment Generating Function\|MGF]] (transform) of $W$:
+We then inspect the [[Moment Generating Function|MGF]] (transform) of $W$:
 $
 \begin{aligned}
 M_{W}(s) =& \mathbb{E}[\exp(s^{T}W)] \\
@@ -2146,35 +2221,35 @@ X = \begin{bmatrix} Y\\Z \end{bmatrix}
 
 ## Properties
 
-- (**Affine transformation**). The [[Affine Transformation\|Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
+- (**Affine transformation**). The [[Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
     - As a special case, any sub-vector of a normal random vector is also normal
         - As a special case, any component of a normal random vector is also normal
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$
     - [&] The proof follows the alternative definition 1 above
 - (**Independent Gaussians are jointly Gaussian**). The sum of independent normal random variables is also a normal random variable ^prop-ind-joint
-    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]]
+    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem]]
     - [!] Note that this is generally not true for dependent random variables
-    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
-- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic\|Sufficient Statistic]]. ^prop-suff
+    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[#Independence, Correlation, and Jointly Normal]]
+- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic]]. ^prop-suff
     - In other words, the distribution of a multivariate normal random vector is completely determined by its mean and covariance
-    - [&] See [[Probability Theory#Sufficiency\|#Sufficiency]] for proof
+    - [&] See [[#Sufficiency]] for proof
 - (**Independent iff Uncorrelated**). For a multivariate normal random vector, its components are independent if and only if they are uncorrelated
-    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[#Independence, Correlation, and Jointly Normal]]
     - [&] For nondegenerate normal random vector, we can also factorize the PDF to show independence.
-    - [!] The statement is not true for general [[Random Variable\|Random Variable]]s for which the mean and variance are not sufficient; see [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [!] The statement is not true for general [[Random Variable]]s for which the mean and variance are not sufficient; see [[#Independence, Correlation, and Jointly Normal]]
 - Hence, if $X\sim \mathcal{N}(\mu,\sigma^{2})$, then $Z = (X - \mu) /\sigma$ is normal with mean 0 and variance 1; $Z$ is said to have a ==standard== or ==unit== normal distribution
     - We write the CDF of a standard normal distribution $\Phi$
 - (**Symmetry**). $\Phi(-x) = 1 - \Phi(x)$
-- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution\|Chi-Square Distribution]])
+- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution]])
 
 ### Proofs
 
 #### Sufficiency
 
-Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function\|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
+Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
 
-For general normal random vectors, we can seek help from the [[Moment Generating Function\|MGF]]. Note that a MGF also completely determines a distribution.
-We use the second alternative definition. For a random vector, its [[Moment Generating Function\|MGF]] is the multivariate transform:
+For general normal random vectors, we can seek help from the [[Moment Generating Function|MGF]]. Note that a MGF also completely determines a distribution.
+We use the second alternative definition. For a random vector, its [[Moment Generating Function|MGF]] is the multivariate transform:
 $
 M_{X}(s) = \mathbb{E}[\exp(s^TX)] = M_{s^TX}(1) = \exp(s^T\mu + s^TVs/2),
 $
@@ -2193,13 +2268,13 @@ As we can see, the mean and variance are sufficient to determine the MGF, and th
 > [!rmk] Independent normal components implies jointly normal.
 >
 > The above statement becomes true once we impose the independence condition.
-> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]].
+> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem]].
 > By the alternative definition, $X$ is jointly normal.
 
 > [!rmk] Joint normal with zero correlation implies independence.
 >
-> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], $Y$ is jointly normal.
-> Since $X$ and $Y$ have the same mean and covariance, by Property [[Probability Theory#^prop-suff\|#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
+> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[#^prop-ind-joint]], $Y$ is jointly normal.
+> Since $X$ and $Y$ have the same mean and covariance, by Property [[#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
 
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
@@ -2254,7 +2329,7 @@ This also implies, for any function $g$:
 $
 \mathbb{E}[(X-\hat{X})g(Y)] = 0.
 $
-By the [[Conditional Probability#General Definition of Conditional Expectation\|Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
+By the [[Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
 $
 \mathbb{E}[X\given Y] = \hat{X}.
 $
@@ -2283,18 +2358,18 @@ $
 
 # Normal Distribution
 
-A [[Random Variable\|Random Variable]] is said to be normally distributed if it has
+A [[Random Variable]] is said to be normally distributed if it has
 
 - Notation
     - $\mathcal{N}(\mu, \sigma^{2})$ - Parameters
     - $\mu\in\R, \sigma^{2}\in\R_{+}$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$     - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$
-- [[Expectation\|Mean]]
-    - $\mu$ - [[Variance\|Variance]]
-    - $\sigma^{2}$ - [[Moment Generating Function\|MGF]]
-    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\mu$ - [[Variance]]
+    - $\sigma^{2}$ - [[Moment Generating Function|MGF]]
+    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function|CF]]
     - $e^{it\mu - \sigma^{2}t^{2} /2}$ 
-Because of the [[Central Limit Theorem\|Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
+Because of the [[Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
 
 ## Equivalent Definitions for Multivariate Normal Distribution
 
@@ -2313,7 +2388,7 @@ These two alternative definitions cover *degenerate* normal distribution, i.e., 
 #### First Alternative
 
 By change of variables, we can see that the definition via PDF implies the first alternative definition. We now show that if $D$ is not singular, $X=DW+\mu$ is a nondegenerate normal r.v. with a PDF of the form above.
-By the relationship of [[Derived Distribution\|Derived Distribution]], we have
+By the relationship of [[Derived Distribution]], we have
 $
 f_{X}(x) = f_{W}(D^{-1}x) \cdot | D^{-1}|.
 $
@@ -2329,7 +2404,7 @@ and $DD^T$ is the covariance of $X$.
 The relationship from the first alternative definition to the second is direct. Now suppose $a^TX$ is normal for any vector $a$.
 
 > [!error] Wrong
-> We inspect the [[Moment Generating Function\|MGF]] of $X$:
+> We inspect the [[Moment Generating Function|MGF]] of $X$:
 > $
 > M_{X}(s) = M_{s^TX}(1) = \exp(s^T\mathbb{E}[X] + s^T\Var(X)s/2),
 > $
@@ -2341,7 +2416,7 @@ To rigorously prove the equivalence, we consider two cases.
 
 **Case I.** $V = D^{2} = \Cov(X,X) \succ 0$. Thus, $D$ is invertible and we let $W = D^{-1}(X-\mu)$. We want to show that $W$ is standard normal, and thus $X = DW +\mu$ satisfies the first alternative definition.
 We first have $\mathbb{E}[W] = 0$ and $\Var(W) = D^{-1}\Var(X)D^{-T} = D^{-1}D^{2}D^{-1} = I$.
-We then inspect the [[Moment Generating Function\|MGF]] (transform) of $W$:
+We then inspect the [[Moment Generating Function|MGF]] (transform) of $W$:
 $
 \begin{aligned}
 M_{W}(s) =& \mathbb{E}[\exp(s^{T}W)] \\
@@ -2368,35 +2443,35 @@ X = \begin{bmatrix} Y\\Z \end{bmatrix}
 
 ## Properties
 
-- (**Affine transformation**). The [[Affine Transformation\|Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
+- (**Affine transformation**). The [[Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
     - As a special case, any sub-vector of a normal random vector is also normal
         - As a special case, any component of a normal random vector is also normal
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$
     - [&] The proof follows the alternative definition 1 above
 - (**Independent Gaussians are jointly Gaussian**). The sum of independent normal random variables is also a normal random variable ^prop-ind-joint
-    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]]
+    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem]]
     - [!] Note that this is generally not true for dependent random variables
-    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
-- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic\|Sufficient Statistic]]. ^prop-suff
+    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[#Independence, Correlation, and Jointly Normal]]
+- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic]]. ^prop-suff
     - In other words, the distribution of a multivariate normal random vector is completely determined by its mean and covariance
-    - [&] See [[Probability Theory#Sufficiency\|#Sufficiency]] for proof
+    - [&] See [[#Sufficiency]] for proof
 - (**Independent iff Uncorrelated**). For a multivariate normal random vector, its components are independent if and only if they are uncorrelated
-    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[#Independence, Correlation, and Jointly Normal]]
     - [&] For nondegenerate normal random vector, we can also factorize the PDF to show independence.
-    - [!] The statement is not true for general [[Random Variable\|Random Variable]]s for which the mean and variance are not sufficient; see [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [!] The statement is not true for general [[Random Variable]]s for which the mean and variance are not sufficient; see [[#Independence, Correlation, and Jointly Normal]]
 - Hence, if $X\sim \mathcal{N}(\mu,\sigma^{2})$, then $Z = (X - \mu) /\sigma$ is normal with mean 0 and variance 1; $Z$ is said to have a ==standard== or ==unit== normal distribution
     - We write the CDF of a standard normal distribution $\Phi$
 - (**Symmetry**). $\Phi(-x) = 1 - \Phi(x)$
-- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution\|Chi-Square Distribution]])
+- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution]])
 
 ### Proofs
 
 #### Sufficiency
 
-Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function\|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
+Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
 
-For general normal random vectors, we can seek help from the [[Moment Generating Function\|MGF]]. Note that a MGF also completely determines a distribution.
-We use the second alternative definition. For a random vector, its [[Moment Generating Function\|MGF]] is the multivariate transform:
+For general normal random vectors, we can seek help from the [[Moment Generating Function|MGF]]. Note that a MGF also completely determines a distribution.
+We use the second alternative definition. For a random vector, its [[Moment Generating Function|MGF]] is the multivariate transform:
 $
 M_{X}(s) = \mathbb{E}[\exp(s^TX)] = M_{s^TX}(1) = \exp(s^T\mu + s^TVs/2),
 $
@@ -2415,13 +2490,13 @@ As we can see, the mean and variance are sufficient to determine the MGF, and th
 > [!rmk] Independent normal components implies jointly normal.
 >
 > The above statement becomes true once we impose the independence condition.
-> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]].
+> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem]].
 > By the alternative definition, $X$ is jointly normal.
 
 > [!rmk] Joint normal with zero correlation implies independence.
 >
-> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], $Y$ is jointly normal.
-> Since $X$ and $Y$ have the same mean and covariance, by Property [[Probability Theory#^prop-suff\|#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
+> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[#^prop-ind-joint]], $Y$ is jointly normal.
+> Since $X$ and $Y$ have the same mean and covariance, by Property [[#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
 
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
@@ -2476,7 +2551,7 @@ This also implies, for any function $g$:
 $
 \mathbb{E}[(X-\hat{X})g(Y)] = 0.
 $
-By the [[Conditional Probability#General Definition of Conditional Expectation\|Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
+By the [[Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
 $
 \mathbb{E}[X\given Y] = \hat{X}.
 $
@@ -2505,18 +2580,18 @@ $
 
 # Normal Distribution
 
-A [[Random Variable\|Random Variable]] is said to be normally distributed if it has
+A [[Random Variable]] is said to be normally distributed if it has
 
 - Notation
     - $\mathcal{N}(\mu, \sigma^{2})$ - Parameters
     - $\mu\in\R, \sigma^{2}\in\R_{+}$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$     - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$
-- [[Expectation\|Mean]]
-    - $\mu$ - [[Variance\|Variance]]
-    - $\sigma^{2}$ - [[Moment Generating Function\|MGF]]
-    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\mu$ - [[Variance]]
+    - $\sigma^{2}$ - [[Moment Generating Function|MGF]]
+    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function|CF]]
     - $e^{it\mu - \sigma^{2}t^{2} /2}$ 
-Because of the [[Central Limit Theorem\|Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
+Because of the [[Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
 
 ## Equivalent Definitions for Multivariate Normal Distribution
 
@@ -2535,7 +2610,7 @@ These two alternative definitions cover *degenerate* normal distribution, i.e., 
 #### First Alternative
 
 By change of variables, we can see that the definition via PDF implies the first alternative definition. We now show that if $D$ is not singular, $X=DW+\mu$ is a nondegenerate normal r.v. with a PDF of the form above.
-By the relationship of [[Derived Distribution\|Derived Distribution]], we have
+By the relationship of [[Derived Distribution]], we have
 $
 f_{X}(x) = f_{W}(D^{-1}x) \cdot | D^{-1}|.
 $
@@ -2551,7 +2626,7 @@ and $DD^T$ is the covariance of $X$.
 The relationship from the first alternative definition to the second is direct. Now suppose $a^TX$ is normal for any vector $a$.
 
 > [!error] Wrong
-> We inspect the [[Moment Generating Function\|MGF]] of $X$:
+> We inspect the [[Moment Generating Function|MGF]] of $X$:
 > $
 > M_{X}(s) = M_{s^TX}(1) = \exp(s^T\mathbb{E}[X] + s^T\Var(X)s/2),
 > $
@@ -2563,7 +2638,7 @@ To rigorously prove the equivalence, we consider two cases.
 
 **Case I.** $V = D^{2} = \Cov(X,X) \succ 0$. Thus, $D$ is invertible and we let $W = D^{-1}(X-\mu)$. We want to show that $W$ is standard normal, and thus $X = DW +\mu$ satisfies the first alternative definition.
 We first have $\mathbb{E}[W] = 0$ and $\Var(W) = D^{-1}\Var(X)D^{-T} = D^{-1}D^{2}D^{-1} = I$.
-We then inspect the [[Moment Generating Function\|MGF]] (transform) of $W$:
+We then inspect the [[Moment Generating Function|MGF]] (transform) of $W$:
 $
 \begin{aligned}
 M_{W}(s) =& \mathbb{E}[\exp(s^{T}W)] \\
@@ -2590,35 +2665,35 @@ X = \begin{bmatrix} Y\\Z \end{bmatrix}
 
 ## Properties
 
-- (**Affine transformation**). The [[Affine Transformation\|Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
+- (**Affine transformation**). The [[Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
     - As a special case, any sub-vector of a normal random vector is also normal
         - As a special case, any component of a normal random vector is also normal
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$
     - [&] The proof follows the alternative definition 1 above
 - (**Independent Gaussians are jointly Gaussian**). The sum of independent normal random variables is also a normal random variable ^prop-ind-joint
-    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]]
+    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem]]
     - [!] Note that this is generally not true for dependent random variables
-    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
-- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic\|Sufficient Statistic]]. ^prop-suff
+    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[#Independence, Correlation, and Jointly Normal]]
+- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic]]. ^prop-suff
     - In other words, the distribution of a multivariate normal random vector is completely determined by its mean and covariance
-    - [&] See [[Probability Theory#Sufficiency\|#Sufficiency]] for proof
+    - [&] See [[#Sufficiency]] for proof
 - (**Independent iff Uncorrelated**). For a multivariate normal random vector, its components are independent if and only if they are uncorrelated
-    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[#Independence, Correlation, and Jointly Normal]]
     - [&] For nondegenerate normal random vector, we can also factorize the PDF to show independence.
-    - [!] The statement is not true for general [[Random Variable\|Random Variable]]s for which the mean and variance are not sufficient; see [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [!] The statement is not true for general [[Random Variable]]s for which the mean and variance are not sufficient; see [[#Independence, Correlation, and Jointly Normal]]
 - Hence, if $X\sim \mathcal{N}(\mu,\sigma^{2})$, then $Z = (X - \mu) /\sigma$ is normal with mean 0 and variance 1; $Z$ is said to have a ==standard== or ==unit== normal distribution
     - We write the CDF of a standard normal distribution $\Phi$
 - (**Symmetry**). $\Phi(-x) = 1 - \Phi(x)$
-- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution\|Chi-Square Distribution]])
+- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution]])
 
 ### Proofs
 
 #### Sufficiency
 
-Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function\|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
+Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
 
-For general normal random vectors, we can seek help from the [[Moment Generating Function\|MGF]]. Note that a MGF also completely determines a distribution.
-We use the second alternative definition. For a random vector, its [[Moment Generating Function\|MGF]] is the multivariate transform:
+For general normal random vectors, we can seek help from the [[Moment Generating Function|MGF]]. Note that a MGF also completely determines a distribution.
+We use the second alternative definition. For a random vector, its [[Moment Generating Function|MGF]] is the multivariate transform:
 $
 M_{X}(s) = \mathbb{E}[\exp(s^TX)] = M_{s^TX}(1) = \exp(s^T\mu + s^TVs/2),
 $
@@ -2637,13 +2712,13 @@ As we can see, the mean and variance are sufficient to determine the MGF, and th
 > [!rmk] Independent normal components implies jointly normal.
 >
 > The above statement becomes true once we impose the independence condition.
-> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]].
+> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem]].
 > By the alternative definition, $X$ is jointly normal.
 
 > [!rmk] Joint normal with zero correlation implies independence.
 >
-> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], $Y$ is jointly normal.
-> Since $X$ and $Y$ have the same mean and covariance, by Property [[Probability Theory#^prop-suff\|#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
+> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[#^prop-ind-joint]], $Y$ is jointly normal.
+> Since $X$ and $Y$ have the same mean and covariance, by Property [[#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
 
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
@@ -2698,7 +2773,7 @@ This also implies, for any function $g$:
 $
 \mathbb{E}[(X-\hat{X})g(Y)] = 0.
 $
-By the [[Conditional Probability#General Definition of Conditional Expectation\|Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
+By the [[Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
 $
 \mathbb{E}[X\given Y] = \hat{X}.
 $
@@ -2727,18 +2802,18 @@ $
 
 # Normal Distribution
 
-A [[Random Variable\|Random Variable]] is said to be normally distributed if it has
+A [[Random Variable]] is said to be normally distributed if it has
 
 - Notation
     - $\mathcal{N}(\mu, \sigma^{2})$ - Parameters
     - $\mu\in\R, \sigma^{2}\in\R_{+}$ - [[Probability Density Function\|PDF]]
     - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$     - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$
-- [[Expectation\|Mean]]
-    - $\mu$ - [[Variance\|Variance]]
-    - $\sigma^{2}$ - [[Moment Generating Function\|MGF]]
-    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function\|CF]]
+- [[Expectation|Mean]]
+    - $\mu$ - [[Variance]]
+    - $\sigma^{2}$ - [[Moment Generating Function|MGF]]
+    - $e^{\mu t + \sigma^{2}t^{2} /2}$ - [[Characteristic Function|CF]]
     - $e^{it\mu - \sigma^{2}t^{2} /2}$ 
-Because of the [[Central Limit Theorem\|Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
+Because of the [[Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
 
 ## Equivalent Definitions for Multivariate Normal Distribution
 
@@ -2757,7 +2832,7 @@ These two alternative definitions cover *degenerate* normal distribution, i.e., 
 #### First Alternative
 
 By change of variables, we can see that the definition via PDF implies the first alternative definition. We now show that if $D$ is not singular, $X=DW+\mu$ is a nondegenerate normal r.v. with a PDF of the form above.
-By the relationship of [[Derived Distribution\|Derived Distribution]], we have
+By the relationship of [[Derived Distribution]], we have
 $
 f_{X}(x) = f_{W}(D^{-1}x) \cdot | D^{-1}|.
 $
@@ -2773,7 +2848,7 @@ and $DD^T$ is the covariance of $X$.
 The relationship from the first alternative definition to the second is direct. Now suppose $a^TX$ is normal for any vector $a$.
 
 > [!error] Wrong
-> We inspect the [[Moment Generating Function\|MGF]] of $X$:
+> We inspect the [[Moment Generating Function|MGF]] of $X$:
 > $
 > M_{X}(s) = M_{s^TX}(1) = \exp(s^T\mathbb{E}[X] + s^T\Var(X)s/2),
 > $
@@ -2785,7 +2860,7 @@ To rigorously prove the equivalence, we consider two cases.
 
 **Case I.** $V = D^{2} = \Cov(X,X) \succ 0$. Thus, $D$ is invertible and we let $W = D^{-1}(X-\mu)$. We want to show that $W$ is standard normal, and thus $X = DW +\mu$ satisfies the first alternative definition.
 We first have $\mathbb{E}[W] = 0$ and $\Var(W) = D^{-1}\Var(X)D^{-T} = D^{-1}D^{2}D^{-1} = I$.
-We then inspect the [[Moment Generating Function\|MGF]] (transform) of $W$:
+We then inspect the [[Moment Generating Function|MGF]] (transform) of $W$:
 $
 \begin{aligned}
 M_{W}(s) =& \mathbb{E}[\exp(s^{T}W)] \\
@@ -2812,35 +2887,35 @@ X = \begin{bmatrix} Y\\Z \end{bmatrix}
 
 ## Properties
 
-- (**Affine transformation**). The [[Affine Transformation\|Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
+- (**Affine transformation**). The [[Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
     - As a special case, any sub-vector of a normal random vector is also normal
         - As a special case, any component of a normal random vector is also normal
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$
     - [&] The proof follows the alternative definition 1 above
 - (**Independent Gaussians are jointly Gaussian**). The sum of independent normal random variables is also a normal random variable ^prop-ind-joint
-    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]]
+    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem]]
     - [!] Note that this is generally not true for dependent random variables
-    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
-- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic\|Sufficient Statistic]]. ^prop-suff
+    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[#Independence, Correlation, and Jointly Normal]]
+- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic]]. ^prop-suff
     - In other words, the distribution of a multivariate normal random vector is completely determined by its mean and covariance
-    - [&] See [[Probability Theory#Sufficiency\|#Sufficiency]] for proof
+    - [&] See [[#Sufficiency]] for proof
 - (**Independent iff Uncorrelated**). For a multivariate normal random vector, its components are independent if and only if they are uncorrelated
-    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[#Independence, Correlation, and Jointly Normal]]
     - [&] For nondegenerate normal random vector, we can also factorize the PDF to show independence.
-    - [!] The statement is not true for general [[Random Variable\|Random Variable]]s for which the mean and variance are not sufficient; see [[Probability Theory#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [!] The statement is not true for general [[Random Variable]]s for which the mean and variance are not sufficient; see [[#Independence, Correlation, and Jointly Normal]]
 - Hence, if $X\sim \mathcal{N}(\mu,\sigma^{2})$, then $Z = (X - \mu) /\sigma$ is normal with mean 0 and variance 1; $Z$ is said to have a ==standard== or ==unit== normal distribution
     - We write the CDF of a standard normal distribution $\Phi$
 - (**Symmetry**). $\Phi(-x) = 1 - \Phi(x)$
-- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution\|Chi-Square Distribution]])
+- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution]])
 
 ### Proofs
 
 #### Sufficiency
 
-Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function\|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
+Note that [[Probability Density Function\|PDF]] or [[Cumulative Distribution Function|CDF]] completely determines the distribution of a random variable. Therefore, by the definition for nondegenerate multivariate normal distribution via PDF, we can see that the mean and covariance matrix are sufficient.
 
-For general normal random vectors, we can seek help from the [[Moment Generating Function\|MGF]]. Note that a MGF also completely determines a distribution.
-We use the second alternative definition. For a random vector, its [[Moment Generating Function\|MGF]] is the multivariate transform:
+For general normal random vectors, we can seek help from the [[Moment Generating Function|MGF]]. Note that a MGF also completely determines a distribution.
+We use the second alternative definition. For a random vector, its [[Moment Generating Function|MGF]] is the multivariate transform:
 $
 M_{X}(s) = \mathbb{E}[\exp(s^TX)] = M_{s^TX}(1) = \exp(s^T\mu + s^TVs/2),
 $
@@ -2859,13 +2934,13 @@ As we can see, the mean and variance are sufficient to determine the MGF, and th
 > [!rmk] Independent normal components implies jointly normal.
 >
 > The above statement becomes true once we impose the independence condition.
-> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]].
+> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem]].
 > By the alternative definition, $X$ is jointly normal.
 
 > [!rmk] Joint normal with zero correlation implies independence.
 >
-> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Probability Theory#^prop-ind-joint\|#^prop-ind-joint]], $Y$ is jointly normal.
-> Since $X$ and $Y$ have the same mean and covariance, by Property [[Probability Theory#^prop-suff\|#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
+> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[#^prop-ind-joint]], $Y$ is jointly normal.
+> Since $X$ and $Y$ have the same mean and covariance, by Property [[#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
 
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
@@ -2920,7 +2995,7 @@ This also implies, for any function $g$:
 $
 \mathbb{E}[(X-\hat{X})g(Y)] = 0.
 $
-By the [[Conditional Probability#General Definition of Conditional Expectation\|Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
+By the [[Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
 $
 \mathbb{E}[X\given Y] = \hat{X}.
 $
@@ -2936,7 +3011,7 @@ $
 
 </div></div>
       |
-| [[Gamma Distribution\|Gamma Distribution]]                | /                                                       | 
+| [[Gamma Distribution]]                | /                                                       | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -2950,18 +3025,18 @@ $
 
 # Gamma Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of gamma distribution if
+A continuous [[Random Variable]] is of gamma distribution if
 
 - Parameters
     - $\alpha, \lambda >0$ - [[Probability Density Function\|PDF]]
-    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$     - where $\Gamma$ is the [[Gamma Function\|Gamma Function]]
+    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$     - where $\Gamma$ is the [[Gamma Function]]
         - $\Gamma(\alpha) = \int _{0}^{\infty} e^{-y}y^{\alpha-1} \, dy$
         - $\Gamma(1) = 1$
         - $\Gamma(\alpha) = (\alpha-1)\Gamma(\alpha-1)$
         - $\Gamma(n) = (n-1)!$
-- [[Expectation\|Mean]]
-    - $\alpha /\lambda$ - [[Variance\|Variance]]
-    - $\alpha /\lambda^{2}$ - [[Moment Generating Function\|MGF]]
+- [[Expectation|Mean]]
+    - $\alpha /\lambda$ - [[Variance]]
+    - $\alpha /\lambda^{2}$ - [[Moment Generating Function|MGF]]
     - $\left( \frac{\lambda}{\lambda - t} \right)^{\alpha},\quad t <\lambda$ 
 
 </div></div>
@@ -2979,18 +3054,18 @@ A continuous [[Random Variable\|Random Variable]] is of gamma distribution if
 
 # Gamma Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of gamma distribution if
+A continuous [[Random Variable]] is of gamma distribution if
 
 - Parameters
     - $\alpha, \lambda >0$ - [[Probability Density Function\|PDF]]
-    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$     - where $\Gamma$ is the [[Gamma Function\|Gamma Function]]
+    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$     - where $\Gamma$ is the [[Gamma Function]]
         - $\Gamma(\alpha) = \int _{0}^{\infty} e^{-y}y^{\alpha-1} \, dy$
         - $\Gamma(1) = 1$
         - $\Gamma(\alpha) = (\alpha-1)\Gamma(\alpha-1)$
         - $\Gamma(n) = (n-1)!$
-- [[Expectation\|Mean]]
-    - $\alpha /\lambda$ - [[Variance\|Variance]]
-    - $\alpha /\lambda^{2}$ - [[Moment Generating Function\|MGF]]
+- [[Expectation|Mean]]
+    - $\alpha /\lambda$ - [[Variance]]
+    - $\alpha /\lambda^{2}$ - [[Moment Generating Function|MGF]]
     - $\left( \frac{\lambda}{\lambda - t} \right)^{\alpha},\quad t <\lambda$ 
 
 </div></div>
@@ -3008,18 +3083,18 @@ A continuous [[Random Variable\|Random Variable]] is of gamma distribution if
 
 # Gamma Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of gamma distribution if
+A continuous [[Random Variable]] is of gamma distribution if
 
 - Parameters
     - $\alpha, \lambda >0$ - [[Probability Density Function\|PDF]]
-    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$     - where $\Gamma$ is the [[Gamma Function\|Gamma Function]]
+    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$     - where $\Gamma$ is the [[Gamma Function]]
         - $\Gamma(\alpha) = \int _{0}^{\infty} e^{-y}y^{\alpha-1} \, dy$
         - $\Gamma(1) = 1$
         - $\Gamma(\alpha) = (\alpha-1)\Gamma(\alpha-1)$
         - $\Gamma(n) = (n-1)!$
-- [[Expectation\|Mean]]
-    - $\alpha /\lambda$ - [[Variance\|Variance]]
-    - $\alpha /\lambda^{2}$ - [[Moment Generating Function\|MGF]]
+- [[Expectation|Mean]]
+    - $\alpha /\lambda$ - [[Variance]]
+    - $\alpha /\lambda^{2}$ - [[Moment Generating Function|MGF]]
     - $\left( \frac{\lambda}{\lambda - t} \right)^{\alpha},\quad t <\lambda$ 
 
 </div></div>
@@ -3037,18 +3112,18 @@ A continuous [[Random Variable\|Random Variable]] is of gamma distribution if
 
 # Gamma Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of gamma distribution if
+A continuous [[Random Variable]] is of gamma distribution if
 
 - Parameters
     - $\alpha, \lambda >0$ - [[Probability Density Function\|PDF]]
-    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$     - where $\Gamma$ is the [[Gamma Function\|Gamma Function]]
+    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$     - where $\Gamma$ is the [[Gamma Function]]
         - $\Gamma(\alpha) = \int _{0}^{\infty} e^{-y}y^{\alpha-1} \, dy$
         - $\Gamma(1) = 1$
         - $\Gamma(\alpha) = (\alpha-1)\Gamma(\alpha-1)$
         - $\Gamma(n) = (n-1)!$
-- [[Expectation\|Mean]]
-    - $\alpha /\lambda$ - [[Variance\|Variance]]
-    - $\alpha /\lambda^{2}$ - [[Moment Generating Function\|MGF]]
+- [[Expectation|Mean]]
+    - $\alpha /\lambda$ - [[Variance]]
+    - $\alpha /\lambda^{2}$ - [[Moment Generating Function|MGF]]
     - $\left( \frac{\lambda}{\lambda - t} \right)^{\alpha},\quad t <\lambda$ 
 
 </div></div>
@@ -3066,23 +3141,23 @@ A continuous [[Random Variable\|Random Variable]] is of gamma distribution if
 
 # Gamma Distribution
 
-A continuous [[Random Variable\|Random Variable]] is of gamma distribution if
+A continuous [[Random Variable]] is of gamma distribution if
 
 - Parameters
-    - $\alpha, \lambda >0$ - [[Probability Density Function\|PDF]]
-    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$     - where $\Gamma$ is the [[Gamma Function\|Gamma Function]]
+    - $\alpha, \lambda >0$ - [[Probability Density Function|PDF]]
+    - $f(x)=\begin{cases} \frac{\lambda e^{-\lambda x}(\lambda x)^{\alpha -1}}{\Gamma(\alpha)},\quad & x \ge 0,\\0,& x<0 \end{cases}$     - where $\Gamma$ is the [[Gamma Function]]
         - $\Gamma(\alpha) = \int _{0}^{\infty} e^{-y}y^{\alpha-1} \, dy$
         - $\Gamma(1) = 1$
         - $\Gamma(\alpha) = (\alpha-1)\Gamma(\alpha-1)$
         - $\Gamma(n) = (n-1)!$
-- [[Expectation\|Mean]]
-    - $\alpha /\lambda$ - [[Variance\|Variance]]
-    - $\alpha /\lambda^{2}$ - [[Moment Generating Function\|MGF]]
+- [[Expectation|Mean]]
+    - $\alpha /\lambda$ - [[Variance]]
+    - $\alpha /\lambda^{2}$ - [[Moment Generating Function|MGF]]
     - $\left( \frac{\lambda}{\lambda - t} \right)^{\alpha},\quad t <\lambda$ 
 
 </div></div>
        |                                                        |
-| [[Beta Distribution\|Beta Distribution]]                 | /                                                       | 
+| [[Beta Distribution]]                 | /                                                       | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -3096,18 +3171,18 @@ A continuous [[Random Variable\|Random Variable]] is of gamma distribution if
 
 # Beta Distribution
 
-A continuous [[Random Variable\|Random Variable]] with range $[0,1]$ is of beta distribution if
+A continuous [[Random Variable]] with range $[0,1]$ is of beta distribution if
 
 - Parameters
-    - $a,b >0$ - [[Probability Density Function\|PDF]]
-    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$     - where $\Gamma$ is the [[Gamma Function\|Gamma Function]]
-- [[Expectation\|Mean]]
-    - $\frac{a}{a+b}$ - [[Variance\|Variance]]
-    - $\frac{ab}{(a+b)^2(a+b+1)}$ - [[Moment Generating Function\|MGF]]
+    - $a,b >0$ - [[Probability Density Function|PDF]]
+    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$     - where $\Gamma$ is the [[Gamma Function]]
+- [[Expectation|Mean]]
+    - $\frac{a}{a+b}$ - [[Variance]]
+    - $\frac{ab}{(a+b)^2(a+b+1)}$ - [[Moment Generating Function|MGF]]
     - $\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} \int_{0}^{1} x^{a-1}(1-x)^{b-1} e^{tx} \mathrm{d} x$ 
 ## Properties
 
-- [[Uniform Distribution\|Uniform Distribution]] is a special case of beta distribution with $a=b=1$.
+- [[Uniform Distribution]] is a special case of beta distribution with $a=b=1$.
 - **Beta-Binomial model**:Given a prior $\operatorname{Beta}(a,b)$, the posterior distribution of $p$ given $n$ Bernoulli trials with $k$ successes is $\operatorname{Beta}(a+k, b+n-k)$.
 
 
@@ -3126,18 +3201,18 @@ A continuous [[Random Variable\|Random Variable]] with range $[0,1]$ is of beta 
 
 # Beta Distribution
 
-A continuous [[Random Variable\|Random Variable]] with range $[0,1]$ is of beta distribution if
+A continuous [[Random Variable]] with range $[0,1]$ is of beta distribution if
 
 - Parameters
-    - $a,b >0$ - [[Probability Density Function\|PDF]]
-    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$     - where $\Gamma$ is the [[Gamma Function\|Gamma Function]]
-- [[Expectation\|Mean]]
-    - $\frac{a}{a+b}$ - [[Variance\|Variance]]
-    - $\frac{ab}{(a+b)^2(a+b+1)}$ - [[Moment Generating Function\|MGF]]
+    - $a,b >0$ - [[Probability Density Function|PDF]]
+    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$     - where $\Gamma$ is the [[Gamma Function]]
+- [[Expectation|Mean]]
+    - $\frac{a}{a+b}$ - [[Variance]]
+    - $\frac{ab}{(a+b)^2(a+b+1)}$ - [[Moment Generating Function|MGF]]
     - $\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} \int_{0}^{1} x^{a-1}(1-x)^{b-1} e^{tx} \mathrm{d} x$ 
 ## Properties
 
-- [[Uniform Distribution\|Uniform Distribution]] is a special case of beta distribution with $a=b=1$.
+- [[Uniform Distribution]] is a special case of beta distribution with $a=b=1$.
 - **Beta-Binomial model**:Given a prior $\operatorname{Beta}(a,b)$, the posterior distribution of $p$ given $n$ Bernoulli trials with $k$ successes is $\operatorname{Beta}(a+k, b+n-k)$.
 
 
@@ -3156,18 +3231,18 @@ A continuous [[Random Variable\|Random Variable]] with range $[0,1]$ is of beta 
 
 # Beta Distribution
 
-A continuous [[Random Variable\|Random Variable]] with range $[0,1]$ is of beta distribution if
+A continuous [[Random Variable]] with range $[0,1]$ is of beta distribution if
 
 - Parameters
-    - $a,b >0$ - [[Probability Density Function\|PDF]]
-    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$     - where $\Gamma$ is the [[Gamma Function\|Gamma Function]]
-- [[Expectation\|Mean]]
-    - $\frac{a}{a+b}$ - [[Variance\|Variance]]
-    - $\frac{ab}{(a+b)^2(a+b+1)}$ - [[Moment Generating Function\|MGF]]
+    - $a,b >0$ - [[Probability Density Function|PDF]]
+    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$     - where $\Gamma$ is the [[Gamma Function]]
+- [[Expectation|Mean]]
+    - $\frac{a}{a+b}$ - [[Variance]]
+    - $\frac{ab}{(a+b)^2(a+b+1)}$ - [[Moment Generating Function|MGF]]
     - $\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} \int_{0}^{1} x^{a-1}(1-x)^{b-1} e^{tx} \mathrm{d} x$ 
 ## Properties
 
-- [[Uniform Distribution\|Uniform Distribution]] is a special case of beta distribution with $a=b=1$.
+- [[Uniform Distribution]] is a special case of beta distribution with $a=b=1$.
 - **Beta-Binomial model**:Given a prior $\operatorname{Beta}(a,b)$, the posterior distribution of $p$ given $n$ Bernoulli trials with $k$ successes is $\operatorname{Beta}(a+k, b+n-k)$.
 
 
@@ -3186,18 +3261,18 @@ A continuous [[Random Variable\|Random Variable]] with range $[0,1]$ is of beta 
 
 # Beta Distribution
 
-A continuous [[Random Variable\|Random Variable]] with range $[0,1]$ is of beta distribution if
+A continuous [[Random Variable]] with range $[0,1]$ is of beta distribution if
 
 - Parameters
-    - $a,b >0$ - [[Probability Density Function\|PDF]]
-    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$     - where $\Gamma$ is the [[Gamma Function\|Gamma Function]]
-- [[Expectation\|Mean]]
-    - $\frac{a}{a+b}$ - [[Variance\|Variance]]
-    - $\frac{ab}{(a+b)^2(a+b+1)}$ - [[Moment Generating Function\|MGF]]
+    - $a,b >0$ - [[Probability Density Function|PDF]]
+    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$     - where $\Gamma$ is the [[Gamma Function]]
+- [[Expectation|Mean]]
+    - $\frac{a}{a+b}$ - [[Variance]]
+    - $\frac{ab}{(a+b)^2(a+b+1)}$ - [[Moment Generating Function|MGF]]
     - $\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} \int_{0}^{1} x^{a-1}(1-x)^{b-1} e^{tx} \mathrm{d} x$ 
 ## Properties
 
-- [[Uniform Distribution\|Uniform Distribution]] is a special case of beta distribution with $a=b=1$.
+- [[Uniform Distribution]] is a special case of beta distribution with $a=b=1$.
 - **Beta-Binomial model**:Given a prior $\operatorname{Beta}(a,b)$, the posterior distribution of $p$ given $n$ Bernoulli trials with $k$ successes is $\operatorname{Beta}(a+k, b+n-k)$.
 
 
@@ -3216,24 +3291,24 @@ A continuous [[Random Variable\|Random Variable]] with range $[0,1]$ is of beta 
 
 # Beta Distribution
 
-A continuous [[Random Variable\|Random Variable]] with range $[0,1]$ is of beta distribution if
+A continuous [[Random Variable]] with range $[0,1]$ is of beta distribution if
 
 - Parameters
-    - $a,b >0$ - [[Probability Density Function\|PDF]]
-    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$     - where $\Gamma$ is the [[Gamma Function\|Gamma Function]]
-- [[Expectation\|Mean]]
-    - $\frac{a}{a+b}$ - [[Variance\|Variance]]
-    - $\frac{ab}{(a+b)^2(a+b+1)}$ - [[Moment Generating Function\|MGF]]
+    - $a,b >0$ - [[Probability Density Function|PDF]]
+    - $f(x)=\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} x^{a-1}(1-x)^{b-1}$     - where $\Gamma$ is the [[Gamma Function]]
+- [[Expectation|Mean]]
+    - $\frac{a}{a+b}$ - [[Variance]]
+    - $\frac{ab}{(a+b)^2(a+b+1)}$ - [[Moment Generating Function|MGF]]
     - $\frac{\Gamma(a+b)}{\Gamma(a) \Gamma(b)} \int_{0}^{1} x^{a-1}(1-x)^{b-1} e^{tx} \mathrm{d} x$ 
 ## Properties
 
-- [[Uniform Distribution\|Uniform Distribution]] is a special case of beta distribution with $a=b=1$.
+- [[Uniform Distribution]] is a special case of beta distribution with $a=b=1$.
 - **Beta-Binomial model**:Given a prior $\operatorname{Beta}(a,b)$, the posterior distribution of $p$ given $n$ Bernoulli trials with $k$ successes is $\operatorname{Beta}(a+k, b+n-k)$.
 
 
 </div></div>
         |                                                        |
-| [[Chi-Square Distribution\|Chi-Square Distribution]]           | 
+| [[Chi-Square Distribution]]           | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -3249,20 +3324,20 @@ A continuous [[Random Variable\|Random Variable]] with range $[0,1]$ is of beta 
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chi-square_pdf.svg/642px-Chi-square_pdf.svg.png)
 
-If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution\|normal random variables]], then
+If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution|normal random variables]], then
 $
 X = \sum^{n}_{i=1} Z_{i}^{2}
 $
 is said to have a **chi-square** distribution with $n$ degrees of freedom.
 
-By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution\|Gamma Distribution]] with parameter $(n/2,1/2)$.
+By the uniqueness of [[Moment Generating Function|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution]] with parameter $(n/2,1/2)$.
 
 - Notation
     - $\chi _{n}^{2}$ - Parameters
-    - $n$ - [[Moment Generating Function\|MGF]]
-    - $(1-2t)^{-n/2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation\|Mean]]
-    - $n$ - [[Variance\|Variance]]
+    - $n$ - [[Moment Generating Function|MGF]]
+    - $(1-2t)^{-n/2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation|Mean]]
+    - $n$ - [[Variance]]
     - $2n$ 
 
 </div></div>
@@ -3282,20 +3357,20 @@ By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distributio
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chi-square_pdf.svg/642px-Chi-square_pdf.svg.png)
 
-If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution\|normal random variables]], then
+If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution|normal random variables]], then
 $
 X = \sum^{n}_{i=1} Z_{i}^{2}
 $
 is said to have a **chi-square** distribution with $n$ degrees of freedom.
 
-By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution\|Gamma Distribution]] with parameter $(n/2,1/2)$.
+By the uniqueness of [[Moment Generating Function|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution]] with parameter $(n/2,1/2)$.
 
 - Notation
     - $\chi _{n}^{2}$ - Parameters
-    - $n$ - [[Moment Generating Function\|MGF]]
-    - $(1-2t)^{-n/2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation\|Mean]]
-    - $n$ - [[Variance\|Variance]]
+    - $n$ - [[Moment Generating Function|MGF]]
+    - $(1-2t)^{-n/2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation|Mean]]
+    - $n$ - [[Variance]]
     - $2n$ 
 
 </div></div>
@@ -3315,20 +3390,20 @@ By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distributio
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chi-square_pdf.svg/642px-Chi-square_pdf.svg.png)
 
-If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution\|normal random variables]], then
+If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution|normal random variables]], then
 $
 X = \sum^{n}_{i=1} Z_{i}^{2}
 $
 is said to have a **chi-square** distribution with $n$ degrees of freedom.
 
-By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution\|Gamma Distribution]] with parameter $(n/2,1/2)$.
+By the uniqueness of [[Moment Generating Function|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution]] with parameter $(n/2,1/2)$.
 
 - Notation
     - $\chi _{n}^{2}$ - Parameters
-    - $n$ - [[Moment Generating Function\|MGF]]
-    - $(1-2t)^{-n/2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation\|Mean]]
-    - $n$ - [[Variance\|Variance]]
+    - $n$ - [[Moment Generating Function|MGF]]
+    - $(1-2t)^{-n/2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation|Mean]]
+    - $n$ - [[Variance]]
     - $2n$ 
 
 </div></div>
@@ -3348,20 +3423,20 @@ By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distributio
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chi-square_pdf.svg/642px-Chi-square_pdf.svg.png)
 
-If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution\|normal random variables]], then
+If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution|normal random variables]], then
 $
 X = \sum^{n}_{i=1} Z_{i}^{2}
 $
 is said to have a **chi-square** distribution with $n$ degrees of freedom.
 
-By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution\|Gamma Distribution]] with parameter $(n/2,1/2)$.
+By the uniqueness of [[Moment Generating Function|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution]] with parameter $(n/2,1/2)$.
 
 - Notation
     - $\chi _{n}^{2}$ - Parameters
-    - $n$ - [[Moment Generating Function\|MGF]]
-    - $(1-2t)^{-n/2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation\|Mean]]
-    - $n$ - [[Variance\|Variance]]
+    - $n$ - [[Moment Generating Function|MGF]]
+    - $(1-2t)^{-n/2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation|Mean]]
+    - $n$ - [[Variance]]
     - $2n$ 
 
 </div></div>
@@ -3381,20 +3456,20 @@ By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distributio
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chi-square_pdf.svg/642px-Chi-square_pdf.svg.png)
 
-If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution\|normal random variables]], then
+If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution|normal random variables]], then
 $
 X = \sum^{n}_{i=1} Z_{i}^{2}
 $
 is said to have a **chi-square** distribution with $n$ degrees of freedom.
 
-By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution\|Gamma Distribution]] with parameter $(n/2,1/2)$.
+By the uniqueness of [[Moment Generating Function|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution]] with parameter $(n/2,1/2)$.
 
 - Notation
     - $\chi _{n}^{2}$ - Parameters
-    - $n$ - [[Moment Generating Function\|MGF]]
-    - $(1-2t)^{-n/2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation\|Mean]]
-    - $n$ - [[Variance\|Variance]]
+    - $n$ - [[Moment Generating Function|MGF]]
+    - $(1-2t)^{-n/2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation|Mean]]
+    - $n$ - [[Variance]]
     - $2n$ 
 
 </div></div>
@@ -3414,26 +3489,26 @@ By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distributio
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chi-square_pdf.svg/642px-Chi-square_pdf.svg.png)
 
-If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution\|normal random variables]], then
+If $Z_1,\dots,Z_n$ are IID standard [[Normal Distribution|normal random variables]], then
 $
 X = \sum^{n}_{i=1} Z_{i}^{2}
 $
 is said to have a **chi-square** distribution with $n$ degrees of freedom.
 
-By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution\|Gamma Distribution]] with parameter $(n/2,1/2)$.
+By the uniqueness of [[Moment Generating Function|MGF]], chi-square distribution with $n$ degrees of freedom is [[Gamma Distribution]] with parameter $(n/2,1/2)$.
 
 - Notation
     - $\chi _{n}^{2}$ - Parameters
-    - $n$ - [[Moment Generating Function\|MGF]]
-    - $(1-2t)^{-n/2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation\|Mean]]
-    - $n$ - [[Variance\|Variance]]
+    - $n$ - [[Moment Generating Function|MGF]]
+    - $(1-2t)^{-n/2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle f(x) = \frac{e^{-x/2}(x/2)^{n /2 -1}}{2\Gamma(n /2)}, \quad x\ge 0$ - [[Expectation|Mean]]
+    - $n$ - [[Variance]]
     - $2n$ 
 
 </div></div>
   |                                                        |
-| [[Wishart Distribution\|Wishart Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
-| [[t Distribution\|t Distribution]]                    | /                                                       | 
+| [[Wishart Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| [[t Distribution]]                    | /                                                       | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -3449,20 +3524,20 @@ By the uniqueness of [[Moment Generating Function\|MGF]], chi-square distributio
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Student_t_pdf.svg/650px-Student_t_pdf.svg.png)
 
-While we can show that the sample [[Variance\|Variance]] of [[Normal Distribution\|Normal Distribution]] samples is of [[Chi-Square Distribution\|Chi-Square Distribution]], it is convenient to define the distribution for the following [[Random Variable\|Random Variable]]
+While we can show that the sample [[Variance]] of [[Normal Distribution]] samples is of [[Chi-Square Distribution]], it is convenient to define the distribution for the following [[Random Variable]]
 $
 T_n = \frac{Z}{\sqrt{ \chi _{n}^{2} /n }},
 $
 where $Z \sim \mathcal{N}(0,1)$. $T_n$ is said to have a **t-distribution** with $n$ degrees of freedom.
 
-By the [[Law of Large Numbers\|Law of Large Numbers]], for large $n$, $T_n \approx Z \sim \mathcal{N}(0,1)$ (but always with larger [[Variance\|Variance]]).
+By the [[Law of Large Numbers]], for large $n$, $T_n \approx Z \sim \mathcal{N}(0,1)$ (but always with larger [[Variance]]).
 
 - Parameter
-    - $n \in \mathbb{N}$ - [[Expectation\|Mean]]
-    - 0 - [[Variance\|Variance]]
+    - $n \in \mathbb{N}$ - [[Expectation|Mean]]
+    - 0 - [[Variance]]
 
-- $\frac{n}{n-2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ - [[Moment Generating Function\|MGF]]
+- $\frac{n}{n-2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ - [[Moment Generating Function|MGF]]
     - *Undefined* 
 ## Examples
 
@@ -3472,7 +3547,7 @@ Suppose $\{ X_{i}\sim \mathcal{N}(\mu,\sigma^{2}) \}$, then
 $
 \frac{\overline{X} - \mu}{s / \sqrt{ n }} \sim t _{n-1},
 $
-where $s$ is the [[Variance#Sample Variance\|Variance#Sample Variance]].
+where $s$ is the [[Variance#Sample Variance]].
 
 ## Difference of Normal Distributions
 
@@ -3503,20 +3578,20 @@ $
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Student_t_pdf.svg/650px-Student_t_pdf.svg.png)
 
-While we can show that the sample [[Variance\|Variance]] of [[Normal Distribution\|Normal Distribution]] samples is of [[Chi-Square Distribution\|Chi-Square Distribution]], it is convenient to define the distribution for the following [[Random Variable\|Random Variable]]
+While we can show that the sample [[Variance]] of [[Normal Distribution]] samples is of [[Chi-Square Distribution]], it is convenient to define the distribution for the following [[Random Variable]]
 $
 T_n = \frac{Z}{\sqrt{ \chi _{n}^{2} /n }},
 $
 where $Z \sim \mathcal{N}(0,1)$. $T_n$ is said to have a **t-distribution** with $n$ degrees of freedom.
 
-By the [[Law of Large Numbers\|Law of Large Numbers]], for large $n$, $T_n \approx Z \sim \mathcal{N}(0,1)$ (but always with larger [[Variance\|Variance]]).
+By the [[Law of Large Numbers]], for large $n$, $T_n \approx Z \sim \mathcal{N}(0,1)$ (but always with larger [[Variance]]).
 
 - Parameter
-    - $n \in \mathbb{N}$ - [[Expectation\|Mean]]
-    - 0 - [[Variance\|Variance]]
+    - $n \in \mathbb{N}$ - [[Expectation|Mean]]
+    - 0 - [[Variance]]
 
-- $\frac{n}{n-2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ - [[Moment Generating Function\|MGF]]
+- $\frac{n}{n-2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ - [[Moment Generating Function|MGF]]
     - *Undefined* 
 ## Examples
 
@@ -3526,7 +3601,7 @@ Suppose $\{ X_{i}\sim \mathcal{N}(\mu,\sigma^{2}) \}$, then
 $
 \frac{\overline{X} - \mu}{s / \sqrt{ n }} \sim t _{n-1},
 $
-where $s$ is the [[Variance#Sample Variance\|Variance#Sample Variance]].
+where $s$ is the [[Variance#Sample Variance]].
 
 ## Difference of Normal Distributions
 
@@ -3557,20 +3632,20 @@ $
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Student_t_pdf.svg/650px-Student_t_pdf.svg.png)
 
-While we can show that the sample [[Variance\|Variance]] of [[Normal Distribution\|Normal Distribution]] samples is of [[Chi-Square Distribution\|Chi-Square Distribution]], it is convenient to define the distribution for the following [[Random Variable\|Random Variable]]
+While we can show that the sample [[Variance]] of [[Normal Distribution]] samples is of [[Chi-Square Distribution]], it is convenient to define the distribution for the following [[Random Variable]]
 $
 T_n = \frac{Z}{\sqrt{ \chi _{n}^{2} /n }},
 $
 where $Z \sim \mathcal{N}(0,1)$. $T_n$ is said to have a **t-distribution** with $n$ degrees of freedom.
 
-By the [[Law of Large Numbers\|Law of Large Numbers]], for large $n$, $T_n \approx Z \sim \mathcal{N}(0,1)$ (but always with larger [[Variance\|Variance]]).
+By the [[Law of Large Numbers]], for large $n$, $T_n \approx Z \sim \mathcal{N}(0,1)$ (but always with larger [[Variance]]).
 
 - Parameter
-    - $n \in \mathbb{N}$ - [[Expectation\|Mean]]
-    - 0 - [[Variance\|Variance]]
+    - $n \in \mathbb{N}$ - [[Expectation|Mean]]
+    - 0 - [[Variance]]
 
-- $\frac{n}{n-2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ - [[Moment Generating Function\|MGF]]
+- $\frac{n}{n-2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ - [[Moment Generating Function|MGF]]
     - *Undefined* 
 ## Examples
 
@@ -3580,7 +3655,7 @@ Suppose $\{ X_{i}\sim \mathcal{N}(\mu,\sigma^{2}) \}$, then
 $
 \frac{\overline{X} - \mu}{s / \sqrt{ n }} \sim t _{n-1},
 $
-where $s$ is the [[Variance#Sample Variance\|Variance#Sample Variance]].
+where $s$ is the [[Variance#Sample Variance]].
 
 ## Difference of Normal Distributions
 
@@ -3611,20 +3686,20 @@ $
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Student_t_pdf.svg/650px-Student_t_pdf.svg.png)
 
-While we can show that the sample [[Variance\|Variance]] of [[Normal Distribution\|Normal Distribution]] samples is of [[Chi-Square Distribution\|Chi-Square Distribution]], it is convenient to define the distribution for the following [[Random Variable\|Random Variable]]
+While we can show that the sample [[Variance]] of [[Normal Distribution]] samples is of [[Chi-Square Distribution]], it is convenient to define the distribution for the following [[Random Variable]]
 $
 T_n = \frac{Z}{\sqrt{ \chi _{n}^{2} /n }},
 $
 where $Z \sim \mathcal{N}(0,1)$. $T_n$ is said to have a **t-distribution** with $n$ degrees of freedom.
 
-By the [[Law of Large Numbers\|Law of Large Numbers]], for large $n$, $T_n \approx Z \sim \mathcal{N}(0,1)$ (but always with larger [[Variance\|Variance]]).
+By the [[Law of Large Numbers]], for large $n$, $T_n \approx Z \sim \mathcal{N}(0,1)$ (but always with larger [[Variance]]).
 
 - Parameter
-    - $n \in \mathbb{N}$ - [[Expectation\|Mean]]
-    - 0 - [[Variance\|Variance]]
+    - $n \in \mathbb{N}$ - [[Expectation|Mean]]
+    - 0 - [[Variance]]
 
-- $\frac{n}{n-2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ - [[Moment Generating Function\|MGF]]
+- $\frac{n}{n-2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ - [[Moment Generating Function|MGF]]
     - *Undefined* 
 ## Examples
 
@@ -3634,7 +3709,7 @@ Suppose $\{ X_{i}\sim \mathcal{N}(\mu,\sigma^{2}) \}$, then
 $
 \frac{\overline{X} - \mu}{s / \sqrt{ n }} \sim t _{n-1},
 $
-where $s$ is the [[Variance#Sample Variance\|Variance#Sample Variance]].
+where $s$ is the [[Variance#Sample Variance]].
 
 ## Difference of Normal Distributions
 
@@ -3665,20 +3740,20 @@ $
 
 ![pdf|300](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Student_t_pdf.svg/650px-Student_t_pdf.svg.png)
 
-While we can show that the sample [[Variance\|Variance]] of [[Normal Distribution\|Normal Distribution]] samples is of [[Chi-Square Distribution\|Chi-Square Distribution]], it is convenient to define the distribution for the following [[Random Variable\|Random Variable]]
+While we can show that the sample [[Variance]] of [[Normal Distribution]] samples is of [[Chi-Square Distribution]], it is convenient to define the distribution for the following [[Random Variable]]
 $
 T_n = \frac{Z}{\sqrt{ \chi _{n}^{2} /n }},
 $
 where $Z \sim \mathcal{N}(0,1)$. $T_n$ is said to have a **t-distribution** with $n$ degrees of freedom.
 
-By the [[Law of Large Numbers\|Law of Large Numbers]], for large $n$, $T_n \approx Z \sim \mathcal{N}(0,1)$ (but always with larger [[Variance\|Variance]]).
+By the [[Law of Large Numbers]], for large $n$, $T_n \approx Z \sim \mathcal{N}(0,1)$ (but always with larger [[Variance]]).
 
 - Parameter
-    - $n \in \mathbb{N}$ - [[Expectation\|Mean]]
-    - 0 - [[Variance\|Variance]]
+    - $n \in \mathbb{N}$ - [[Expectation|Mean]]
+    - 0 - [[Variance]]
 
-- $\frac{n}{n-2}$ - [[Probability Density Function\|PDF]]
-    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ - [[Moment Generating Function\|MGF]]
+- $\frac{n}{n-2}$ - [[Probability Density Function|PDF]]
+    - $\displaystyle\frac{\Gamma \left(\frac{n+1}{2} \right)} {\sqrt{n\pi}\,\Gamma \left(\frac{n}{2} \right)} \left(1+\frac{x^2}{n} \right)^{-\frac{n+1}{2}}$ - [[Moment Generating Function|MGF]]
     - *Undefined* 
 ## Examples
 
@@ -3688,7 +3763,7 @@ Suppose $\{ X_{i}\sim \mathcal{N}(\mu,\sigma^{2}) \}$, then
 $
 \frac{\overline{X} - \mu}{s / \sqrt{ n }} \sim t _{n-1},
 $
-where $s$ is the [[Variance#Sample Variance\|Variance#Sample Variance]].
+where $s$ is the [[Variance#Sample Variance]].
 
 ## Difference of Normal Distributions
 
@@ -3704,7 +3779,7 @@ $
 
 </div></div>
            |                                                        |
-| [[F Distribution\|F Distribution]]                    | /                                                       | 
+| [[F Distribution]]                    | /                                                       | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -3727,9 +3802,9 @@ $
 is said to have an **F-distribution** with $n,m$ degrees of freedom.
 
 - Parameters
-    - $n,m \in \mathbb{N}$ - [[Expectation\|Mean]]
-    - $m/(m-2)$ - [[Variance\|Variance]]
-    - $\displaystyle \frac{2m^{2}(m+n -2)}{n(m-2)^{2}(m-4)}$ - [[Moment Generating Function\|MGF]]
+    - $n,m \in \mathbb{N}$ - [[Expectation|Mean]]
+    - $m/(m-2)$ - [[Variance]]
+    - $\displaystyle \frac{2m^{2}(m+n -2)}{n(m-2)^{2}(m-4)}$ - [[Moment Generating Function|MGF]]
     - *Undefined* 
 
 </div></div>
@@ -3756,9 +3831,9 @@ $
 is said to have an **F-distribution** with $n,m$ degrees of freedom.
 
 - Parameters
-    - $n,m \in \mathbb{N}$ - [[Expectation\|Mean]]
-    - $m/(m-2)$ - [[Variance\|Variance]]
-    - $\displaystyle \frac{2m^{2}(m+n -2)}{n(m-2)^{2}(m-4)}$ - [[Moment Generating Function\|MGF]]
+    - $n,m \in \mathbb{N}$ - [[Expectation|Mean]]
+    - $m/(m-2)$ - [[Variance]]
+    - $\displaystyle \frac{2m^{2}(m+n -2)}{n(m-2)^{2}(m-4)}$ - [[Moment Generating Function|MGF]]
     - *Undefined* 
 
 </div></div>
@@ -3785,9 +3860,9 @@ $
 is said to have an **F-distribution** with $n,m$ degrees of freedom.
 
 - Parameters
-    - $n,m \in \mathbb{N}$ - [[Expectation\|Mean]]
-    - $m/(m-2)$ - [[Variance\|Variance]]
-    - $\displaystyle \frac{2m^{2}(m+n -2)}{n(m-2)^{2}(m-4)}$ - [[Moment Generating Function\|MGF]]
+    - $n,m \in \mathbb{N}$ - [[Expectation|Mean]]
+    - $m/(m-2)$ - [[Variance]]
+    - $\displaystyle \frac{2m^{2}(m+n -2)}{n(m-2)^{2}(m-4)}$ - [[Moment Generating Function|MGF]]
     - *Undefined* 
 
 </div></div>
@@ -3814,14 +3889,14 @@ $
 is said to have an **F-distribution** with $n,m$ degrees of freedom.
 
 - Parameters
-    - $n,m \in \mathbb{N}$ - [[Expectation\|Mean]]
-    - $m/(m-2)$ - [[Variance\|Variance]]
-    - $\displaystyle \frac{2m^{2}(m+n -2)}{n(m-2)^{2}(m-4)}$ - [[Moment Generating Function\|MGF]]
+    - $n,m \in \mathbb{N}$ - [[Expectation|Mean]]
+    - $m/(m-2)$ - [[Variance]]
+    - $\displaystyle \frac{2m^{2}(m+n -2)}{n(m-2)^{2}(m-4)}$ - [[Moment Generating Function|MGF]]
     - *Undefined* 
 
 </div></div>
            |                                                        |
-| [[Geometric Distribution\|Geometric Distribution]]            | /                                                       | 
+| [[Geometric Distribution]]            | /                                                       | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -3835,15 +3910,15 @@ is said to have an **F-distribution** with $n,m$ degrees of freedom.
 
 # Geometric Distribution
 
-For a [[Bernoulli Trial\|Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
+For a [[Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
 Another definition lets $X$ be the number of failures before the first success, then the PMF is $pq^{n}$.
 
 - Parameter
-    - $p\in [0,1]$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = pq^{n-1}$ - [[Expectation\|Mean]]
-    - $1 /p$ - [[Variance\|Variance]]
-    - $q /p^{2}$ - [[Moment Generating Function\|MGF]]
+    - $p\in [0,1]$ - [[Cumulative Distribution Function|CDF]]
+    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function|PMF]]
+    - $p(n) = pq^{n-1}$ - [[Expectation|Mean]]
+    - $1 /p$ - [[Variance]]
+    - $q /p^{2}$ - [[Moment Generating Function|MGF]]
     - $\frac{pe^{t}}{1-qe^{t}}$, $e^{t}< 1 /q$ 
 ## Memoryless
 
@@ -3851,7 +3926,7 @@ An geometric random variable is memoryless:
 $
 P(X \ge n+k | X> n) = \frac{q^{n+k-1}}{q^{n}} = q^{k-1} = P(x \ge k).
 $
-This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation\|Conditional Probability#Conditional Expectation]].
+This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation]].
 For the mean, we have
 $
 \mathbb{E}[X] = \mathbb{E}[X\given X =1 ]P(X=1) + \mathbb{E}[X\given X >1 ]P(X>1) = 1 \cdot p + \left( 1 + \mathbb{E}[X] \right) \cdot q,
@@ -3879,15 +3954,15 @@ which implies $\mathbb{E}[X^{2}] = (2-p) /p^{2}$.
 
 # Geometric Distribution
 
-For a [[Bernoulli Trial\|Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
+For a [[Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
 Another definition lets $X$ be the number of failures before the first success, then the PMF is $pq^{n}$.
 
 - Parameter
-    - $p\in [0,1]$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = pq^{n-1}$ - [[Expectation\|Mean]]
-    - $1 /p$ - [[Variance\|Variance]]
-    - $q /p^{2}$ - [[Moment Generating Function\|MGF]]
+    - $p\in [0,1]$ - [[Cumulative Distribution Function|CDF]]
+    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function|PMF]]
+    - $p(n) = pq^{n-1}$ - [[Expectation|Mean]]
+    - $1 /p$ - [[Variance]]
+    - $q /p^{2}$ - [[Moment Generating Function|MGF]]
     - $\frac{pe^{t}}{1-qe^{t}}$, $e^{t}< 1 /q$ 
 ## Memoryless
 
@@ -3895,7 +3970,7 @@ An geometric random variable is memoryless:
 $
 P(X \ge n+k | X> n) = \frac{q^{n+k-1}}{q^{n}} = q^{k-1} = P(x \ge k).
 $
-This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation\|Conditional Probability#Conditional Expectation]].
+This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation]].
 For the mean, we have
 $
 \mathbb{E}[X] = \mathbb{E}[X\given X =1 ]P(X=1) + \mathbb{E}[X\given X >1 ]P(X>1) = 1 \cdot p + \left( 1 + \mathbb{E}[X] \right) \cdot q,
@@ -3923,15 +3998,15 @@ which implies $\mathbb{E}[X^{2}] = (2-p) /p^{2}$.
 
 # Geometric Distribution
 
-For a [[Bernoulli Trial\|Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
+For a [[Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
 Another definition lets $X$ be the number of failures before the first success, then the PMF is $pq^{n}$.
 
 - Parameter
-    - $p\in [0,1]$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = pq^{n-1}$ - [[Expectation\|Mean]]
-    - $1 /p$ - [[Variance\|Variance]]
-    - $q /p^{2}$ - [[Moment Generating Function\|MGF]]
+    - $p\in [0,1]$ - [[Cumulative Distribution Function|CDF]]
+    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function|PMF]]
+    - $p(n) = pq^{n-1}$ - [[Expectation|Mean]]
+    - $1 /p$ - [[Variance]]
+    - $q /p^{2}$ - [[Moment Generating Function|MGF]]
     - $\frac{pe^{t}}{1-qe^{t}}$, $e^{t}< 1 /q$ 
 ## Memoryless
 
@@ -3939,7 +4014,7 @@ An geometric random variable is memoryless:
 $
 P(X \ge n+k | X> n) = \frac{q^{n+k-1}}{q^{n}} = q^{k-1} = P(x \ge k).
 $
-This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation\|Conditional Probability#Conditional Expectation]].
+This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation]].
 For the mean, we have
 $
 \mathbb{E}[X] = \mathbb{E}[X\given X =1 ]P(X=1) + \mathbb{E}[X\given X >1 ]P(X>1) = 1 \cdot p + \left( 1 + \mathbb{E}[X] \right) \cdot q,
@@ -3967,15 +4042,15 @@ which implies $\mathbb{E}[X^{2}] = (2-p) /p^{2}$.
 
 # Geometric Distribution
 
-For a [[Bernoulli Trial\|Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
+For a [[Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
 Another definition lets $X$ be the number of failures before the first success, then the PMF is $pq^{n}$.
 
 - Parameter
-    - $p\in [0,1]$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = pq^{n-1}$ - [[Expectation\|Mean]]
-    - $1 /p$ - [[Variance\|Variance]]
-    - $q /p^{2}$ - [[Moment Generating Function\|MGF]]
+    - $p\in [0,1]$ - [[Cumulative Distribution Function|CDF]]
+    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function|PMF]]
+    - $p(n) = pq^{n-1}$ - [[Expectation|Mean]]
+    - $1 /p$ - [[Variance]]
+    - $q /p^{2}$ - [[Moment Generating Function|MGF]]
     - $\frac{pe^{t}}{1-qe^{t}}$, $e^{t}< 1 /q$ 
 ## Memoryless
 
@@ -3983,7 +4058,7 @@ An geometric random variable is memoryless:
 $
 P(X \ge n+k | X> n) = \frac{q^{n+k-1}}{q^{n}} = q^{k-1} = P(x \ge k).
 $
-This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation\|Conditional Probability#Conditional Expectation]].
+This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation]].
 For the mean, we have
 $
 \mathbb{E}[X] = \mathbb{E}[X\given X =1 ]P(X=1) + \mathbb{E}[X\given X >1 ]P(X>1) = 1 \cdot p + \left( 1 + \mathbb{E}[X] \right) \cdot q,
@@ -4011,15 +4086,15 @@ which implies $\mathbb{E}[X^{2}] = (2-p) /p^{2}$.
 
 # Geometric Distribution
 
-For a [[Bernoulli Trial\|Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
+For a [[Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
 Another definition lets $X$ be the number of failures before the first success, then the PMF is $pq^{n}$.
 
 - Parameter
-    - $p\in [0,1]$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = pq^{n-1}$ - [[Expectation\|Mean]]
-    - $1 /p$ - [[Variance\|Variance]]
-    - $q /p^{2}$ - [[Moment Generating Function\|MGF]]
+    - $p\in [0,1]$ - [[Cumulative Distribution Function|CDF]]
+    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function|PMF]]
+    - $p(n) = pq^{n-1}$ - [[Expectation|Mean]]
+    - $1 /p$ - [[Variance]]
+    - $q /p^{2}$ - [[Moment Generating Function|MGF]]
     - $\frac{pe^{t}}{1-qe^{t}}$, $e^{t}< 1 /q$ 
 ## Memoryless
 
@@ -4027,7 +4102,7 @@ An geometric random variable is memoryless:
 $
 P(X \ge n+k | X> n) = \frac{q^{n+k-1}}{q^{n}} = q^{k-1} = P(x \ge k).
 $
-This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation\|Conditional Probability#Conditional Expectation]].
+This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation]].
 For the mean, we have
 $
 \mathbb{E}[X] = \mathbb{E}[X\given X =1 ]P(X=1) + \mathbb{E}[X\given X >1 ]P(X>1) = 1 \cdot p + \left( 1 + \mathbb{E}[X] \right) \cdot q,
@@ -4055,15 +4130,15 @@ which implies $\mathbb{E}[X^{2}] = (2-p) /p^{2}$.
 
 # Geometric Distribution
 
-For a [[Bernoulli Trial\|Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
+For a [[Bernoulli Trial]], let $X$ be the number of tests when we first meet 1. Then $X$ is said to have a **geometric distribution**.
 Another definition lets $X$ be the number of failures before the first success, then the PMF is $pq^{n}$.
 
 - Parameter
-    - $p\in [0,1]$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function\|PMF]]
-    - $p(n) = pq^{n-1}$ - [[Expectation\|Mean]]
-    - $1 /p$ - [[Variance\|Variance]]
-    - $q /p^{2}$ - [[Moment Generating Function\|MGF]]
+    - $p\in [0,1]$ - [[Cumulative Distribution Function|CDF]]
+    - $F(n) = 1 - q^{n}$ - [[Probability Mass Function|PMF]]
+    - $p(n) = pq^{n-1}$ - [[Expectation|Mean]]
+    - $1 /p$ - [[Variance]]
+    - $q /p^{2}$ - [[Moment Generating Function|MGF]]
     - $\frac{pe^{t}}{1-qe^{t}}$, $e^{t}< 1 /q$ 
 ## Memoryless
 
@@ -4071,7 +4146,7 @@ An geometric random variable is memoryless:
 $
 P(X \ge n+k | X> n) = \frac{q^{n+k-1}}{q^{n}} = q^{k-1} = P(x \ge k).
 $
-This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation\|Conditional Probability#Conditional Expectation]].
+This gives an alternative method to calculate the expectation of geometric distribution using [[Conditional Probability#Conditional Expectation]].
 For the mean, we have
 $
 \mathbb{E}[X] = \mathbb{E}[X\given X =1 ]P(X=1) + \mathbb{E}[X\given X >1 ]P(X>1) = 1 \cdot p + \left( 1 + \mathbb{E}[X] \right) \cdot q,
@@ -4086,7 +4161,7 @@ which implies $\mathbb{E}[X^{2}] = (2-p) /p^{2}$.
 
 </div></div>
    |                                                        |
-| [[Hypergeometric Distribution\|Hypergeometric Distribution]]       | /                                                       | 
+| [[Hypergeometric Distribution]]       | /                                                       | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -4103,9 +4178,9 @@ which implies $\mathbb{E}[X^{2}] = (2-p) /p^{2}$.
 Consider a pool of $N$ machines which contains $M$ defect machines. Now $n$ machines are randomly selected, let $X$ be the number of defect machines selected. Then $X$ is said to have a **hypergeometric distribution**.
 
 - Parameters
-    - $N\in \mathbb{N}, M,n\in [N]$ - [[Probability Mass Function\|PMF]]
-    - $\displaystyle p(k) = \frac{{M \choose k}{N-M \choose n-k}}{{N \choose k}}$ - [[Expectation\|Mean]]
-    - $\frac{nM}{N}$ - [[Variance\|Variance]]
+    - $N\in \mathbb{N}, M,n\in [N]$ - [[Probability Mass Function|PMF]]
+    - $\displaystyle p(k) = \frac{{M \choose k}{N-M \choose n-k}}{{N \choose k}}$ - [[Expectation|Mean]]
+    - $\frac{nM}{N}$ - [[Variance]]
     - $\displaystyle\frac{nM(N-n)(N-M)}{N^{2}(N-1)}$ 
 
 </div></div>
@@ -4126,9 +4201,9 @@ Consider a pool of $N$ machines which contains $M$ defect machines. Now $n$ mach
 Consider a pool of $N$ machines which contains $M$ defect machines. Now $n$ machines are randomly selected, let $X$ be the number of defect machines selected. Then $X$ is said to have a **hypergeometric distribution**.
 
 - Parameters
-    - $N\in \mathbb{N}, M,n\in [N]$ - [[Probability Mass Function\|PMF]]
-    - $\displaystyle p(k) = \frac{{M \choose k}{N-M \choose n-k}}{{N \choose k}}$ - [[Expectation\|Mean]]
-    - $\frac{nM}{N}$ - [[Variance\|Variance]]
+    - $N\in \mathbb{N}, M,n\in [N]$ - [[Probability Mass Function|PMF]]
+    - $\displaystyle p(k) = \frac{{M \choose k}{N-M \choose n-k}}{{N \choose k}}$ - [[Expectation|Mean]]
+    - $\frac{nM}{N}$ - [[Variance]]
     - $\displaystyle\frac{nM(N-n)(N-M)}{N^{2}(N-1)}$ 
 
 </div></div>
@@ -4149,9 +4224,9 @@ Consider a pool of $N$ machines which contains $M$ defect machines. Now $n$ mach
 Consider a pool of $N$ machines which contains $M$ defect machines. Now $n$ machines are randomly selected, let $X$ be the number of defect machines selected. Then $X$ is said to have a **hypergeometric distribution**.
 
 - Parameters
-    - $N\in \mathbb{N}, M,n\in [N]$ - [[Probability Mass Function\|PMF]]
-    - $\displaystyle p(k) = \frac{{M \choose k}{N-M \choose n-k}}{{N \choose k}}$ - [[Expectation\|Mean]]
-    - $\frac{nM}{N}$ - [[Variance\|Variance]]
+    - $N\in \mathbb{N}, M,n\in [N]$ - [[Probability Mass Function|PMF]]
+    - $\displaystyle p(k) = \frac{{M \choose k}{N-M \choose n-k}}{{N \choose k}}$ - [[Expectation|Mean]]
+    - $\frac{nM}{N}$ - [[Variance]]
     - $\displaystyle\frac{nM(N-n)(N-M)}{N^{2}(N-1)}$ 
 
 </div></div>
@@ -4172,14 +4247,14 @@ Consider a pool of $N$ machines which contains $M$ defect machines. Now $n$ mach
 Consider a pool of $N$ machines which contains $M$ defect machines. Now $n$ machines are randomly selected, let $X$ be the number of defect machines selected. Then $X$ is said to have a **hypergeometric distribution**.
 
 - Parameters
-    - $N\in \mathbb{N}, M,n\in [N]$ - [[Probability Mass Function\|PMF]]
-    - $\displaystyle p(k) = \frac{{M \choose k}{N-M \choose n-k}}{{N \choose k}}$ - [[Expectation\|Mean]]
-    - $\frac{nM}{N}$ - [[Variance\|Variance]]
+    - $N\in \mathbb{N}, M,n\in [N]$ - [[Probability Mass Function|PMF]]
+    - $\displaystyle p(k) = \frac{{M \choose k}{N-M \choose n-k}}{{N \choose k}}$ - [[Expectation|Mean]]
+    - $\frac{nM}{N}$ - [[Variance]]
     - $\displaystyle\frac{nM(N-n)(N-M)}{N^{2}(N-1)}$ 
 
 </div></div>
  | /                                                       |                                                        |
-| [[Cauchy Distribution\|Cauchy Distribution]]               | /                                                       | 
+| [[Cauchy Distribution]]               | /                                                       | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 <div class="markdown-embed-title">
@@ -4194,22 +4269,22 @@ Consider a pool of $N$ machines which contains $M$ defect machines. Now $n$ mach
 # Cauchy Distribution
 
 - Parameter
-    - $a$ - [[Cumulative Distribution Function\|CDF]]
-    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function\|PDF]]
-    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation\|Mean]]
-    - Doesn't exist - [[Variance\|Variance]]
-    - Doesn't exist - [[Moment Generating Function\|MGF]]
-    - Doesn't exist - [[Characteristic Function\|Characteristic Function]]
+    - $a$ - [[Cumulative Distribution Function|CDF]]
+    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function|PDF]]
+    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation|Mean]]
+    - Doesn't exist - [[Variance]]
+    - Doesn't exist - [[Moment Generating Function|MGF]]
+    - Doesn't exist - [[Characteristic Function]]
     - $e^{-a|t|}$
 
 ## Characteristic Function
 
-The [[Characteristic Function\|Characteristic Function]] of a Cauchy [[Random Variable\|Random Variable]] is
+The [[Characteristic Function]] of a Cauchy [[Random Variable]] is
 $
 \phi(t) = \int _{\R} e^{ixt} \frac{a}{\pi} \frac{1}{x^{2} + a^{2}} \, dx.
 $
 
-From [[Residue Theorem\|Residue Theorem]], we know that
+From [[Residue Theorem]], we know that
 $
 \phi(t) = 2\pi i \frac{a}{\pi} \frac{e^{ix|t|}}{ \frac{ \mathrm{d} }{ \mathrm{d}x } x^{2} + a^{2}}\Big|_{x = ai} = e^{-a|t|}.
 $
@@ -4221,7 +4296,7 @@ Consider $P(0,a) \in \R^{2}$. A line passing $P$ has the angle with the y-axis $
 
 ## Reproducibility and Sample Mean
 
-Just like [[Moment Generating Function\|MGF]], a [[Characteristic Function\|CF]] uniquely determine a distribution.
+Just like [[Moment Generating Function|MGF]], a [[Characteristic Function|CF]] uniquely determine a distribution.
 Let $\{ X _i \}_{i=1}^{n}$ be a set of Cauchy random variables with parameter $\{ a_i \}$. Then we have
 $
 \mathbb{E}\left[ e^{it\sum_{i=1}^{n}X _i} \right] = \prod_{i=1}^{n}\mathbb{E}[e^{itX _i}] = \prod^{n}_{i=1} e^{-a_i|t|} = e^{-\left( \sum^{n}_{i=1}a_i \right)|t|}.
@@ -4247,22 +4322,22 @@ Thus, $\overline{X}$ is also a Cauchy random variable, with parameter $\sum^{n}_
 # Cauchy Distribution
 
 - Parameter
-    - $a$ - [[Cumulative Distribution Function\|CDF]]
-    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function\|PDF]]
-    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation\|Mean]]
-    - Doesn't exist - [[Variance\|Variance]]
-    - Doesn't exist - [[Moment Generating Function\|MGF]]
-    - Doesn't exist - [[Characteristic Function\|Characteristic Function]]
+    - $a$ - [[Cumulative Distribution Function|CDF]]
+    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function|PDF]]
+    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation|Mean]]
+    - Doesn't exist - [[Variance]]
+    - Doesn't exist - [[Moment Generating Function|MGF]]
+    - Doesn't exist - [[Characteristic Function]]
     - $e^{-a|t|}$
 
 ## Characteristic Function
 
-The [[Characteristic Function\|Characteristic Function]] of a Cauchy [[Random Variable\|Random Variable]] is
+The [[Characteristic Function]] of a Cauchy [[Random Variable]] is
 $
 \phi(t) = \int _{\R} e^{ixt} \frac{a}{\pi} \frac{1}{x^{2} + a^{2}} \, dx.
 $
 
-From [[Residue Theorem\|Residue Theorem]], we know that
+From [[Residue Theorem]], we know that
 $
 \phi(t) = 2\pi i \frac{a}{\pi} \frac{e^{ix|t|}}{ \frac{ \mathrm{d} }{ \mathrm{d}x } x^{2} + a^{2}}\Big|_{x = ai} = e^{-a|t|}.
 $
@@ -4274,7 +4349,7 @@ Consider $P(0,a) \in \R^{2}$. A line passing $P$ has the angle with the y-axis $
 
 ## Reproducibility and Sample Mean
 
-Just like [[Moment Generating Function\|MGF]], a [[Characteristic Function\|CF]] uniquely determine a distribution.
+Just like [[Moment Generating Function|MGF]], a [[Characteristic Function|CF]] uniquely determine a distribution.
 Let $\{ X _i \}_{i=1}^{n}$ be a set of Cauchy random variables with parameter $\{ a_i \}$. Then we have
 $
 \mathbb{E}\left[ e^{it\sum_{i=1}^{n}X _i} \right] = \prod_{i=1}^{n}\mathbb{E}[e^{itX _i}] = \prod^{n}_{i=1} e^{-a_i|t|} = e^{-\left( \sum^{n}_{i=1}a_i \right)|t|}.
@@ -4300,22 +4375,22 @@ Thus, $\overline{X}$ is also a Cauchy random variable, with parameter $\sum^{n}_
 # Cauchy Distribution
 
 - Parameter
-    - $a$ - [[Cumulative Distribution Function\|CDF]]
-    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function\|PDF]]
-    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation\|Mean]]
-    - Doesn't exist - [[Variance\|Variance]]
-    - Doesn't exist - [[Moment Generating Function\|MGF]]
-    - Doesn't exist - [[Characteristic Function\|Characteristic Function]]
+    - $a$ - [[Cumulative Distribution Function|CDF]]
+    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function|PDF]]
+    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation|Mean]]
+    - Doesn't exist - [[Variance]]
+    - Doesn't exist - [[Moment Generating Function|MGF]]
+    - Doesn't exist - [[Characteristic Function]]
     - $e^{-a|t|}$
 
 ## Characteristic Function
 
-The [[Characteristic Function\|Characteristic Function]] of a Cauchy [[Random Variable\|Random Variable]] is
+The [[Characteristic Function]] of a Cauchy [[Random Variable]] is
 $
 \phi(t) = \int _{\R} e^{ixt} \frac{a}{\pi} \frac{1}{x^{2} + a^{2}} \, dx.
 $
 
-From [[Residue Theorem\|Residue Theorem]], we know that
+From [[Residue Theorem]], we know that
 $
 \phi(t) = 2\pi i \frac{a}{\pi} \frac{e^{ix|t|}}{ \frac{ \mathrm{d} }{ \mathrm{d}x } x^{2} + a^{2}}\Big|_{x = ai} = e^{-a|t|}.
 $
@@ -4327,7 +4402,7 @@ Consider $P(0,a) \in \R^{2}$. A line passing $P$ has the angle with the y-axis $
 
 ## Reproducibility and Sample Mean
 
-Just like [[Moment Generating Function\|MGF]], a [[Characteristic Function\|CF]] uniquely determine a distribution.
+Just like [[Moment Generating Function|MGF]], a [[Characteristic Function|CF]] uniquely determine a distribution.
 Let $\{ X _i \}_{i=1}^{n}$ be a set of Cauchy random variables with parameter $\{ a_i \}$. Then we have
 $
 \mathbb{E}\left[ e^{it\sum_{i=1}^{n}X _i} \right] = \prod_{i=1}^{n}\mathbb{E}[e^{itX _i}] = \prod^{n}_{i=1} e^{-a_i|t|} = e^{-\left( \sum^{n}_{i=1}a_i \right)|t|}.
@@ -4353,22 +4428,22 @@ Thus, $\overline{X}$ is also a Cauchy random variable, with parameter $\sum^{n}_
 # Cauchy Distribution
 
 - Parameter
-    - $a$ - [[Cumulative Distribution Function\|CDF]]
-    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function\|PDF]]
-    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation\|Mean]]
-    - Doesn't exist - [[Variance\|Variance]]
-    - Doesn't exist - [[Moment Generating Function\|MGF]]
-    - Doesn't exist - [[Characteristic Function\|Characteristic Function]]
+    - $a$ - [[Cumulative Distribution Function|CDF]]
+    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function|PDF]]
+    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation|Mean]]
+    - Doesn't exist - [[Variance]]
+    - Doesn't exist - [[Moment Generating Function|MGF]]
+    - Doesn't exist - [[Characteristic Function]]
     - $e^{-a|t|}$
 
 ## Characteristic Function
 
-The [[Characteristic Function\|Characteristic Function]] of a Cauchy [[Random Variable\|Random Variable]] is
+The [[Characteristic Function]] of a Cauchy [[Random Variable]] is
 $
 \phi(t) = \int _{\R} e^{ixt} \frac{a}{\pi} \frac{1}{x^{2} + a^{2}} \, dx.
 $
 
-From [[Residue Theorem\|Residue Theorem]], we know that
+From [[Residue Theorem]], we know that
 $
 \phi(t) = 2\pi i \frac{a}{\pi} \frac{e^{ix|t|}}{ \frac{ \mathrm{d} }{ \mathrm{d}x } x^{2} + a^{2}}\Big|_{x = ai} = e^{-a|t|}.
 $
@@ -4380,7 +4455,7 @@ Consider $P(0,a) \in \R^{2}$. A line passing $P$ has the angle with the y-axis $
 
 ## Reproducibility and Sample Mean
 
-Just like [[Moment Generating Function\|MGF]], a [[Characteristic Function\|CF]] uniquely determine a distribution.
+Just like [[Moment Generating Function|MGF]], a [[Characteristic Function|CF]] uniquely determine a distribution.
 Let $\{ X _i \}_{i=1}^{n}$ be a set of Cauchy random variables with parameter $\{ a_i \}$. Then we have
 $
 \mathbb{E}\left[ e^{it\sum_{i=1}^{n}X _i} \right] = \prod_{i=1}^{n}\mathbb{E}[e^{itX _i}] = \prod^{n}_{i=1} e^{-a_i|t|} = e^{-\left( \sum^{n}_{i=1}a_i \right)|t|}.
@@ -4406,22 +4481,22 @@ Thus, $\overline{X}$ is also a Cauchy random variable, with parameter $\sum^{n}_
 # Cauchy Distribution
 
 - Parameter
-    - $a$ - [[Cumulative Distribution Function\|CDF]]
-    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function\|PDF]]
-    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation\|Mean]]
-    - Doesn't exist - [[Variance\|Variance]]
-    - Doesn't exist - [[Moment Generating Function\|MGF]]
-    - Doesn't exist - [[Characteristic Function\|Characteristic Function]]
+    - $a$ - [[Cumulative Distribution Function|CDF]]
+    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function|PDF]]
+    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation|Mean]]
+    - Doesn't exist - [[Variance]]
+    - Doesn't exist - [[Moment Generating Function|MGF]]
+    - Doesn't exist - [[Characteristic Function]]
     - $e^{-a|t|}$
 
 ## Characteristic Function
 
-The [[Characteristic Function\|Characteristic Function]] of a Cauchy [[Random Variable\|Random Variable]] is
+The [[Characteristic Function]] of a Cauchy [[Random Variable]] is
 $
 \phi(t) = \int _{\R} e^{ixt} \frac{a}{\pi} \frac{1}{x^{2} + a^{2}} \, dx.
 $
 
-From [[Residue Theorem\|Residue Theorem]], we know that
+From [[Residue Theorem]], we know that
 $
 \phi(t) = 2\pi i \frac{a}{\pi} \frac{e^{ix|t|}}{ \frac{ \mathrm{d} }{ \mathrm{d}x } x^{2} + a^{2}}\Big|_{x = ai} = e^{-a|t|}.
 $
@@ -4433,7 +4508,7 @@ Consider $P(0,a) \in \R^{2}$. A line passing $P$ has the angle with the y-axis $
 
 ## Reproducibility and Sample Mean
 
-Just like [[Moment Generating Function\|MGF]], a [[Characteristic Function\|CF]] uniquely determine a distribution.
+Just like [[Moment Generating Function|MGF]], a [[Characteristic Function|CF]] uniquely determine a distribution.
 Let $\{ X _i \}_{i=1}^{n}$ be a set of Cauchy random variables with parameter $\{ a_i \}$. Then we have
 $
 \mathbb{E}\left[ e^{it\sum_{i=1}^{n}X _i} \right] = \prod_{i=1}^{n}\mathbb{E}[e^{itX _i}] = \prod^{n}_{i=1} e^{-a_i|t|} = e^{-\left( \sum^{n}_{i=1}a_i \right)|t|}.
@@ -4459,22 +4534,22 @@ Thus, $\overline{X}$ is also a Cauchy random variable, with parameter $\sum^{n}_
 # Cauchy Distribution
 
 - Parameter
-    - $a$ - [[Cumulative Distribution Function\|CDF]]
-    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function\|PDF]]
-    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation\|Mean]]
-    - Doesn't exist - [[Variance\|Variance]]
-    - Doesn't exist - [[Moment Generating Function\|MGF]]
-    - Doesn't exist - [[Characteristic Function\|Characteristic Function]]
+    - $a$ - [[Cumulative Distribution Function|CDF]]
+    - $\frac{1}{\pi}\left(\arctan \frac{x}{a} +\frac{\pi}{2}  \right)$ - [[Probability Density Function|PDF]]
+    - $\frac{1}{\pi}\frac{a}{x^{2} + a ^{2}}$ - [[Expectation|Mean]]
+    - Doesn't exist - [[Variance]]
+    - Doesn't exist - [[Moment Generating Function|MGF]]
+    - Doesn't exist - [[Characteristic Function]]
     - $e^{-a|t|}$
 
 ## Characteristic Function
 
-The [[Characteristic Function\|Characteristic Function]] of a Cauchy [[Random Variable\|Random Variable]] is
+The [[Characteristic Function]] of a Cauchy [[Random Variable]] is
 $
 \phi(t) = \int _{\R} e^{ixt} \frac{a}{\pi} \frac{1}{x^{2} + a^{2}} \, dx.
 $
 
-From [[Residue Theorem\|Residue Theorem]], we know that
+From [[Residue Theorem]], we know that
 $
 \phi(t) = 2\pi i \frac{a}{\pi} \frac{e^{ix|t|}}{ \frac{ \mathrm{d} }{ \mathrm{d}x } x^{2} + a^{2}}\Big|_{x = ai} = e^{-a|t|}.
 $
@@ -4486,7 +4561,7 @@ Consider $P(0,a) \in \R^{2}$. A line passing $P$ has the angle with the y-axis $
 
 ## Reproducibility and Sample Mean
 
-Just like [[Moment Generating Function\|MGF]], a [[Characteristic Function\|CF]] uniquely determine a distribution.
+Just like [[Moment Generating Function|MGF]], a [[Characteristic Function|CF]] uniquely determine a distribution.
 Let $\{ X _i \}_{i=1}^{n}$ be a set of Cauchy random variables with parameter $\{ a_i \}$. Then we have
 $
 \mathbb{E}\left[ e^{it\sum_{i=1}^{n}X _i} \right] = \prod_{i=1}^{n}\mathbb{E}[e^{itX _i}] = \prod^{n}_{i=1} e^{-a_i|t|} = e^{-\left( \sum^{n}_{i=1}a_i \right)|t|}.
@@ -4512,22 +4587,22 @@ Thus, $\overline{X}$ is also a Cauchy random variable, with parameter $\sum^{n}_
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4547,22 +4622,22 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4582,22 +4657,22 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4617,22 +4692,22 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4652,22 +4727,22 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4687,22 +4762,22 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4723,22 +4798,22 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4758,22 +4833,22 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4793,22 +4868,22 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4828,22 +4903,22 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4863,22 +4938,22 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Power Law Distribution
 
-A [[Random Variable\|Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
+A [[Random Variable]] is of power law distribution if its range is $\mathbb{N}$ (discrete) or $[c,\infty)$ (continuous) and
 
 - Parameters
     - Discrete: $\alpha\in\R_{++}$     - Continuous: $\alpha, c\in\R_{++}$, $\beta=c^{\alpha}$ ^para-cont
-- [[Cumulative Distribution Function\|CDF]]
+- [[Cumulative Distribution Function|CDF]]
     - Discrete: $P(X\ge k) = 1 /k^{\alpha}$
         - $F(k)=1-1 /(k+1)^{\alpha }$     - Continuous: $P(X > x) = \beta /x^{\alpha}$ for $x\ge c>0$
         - $F(x) = 1 - c^{\alpha} /x^{\alpha}$ for $x\ge c$ ^cdf-cont
-- [[Probability Mass Function\|PMF]]
-    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function\|PDF]]
+- [[Probability Mass Function|PMF]]
+    - $p(k) = 1 /k^{\alpha} - 1 /(k+1)^{\alpha}$ - [[Probability Density Function|PDF]]
     - $f(x) = \alpha c^{\alpha} /x^{\alpha+1}$ ^pdf-cont
-- [[Expectation\|Mean]]
+- [[Expectation|Mean]]
     - Discrete: $\sum_{k=1}^{\infty}1/k^{\alpha}$     - Continuous: $\frac{\alpha}{\alpha-1}$ ^mean-cont
-- [[Variance\|Variance]]
+- [[Variance]]
     - Discrete: $\sum_{k=1}^{\infty} 2k^{1-\alpha} - k^{-\alpha} - \left( \sum_{k=1}^{\infty}k^{-\alpha} \right)^{2}$     - Continuous: $\frac{\alpha}{(\alpha-1)^{2}(\alpha-2)}$ ^var-cont
-- [[Moment Generating Function\|MGF]]
+- [[Moment Generating Function|MGF]]
     - Discrete: $1 + (e^{t}-1) \sum_{k=0}^{\infty}e^{tk}(k+1)^{-\alpha}$ 
 Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays slowly (slower than an exponential) as $k$ increases, and in some sense such a distribution has "heavy tails".
 
@@ -4899,18 +4974,18 @@ Note that when $α$ is small, the "tail" $P(X ≥ k)$ of the distribution decays
 
 # Dirac Distribution
 
-A Dirac (or degenerate) distribution on a [[Probability Space\|Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
+A Dirac (or degenerate) distribution on a [[Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
 Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 - Notation
     - $\delta_{x_0}$ - Parameter
-    - $x_0\in\mathbb{R}$ - [[Probability Mass Function\|PMF]]
+    - $x_0\in\mathbb{R}$ - [[Probability Mass Function|PMF]]
     - $p(x)=\delta(x-x_0)$         - $\delta$ is the Dirac delta function, which is 0-valued everywhere except 0, yet integrates to 1.
         - By defining $p(x)$ to be $\delta$ shifted by $-x_0$ we obtain an infinitely narrow and infinitely high peak of probability mass where $x=x_0$.
-- [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation\|Mean]]
-    - $x_0$ - [[Variance\|Variance]]
-    - $0$ - [[Moment Generating Function\|MGF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation|Mean]]
+    - $x_0$ - [[Variance]]
+    - $0$ - [[Moment Generating Function|MGF]]
     - $e^{x_0t}$ 
 
 </div></div>
@@ -4928,18 +5003,18 @@ Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 # Dirac Distribution
 
-A Dirac (or degenerate) distribution on a [[Probability Space\|Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
+A Dirac (or degenerate) distribution on a [[Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
 Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 - Notation
     - $\delta_{x_0}$ - Parameter
-    - $x_0\in\mathbb{R}$ - [[Probability Mass Function\|PMF]]
+    - $x_0\in\mathbb{R}$ - [[Probability Mass Function|PMF]]
     - $p(x)=\delta(x-x_0)$         - $\delta$ is the Dirac delta function, which is 0-valued everywhere except 0, yet integrates to 1.
         - By defining $p(x)$ to be $\delta$ shifted by $-x_0$ we obtain an infinitely narrow and infinitely high peak of probability mass where $x=x_0$.
-- [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation\|Mean]]
-    - $x_0$ - [[Variance\|Variance]]
-    - $0$ - [[Moment Generating Function\|MGF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation|Mean]]
+    - $x_0$ - [[Variance]]
+    - $0$ - [[Moment Generating Function|MGF]]
     - $e^{x_0t}$ 
 
 </div></div>
@@ -4957,18 +5032,18 @@ Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 # Dirac Distribution
 
-A Dirac (or degenerate) distribution on a [[Probability Space\|Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
+A Dirac (or degenerate) distribution on a [[Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
 Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 - Notation
     - $\delta_{x_0}$ - Parameter
-    - $x_0\in\mathbb{R}$ - [[Probability Mass Function\|PMF]]
+    - $x_0\in\mathbb{R}$ - [[Probability Mass Function|PMF]]
     - $p(x)=\delta(x-x_0)$         - $\delta$ is the Dirac delta function, which is 0-valued everywhere except 0, yet integrates to 1.
         - By defining $p(x)$ to be $\delta$ shifted by $-x_0$ we obtain an infinitely narrow and infinitely high peak of probability mass where $x=x_0$.
-- [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation\|Mean]]
-    - $x_0$ - [[Variance\|Variance]]
-    - $0$ - [[Moment Generating Function\|MGF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation|Mean]]
+    - $x_0$ - [[Variance]]
+    - $0$ - [[Moment Generating Function|MGF]]
     - $e^{x_0t}$ 
 
 </div></div>
@@ -4986,18 +5061,18 @@ Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 # Dirac Distribution
 
-A Dirac (or degenerate) distribution on a [[Probability Space\|Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
+A Dirac (or degenerate) distribution on a [[Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
 Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 - Notation
     - $\delta_{x_0}$ - Parameter
-    - $x_0\in\mathbb{R}$ - [[Probability Mass Function\|PMF]]
+    - $x_0\in\mathbb{R}$ - [[Probability Mass Function|PMF]]
     - $p(x)=\delta(x-x_0)$         - $\delta$ is the Dirac delta function, which is 0-valued everywhere except 0, yet integrates to 1.
         - By defining $p(x)$ to be $\delta$ shifted by $-x_0$ we obtain an infinitely narrow and infinitely high peak of probability mass where $x=x_0$.
-- [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation\|Mean]]
-    - $x_0$ - [[Variance\|Variance]]
-    - $0$ - [[Moment Generating Function\|MGF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation|Mean]]
+    - $x_0$ - [[Variance]]
+    - $0$ - [[Moment Generating Function|MGF]]
     - $e^{x_0t}$ 
 
 </div></div>
@@ -5015,18 +5090,18 @@ Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 # Dirac Distribution
 
-A Dirac (or degenerate) distribution on a [[Probability Space\|Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
+A Dirac (or degenerate) distribution on a [[Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
 Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 - Notation
     - $\delta_{x_0}$ - Parameter
-    - $x_0\in\mathbb{R}$ - [[Probability Mass Function\|PMF]]
+    - $x_0\in\mathbb{R}$ - [[Probability Mass Function|PMF]]
     - $p(x)=\delta(x-x_0)$         - $\delta$ is the Dirac delta function, which is 0-valued everywhere except 0, yet integrates to 1.
         - By defining $p(x)$ to be $\delta$ shifted by $-x_0$ we obtain an infinitely narrow and infinitely high peak of probability mass where $x=x_0$.
-- [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation\|Mean]]
-    - $x_0$ - [[Variance\|Variance]]
-    - $0$ - [[Moment Generating Function\|MGF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation|Mean]]
+    - $x_0$ - [[Variance]]
+    - $0$ - [[Moment Generating Function|MGF]]
     - $e^{x_0t}$ 
 
 </div></div>
@@ -5044,18 +5119,18 @@ Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 # Dirac Distribution
 
-A Dirac (or degenerate) distribution on a [[Probability Space\|Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
+A Dirac (or degenerate) distribution on a [[Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
 Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 - Notation
     - $\delta_{x_0}$ - Parameter
-    - $x_0\in\mathbb{R}$ - [[Probability Mass Function\|PMF]]
+    - $x_0\in\mathbb{R}$ - [[Probability Mass Function|PMF]]
     - $p(x)=\delta(x-x_0)$         - $\delta$ is the Dirac delta function, which is 0-valued everywhere except 0, yet integrates to 1.
         - By defining $p(x)$ to be $\delta$ shifted by $-x_0$ we obtain an infinitely narrow and infinitely high peak of probability mass where $x=x_0$.
-- [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation\|Mean]]
-    - $x_0$ - [[Variance\|Variance]]
-    - $0$ - [[Moment Generating Function\|MGF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation|Mean]]
+    - $x_0$ - [[Variance]]
+    - $0$ - [[Moment Generating Function|MGF]]
     - $e^{x_0t}$ 
 
 </div></div>
@@ -5073,28 +5148,30 @@ Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 # Dirac Distribution
 
-A Dirac (or degenerate) distribution on a [[Probability Space\|Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
+A Dirac (or degenerate) distribution on a [[Probability Space]] with support only on a lower-dimensional manifold, which could be a point.
 Usually, we consider $\Omega\subset\mathbb{R}$ and the support is a point.
 
 - Notation
     - $\delta_{x_0}$ - Parameter
-    - $x_0\in\mathbb{R}$ - [[Probability Mass Function\|PMF]]
+    - $x_0\in\mathbb{R}$ - [[Probability Mass Function|PMF]]
     - $p(x)=\delta(x-x_0)$         - $\delta$ is the Dirac delta function, which is 0-valued everywhere except 0, yet integrates to 1.
         - By defining $p(x)$ to be $\delta$ shifted by $-x_0$ we obtain an infinitely narrow and infinitely high peak of probability mass where $x=x_0$.
-- [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation\|Mean]]
-    - $x_0$ - [[Variance\|Variance]]
-    - $0$ - [[Moment Generating Function\|MGF]]
+- [[Cumulative Distribution Function|CDF]]
+    - $F(x) = \mathbb{1}\left\{ x\ge x_0 \right\}$ - [[Expectation|Mean]]
+    - $x_0$ - [[Variance]]
+    - $0$ - [[Moment Generating Function|MGF]]
     - $e^{x_0t}$ 
 
 </div></div>
        |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5115,11 +5192,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5140,11 +5219,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5165,11 +5246,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5190,11 +5273,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5215,11 +5300,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5240,11 +5327,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5265,11 +5354,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5290,11 +5381,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5315,11 +5408,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5340,11 +5435,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5365,11 +5462,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5390,11 +5489,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5415,11 +5516,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5440,11 +5543,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5465,11 +5570,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5490,11 +5597,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5515,11 +5624,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5540,11 +5651,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5565,11 +5678,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5590,11 +5705,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5615,11 +5732,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5640,11 +5759,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5665,11 +5786,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5690,11 +5813,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5715,11 +5840,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5740,11 +5867,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5765,11 +5894,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5790,11 +5921,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5815,11 +5948,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5840,11 +5975,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5865,11 +6002,13 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 | Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
 | [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
 | [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5886,15 +6025,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
       |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5911,15 +6052,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5936,15 +6079,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5961,15 +6106,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -5986,15 +6133,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6011,15 +6160,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6036,15 +6187,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6061,15 +6214,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6086,15 +6241,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6111,15 +6268,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6136,15 +6295,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6161,15 +6322,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6186,15 +6349,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6211,15 +6376,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6236,15 +6403,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6261,15 +6430,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6286,15 +6457,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6311,15 +6484,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6336,15 +6511,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6361,15 +6538,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6386,15 +6565,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6411,15 +6592,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6436,15 +6619,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6461,15 +6646,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6486,15 +6673,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6511,15 +6700,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6536,15 +6727,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6561,15 +6754,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6586,15 +6781,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6611,15 +6808,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6636,15 +6835,17 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
 s parameter is also $a$.
 
 ### PDF Approach
 
-Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function\|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
+Another way to show that the sample mean of Cauchy r.v.s is still Cauchy is to calculate its [[Probability Density Function|PDF]]. We start with $(X_{1} + X_{2})/2$. We know the PDF of $X_{1} /2$ is $2f_{1}(2x) \coloneqq \hat{f}_{1}(x)$, where $f_{1}$ is the PDF of $X_{1}$. Therefore, the PDF of $(X_{1} + X_{2}) /2$ is
 $
 \begin{aligned}
 f(x) &= \hat{f}_{1} * \hat{f}_{2} (x)\\
@@ -6661,7 +6862,9 @@ That is, $(X_{1} + X_{2})/2$ is a Cauchy r.v. with parameter $(a_{1} + a_{2}) /2
 
 </div></div>
          | ![[Cauchy Distribution#^cdf\|inline naked n-link]]         | ![[Cauchy Distribution#^pdf\|inline naked n-link]]         | ![[Cauchy Distribution#^mean\|naked inline n-link]]         | ![[Cauchy Distribution#^var\|inline naked n-link]]         | ![[Cauchy Distribution#^mgf\|inline naked n-link]]      |                                                        |
-| Discrete [[Power Law Distribution\|Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
-| Continuous [[Power Law Distribution\|Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
-| [[Dirac Distribution\|Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
-| [[Laplace Distribution\|Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+| Discrete [[Power Law Distribution]]   | /                                                       | ![[Power Law Distribution#^para\|inline naked n-link]]      | ![[Power Law Distribution#^cdf\|inline naked n-link]]      | ![[Power Law Distribution#^pdf\|inline naked n-link]]      | ![[Power Law Distribution#^mean\|naked inline n-link]]      | ![[Power Law Distribution#^var\|inline naked n-link]]      | ![[Power Law Distribution#^mgf\|inline naked n-link]]   |                                                        |
+| Continuous [[Power Law Distribution]] | /                                                       | ![[Power Law Distribution#^para-cont\|inline naked n-link]] | ![[Power Law Distribution#^cdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^pdf-cont\|inline naked n-link]] | ![[Power Law Distribution#^mean-cont\|naked inline n-link]] | ![[Power Law Distribution#^var-cont\|inline naked n-link]] | /                                                       |                                                        |
+| [[Dirac Distribution]]                | ![[Dirac Distribution#^nota\|inline naked n-link]]      | ![[Dirac Distribution#^para\|inline naked n-link]]          | ![[Dirac Distribution#^cdf\|inline n-link naked]]          | ![[Dirac Distribution#^pdf\|inline naked n-link n-l2 ]]    | ![[Dirac Distribution#^mean\|naked inline n-link]]          | ![[Dirac Distribution#^var\|inline naked n-link]]          | ![[Dirac Distribution#^mgf\|inline naked n-link]]       |                                                        |
+| [[Laplace Distribution]]              |                                                         |                                                             |                                                            |                                                            |                                                             |                                                            |                                                         |                                                        |
+
+```
