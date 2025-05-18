@@ -8,7 +8,7 @@ interface Options {
 }
 
 export default ((opts?: Options) => {
-  const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const MyFooter: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const year = new Date().getFullYear()
     const links = opts?.links ?? []
     return (
@@ -28,6 +28,6 @@ export default ((opts?: Options) => {
     )
   }
 
-  Footer.css = style
-  return Footer
+  MyFooter.css = style
+  return MyFooter
 }) satisfies QuartzComponentConstructor
