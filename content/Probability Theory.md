@@ -52,27 +52,9 @@
 | [[Uniform Distribution\|Uniform Distribution]]              | 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
-<div class="markdown-embed-title">
-
-# inline n-link naked
-
-</div>
 
 
-
-
-# Uniform Distribution
-
-The uniform distribution over $[a,b]$ has
-
-- Notation
-    - $\mathcal{U}(a,b)$ - Parameters
-    - $a,b\in\R$ - [[Cumulative Distribution Function\|CDF]]
-    - $F(x) = \begin{cases}0,  \quad & x<a,\\ \frac{x-a}{b-a}, &a\le x\le b,\\ 1,  & x>b.\end{cases}$ - [[Probability Density Function\|PDF]]
-    - $f(x) = \begin{cases} \frac{1}{b-a}, \quad & a\le x\le b,\\ 0, & \text{otherwise.}\end{cases}$ - [[Expectation\|Mean]]
-    - $\frac{a+b}{2}$ - [[Variance\|Variance]]
-    - $\frac{(b-a)^{2}}{12}$ - [[Moment Generating Function\|MGF]]
-    - $\displaystyle \frac{e^{tb} - e^{ta}}{(b-a)t}$ 
+    - $\mathcal{U}(a,b)$ 
 
 </div></div>
     | 
