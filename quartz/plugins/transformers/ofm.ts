@@ -41,6 +41,8 @@ export interface Options {
   enableYouTubeEmbed: boolean
   enableVideoEmbed: boolean
   enableCheckbox: boolean
+	customCheckboxes: boolean
+  customCheckboxMappings: Record<string, string>
 }
 
 const defaultOptions: Options = {
@@ -56,7 +58,21 @@ const defaultOptions: Options = {
   enableYouTubeEmbed: true,
   enableVideoEmbed: true,
   enableCheckbox: false,
+	customCheckboxes: true,
+  customCheckboxMappings: {
+    "+": "👍",
+    "-": "👎",
+    "!": "❗️",
+		"?": "❓",
+    "*": "⭐️",
+    "@": "📗",
+		"~": "💡",
+		"&": "📎",
+  }
 }
+
+// Add the following RegEx beneath the other regex definitions:
+const customCheckboxRegex = /^(\s*)- \[(-|f|w|!|>|<|p|c|s|m)\]\s*(.*)$/gm
 
 const calloutMapping = {
   note: "note",
@@ -157,6 +173,17 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
   return {
     name: "ObsidianFlavoredMarkdown",
     textTransform(_ctx, src) {
+			// Add the following as part of the `textTransform()` body
+      if (opts.customCheckboxes) {
+        if (src instanceof Buffer) {
+          src = src.toString()
+        }
+
+        src = src.replace(customCheckboxRegex, (match, spaces, checkType, text) => {
+          return "\n" + "\t".repeat((spaces?.length || 0) / 4) + "- <span class='custom-checkbox'>" + (opts.customCheckboxMappings[checkType] || match) + " " + text + "</span>"
+        })
+      }
+
       // do comments at text level
       if (opts.comments) {
         src = src.replace(commentRegex, "")
