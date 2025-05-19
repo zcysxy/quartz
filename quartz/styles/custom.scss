@@ -10,6 +10,10 @@ code.mermaid svg,
   margin: 1rem auto;
 }
 
+.mathjax, .katex {
+  font-size: 1em;
+}
+
 .page>#quartz-body {
   grid-template:
     "grid-sidebar-left grid-header grid-sidebar-right"
