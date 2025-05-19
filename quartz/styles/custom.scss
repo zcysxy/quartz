@@ -21,6 +21,15 @@ code.mermaid svg,
     "grid-sidebar-left grid-footer grid-sidebar-right" / 320px auto 0px
 }
 
+/* Custom checkboxes */
+li:has(span.custom-checkbox[data-task="c"]) {
+    text-align: center;
+}
+li:has(span.custom-checkbox[data-task="c"])::marker {
+    display: none;
+    content: "";
+}
+
 /* .page>#quartz-body div.left.sidebar { */
 /*   display: none; */
 /* } */
