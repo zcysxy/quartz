@@ -10,8 +10,9 @@ code.mermaid svg,
   margin: 1rem auto;
 }
 
-.mathjax, .katex {
+.MathJax, .katex {
   font-size: 1em !important;
+  color: var(--text-normal, var(--black));
 }
 
 .page>#quartz-body {
