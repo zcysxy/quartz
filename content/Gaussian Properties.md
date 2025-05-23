@@ -26,7 +26,7 @@ That is, we can *compress* the data from an $n$-dimensional vector to a real num
 Any [[Affine Transformation\|Affine Transformation]] of a normal r.v. is also normal. Specifically,
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$ 
 
-    - As a special case, any sub-vector of a normal random vector is also normal 
+- As a special case, any sub-vector of a normal random vector is also normal 
 
 The affine transformation invariance is central to normal distribution. Actually, normal distribution can be defined through affine transformation.
 We have the following two alternative definitions:
