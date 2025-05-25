@@ -1,9 +1,28 @@
 ---
-{"publish":true,"title":"*Sufficient* of Statistics","created":"2023-10-17T21:41:50","modified":"2025-05-21T18:14:33","cssclasses":""}
+{"publish":true,"title":"*Sufficient* of Statistics","created":"2023-10-17T21:41:50","modified":"2025-05-24T19:41:24","cssclasses":""}
 ---
 
 
 # *Sufficient* of Statistics
+
+Statistics is a **problem-solving procedure**:
+
+```mermaid
+flowchart LR
+subgraph AA["Data"]
+    direction TB
+    A1@{shape: braces, label: "distribution<br>dependence<br>..."}
+end
+subgraph BB["Method"]
+    direction TB
+    B1@{shape: braces, label: "algorithms<br>statistics<br>..."}
+end
+subgraph CC["Problem"]
+    direction TB
+    C1@{shape: braces, label: "output<br>metric<br>..."}
+end
+AA --- BB --- CC
+```
 
 - [c] Table. Statistics dictionary
 

@@ -8,20 +8,36 @@
 A [[Random Variable\|Random Variable]] is said to be normally distributed if it has
 
 - Notation
-    - $\mathcal{N}(\mu, \sigma^{2})$ ^nota
+    - $\mathcal{N}(\mu, \sigma^{2})$
+{ #nota}
+
 - Parameters
-    - $\mu\in\R, \sigma^{2}\in\R_{+}$ ^para
+    - $\mu\in\R, \sigma^{2}\in\R_{+}$
+{ #para}
+
 - [[Probability Density Function\|PDF]]
-    - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$ ^pdf
-    - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$ ^vec-pdf
+    - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$
+{ #pdf}
+
+    - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$
+{ #vec-pdf}
+
 - [[Expectation\|Mean]]
-    - $\mu$ ^mean
+    - $\mu$
+{ #mean}
+
 - [[Variance\|Variance]]
-    - $\sigma^{2}$ ^var
+    - $\sigma^{2}$
+{ #var}
+
 - [[Moment Generating Function\|MGF]]
-    - $e^{\mu t + \sigma^{2}t^{2} /2}$ ^mgf
+    - $e^{\mu t + \sigma^{2}t^{2} /2}$
+{ #mgf}
+
 - [[Characteristic Function\|CF]]
-    - $e^{it\mu - \sigma^{2}t^{2} /2}$ ^cf
+    - $e^{it\mu - \sigma^{2}t^{2} /2}$
+{ #cf}
+
 
 Because of the [[Central Limit Theorem\|Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
 
@@ -32,8 +48,12 @@ We can define a random vector to be (nondegenerate multivariate) normal if if ha
 $$
 X = DW + \mu,
 $$
-for any matrix $D$ and vector $\mu$, where $W$ is a random vector whose components are independent standard normal random variables $\mathcal{N}(0,1)$. ^7bb02c
-2. Or, if for any real vector $a$, the random variable $a^{T}X$ is normal. ^f2c84a
+for any matrix $D$ and vector $\mu$, where $W$ is a random vector whose components are independent standard normal random variables $\mathcal{N}(0,1)$.
+{ #7bb02c}
+
+2. Or, if for any real vector $a$, the random variable $a^{T}X$ is normal.
+{ #f2c84a}
+
 
 These two alternative definitions cover *degenerate* normal distribution, i.e., some components are constant/ the distribution is concentrated on a proper subspace of $\R^{k}$.
 
@@ -97,15 +117,23 @@ X = \begin{bmatrix} Y\\Z \end{bmatrix}
 
 ## Properties
 
-- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic\|Sufficient Statistic]]. ^prop-suff
+- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic\|Sufficient Statistic]].
+{ #prop-suff}
+
     - In other words, the distribution of a multivariate normal random vector is completely determined by its mean and covariance
     - [&] See [[Normal Distribution#Sufficiency\|#Sufficiency]] for proof
 - (**Affine transformation**). The [[Affine Transformation\|Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
-    - As a special case, any sub-vector of a normal random vector is also normal ^bcd246
+    - As a special case, any sub-vector of a normal random vector is also normal
+{ #bcd246}
+
         - As a special case, any component of a normal random vector is also normal
-    - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$ ^e2d605
+    - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$
+{ #e2d605}
+
     - [&] The proof follows the alternative definition 1 above
-- (**Independent Gaussians are jointly Gaussian**). The sum of independent normal random variables is also a normal random variable ^prop-ind-joint
+- (**Independent Gaussians are jointly Gaussian**). The sum of independent normal random variables is also a normal random variable
+{ #prop-ind-joint}
+
     - [&] Prove this using the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]]
     - [!] Note that this is generally not true for dependent random variables
     - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[Normal Distribution#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
