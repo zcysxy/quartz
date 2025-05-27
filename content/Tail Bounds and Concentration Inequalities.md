@@ -8,7 +8,7 @@
 Both tail bounds and concentration inequalities describe the probability that a random variable deviates from some certain value, such as its mean.
 In this notebook, we will explore how tail bounds and concentration inequalities predict the behavior of random variables.
 
-```run-python
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -33,7 +33,7 @@ P(X \geq x) \le \frac{e^{-x^2 /2}}{x\sqrt{2\pi}}
 $$
 We plot the theoretical tail bound:
 
-```run-python
+```python
 # Plotting the Gaussian Tail Bound using Mill's Ratio
 
 def mills_ratio(x):
@@ -56,7 +56,7 @@ ax.legend()
 
 We now demonstrate the tail bound of a Gaussian random variable using simulation.
 
-```run-python
+```python
 def simulate_tail_probabilities(dist_sampler, x_vals, n_samples=int(1e7)):
     """
     Simulate tail probabilities P(X ≥ x) for a given sampler.
@@ -91,7 +91,7 @@ $$
 
 We plot the theoretical and empirical Cauchy tail bound against the theoretical Gaussian tail bound.
 
-```run-python
+```python
 tail_cauchy_theo = np.arctan(1 / x_vals) / np.pi
 tail_cauchy_emp = simulate_tail_probabilities(lambda n: np.random.standard_cauchy(n), x_vals, n_samples=int(1e2))
 
@@ -118,7 +118,7 @@ $$
 
 Because of the generality, it's often too loose for certain distributions.
 
-```run-python
+```python
 tail_gauss_chebyshev = np.var(np.random.randn(int(1e7))) / (x_vals**2)
 
 fig_concen, ax = plt.subplots()
@@ -143,7 +143,7 @@ P(X \geq t) \leq e^{-t^2 / 2},
 $$
 which is close to the exact Gaussian tail bound, with a slight difference caused by constants and the scaling of $t$.
 
-```run-python
+```python
 tail_gauss_hoeffding = np.exp(-(x_vals**2)/2)
 
 ax.plot(x_vals, tail_gauss_hoeffding, label="Hoeffding's Inequality", color='green')
@@ -153,7 +153,7 @@ plt.show()
 
 We now explore different concentration inequalities for non-Gaussian distributions. We use iid uniform random variables as an example.
 
-```run-python
+```python
 def simulate_sample_means(n_trials, n_vars=10):
     """
     Simulate sample means of n_vars iid Uniform[0,1] variables over n_trials.

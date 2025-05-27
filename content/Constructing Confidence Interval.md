@@ -15,7 +15,7 @@ This notebook explores methods of constructing [[Confidence Interval\|Confidence
 
 We focus on the example of estimating the mean of a Bernoulli distribution with parameter $p$.
 
-```run-python
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -73,7 +73,7 @@ where $b_{q}(\alpha,\beta)$ is the $q$-th quantile of the Beta distribution with
 > [!rmk] Remark
 > Note that $p$ is **not a random variable**. However, treating it as a beta random variable (as in a Bayesian interpretation) gives us the same exact calculation as using the binomial distribution.
 
-```run-python
+```python
 from scipy.stats import beta
 
 def exact_ci(s, n, alpha=0.05):
@@ -102,7 +102,7 @@ def exact_ci(s, n, alpha=0.05):
     return lower, upper
 ```
 
-```run-python
+```python
 # Simulate exact CI coverage as sample size increases
 
 p = 0.7
@@ -140,7 +140,7 @@ fig = plot_ci(sample_sizes, lower_bounds, upper_bounds, point_estimates, p, 'Exa
 plt.show()
 ```
 
-```run-python
+```python
 def evaluate_ci_method(ci_function, p, sample_sizes, num_trials=1000, alpha=0.05):
     """
     Evaluate a CI method over multiple sample sizes.
@@ -180,7 +180,7 @@ def evaluate_ci_method(ci_function, p, sample_sizes, num_trials=1000, alpha=0.05
     }
 ```
 
-```run-python
+```python
 results_exact = evaluate_ci_method(exact_ci, p, sample_sizes, num_trials=int(1e3))
 
 def plot_stat(results, method_name, alpha=0.05):
@@ -233,7 +233,7 @@ C^{(\mathrm{CLT})}(X) = \overline{X} \pm z_{\alpha /2}\frac{\hat{\sigma}}{\sqrt{
 $$
 where $z_{\beta}$ is the $\beta$-th quantile of the standard normal distribution.
 
-```run-python
+```python
 from scipy.stats import norm
 
 def clt_ci(s, n, alpha=0.05):
@@ -258,7 +258,7 @@ fig = plot_ci(sample_sizes, lower_bounds, upper_bounds, point_estimates, p, 'CLT
 plt.show()
 ```
 
-```run-python
+```python
 results_clt = evaluate_ci_method(clt_ci, p, sample_sizes, num_trials=int(1e3))
 
 fig = plot_stat(results_clt, 'CLT CI')
@@ -279,7 +279,7 @@ $$
 C^{(\mathrm{Hoeff})}(\overline{X}) = \overline{X} \pm \sqrt{\frac{\log(2/\alpha)}{2n}}.
 $$
 
-```run-python
+```python
 def hoeffding_ci(s, n, alpha=0.05):
     X_bar = s / n
     half_width = np.sqrt(np.log(2 / alpha) / (2 * n))
@@ -300,7 +300,7 @@ fig = plot_ci(sample_sizes, lower_bounds, upper_bounds, point_estimates, p, 'Hoe
 plt.show()
 ```
 
-```run-python
+```python
 results_hoeff = evaluate_ci_method(hoeffding_ci, p, sample_sizes, num_trials=int(1e3))
 fig = plot_stat(results_hoeff, 'Hoeffding CI')
 plt.show()
@@ -328,7 +328,7 @@ $$
 C^{(\mathrm{Wald})}(X) = \overline{X} \pm z_{\alpha /2} \sqrt{\frac{\overline{X}(1-\overline{X})}{n}}.
 $$
 
-```run-python
+```python
 def wald_ci(s, n, alpha=0.05):
 		X_bar = s / n
 		half_width = norm.ppf(1 - alpha / 2) * np.sqrt(X_bar * (1 - X_bar) / n)
@@ -348,7 +348,7 @@ fig = plot_ci(sample_sizes, lower_bounds, upper_bounds, point_estimates, p, 'Wal
 plt.show()
 ```
 
-```run-python
+```python
 results_wald = evaluate_ci_method(wald_ci, p, sample_sizes, num_trials=int(1e3))
 fig = plot_stat(results_wald, 'Wald CI')
 plt.show()
@@ -364,7 +364,7 @@ Left as exercise
 
 We now compare the average length and coverage of the confidence intervals constructed above.
 
-```run-python
+```python
 def plot_ci_comparison(all_results, method_names, alpha=0.05):
     fig = plt.figure(figsize=(12, 5))
 

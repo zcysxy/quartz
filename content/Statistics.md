@@ -31,7 +31,7 @@ AA --- BB --- CC
 | estimation                      | [[Machine Learning\|learning]]      |
 | [[Regression\|regression]]                  | [[Supervised Learning\|supervised learning]]             |
 | [[Clustering\|clustering]]                  | [[Unsupervised Learning\|unsupervised learning]]           |
-| [[Hypothesis Test\|hypothesis]] | [[Classification\|classification]]                  |
+| [[Hypothesis Testing\|hypothesis]] | [[Classification\|classification]]                  |
 | covariates                      | features                            |
 | coefficient                     | weight                              |
 | predictor                       | input                               |
@@ -53,7 +53,7 @@ AA --- BB --- CC
         - [[Maximum Likelihood Estimation\|Maximum Likelihood Estimation]]
         - [[Method of Moments\|Method of Moments]]
         - [[Mean Squared Error\|Mean Squared Error]]
-- [[Hypothesis Test\|Hypothesis Test]]
+- [[Hypothesis Testing\|Hypothesis Testing]]
 - [[Regression\|Regression]]
 - [[Variance\|Variance]]
     - [[ANOVA\|ANOVA]]
