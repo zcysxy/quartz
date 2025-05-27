@@ -23,6 +23,32 @@ code.mermaid svg,
 }
 
 /* Custom checkboxes */
+span.custom-checkbox {
+  background-color: var(--checkbox-color);
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+}
+
+span.custom-checkbox[data-task="!"] {
+  --checkbox-color: #ffebee;
+}
+
+span.custom-checkbox[data-task="?"] {
+  --checkbox-color: #fff3e0;
+}
+
+span.custom-checkbox[data-task="*"] {
+  --checkbox-color: #fff3e0;
+}
+
+span.custom-checkbox[data-task="@"] {
+  --checkbox-color: #e8f5e9;
+}
+
+span.custom-checkbox[data-task="~"] {
+  --checkbox-color: #e0f7fa;
+}
+
 li:has(span.custom-checkbox[data-task="c"]) {
     text-align: center;
 }
