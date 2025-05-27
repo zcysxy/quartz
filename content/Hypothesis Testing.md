@@ -40,7 +40,9 @@ where $\Theta_{0}$ and $\Theta_{1}$ are disjoint subsets of $\Theta$.
   $$
     - [~] The power can be remembered as the power of rejecting null.
 - A test has (<span style="color:skyblue">asymptotic</span>) ==level== $\alpha$ if its worst Type I error is at most $\alpha$:
-  $${\color{\skyblue}\lim_{ n \to \infty } }\sup_{\theta_{0}\in\Theta_{0}}\alpha _{\psi}(\theta_{0})\le \alpha.$$
+  $$
+  {\color{skyblue}\lim_{ n \to \infty } }\sup_{\theta_{0}\in\Theta_{0}}\alpha _{\psi}(\theta_{0})\le \alpha.
+  $$
 
 ## Test Statistic and Rejection Region
 
@@ -87,6 +89,7 @@ This method is called the ==likelihood ratio test==.
 Similar to [[Confidence Interval#CLT CI\|Confidence Interval#CLT CI]], [[Central Limit Theorem\|CLT]] is also often used to construct a test statistic, and then the [[Hypothesis Testing#p-value\|#p-value]], especially for HTs about the mean.
 
 - [*] Recall that a test statistic, or the HT itself, is to disprove null. Thus, a test statistic is often constructed as a function of $\theta_{0}$.
+
 Suppose we want to test the null about mean $H_{0}: \theta=\theta_{0}$. Assuming null, CLT gives
 $$
 \frac{\theta- \theta_{0}}{\operatorname{SE}(\theta )} \overset{d}{\longrightarrow} \mathcal{N}(0,1).
