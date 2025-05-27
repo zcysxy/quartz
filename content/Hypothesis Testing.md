@@ -40,9 +40,7 @@ where $\Theta_{0}$ and $\Theta_{1}$ are disjoint subsets of $\Theta$.
   $$
     - [~] The power can be remembered as the power of rejecting null.
 - A test has (<span style="color:skyblue">asymptotic</span>) ==level== $\alpha$ if its worst Type I error is at most $\alpha$:
-  $$
-  {\color{\skyblue}\lim_{ n \to \infty } }\sup_{\theta_{0}\in\Theta_{0}}\alpha _{\psi}(\theta_{0})\le \alpha.
-  $$
+  $${\color{\skyblue}\lim_{ n \to \infty } }\sup_{\theta_{0}\in\Theta_{0}}\alpha _{\psi}(\theta_{0})\le \alpha.$$
 
 ## Test Statistic and Rejection Region
 
