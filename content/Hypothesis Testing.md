@@ -123,7 +123,7 @@ Consider an observed test-statistic $t$ from unknown distribution $T$. Then t
 - $p=2\min\{\Pr(T\geq t\mid H_{0}),\Pr(T\leq t\mid H_{0})$ for a two-sided test.
     - If the distribution of $T$ is symmetric about zero, then $p=\Pr(|T|\geq |t|\mid H_{0})$
 
-> [!ex] [[Hypothesis Testing#CLT Test Statistic\|#CLT Test Statistic]]
+> [!ex] [CLT Test Statistic](#clt-test-statistic)
 >
 > $$
 > p = 
