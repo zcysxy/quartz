@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-27T15:53:41","cssclasses":""}
+{"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-27T15:55:55","cssclasses":""}
 ---
 
 
@@ -11,7 +11,7 @@ In the context of HT, the statistical procedure $A$ is often called a **test**, 
 Formally, given a [[Statistical Model\|Statistical Model]] $\{ P_{\theta} \}_{\theta\in\Theta }$, we want to test the following hypotheses:
 $$
 \begin{cases}
-H_{0}: \theta = \Theta _{0}, & \text{(null hypothesis)}\\
+H_{0}: \theta \in \Theta _{0}, & \text{(null hypothesis)}\\
 H_{1}: \theta \in \Theta_{1}, & \text{(alternative hypothesis)}
 \end{cases}
 $$

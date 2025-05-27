@@ -4,7 +4,7 @@
 
 
 # Statistical Decision Theory
-
+ 
 Statistical decision theory is a general framework that models every statistical task as a decision-making problem, including [[Estimation\|Estimation]], prediction, and [[Hypothesis Testing\|Hypothesis Testing]].
 
 Given a [[Statistical Model\|Statistical Model]] and observe $\mathcal{X}\ni X \sim P_{\theta }$, we want to find a statistical procedure
