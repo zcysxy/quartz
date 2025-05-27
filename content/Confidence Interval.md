@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Confidence Interval","created":"2023-10-17T22:44:28","modified":"2025-05-26T23:51:34","cssclasses":""}
+{"publish":true,"title":"Confidence Interval","created":"2023-10-17T22:44:28","modified":"2025-05-27T11:36:43","cssclasses":""}
 ---
 
 
@@ -128,5 +128,5 @@ P\left( z_{\alpha /2} \le \frac{\hat{p}-p}{\sqrt{ \frac{p(1-p)}{n} }} \le -z_{\a
 $$
 The involved inequalities are quadratic in $p$. Solving them gives the Wilson score CI:
 $$
-\frac{1}{1+\frac{z^2}{n}}\left(\hat{p}+\frac{z^2}{2 n}\right) \pm \frac{z}{1+\frac{z^2}{n}} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}+\frac{z^2}{4 n^2}}
-.$$
+\frac{1}{1+\frac{z^2}{n}}\left(\hat{p}+\frac{z^2}{2 n}\right) \pm \frac{z}{1+\frac{z^2}{n}} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}+\frac{z^2}{4 n^2}}.
+$$
