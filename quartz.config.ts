@@ -79,6 +79,8 @@ const config: QuartzConfig = {
 					"\\N": "\\mathbb{N}",
 					"\\Q": "\\mathbb{Q}",
 					"\\Cov": "\\operatorname{Cov}",
+					"\\TV": "\\operatorname{TV}",
+					"\\abs": "\\left|#1\\right|",
 				},
 			}),
     ],
