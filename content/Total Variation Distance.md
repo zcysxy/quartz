@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-05-27T23:14:35","cssclasses":""}
+{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-05-27T23:18:30","cssclasses":""}
 ---
 
 
@@ -59,4 +59,5 @@ $$
 Taking the supremum over $A \in \mathcal F$, gives
 $$
 \sup_A \abs{\int_A (p-q)\, d\nu} \le \frac 12 \int_\Omega \abs{p-q}\, d\nu
-$$ which is the other needed inequality.
+$$ 
+which is the other needed inequality.
