@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-05-27T23:01:34","cssclasses":""}
+{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-05-27T23:14:35","cssclasses":""}
 ---
 
 
@@ -13,8 +13,17 @@ One direct implication from the definition is that if two distributions have dis
 For example, the TV distance between a discrete and a continuous distribution is 1, because on the common sample space, the support of the discrete distribution has measure 0.
 
 > [!rmk]
-> The TV distance is not **tensorizable**:
-> $$\TV(P_1 \otimes P_2, Q_1 \otimes Q_2) \not\gtreqless \TV(P_1, Q_1) \cdot \TV(P_2, Q_2)$$
+> TV distance does not **tensorize**:
+>
+> $$
+> \TV(P_1 \otimes P_2, Q_1 \otimes Q_2) \not\lesssim \TV(P_1, Q_1) + \TV(P_2, Q_2).
+> $$
+> In other words, a property in one dimension does not hold in multiple dimensions.
+> Specifically, suppose we have $n$ iid samples from $P_{\theta_{1}}$. We do not have relationship
+> $$
+> \TV(P_{\theta_{1}}^{n}, P_{\theta_{2}}^{n}) \le n\TV(P_{\theta_{1}}, P_{\theta_{2}}).
+> $$
+> Therefore, in practice, it's usually more convenient to calculate other distances that tensorize, such as the [[KL Divergence\|KL Divergence]], [[Wasserstein Distance\|Wasserstein Distance]], and [[Hellinger Distance\|Hellinger Distance]].
 
 ## L1 Norm
 
@@ -37,7 +46,7 @@ and hence
 $$
 \int_B (p-q) \, d\nu = \int_{\Omega \setminus B} (q-p) \, d\nu
 $$
-Now for any $A \in \mathcal F$, we have 
+Now for any $A \in \mathcal F$, we have
 $$
 \begin{aligned}
 \abs{\int_A (p-q)\, d\nu} &= \max\left\{\int_A (p-q)\, d\nu, \int_A (q-p)\, d\nu\right\}\\
