@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-05-27T23:18:30","cssclasses":""}
+{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-05-27T23:42:11","cssclasses":""}
 ---
 
 
@@ -9,7 +9,7 @@ The total variation distance between two probability measures $P$ and $Q$ on a [
 $$\TV (P,Q)=\sup _{A\in {\mathcal {F}}}\left|P(A)-Q(A)\right|$$
 Informally, this is the largest possible difference between the probabilities that the two probability distributions can assign to the same event.
 
-One direct implication from the definition is that if two distributions have disjoint support, i.e., $m(\operatorname{supp}(P)\cap \operatorname{supp}(Q))=0$, where $m$ is the uniform measure on the sigma field, then their TV distance is 1.
+One direct implication from the definition is that if two distributions have disjoint support, i.e., $\nu(\operatorname{supp}(P)\cap \operatorname{supp}(Q))=0$, where $m$ is the measure on the sigma field, then their TV distance is 1.
 For example, the TV distance between a discrete and a continuous distribution is 1, because on the common sample space, the support of the discrete distribution has measure 0.
 
 > [!rmk]
@@ -31,7 +31,9 @@ For example, the TV distance between a discrete and a continuous distribution is
 > The TV distance is equivalent to the [[L1 Regularization\|L1 norm]].
 > $$\TV(p,q) = \frac{1}{2}\| p-q \| _{1}.$$
 
-*Proof*. Let $B = \{p \ge q\}$. Note that
+### First Proof
+
+Let $B = \{p \ge q\}$. Note that
 $$
 \begin{aligned}
 \int_\Omega \def\abs#1{\left|#1\right|}\abs{p-q}\, d\nu &= \int_B (p - q) \, d\nu + \int_{\Omega \setminus B} (q- p)\, d\nu\\ &\le 2 \sup_A \abs{\int_A (p-q) \, d\nu}\\
@@ -61,3 +63,21 @@ $$
 \sup_A \abs{\int_A (p-q)\, d\nu} \le \frac 12 \int_\Omega \abs{p-q}\, d\nu
 $$ 
 which is the other needed inequality.
+
+### Second Proof
+
+Again, let $B = \{p \ge q\}$. We know that $\int_{B} (p-q) \d \nu = \frac{1}{2}\int _{\Omega}|p-q|\d \nu$. Therefore, we only need to show $\sup_A \abs{\int_A (p-q) \d \nu} = \abs{\int_B (p-q) \d \nu} = \abs{\int _{B^{C}}(p-q)\d \nu} = \int_B (p-q) \d \nu$, where the last two equalities are known.
+
+For any $A \not\in \{ B,B^{C} \}$, we suppose $P(A) \ge Q(A)$ WLOG. Then,
+$$
+(P(B) - Q(B)) - (P(A) - Q(A)) = \underbrace{ \int _{B\setminus A} (p-q)\d \nu }_{ \ge 0 } - \underbrace{ \int _{A\setminus B} (p-q)\d \nu }_{ \le 0 } > 0,
+$$
+where the strict inequality is because two equalties cannot hold at the same time, as $A\not\in \{ B,B^{C} \}$. Then,
+$$
+(P(B) - Q(B)) - (P(A) - Q(A)) = \abs{\int _{B} (p-q)\d \nu} - \abs{\int _{A} (p-q)\d \nu} > 0,
+$$
+which further implies
+$$
+A\not\in\arg\sup_A \abs{\int_A (p-q) \d \nu}.
+$$
+Thus, $B$ and $B^{C}$ are the sets that achieve the supremum.
