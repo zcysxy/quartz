@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Confidence Interval and Hypothesis Test Duality","created":"2025-05-27T14:51:17","modified":"2025-05-29T03:24:50","cssclasses":""}
+{"publish":true,"title":"Confidence Interval and Hypothesis Test Duality","created":"2025-05-27T14:51:17","modified":"2025-05-29T03:39:04","cssclasses":""}
 ---
 
 
@@ -18,3 +18,18 @@ $$
 P(C(X)\not\ni \theta ) = P_{\theta }(\psi _{\theta}(X) = 1) \le \alpha,
 $$
 indicating that $C(X)$ is indeed a $(1-\alpha )$ level confidence interval.
+In other words, to build a $(1-\alpha)$ level CI, we collect all parameters that are *consistent enough* with the data, i.e., those that do not reject of the simple null hypothesis at level $\alpha$.
+
+## Algorithm for HT to CI
+
+We give an example algorithm for constructing CI through HT.
+Our goal is to construct a CI with *balanced coverage*: $P(\theta> \sup C(X)) \approx  P(\theta < \inf C(X))$.
+
+> [!alg]
+> - Input: level $\alpha$
+> - For $\tilde{\theta}\in\Theta$:
+>     - Generate a $\alpha /2$-test $\psi ^{\uparrow}_{\tilde{\theta}}$ on HT $\Theta_{0}=\{ \tilde{\theta} \}$ against $\Theta_{1} = \{ \theta > \tilde{\theta} \}$.
+>     - Generate a $\alpha /2$-test $\psi ^{\downarrow}_{\tilde{\theta}}$ on HT $\Theta_{0}=\{ \tilde{\theta} \}$ against $\Theta_{1} = \{ \theta < \tilde{\theta} \}$.
+> - Return: $C(X) = \{ \tilde{\theta}\in\Theta : \psi ^{\uparrow}_{\tilde{\theta}}(X) = \psi ^{\downarrow}_{\tilde{\theta}}(X) = 0 \}$
+
+One can check that the above method returns a finite-sample valid CI.
