@@ -6,7 +6,7 @@
 # Confidence Interval and Hypothesis Test Duality
 
 Beyond both being [[Statistical Decision Theory\|statistical decision-making]] procedures, confidence intervals and hypothesis tests have a stronger connection.
-The one direction of the duality is easy: given a confidence interval $C(X)$ for the parameter, we can construct a hypothesis test $\psi(X) = \mathbb{1}\{ \theta_{0} \not\in C(X) \}$$. Basically, the confidence region is the rejection region of the hypothesis test.
+The one direction of the duality is easy: given a confidence interval $C(X)$ for the parameter, we can construct a hypothesis test $\psi(X) = \mathbb{1}\{ \theta_{0} \not\in C(X) \}$. Essentially, the confidence region corresponds to the rejection region of the hypothesis test.
 
 For the other direction, we consider a *family* of tests $\{ \psi _{\theta_{0}} \}_{\theta_{0}\in\Theta}$, each of which rejects the null hypothesis $H_0: \theta = \theta_{0}$ with probability $\alpha$. That is, the family of tests test against all possible values of the parameter $\theta$.
 Then, we can construct a confidence interval
