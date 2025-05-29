@@ -40,8 +40,12 @@ sampler = lambda n, p: np.random.binomial(1, p, size=n)
 Recall that a [[Statistic\|statistic]] is a function of the observed data, e.g., mean and variance.
 If a test involves some parameters, a test statistic is often a function of both the sample and the parameter, such that
 
-- the distribution of $t$ is known, e.g., a [[t Distribution\|t Distribution]] or a [[Chi-Square Distribution\|Chi-Square Distribution]], or can be approximated, e.g., using [[Central Limit Theorem\|CLT]] ^known
-- the distribution of $t$ does not depend on the parameter ^unkown
+- the distribution of $t$ is known, e.g., a [[t Distribution\|t Distribution]] or a [[Chi-Square Distribution\|Chi-Square Distribution]], or can be approximated, e.g., using [[Central Limit Theorem\|CLT]]
+{ #known}
+
+- the distribution of $t$ does not depend on the parameter
+{ #unkown}
+
 
 Such a test statistic is also called a *pivot (quantity)*.
 
@@ -195,30 +199,7 @@ def plot_stat(results, method_name, alpha=0.05):
     plt.plot(n_vals, avg_lengths, marker='o', color='blue')
     plt.xscale('log')
     plt.yscale('log')
-    plt.plot(n_vals, 1 / np.sqrt(n_vals), linestyle='--', color='gray', label='$n^{-1/2}$')
-    plt.xlabel('Sample Size (n)')
-    plt.ylabel('Average CI Length')
-    plt.title(f'{method_name}: Average CI Length vs Sample Size')
-    plt.grid(True, which='both', linestyle='--', alpha=0.6)
-    plt.legend()
-
-    # Coverage
-    plt.subplot(1, 2, 2)
-    plt.plot(n_vals, coverages, marker='s', color='green')
-    plt.axhline(1 - alpha, color='red', linestyle='--', label=f'Nominal Level = {1 - alpha:.2f}')
-    plt.xscale('log')
-    plt.xlabel('Sample Size (n)')
-    plt.ylabel('Empirical Coverage')
-    plt.title(f'{method_name}: Coverage vs Sample Size')
-    plt.legend()
-    plt.grid(True, which='both', linestyle='--', alpha=0.6)
-
-    plt.tight_layout()
-    return fig
-
-fig = plot_stat(results_exact, 'Exact CI')
-plt.show()
-```
+    plt.plot(n_vals, 1 / np.sqrt(n_vals), linestyle='--', color='gray', label='$n^{-1/2}
 
 ## CLT CI
 
@@ -411,6 +392,123 @@ Summary of the methodology behind the above methods:
 
 - Exact calculation is finite-sample valid, preferred when the test statistic's distribution is known and easy to compute. Not practical for unknown distributions.
 - CLT CI uses [[Central Limit Theorem\|Central Limit Theorem]] and thus is asymptotically valid. It is preferred when the sample size is large. It does not leverage any structural information about the distribution.
+- Hoeffding CI is one example of a concentration inequality-based CI. This class of CIs is finite-sample valid. Any concentration inequality can be used to construct a CI, and some are more suitable for specific distributions. Generally, concentration inequality-based CIs are more conservative.
+- Wald CI uses the plug-in principle, which is asymptotically valid. It is preferred when the test statistic involves parameters that can be readily estimated; then the estimation is plugged into the CI formula.
+- Wilson score CI constructs the CI by *solving* the inequality by CLT or other concentration inequalities. It leverages the structure of the test statistic but is preferred only when the inequality can be solved easily.
+
+The width of the confidence interval, that is, its accuracy depends on:
+
+- The sample size n: the larger the sample size the narrow the width of the CI.
+- The confidence level: the higher the confidence the wider the CI will be!
+- The standard deviation of the population or SE: the larger the SE the wider the CI will be.
+- The method used to construct the CI
+)
+    plt.xlabel('Sample Size (n)')
+    plt.ylabel('Average CI Length')
+    plt.title(f'{method_name}: Average CI Length vs Sample Size')
+    plt.grid(True, which='both', linestyle='--', alpha=0.6)
+    plt.legend()
+
+    # Coverage
+    plt.subplot(1, 2, 2)
+    plt.plot(n_vals, coverages, marker='s', color='green')
+    plt.axhline(1 - alpha, color='red', linestyle='--', label=f'Nominal Level = {1 - alpha:.2f}')
+    plt.xscale('log')
+    plt.xlabel('Sample Size (n)')
+    plt.ylabel('Empirical Coverage')
+    plt.title(f'{method_name}: Coverage vs Sample Size')
+    plt.legend()
+    plt.grid(True, which='both', linestyle='--', alpha=0.6)
+
+    plt.tight_layout()
+    return fig
+
+fig = plot_stat(results_exact, 'Exact CI')
+plt.show()
+```
+
+## CLT CI
+
+By CLT and LLN, we know that
+$$
+\frac{\sqrt{ n }(\overline{X}-p)}{\hat{\sigma}} \overset{ d }{ \to } \mathcal{N}(0,1),
+$$
+where $\overline{X}$ is the sample mean and $\hat{\sigma}^{2} =\frac{1}{n-1}\sum_{i=1}^{n}(X_{i}-\overline{X})^{2}$ is the sample variance.
+This gives the CLT CI:
+$$
+C^{(\mathrm{CLT})}(X) = \overline{X} \pm z_{\alpha /2}\frac{\hat{\sigma}}{\sqrt{ n }}.
+$$
+where $z_{\beta}$ is the $\beta$-th quantile of the standard normal distribution.
+
+{{CODE_BLOCK_5}}
+
+{{CODE_BLOCK_6}}
+
+We can see that both exact CI and CLT CI have an average length of order $n^{-1/2}$.
+However, CLT CI is only asymptotically valid.
+
+## Hoeffding CI
+
+Since Bernoulli trials are bounded, Hoeffding's inequality gives
+$$
+P\left( \left| \overline{X}-p \right| \ge t \right) \le 2\exp\left( -2 n t^{2} \right),
+$$
+leading to a $1-\alpha$ level CI:
+$$
+C^{(\mathrm{Hoeff})}(\overline{X}) = \overline{X} \pm \sqrt{\frac{\log(2/\alpha)}{2n}}.
+$$
+
+{{CODE_BLOCK_7}}
+
+{{CODE_BLOCK_8}}
+
+We can see Hoeffding CI is super *conservative*: it has a much wider CI with a higher coverage than the nominal level.
+
+> [!ex] Chebyshev CI
+> Construct another concentration inequality-based CI. For example, Chebyshev CI. And compare it with Hoeffding CI.
+
+## Wald CI
+
+Another version of CLT CI is using the fact that
+$$
+\frac{\hat{\theta}-\theta}{\mathrm{SE}(\hat{\theta} )} \overset{ d }{ \to } \mathcal{N}(0,1),
+$$
+where $\mathrm{SE}$ is the *standard error* of the statistic $\hat{\theta}$.
+For sample mean, we know its standard error is
+$$
+\mathrm{SE}(\overline{X}) = \frac{\operatorname{Var}(X_{i})}{\sqrt{ n }}.
+$$
+For Bernoulli distribution, instead of using a sample variance to estimate the variance, and hence estimate the standard error, as we did in constructing [CLT CI](#clt-ci), we notice that
+$$
+\operatorname{Var}(X_i) = p(1-p).
+$$
+Thus, we can estimate the standard error by **plugging in** the estimation of $p$ instead, using $\hat{p} = \overline{X}$, giving the Wald plug-in CI:
+$$
+C^{(\mathrm{Wald})}(X) = \overline{X} \pm z_{\alpha /2} \sqrt{\frac{\overline{X}(1-\overline{X})}{n}}.
+$$
+
+{{CODE_BLOCK_9}}
+
+{{CODE_BLOCK_10}}
+
+Since Wald CI also uses CLT, it behaves similarly to CLT CI.
+
+## Wilson Score CI
+
+Left as exercise
+
+## Comparison
+
+We now compare the average length and coverage of the confidence intervals constructed above.
+
+{{CODE_BLOCK_11}}
+
+## Takeaways
+
+Summary of the methodology behind the above methods:
+
+- Exact calculation is finite-sample valid, preferred when the test statistic's distribution is known and easy to compute. Not practical for unknown distributions.
+- CLT CI uses [[Central Limit Theorem]] and thus is asymptotically valid. It is preferred when the sample size is large. It does not leverage any structural information about the distribution.
 - Hoeffding CI is one example of a concentration inequality-based CI. This class of CIs is finite-sample valid. Any concentration inequality can be used to construct a CI, and some are more suitable for specific distributions. Generally, concentration inequality-based CIs are more conservative.
 - Wald CI uses the plug-in principle, which is asymptotically valid. It is preferred when the test statistic involves parameters that can be readily estimated; then the estimation is plugged into the CI formula.
 - Wilson score CI constructs the CI by *solving* the inequality by CLT or other concentration inequalities. It leverages the structure of the test statistic but is preferred only when the inequality can be solved easily.

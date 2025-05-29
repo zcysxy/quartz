@@ -6,9 +6,25 @@
 # Gaussian Properties
 
 A real-valued random variable (r.v.) is called a normal/Gaussian r.v. if it admits the following probability density function (PDF):
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/Normal-Distribution#pdf" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
     - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$ 
+
+</div></div>
+
 Generally, a vector-valued r.v. is normal/Gaussian if it has PDF:
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/Normal-Distribution#vec-pdf" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
     - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$ 
+
+</div></div>
+
 
 Normal r.v.s have many nice properties, each of which gives a partial answer to why they are so common in nature.
 
@@ -24,19 +40,51 @@ That is, we can *compress* the data from an $n$-dimensional vector to a real num
 ## Affine Transformation Invariance
 
 Any [[Affine Transformation\|Affine Transformation]] of a normal r.v. is also normal. Specifically,
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/Normal-Distribution#e2d605" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$ 
+
+</div></div>
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/Normal-Distribution#bcd246" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
 
     - As a special case, any sub-vector of a normal random vector is also normal 
 
+</div></div>
+
+
 The affine transformation invariance is central to normal distribution. Actually, normal distribution can be defined through affine transformation.
 We have the following two alternative definitions:
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/Normal-Distribution#7bb02c" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
 
 1. Or, if it has the form:
 $
 X = DW + \mu,
 $
 for any matrix $D$ and vector $\mu$, where $W$ is a random vector whose components are independent standard normal random variables $\mathcal{N}(0,1)$. 
+
+</div></div>
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/Normal-Distribution#f2c84a" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
 2. Or, if for any real vector $a$, the random variable $a^{T}X$ is normal. 
+
+</div></div>
+
 
 ## Symmetry
 
@@ -78,6 +126,16 @@ $$
 
 ## Independence, Correlation, and Jointly Normal
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/Normal-Distribution#Independence-Correlation-and-Jointly-Normal" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+<div class="markdown-embed-title">
+
+# n-h
+
+</div>
+
+
 ## Independence, Correlation, and Jointly Normal
 
 > [!rmk] Normal components does not imply jointly normal.
@@ -104,6 +162,9 @@ $$
 > $
 > \Cov(X,Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y] = \mathbb{E}[X^{3}] - 0 = 0.
 > $
+
+
+</div></div>
 
 
 ## Tail Bound
@@ -137,17 +198,33 @@ $$
 $$
 A nice thing about normal distribution is that the posterior of a normal prior and a normal likelihood is also normal.
 A specific example in [[Bayesian Linear Regression\|Bayesian Linear Regression]] is:
-$$
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+$
 \begin{aligned}
 \text{Likelihood}:& \quad y \sim N\left(X w, \sigma^2 I\right)\\
 \text{Prior}:& \quad w \sim N\left(0, \lambda^{-1} I\right)
 \end{aligned}
-$$
+$
+
+</div></div>
+
 Then, the posterior is
-$$
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+$
 \tag{1}
 p(w|y,X) \sim \mathcal{N}\left( (\lambda\sigma^{2}I + X^TX)^{-1}X^Ty, (\lambda I+\sigma^{-2}X^TX)^{-1}\right).
-$$
+$
+
+</div></div>
+
 More importantly, with the help of linear algebra ([[Sherman-Morrison Formula\|Sherman-Morrison Formula]]) with low-rank update ($X^T_{t+1}X_{t+1} = X^T_{t}X_{t} + x_{t+1}x_{t+1}^T$), we can calculate the normal posterior easily in an online fashion.
 
 Additionally, other common operations on Gaussian distributions also preserve Gaussianity, including [[Gaussian Properties#Affine Transformation Invariance\|affine transformation]], [[Convolution\|Convolution]], conditioning, and marginalization.

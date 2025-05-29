@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-05-27T23:42:11","cssclasses":""}
+{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-05-28T00:49:01","cssclasses":""}
 ---
 
 
@@ -81,3 +81,49 @@ $$
 A\not\in\arg\sup_A \abs{\int_A (p-q) \d \nu}.
 $$
 Thus, $B$ and $B^{C}$ are the sets that achieve the supremum.
+
+## Optimal Transport Interpretation
+
+TV can be interpreted as the distance from transforming one distribution to another in an optimal transport perspective.
+
+Formally, suppose $\TV(P_{1},P_{2}) = \gamma$. Then, there exists a joint distribution of $(X_{1},X_{2}) \sim P$ such that the marginal distributions are $P_{1}$ and $P_{2}$, and $P(X_{1}=X_{2})=1-\gamma$.
+
+This means that we can transform $P_{1}$ to $P_{2}$ by moving $\gamma$ mass from $P_{1}$ to $P_{2}$, and the remaining mass remains unchanged.
+
+### Proof
+
+Suppose $P_1, P_2$ have PDF/PMF $f_1, f_2$. Then note that
+
+$$
+\begin{aligned}
+\int_\mathcal{X} f_1 \wedge f_2 
+=& \int_{\{f_1 \le f_2\}} f_1 + \int_{\{f_2 < f_1\}} f_2 \\
+=& 1 - \int_{\{f_1 \le f_2\}^c} f_1 + 1 - \int_{\{f_2 < f_1\}^c} f_2 \\
+=& 2 - \int_{\{f_1 > f_2\}} (f_1 - f_2) - \int_{\{f_2 \ge f_1\}} (f_2 - f_1) \quad \\
+& - \int_{\{f_1 > f_2\}} f_2 - \int_{\{f_2 \ge f_1\}} f_1 \\
+=& 2 - 2 \|P_1 - P_2\|_{\mathrm{TV}} - \int_\mathcal{X} f_1 \wedge f_2,
+\end{aligned}
+$$
+which implies
+$$
+\int_x f_1 \wedge f_2 = 1 - \|P_1 - P_2\|_{\mathrm{TV}} = 1 - \gamma
+$$
+
+Now note that due to the marginal constraint,
+$$
+P(X_1 = X_2 = x) \le P(X_1 = x) \land P(X_2 = x),
+$$
+which implies
+$$
+\sup_{P} P(X_1 = X_2) \le \int_x f_1 \wedge f_2 = 1 - \gamma
+$$
+
+OTOH, we can define
+
+$$
+P(X_1 = x, X_2 = x) = P(X_1 = x) \land P(X_2 = x) \Rightarrow P(X_1 = X_2) = 1 - \gamma
+$$
+
+Then we can specify the other values of $P$ to make it meet the marginal constraint.
+
+[[!todo\|!todo]] See also *Hw 3.4*.

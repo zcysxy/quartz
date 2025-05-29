@@ -18,8 +18,12 @@ Set relations are useful in constructing different CIs:
 Recall that a [[Statistic\|statistic]] is a function of the observed data, e.g., mean and variance.
 If a test involves some parameters, a test statistic is often a function of both the sample and the parameter, such that
 
-- the distribution of $t$ is known, e.g., a [[t Distribution\|t Distribution]] or a [[Chi-Square Distribution\|Chi-Square Distribution]], or can be approximated, e.g., using [[Central Limit Theorem\|CLT]] ^known
-- the distribution of $t$ does not depend on the parameter ^unkown
+- the distribution of $t$ is known, e.g., a [[t Distribution\|t Distribution]] or a [[Chi-Square Distribution\|Chi-Square Distribution]], or can be approximated, e.g., using [[Central Limit Theorem\|CLT]]
+{ #known}
+
+- the distribution of $t$ does not depend on the parameter
+{ #unkown}
+
 
 Such a test statistic is also called a ==pivot (quantity)==.
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-27T15:55:55","cssclasses":""}
+{"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-29T02:41:55","cssclasses":""}
 ---
 
 
@@ -19,8 +19,10 @@ where $\Theta_{0}$ and $\Theta_{1}$ are disjoint subsets of $\Theta$.
 
 ## Basic Concepts
 
-- Asymmetry in $H_{0}$ and $H_{1}$: the data is is only used to try to disprove $H_{0}$. The result of a HT is either **reject** or **fail to reject** the null hypothesis $H_{0}$. ^d85be2
-- If $\Theta_{0} \cup \Theta_{1} = \Theta$, then we say we test $H_{0}$ against $H_{1}$. In this case, rejection of $H_{0}$ implies acceptance of $H_{1}$.
+- Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$.
+{ #d85be2}
+
+- If $\Theta_{0} \cup \Theta_{1} = \Theta$, then we say we test $H_{0}$ against $H_{1}$. In this case, rejecting $H_{0}$ implies acceptance of $H_{1}$.
 - Failing to reject $H_{0}$ never implies acceptance of $H_{0}$, but only that we do not have enough evidence to reject it.
 - When $\Theta_{0}$ and $\Theta_{1}$ are singletons, we call it a ==simple-simple== HT. Otherwise, we call it a ==composite== HT.
 - Suppose $\Theta_{0} = \{ \theta_{0} \}$ and $\theta_{0}\in\R$. Then the HT is ==two-sided== if $H_{1} : \theta\ne\theta_{0}$, or is ==one-sided== if $H_{1} : \theta < \theta_{0}$ or $H_{1} : \theta > \theta_{0}$.
@@ -43,6 +45,31 @@ where $\Theta_{0}$ and $\Theta_{1}$ are disjoint subsets of $\Theta$.
   $$
   {\color{skyblue}\lim_{ n \to \infty } }\sup_{\theta_{0}\in\Theta_{0}}\alpha _{\psi}(\theta_{0})\le \alpha.
   $$
+
+## How to Construct a Test
+
+```mermaid
+flowchart LR
+subgraph B[Transformation]
+    BA1[test statistic]; BA2[rejection region]
+    B1[?]; B2[?];
+    BB1[test statistic]; BB2[p-value]
+end
+A --- BA1 --- BA2 --- C
+A --- BB1 --- BB2 --- C
+A[sample] --- B1 --- B2 --- C[test]
+```
+
+Recall that an HT is a [[Statistical Decision Theory\|statistical decision-making]] problem, and the output test $\psi$ is a [[Statistic\|Statistic]].
+An important question is, how to construct a test $\psi$ (method/algorithm)?
+
+Simple constructions directly map the sample to a decision rule, for example: the mean of the first distribution is larger than that of the second, if the sample mean of the first distribution is larger than that of the second.
+
+More sophisticated and principled methods are needed. In response, some transformations of the sample (statistics) are introduced to construct the test. We discuss two examples:
+
+- [[Hypothesis Testing#Test Statistic and Rejection Region\|#Test Statistic and Rejection Region]]. A test statistic is a statistic of the sample usually with known distribution under the null hypothesis. Then the critical values form a rejection region for the test statistic. The test is then based on if the test statistic falls into the rejection region.
+- [[Hypothesis Testing#p-value\|#p-value]]. Sometimes critical values are not available, or the rejection region is not easy to construct. The use of p-value eliminates the need for rejection regions. p-value is a statistic of the test statistic (which is a random variable). The test is then based on if the p-value is smaller than the level $\alpha$.
+    - If we treat p-value as the test statistic, we can see that it gives a principled way of constructing rejection regions: $\mathrm{RR} = \{ p \le \alpha \}$, without the need of other critical values.
 
 ## Test Statistic and Rejection Region
 
@@ -67,6 +94,16 @@ See [[Confidence Interval and Hypothesis Test Duality\|Confidence Interval and H
 
 ### Rejection Region by Likelihood Ratio
 
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+<div class="markdown-embed-title">
+
+# n-h
+
+</div>
+
+
 ## Rejection Region
 
 We can also construct a rejection region using the [[Likelihood\|likelihood]] ratio:
@@ -82,6 +119,9 @@ $
 where $k$ is chosen such that the test has a significance level $\alpha$.
 
 This method is called the ==likelihood ratio test==.
+
+
+</div></div>
 
 
 ## CLT Test Statistic
@@ -147,7 +187,20 @@ In other words, an almost impossible event ($p<\alpha$) happens given H0, thus i
 
 ## Role of Alternative
 
-Recall that - Asymmetry in $H_{0}$ and $H_{1}$: the data is is only used to try to disprove $H_{0}$. The result of a HT is either **reject** or **fail to reject** the null hypothesis $H_{0}$. 
+Recall that 
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/Hypothesis-Testing#d85be2" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+<div class="markdown-embed-title">
+
+# inline
+
+</div>
+
+
+- Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. 
+
+</div></div>
+
 Also notice that in the calculation of the test statistic, critical value, and p-value, we only need the null hypothesis $H_{0}$. This brings up the question:
 
 > [!qn] what is the role of the alternative hypothesis $H_{1}$?
