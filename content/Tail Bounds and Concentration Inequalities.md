@@ -180,15 +180,7 @@ plt.plot(x_vals, tail_mean_chebyshev, label="Chebyshev's Inequality", color='pur
 plt.plot(x_vals, tail_mean_hoeffding, label="Hoeffding's Inequality", color='green')
 plt.yscale('log')
 plt.xlabel('t')
-plt.ylabel(r'$P(|\bar{X} - \mathbb{E}[\bar{X}]| \geq t)
-
-## Takeaways
-
-- Tail bounds describe the probability of a random variable deviating from a specific value, such as its mean.
-- Different distributions have different tail behaviors, with Gaussian having a light tail and Cauchy having a heavy tail. Tight-tailed distributions are easier to control and predict.
-- Different from exact tail bounds, concentration inequalities provide general bounds for a class of random variables, such as Chebyshev's inequality and Hoeffding's inequality.
-- Compared to exact tail bounds, concentration inequalities are often too *conservative* and thus provide looser bounds.
-)
+plt.ylabel(r'$P(|\bar{X} - \mathbb{E}[\bar{X}]| \geq t)$')
 plt.title('Concentration Inequalities for Sample Mean of Uniform Distribution')
 plt.legend()
 plt.show()

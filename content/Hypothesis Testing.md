@@ -19,9 +19,7 @@ where $\Theta_{0}$ and $\Theta_{1}$ are disjoint subsets of $\Theta$.
 
 ## Basic Concepts
 
-- Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$.
-{ #d85be2}
-
+- Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. ^d85be2
 - If $\Theta_{0} \cup \Theta_{1} = \Theta$, then we say we test $H_{0}$ against $H_{1}$. In this case, rejecting $H_{0}$ implies acceptance of $H_{1}$.
 - Failing to reject $H_{0}$ never implies acceptance of $H_{0}$, but only that we do not have enough evidence to reject it.
 - When $\Theta_{0}$ and $\Theta_{1}$ are singletons, we call it a ==simple-simple== HT. Otherwise, we call it a ==composite== HT.
@@ -94,16 +92,6 @@ See [[Confidence Interval and Hypothesis Test Duality\|Confidence Interval and H
 
 ### Rejection Region by Likelihood Ratio
 
-
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
-
-<div class="markdown-embed-title">
-
-# n-h
-
-</div>
-
-
 ## Rejection Region
 
 We can also construct a rejection region using the [[Likelihood\|likelihood]] ratio:
@@ -119,9 +107,6 @@ $
 where $k$ is chosen such that the test has a significance level $\alpha$.
 
 This method is called the ==likelihood ratio test==.
-
-
-</div></div>
 
 
 ## CLT Test Statistic
@@ -187,20 +172,7 @@ In other words, an almost impossible event ($p<\alpha$) happens given H0, thus i
 
 ## Role of Alternative
 
-Recall that 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/Hypothesis-Testing#d85be2" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-<div class="markdown-embed-title">
-
-# inline
-
-</div>
-
-
-- Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. 
-
-</div></div>
-
+Recall that - Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. 
 Also notice that in the calculation of the test statistic, critical value, and p-value, we only need the null hypothesis $H_{0}$. This brings up the question:
 
 > [!qn] what is the role of the alternative hypothesis $H_{1}$?
