@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Confidence Interval and Hypothesis Test Duality","created":"2025-05-27T14:51:17","modified":"2025-05-29T03:39:04","cssclasses":""}
+{"publish":true,"title":"Confidence Interval and Hypothesis Test Duality","created":"2025-05-27T14:51:17","modified":"2025-05-29T17:25:33","cssclasses":""}
 ---
 
 
@@ -25,7 +25,7 @@ In other words, to build a $(1-\alpha)$ level CI, we collect all parameters that
 We give an example algorithm for constructing CI through HT.
 Our goal is to construct a CI with *balanced coverage*: $P(\theta> \sup C(X)) \approx  P(\theta < \inf C(X))$.
 
-> [!alg]
+> [!algorithm]
 > - Input: level $\alpha$
 > - For $\tilde{\theta}\in\Theta$:
 >     - Generate a $\alpha /2$-test $\psi ^{\uparrow}_{\tilde{\theta}}$ on HT $\Theta_{0}=\{ \tilde{\theta} \}$ against $\Theta_{1} = \{ \theta > \tilde{\theta} \}$.
