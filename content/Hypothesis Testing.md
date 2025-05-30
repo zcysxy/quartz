@@ -1,12 +1,12 @@
 ---
-{"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-29T17:32:57","cssclasses":""}
+{"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-30T03:02:47","cssclasses":""}
 ---
 
 
 # Hypothesis Testing
 
 Hypothesis testing (HT) is a classical [[Statistical Decision Theory\|statistical decision-making]] problem, and can be extended to more general binary statistical decision-making problems. Given sample $X$, we need to make a decision $A(X)$ such that $A(X) \approx \mathbb{1}_{H_{1}}$, where $H_{1}$ is the alternative hypothesis.
-In the context of HT, the statistical procedure $A$ is often called a **test**, and denoted as $\psi(X)$. A test is a [[Statistic\|Statistic]].
+In the context of HT, the statistical procedure $A$ is often called a ==test==, and denoted as $\psi(X)$. A test is a [[Statistic\|Statistic]].
 
 Formally, given a [[Statistical Model\|Statistical Model]] $\{ P_{\theta} \}_{\theta\in\Theta }$, we want to test the following hypotheses:
 $$
@@ -24,27 +24,22 @@ where $\Theta_{0}$ and $\Theta_{1}$ are disjoint subsets of $\Theta$.
 - Failing to reject $H_{0}$ never implies acceptance of $H_{0}$, but only that we do not have enough evidence to reject it.
 - When $\Theta_{0}$ and $\Theta_{1}$ are singletons, we call it a ==simple-simple== HT. Otherwise, we call it a ==composite== HT.
 - Suppose $\Theta_{0} = \{ \theta_{0} \}$ and $\theta_{0}\in\R$. Then the HT is ==two-sided== if $H_{1} : \theta\ne\theta_{0}$, or is ==one-sided== if $H_{1} : \theta < \theta_{0}$ or $H_{1} : \theta > \theta_{0}$.
-- We have two basic metrics for HT:
-    - ==Type I error== a.k.a ==false positive rate== is the probability of rejecting $H_{0}$ when it is true: $P_{\theta_{0}}(\psi (X)=1)$.
-    - ==Type II error== a.k.a ==false negative rate== is the probability of failing to reject $H_{0}$ when it is false: $P_{\theta_{1}}(\psi (X)=0)$.
-    - More generally, Type I and II errors are functions indexed by the test $\psi$, defined as
-        $$
-        \begin{cases}
-        \alpha _{\psi} &: \Theta_{0}\to \R, & \theta_{0} \mapsto P_{\theta_{0}}(\psi (X)=1), & \text{(Type I error)}\\
-        \beta _{\psi} &: \Theta_{1}\to \R, &\theta_{1} \mapsto P_{\theta_{1}}(\psi (X)=0), & \text{(Type II error)}
-        \end{cases}
-        $$
-- Minimizing false negative gives the *objective* of the test, called the ==power== of the test:
-  $$
-  \pi _{\psi} = \inf_{\theta_{1}\in\Theta_{1}}(1-\beta _{\psi}(\theta_{1})).
-  $$
-    - [~] The power can be remembered as the power of rejecting null.
-- A test has (<span style="color:skyblue">asymptotic</span>) ==level== $\alpha$ if its worst Type I error is at most $\alpha$:
-  $$
-  {\color{skyblue}\lim_{ n \to \infty } }\sup_{\theta_{0}\in\Theta_{0}}\alpha _{\psi}(\theta_{0})\le \alpha.
-  $$
+
+## How to Evaluate a Test
+
+We now focus on the test, i.e., the statistical procedure/algorithm/policy $\psi$ for an HT. The first question is
+
+- [?] What is a good/optimal test?
+
+Please refer to [[Evaluating a Test\|Evaluating a Test]] for some answers.
 
 ## How to Construct a Test
+
+Once we determine the evaluation criteria for a test, the next question is
+
+- [?] How to construct a test $\psi$ that satisfies the criteria?
+
+In this note, we focus on constructing tests that achieve a certain significance level $\alpha$.
 
 ```mermaid
 flowchart LR
@@ -57,9 +52,6 @@ A --- BA1 --- BA2 --- C
 A --- BB1 --- BB2 --- C
 A[sample] --- B1 --- B2 --- C[test]
 ```
-
-Recall that an HT is a [[Statistical Decision Theory\|statistical decision-making]] problem, and the output test $\psi$ is a [[Statistic\|Statistic]].
-An important question is, how to construct a test $\psi$ (method/algorithm)?
 
 Simple constructions directly map the sample to a decision rule, for example: the mean of the first distribution is larger than that of the second, if the sample mean of the first distribution is larger than that of the second.
 
