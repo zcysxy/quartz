@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Likelihood Hypothesis Test","created":"2023-10-17T19:15:35","modified":"2025-05-31T19:20:25","cssclasses":""}
+{"publish":true,"title":"Likelihood Hypothesis Test","created":"2023-10-17T19:15:35","modified":"2025-05-31T19:25:24","cssclasses":""}
 ---
 
 
@@ -10,13 +10,13 @@
 We can also construct a rejection region using the [[Likelihood]] ratio:
 $$
 \Lambda(\boldsymbol{x}) = \frac{\sup_{\theta \in \Theta_0} L(\theta \mid \boldsymbol{x})}{\sup_{\theta \in \Theta} L(\theta \mid \boldsymbol{x})}
-= \frac{L(\hat{\theta}_{0} )}{L(\hat{\theta}_{\mathrm{MLE}})}
-,$$
+= \frac{L(\hat{\theta}_{0} )}{L(\hat{\theta}_{\mathrm{MLE}})},
+$$
 where $\Theta_0$ is the null hypothesis parameter space.
 Then, the rejection region is given by
 $$
-\mathrm{RR} = \{ \boldsymbol{x} \mid \Lambda(\boldsymbol{x}) \le k \}
-,$$
+\mathrm{RR} = \{ \boldsymbol{x} \mid \Lambda(\boldsymbol{x}) \le k \},
+$$
 where $k$ is chosen such that the test has a significance level $\alpha$.
 
 This method is called the ==likelihood ratio test==.
@@ -25,7 +25,7 @@ This method is called the ==likelihood ratio test==.
 
 Under [[Fisher Information#Sufficient Regularity Conditions]], as $n → ∞$, we have
 $$
-− 2 \log \Lambda  (X) \eqqcolon G^{2} \overset{d}{\to} 𝜒^{2}_{k} .,
+− 2 \log \Lambda  (X) \eqqcolon G^{2} \overset{d}{\to} 𝜒^{2}_{k} ,
 $$
 where the degrees of freedom $k = \operatorname{dim}(\Theta ) – \operatorname{dim}(\Theta_0)$.
 
