@@ -127,6 +127,7 @@ where $z_{\beta}$ is the $\beta$-quantile of the standard normal distribution.
 ## Role of Alternative
 
 Recall that ![[Hypothesis Testing#^d85be2\|inline]]
+
 Also notice that in the calculation of the test statistic, critical value, and p-value, we only need the null hypothesis $H_{0}$. This brings up the question:
 
 > [!qn] what is the role of the alternative hypothesis $H_{1}$?
