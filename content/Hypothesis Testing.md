@@ -1,12 +1,16 @@
 ---
-{"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-31T19:22:34","cssclasses":""}
+{"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-31T19:52:33","cssclasses":""}
 ---
 
 
 # Hypothesis Testing
 
-> [!tldr] Takeaway Card
-> -
+> [!tldr]- Takeaway Card
+>
+> - Numerous concepts around hypothesis testing (HT) can be confusing. Always locate yourself in the general **[[Statistical Decision Theory\|statistical binary decision-making]]** framework.
+> - Under this framework, the question asked for the task is "[[Hypothesis Testing#how to evaluate a test]]?" All different metrics stem from the two basic ones: Type I error and Type II error. See also the [[Evaluating a Test#^confusion\|confusion matrix]] of an HT. Remember that your evaluation can always balance the two errors, or focus on one of them.
+> - The question asked for the algorithm is "[[Hypothesis Testing#how to construct a test]]?" This statistical procedure is simply a *transformation* of the sample into a binary decision rule. One transformation path is through [[Hypothesis Testing#test statistic and rejection region]]. Another path is through test statistic and [[p-value]].
+> - HT focuses on *disproving* the null hypothesis, resulting in an *asymmetry* between the null and alternative hypotheses. Calculating the Type I error, test statistic (under the null), and p-value only requires the null hypothesis. However, the [[Hypothesis Testing#Role of Alternative\|alternative hypothesis plays a role]] in shaping the belief about the complement of the null and dictating the direction of extremeness.
 
 Hypothesis testing (HT) is a classical [[Statistical Decision Theory\|statistical decision-making]] problem, and can be extended to more general binary statistical decision-making problems. Given sample $X$, we need to make a decision $A(X)$ such that $A(X) \approx \mathbb{1}_{H_{1}}$, where $H_{1}$ is the alternative hypothesis.
 In the context of HT, the statistical procedure $A$ is often called a ==test==, and denoted as $\psi(X)$. A test is a [[Statistic]].

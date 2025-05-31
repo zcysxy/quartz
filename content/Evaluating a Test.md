@@ -41,6 +41,8 @@ We summarize the above metrics into a confusion matrix:
 | $H_{0}$           | True Negative<br>Confidence<br>$1-\alpha$  | False Positive<br>Type I Error<br>Size<br>Significance Level<br>$\alpha$ |
 | $H_{1}$           | False Negative<br>Type II Error<br>$\beta$ | True Positive<br>Power<br>$1-\beta$                                      |
 
+^confusion
+
 ## Balanced Evaluation
 
 Different situations favors different evaluation metrics. Specifically, one may want to balance the Type I and Type II errors, or focus more on one of them. There are two common ways to balance the two.
