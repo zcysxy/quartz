@@ -26,37 +26,37 @@ AA --- BB --- CC
 
 - [c] Table. Statistics dictionary
 
-| Statistics                      | **[[Machine Learning\|Machine Learning]]**            |
+| Statistics                      | **[[Machine Learning]]**            |
 | ------------------------------- | ----------------------------------- |
 | estimation                      | [[Machine Learning\|learning]]      |
-| [[Regression\|regression]]                  | [[Supervised Learning\|supervised learning]]             |
-| [[Clustering\|clustering]]                  | [[Unsupervised Learning\|unsupervised learning]]           |
-| [[Hypothesis Testing\|hypothesis]] | [[Classification\|classification]]                  |
+| [[Regression]]                  | [[Supervised Learning]]             |
+| [[Clustering]]                  | [[Unsupervised Learning]]           |
+| [[Hypothesis Testing\|hypothesis]] | [[Classification]]                  |
 | covariates                      | features                            |
 | coefficient                     | weight                              |
 | predictor                       | input                               |
 | response                        | output                              |
 | intercept                       | bias                                |
-| derived predictor               | [[Hidden Units\|hidden units]]                    |
+| derived predictor               | [[Hidden Units]]                    |
 | penalty function                | [[L2 Regularization\|weight decay]] |
 
 ## Basic Concepts
 
-- [[Statistical Model\|Statistical Model]]
-- [[Statistical Decision Theory\|Statistical Decision Theory]]
+- [[Statistical Model]]
+- [[Statistical Decision Theory]]
 
 - Estimation
     - Concepts
-        - [[Likelihood\|Likelihood]]
-        - [[Confidence Interval\|Confidence Interval]]
+        - [[Likelihood]]
+        - [[Confidence Interval]]
     - Methods
-        - [[Maximum Likelihood Estimation\|Maximum Likelihood Estimation]]
-        - [[Method of Moments\|Method of Moments]]
-        - [[Mean Squared Error\|Mean Squared Error]]
-- [[Hypothesis Testing\|Hypothesis Testing]]
-- [[Regression\|Regression]]
-- [[Variance\|Variance]]
-    - [[ANOVA\|ANOVA]]
+        - [[Maximum Likelihood Estimation]]
+        - [[Method of Moments]]
+        - [[Mean Squared Error]]
+- [[Hypothesis Testing]]
+- [[Regression]]
+- [[Variance]]
+    - [[ANOVA]]
 
 ## Probability and Statistics
 
@@ -66,7 +66,7 @@ A(Data generating process) --Probability--> B(Observed data)
 B --Statistical inference--> A
 ```
 
-[[Probability Theory\|Probability Theory]] answers the following question:
+[[Probability Theory]] answers the following question:
 
 > [!qn] Given a data generating process, what are the properties of the outcomes?
 

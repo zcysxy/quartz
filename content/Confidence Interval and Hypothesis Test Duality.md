@@ -13,7 +13,7 @@ Then, we can construct a confidence interval
 $$
 C(X) = \{ \theta: \psi _{\theta}(X) = 0 \}.
 $$
-Recall the definition of the level of a [[Hypothesis Testing\|Hypothesis Testing]]. We have
+Recall the definition of the level of a [[Hypothesis Testing]]. We have
 $$
 P(C(X)\not\ni \theta ) = P_{\theta }(\psi _{\theta}(X) = 1) \le \alpha,
 $$

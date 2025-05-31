@@ -16,7 +16,7 @@ Consider an observed test-statistic $t$ from unknown distribution $T$. Then t
 - $p=2\min\{\Pr(T\geq t\mid H_{0}),\Pr(T\leq t\mid H_{0})$ for a two-sided test.
     - If the distribution of $T$ is symmetric about zero, then $p=\Pr(|T|\geq |t|\mid H_{0})$
 
-> [!ex] [[Hypothesis Testing#CLT Test Statistic\|Hypothesis Testing#CLT Test Statistic]]
+> [!ex] [[Hypothesis Testing#CLT Test Statistic]]
 >
 > $
 > p =
@@ -41,19 +41,19 @@ In other words, an almost impossible event ($p<\alpha$) happens given H0, thus i
 
 The above note provides an intuitive understanding of p-value. This section discusses p-value from a more formal perspective.
 
-We first formalize the idea in [[p-value#^rej\|#^rej]] using [[Hypothesis Testing#Test Statistic and Rejection Region\|rejection regions]]. Suppose we are given a test statistic $T$ and its rejection regions $\mathrm{RR}_{\alpha }$ for any level $\alpha$. Then, we have
+We first formalize the idea in [[p-value#^rej]] using [[Hypothesis Testing#Test Statistic and Rejection Region\|rejection regions]]. Suppose we are given a test statistic $T$ and its rejection regions $\mathrm{RR}_{\alpha }$ for any level $\alpha$. Then, we have
 $$
 p\text{-value} = \inf \{ \alpha : T \in \mathrm{RR}_{\alpha } \}. \tag{1}
 $$
 
-We then formalize the idea in [[p-value#^extreme\|#^extreme]]. For a test statistic $T$, whose randomness depends on the underlying true parameter, we denote $T_{\theta_{0}}$ as the same statistic but whose distribution is determined by the null parameter $\theta_{0}$ and is usually known. Then, suppose the rejection region is of the form $\mathrm{RR}_{\alpha} = \{ T \ge c_{\alpha} \}$, i.e., consider a right-tail test. Then, we have
+We then formalize the idea in [[p-value#^extreme]]. For a test statistic $T$, whose randomness depends on the underlying true parameter, we denote $T_{\theta_{0}}$ as the same statistic but whose distribution is determined by the null parameter $\theta_{0}$ and is usually known. Then, suppose the rejection region is of the form $\mathrm{RR}_{\alpha} = \{ T \ge c_{\alpha} \}$, i.e., consider a right-tail test. Then, we have
 $$
 p\text{-value} = P_{\theta_{0}}(T_{\theta_{0}} \ge T). \tag{2}
 $$
 Specifically, upon realization of the test statistic $T=t$, the p-value is realized as $P_{\theta_{0}}(T_{\theta_{0}} \ge t)$.
 
 Finally, we provide the most general definition of p-value, which does not depend on the rejection region:
-p-value is a [[Statistic\|Statistic]] $p: \mathcal{X} \to [0,1]$ such that
+p-value is a [[Statistic]] $p: \mathcal{X} \to [0,1]$ such that
 $$
 P_{\theta_{0}}(p(X) \le t) \le t, \quad \forall t\in[0,1], \theta_{0}\in\Theta _{0}. \tag{3}
 $$

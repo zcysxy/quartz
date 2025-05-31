@@ -6,7 +6,7 @@
 # Statistic
 
 A ==statistic== is some *measurement* taken directly from the sample.
-Formally, a statistic is a [[Measurable\|Measurable]] function $T: \mathcal{X}\to \R^{k}$.
+Formally, a statistic is a [[Measurable]] function $T: \mathcal{X}\to \R^{k}$.
 A statistic transforms the sample into some measurement of the sample.
 Notably, a statistic acts on the sample, but not the underlying distribution. And usually we want to use the statistic to infer something about the underlying distribution.
 
@@ -18,7 +18,7 @@ More generally, a statistic can be a measurable functional: $T : \mathcal{X}\to 
 
 ## Statistic is Random
 
-Being a function of random variables, a statistic is also a [[Random Variable\|random variable]].
+Being a function of random variables, a statistic is also a [[Random Variable]].
 Thus, if a statistic is an estimator of some function on the underlying distribution, we can discuss its [[Convergence of Random Variables\|convergence properties]].
 
 ## Linear Statistic
