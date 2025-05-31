@@ -22,6 +22,13 @@ code.mermaid svg,
     "grid-sidebar-left grid-footer grid-sidebar-right" / 320px auto 0px
 }
 
+/* Custom embedded content */
+.transclude {
+  &>h1, &>h2, &>h3, &>h4, &>h5, &>h6 {
+    display: none;
+  }
+}
+
 /* Custom checkboxes */
 span.custom-checkbox {
   background-color: var(--checkbox-color);
