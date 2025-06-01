@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"p-value","created":"2025-05-29T17:32:33","modified":"2025-05-31T22:26:17","cssclasses":""}
+{"publish":true,"title":"p-value","created":"2025-05-29T17:32:33","modified":"2025-05-31T22:26:17","cssclasses":"","alias":null,"type":"note","sup":["[[Hypothesis Testing]]"],"state":"done"}
 ---
 
 

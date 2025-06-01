@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-05-28T00:49:01","cssclasses":""}
+{"publish":true,"aliases":["Total-Variation Metric","TV"],"created":"2022-05-28T03:34:22","modified":"2025-05-28T00:49:01","cssclasses":"","type":"note","sup":["[[Probability Theory]]"],"state":"done"}
 ---
 
 
