@@ -55,6 +55,10 @@ code.mermaid svg,
   }
   &[class$="-sup"] {
     --meta-icon: var(--meta-icon-sup);
+    & a:not(:last-of-type):after {
+      content: " · ";
+      color: var(--gray);
+    }
   }
 }
 

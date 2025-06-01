@@ -81,6 +81,7 @@ const config: QuartzConfig = {
 					"\\Cov": "\\operatorname{Cov}",
 					"\\TV": "\\operatorname{TV}",
 					"\\abs": "\\left|#1\\right|",
+					"\\d": "\\mathrm{d}",
 				},
 			}),
     ],

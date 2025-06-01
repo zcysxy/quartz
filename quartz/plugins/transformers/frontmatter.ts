@@ -119,13 +119,23 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
             allSlugs.splice(0, allSlugs.length, ...uniqueSlugs)
 
 						if (data.sup) {
-							const sup = data.sup.toString()
-							if (sup.startsWith("[[") && sup.endsWith("]]")) {
-								data.sup = sup.slice(2, -2)
-								const slug = slugifyFilePath(data.sup as FilePath)
-								data.supslug = slug
-							} else {
-								data.supslug = slugifyFilePath(sup as FilePath)
+							/* Apply the following transformations to all elements in the `sup` field: */
+							/* Use index idx and assign it back to the idx element of data.sup */
+							/* Intialize a slug array of the same length as data.sup */
+							data.supslug = []
+							/* transform data.sup to an array if it is not already */
+							if (!Array.isArray(data.sup)) {
+								data.sup = [data.sup]
+							}
+							for (let idx = 0; idx < data.sup.length; idx++) {
+								const sup = data.sup[idx].toString()
+								if (sup.startsWith("[[") && sup.endsWith("]]")) {
+									data.sup[idx] = sup.slice(2, -2)
+									const slug = slugifyFilePath(data.sup[idx] as FilePath)
+									data.supslug[idx] = slug
+								} else {
+									data.supslug[idx] = slugifyFilePath(sup as FilePath)
+								}
 							}
 						}
 

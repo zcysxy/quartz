@@ -30,7 +30,13 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       const segments: (string | JSX.Element)[] = []
 
 			if (fileData.frontmatter?.sup) {
-				segments.push(<a class="meta-sup" title="parent note" href={fileData.frontmatter.supslug}>{fileData.frontmatter.sup}</a>)
+				segments.push(
+					<span class="meta-sup" title="parent note">
+						{fileData.frontmatter.sup.map((supItem: string, idx: number) => (
+							<a href={fileData.frontmatter.supslug[idx]}>{supItem}</a>
+						))}
+					</span>
+				)
 			}
 
       if (fileData.dates?.created) {
