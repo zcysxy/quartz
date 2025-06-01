@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2022-05-28T03:34:21","modified":"2025-06-01T02:55:26","cssclasses":"","type":"note","aliases":null,"sup":["[[Machine Learning]]","[[Information Theory]]","[[Statistics]]","[[f-Divergence]]"],"state":"done"}
+{"publish":true,"aliases":["KL"],"created":"2022-05-28T03:34:21","modified":"2025-06-01T02:55:26","cssclasses":"","type":"note","sup":["[[Machine Learning]]","[[Information Theory]]","[[Statistics]]","[[f-Divergence]]"],"state":"done"}
 ---
 
 
@@ -24,7 +24,7 @@ $$
 > > &\geq -\log (\sum P(x)\frac{ Q(x)}{P(x)})\\
 > > &= - \log 1\\
 > > &=0
-> \end{aligned}$$
+> > \end{aligned}$$
 
 KL divergence measures how two probability distributions are different from each other: the more similar two distributions are, the smaller their KL divergence is. For example, if two distributions' KL divergence is 0, iff they are almost everywhere the same. ^88c6e5
 
