@@ -118,6 +118,36 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
             const uniqueSlugs = [...new Set(allSlugs)]
             allSlugs.splice(0, allSlugs.length, ...uniqueSlugs)
 
+						if (data.sup) {
+							const sup = data.sup.toString()
+							if (sup.startsWith("[[") && sup.endsWith("]]")) {
+								data.sup = sup.slice(2, -2)
+								const slug = slugifyFilePath(data.sup as FilePath)
+								data.supslug = slug
+							} else {
+								data.supslug = slugifyFilePath(sup as FilePath)
+							}
+						}
+
+						if (data.state) {
+							const state = data.state.toString()
+							/* transformation dictionary:
+								* done -> "completed"
+								* [[%wip]] -> "work-in-progress"
+								* [[%todo]] -> "on-hold"
+								* [[%watch]] -> "on-hold"
+								* */
+							if (state === "done") {
+								data.state = "Completed"
+							} else if (state === "[[%wip]]") {
+								data.state = "Work-in-progress"
+							} else if (state === "[[%todo]]" || state === "[[%watch]]") {
+								data.state = "On-hold"
+							} else {
+								data.state = state
+							}
+
+						}
             // fill in frontmatter
             file.data.frontmatter = data as QuartzPluginData["frontmatter"]
           }
@@ -147,6 +177,7 @@ declare module "vfile" {
         cssclasses: string[]
         socialImage: string
         comments: boolean | string
+				supslug: string
       }>
   }
 }

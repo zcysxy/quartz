@@ -15,8 +15,8 @@ interface ContentMetaOptions {
 }
 
 const defaultOptions: ContentMetaOptions = {
-  showReadingTime: true,
-  showComma: true,
+  showReadingTime: false,
+  showComma: false,
 }
 
 export default ((opts?: Partial<ContentMetaOptions>) => {
@@ -29,8 +29,15 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-      if (fileData.dates) {
-        segments.push(<Date date={getDate(cfg, fileData)!} locale={cfg.locale} />)
+			if (fileData.frontmatter?.sup) {
+				segments.push(<a class="meta-sup" title="parent note" href={fileData.frontmatter.supslug}>{fileData.frontmatter.sup}</a>)
+			}
+
+      if (fileData.dates?.created) {
+        segments.push(<span class="meta-created" title="created time"><Date date={fileData.dates.created} locale={cfg.locale} /></span>)
+      }
+      if (fileData.dates?.modified) {
+        segments.push(<span class="meta-modified" title="modified time"><Date date={fileData.dates.modified} locale={cfg.locale} /></span>)
       }
 
       // Display reading time if enabled
@@ -41,6 +48,11 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         })
         segments.push(<span>{displayedTime}</span>)
       }
+
+			// Other metadata segments can be added here
+			if (fileData.frontmatter?.state) {
+				segments.push(<span class="meta-status" title="note status">{fileData.frontmatter.state}</span>)
+			}
 
       return (
         <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
