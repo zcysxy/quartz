@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Evaluating a Test","created":"2025-05-30T02:48:39","modified":"2025-05-30T04:01:42","cssclasses":""}
+{"publish":true,"title":"Evaluating a Test","created":"2025-05-30T02:48:39","modified":"2025-05-31T20:32:19","cssclasses":""}
 ---
 
 
@@ -57,7 +57,7 @@ where $\pi$ is the prior for $\theta$ and $c_{\mathrm{FP}}$ and $c_{\mathrm{FN}}
 
 ### Uniformly Most Powerful Test
 
-[[Uniformly Most Powerful Test]] formulates the problem as a constrained optimization problem:
+[[Uniformly Most Powerful Test]] for a simple alternative hypothesis formulates the problem as a constrained optimization problem:
 $$
 \begin{aligned}
 \max_{\psi} & \quad \pi _{\psi }\\
@@ -67,7 +67,7 @@ $$
 which is equivalent to
 $$
 \begin{aligned}
-\min_{\psi} & \quad \max_{\theta_{1}\in\Theta_{1}}\beta  _{\psi }(\theta_{1})\\
+\min_{\psi} & \quad \beta  _{\psi }(\theta_{1})\\
 \text{s.t.} & \quad \max_{\theta_{0}\in\Theta_{0}}\alpha _{\psi}(\theta_{0}) \le \alpha .
 \end{aligned}
 $$

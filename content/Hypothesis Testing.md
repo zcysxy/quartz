@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-31T19:52:33","cssclasses":""}
+{"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-31T21:04:22","cssclasses":""}
 ---
 
 
@@ -60,17 +60,17 @@ A --- BB1 --- BB2 --- C
 A[sample] --- B1 --- B2 --- C[test]
 ```
 
-Simple constructions directly map the sample to a decision rule, for example: the mean of the first distribution is larger than that of the second, if the sample mean of the first distribution is larger than that of the second.
+Simple constructions directly map the sample to a decision rule, for example: after tossing a coin 4 times, we decide the coin is biased (towards heads) if the number of heads is greater than 2.
 
 More sophisticated and principled methods are needed. In response, some transformations of the sample (statistics) are introduced to construct the test. We discuss two examples:
 
-- [[Hypothesis Testing#Test Statistic and Rejection Region]]. A test statistic is a statistic of the sample usually with known distribution under the null hypothesis. Then the critical values form a rejection region for the test statistic. The test is then based on if the test statistic falls into the rejection region.
-- [[Hypothesis Testing#p-value]]. Sometimes critical values are not available, or the rejection region is not easy to construct. The use of p-value eliminates the need for rejection regions. p-value is a statistic of the test statistic (which is a random variable). The test is then based on if the p-value is smaller than the level $\alpha$.
-    - If we treat p-value as the test statistic, we can see that it gives a principled way of constructing rejection regions: $\mathrm{RR} = \{ p \le \alpha \}$, without the need of other critical values.
+- [[Hypothesis Testing#Test Statistic and Rejection Region]]. A test statistic is a statistic of the sample usually with a known distribution **under the null hypothesis**. Then the critical values form a rejection region for the test statistic. The test is then based on whether the test statistic falls into the rejection region.
+- [[Hypothesis Testing#p-value]]. Sometimes critical values are not available, or the rejection region is not easy to construct. The use of p-value eliminates the need for rejection regions. p-value is a statistic of the test statistic (which is a random variable). The test is then based on whether the p-value is smaller than the level $\alpha$.
+    - If we treat p-value as the test statistic, we can see that it gives a principled way of constructing rejection regions: $\mathrm{RR} = \{ p \le \alpha \}$, without the need for other critical values.
 
 ## Test Statistic and Rejection Region
 
-For a hypothesis and sample $\{ x_{i} \}$, we construct a **rejection region** of the following form:
+For a hypothesis and sample $\{ x_{i} \}$, we construct a ==rejection region== of the following form:
 $$
 \mathrm{RR} = \{ x_{1},\dots,x_n \mid t \ge c \},
 $$
@@ -113,9 +113,9 @@ $$
 And the rejection region for a $\alpha$-level test is
 $$
 \mathrm{RR} = \begin{cases}
-T_n \ge z_{1-\alpha} \text{ (right-tail test)},\\
-T_n \le z_{\alpha} \text{ (left-tail test)},\\
-|T_n| \ge z_{\alpha /2} \text{ (two-sided test)},
+T_n \ge z_{1-\alpha} && \text{ (right-tail test)},\\
+T_n \le z_{\alpha} &&\text{ (left-tail test)},\\
+|T_n| \ge z_{\alpha /2} &&\text{ (two-sided test)},
 \end{cases}
 $$
 where $z_{\beta}$ is the $\beta$-quantile of the standard normal distribution.
@@ -135,5 +135,6 @@ Also notice that in the calculation of the test statistic, critical value, and p
 We first remark that we do not expect the alternative to have the same critical role as the null, due to the asymmetry. However, the alternative do have two important implications:
 
 - The alternative shapes the belief about the complement of the null. Specifically, the set pair $(\Theta_{0},\Theta_{1})$ forms a *model assumption*, meaning that we believe the true parameter is either in $\Theta_{0}$ or $\Theta_{1}$. Under this belief, when rejecting $H_{0}$, we implicitly accept $H_{1}$.
+    - [@] For example, a company want to test their current risk control threshold $\theta_{0}$. Their hypotheses are $H_{0}: \theta = \theta_{0}$ and $H_{1}: \theta > \theta_{0}$. We can see that, they only reject the null if they *believe the risk is higher* then their current threshold. They do not modify the threshold (reject the null) even observing a risk significantly lower than the threshold, as it does no harm.
 - The alternative dictates the direction of extremeness. When calculating the rejection region or p-value, it's important to know what counts as an *extreme* event under the null. The alternative dictates the direction, i.e., right-tail, left-tail, or two-sided.
     - [@] For example, suppose $H_{0}: \text{mean} = \mu_{0}$ and $H_{1} : \text{mean} = \mu_{1}$. Then, if $\mu_{1} > \mu_{0}$, it is extreme(ly unlikely the null is true) when we observe a large sample mean; on the other hand, if $\mu_{1} < \mu_{0}$, a small sample mean is extreme under the null.
