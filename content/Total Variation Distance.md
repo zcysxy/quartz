@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":["Total-Variation Metric","TV"],"created":"2022-05-28T03:34:22","modified":"2025-06-01T02:40:48","cssclasses":"","type":"note","sup":["[[Probability Theory]]"],"state":"[[%wip]]"}
+{"publish":true,"aliases":["Total-Variation Metric","TV"],"created":"2022-05-28T03:34:22","modified":"2025-06-01T02:55:05","cssclasses":"","type":"note","sup":["[[Probability Theory]]"],"state":"[[%wip]]"}
 ---
 
 
@@ -127,3 +127,37 @@ $$
 Then we can specify the other values of $P$ to make it meet the marginal constraint.
 
 [[!todo]] See also *Hw 3.4*.
+
+## Sample Gain
+
+It's intuitive that more iid samples help distinguish two distributions. Formally, we claim
+$$
+\TV(P_{0},P_{1}) \le \TV(P_{0}\times P_{0},P_{1}\times P_{1} )
+$$
+
+### First Proof
+
+The first proof is for continuous distributions.
+Let $B = \{ f_{0} > f_{1} \}$ and WLOG, $\int _{B}f_{0} + \int_{B}f_{1} \ge 1$. Note that $B\times B \subset B^{\mathrm{opt}} = \{ f_{0} \times f_{0} > f_{1} \times f_{1} \}$. Thus,
+$$
+\begin{aligned}
+\TV(P_{0}\times P_{0},P_{1}\times P_{1}) &\ge\int _{B\times B} (f_{0}\times f_{0} - f_{1}\times f_{1}) \d x\d y \\
+&= \int _{B \times B} (f_{0} + f_{1}) \d x(f_{0}-f_{1}) \d y \\
+&= \TV(P_{0},P_{1}) \int _{B} (f_{0} + f_{1}) \d x \\
+&\ge \TV(P_{0},P_{1}).
+\end{aligned}
+$$
+
+### Second Proof
+
+The second proof applies to general distributions.
+By the set relationship, we have
+$$
+\begin{aligned}
+\TV(P_{0},P_{1}) &= \sup_{B} \left| P_{0}(B)-P_{1}(B) \right| \\
+&= \sup_{B} \left| P_{0}(B)\times P_{0}(\mathcal{X})-P_{1}(B)\times P_{1}(\mathcal{X}) \right| \\
+&= \sup_{C = B \times \mathcal{X}} \left| P_{0}\times P_{0}(C)-P_{1}\times P_{1}(C) \right| \\
+&\le \sup_{C } \left| P_{0}\times P_{0}(C)-P_{1}\times P_{1}(C) \right| \\
+&= \TV(P_{0}\times P_{0},P_{1}\times P_{1}).
+\end{aligned}
+$$
