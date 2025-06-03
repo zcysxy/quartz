@@ -16,7 +16,7 @@ Consider an observed test-statistic $t$ from unknown distribution $T$. Then t
 - $p=2\min\{\Pr(T\geq t\mid H_{0}),\Pr(T\leq t\mid H_{0})$ for a two-sided test.
     - If the distribution of $T$ is symmetric about zero, then $p=\Pr(|T|\geq |t|\mid H_{0})$
 
-> [!ex] [[Hypothesis Testing#CLT Test Statistic]]
+> [!ex] [[Hypothesis Testing#CLT Test Statistic\|Hypothesis Testing#CLT Test Statistic]]
 >
 > $
 > p =
@@ -41,19 +41,19 @@ In other words, an almost impossible event ($p<\alpha$) happens given H0, thus i
 
 The above note provides an intuitive understanding of p-value. This section discusses p-value from a more formal perspective.
 
-We first formalize the idea in [[p-value#^reject]] using [[Hypothesis Testing#Test Statistic and Rejection Region\|rejection regions]]. Suppose we are given a test statistic $T$ and its rejection regions $\mathrm{RR}_{\alpha }$ for any level $\alpha$. Then, we have
+We first formalize the idea in [[p-value#^reject\|#^reject]] using [[Hypothesis Testing#Test Statistic and Rejection Region\|rejection regions]]. Suppose we are given a test statistic $T$ and its rejection regions $\mathrm{RR}_{\alpha }$ for any level $\alpha$. Then, we have
 $$
 p\text{-value} = \inf \{ \alpha : T \in \mathrm{RR}_{\alpha } \}. \tag{1}
 $$
 
-We then formalize the idea in [[p-value#^extreme]]. For a test statistic $T$, whose randomness depends on the underlying true parameter, we denote $T_{\theta_{0}}$ as the same statistic but whose distribution is determined by the null parameter $\theta_{0}$ and is usually known. Then, suppose the rejection region is of the form $\mathrm{RR}_{\alpha} = \{ T \ge c_{\alpha} \}$, i.e., consider a right-tail test. Then, we have
+We then formalize the idea in [[p-value#^extreme\|#^extreme]]. For a test statistic $T$, whose randomness depends on the underlying true parameter, we denote $T_{\theta_{0}}$ as the same statistic but whose distribution is determined by the null parameter $\theta_{0}$ and is usually known. Then, suppose the rejection region is of the form $\mathrm{RR}_{\alpha} = \{ T \ge c_{\alpha} \}$, i.e., consider a right-tail test. Then, we have
 $$
 p\text{-value} = P_{\theta_{0}}(T_{\theta_{0}} \ge T). \tag{2}
 $$
 Specifically, upon realization of the test statistic $T=t$, the p-value is realized as $P_{\theta_{0}}(T_{\theta_{0}} \ge t)$.
 
 Finally, we provide the most general definition of p-value, which does not depend on the rejection region:
-p-value is a [[Statistic]] $p: \mathcal{X} \to [0,1]$ such that
+p-value is a [[Statistic\|Statistic]] $p: \mathcal{X} \to [0,1]$ such that
 $$
 P_{\theta_{0}}(p(X) \le t) \le t, \quad \forall t\in[0,1], \theta_{0}\in\Theta _{0}. \tag{3}
 $$
@@ -71,13 +71,13 @@ To verify the validity of the above definitions $(1)$, $(2)$, and $(3)$, one jus
 
 > [!rmk] CI and HT duality
 > - Denoting $\psi _{\alpha} = \mathbb{1}\{ p\le \alpha \}$, we see that a p-value summaries the collection of test $\{ \psi _{\alpha } \}_{\alpha\in [0,1]}$ for different levels and a fixed null.
-> - Due to the [[Confidence Interval and Hypothesis Test Duality]], we see that a confidence interval summaries the collection of tests $\{ \psi _{\tilde{\theta} } \}_{\tilde{\theta}\in \Theta}$ for different nulls and a fixed level.
+> - Due to the [[Confidence Interval and Hypothesis Test Duality\|Confidence Interval and Hypothesis Test Duality]], we see that a confidence interval summaries the collection of tests $\{ \psi _{\tilde{\theta} } \}_{\tilde{\theta}\in \Theta}$ for different nulls and a fixed level.
 
 ## Examples
 
 ### CLT Test Statistic
 
-Given a [[Hypothesis Testing#CLT Test Statistic]] $T \overset{ d }{ \to }\mathcal{N}(0,1)$, an asymptotic right-tail p-value is $p(X) = 1-\Phi(T(X))$, i.e., the Gaussian tail bound. The construction is based on the definition $(2)$.
+Given a [[Hypothesis Testing#CLT Test Statistic\|Hypothesis Testing#CLT Test Statistic]] $T \overset{ d }{ \to }\mathcal{N}(0,1)$, an asymptotic right-tail p-value is $p(X) = 1-\Phi(T(X))$, i.e., the Gaussian tail bound. The construction is based on the definition $(2)$.
 
 ### Likelihood Ratio Test
 
@@ -85,4 +85,4 @@ For a simple-simple HT, given its likelihood ratio $g(x) = f_{1}(x) / f_{0}(x)$,
 $$
 P(1 /g(X)\le t) = P(g(X)\ge t^{-1}) \le \frac{\mathbb{E}_{\theta_{0}}[g(X)]}{(t^{-1})^{-1}} = t\int \frac{f_{1}(x)}{f_{0}(x)} f_{0}(x) dx = t,
 $$
-where the inequality uses [[Chebyshev Inequality\|Markov Inequality]]. See also [[Likelihood Ratio Test]] for more general results.
+where the inequality uses [[Chebyshev Inequality\|Markov Inequality]]. See also [[Likelihood Ratio Test\|Likelihood Ratio Test]] for more general results.

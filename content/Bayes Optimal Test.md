@@ -1,12 +1,12 @@
 ---
-{"publish":true,"title":"Bayes Optimal Test","created":"2025-05-27T23:48:18","modified":"2025-05-31T20:00:05","cssclasses":"","state":"done","sup":["[[Hypothesis Testing]]","[[Bayes Optimality]]"],"alias":null,"type":"note"}
+{"publish":true,"title":"Bayes Optimal Test","created":"2025-05-27T23:48:18","modified":"2025-05-31T20:00:05","cssclasses":"","state":"done","sup":["[[Hypothesis Testing\|Hypothesis Testing]]","[[Bayes Optimality]]"],"alias":null,"type":"note"}
 ---
 
 
 # Bayes Optimal Test
 
 Recall that [[Hypothesis Testing]] is a [[Statistical Decision Theory\|decision-making problem]], where we make a binary decision $A(X)\in \{0,1\}$.
-Therefore, given a loss function $L(a,\theta)$, we can define the [[Risk]] of a test, and thus derive the (Bayes) optimal test.
+Therefore, given a loss function $L(a,\theta)$, we can define the [[Risk\|Risk]] of a test, and thus derive the (Bayes) optimal test.
 For a binary HT, the loss function always takes the form
 $$
 L(a,\theta) = \begin{cases}
@@ -21,7 +21,7 @@ Similarly, a Bayes prior always takes the form
 $$
 Q(\theta_{0}) = \pi_{0}\in (0,1), \quad Q(\theta_{1}) = \pi_{1} = 1 - \pi_{0}.
 $$
-Then, the Bayes [[Risk]] is
+Then, the Bayes [[Risk\|Risk]] is
 $$
 R_{B}(A,Q) = \mathbb{E}_{\theta \sim Q} \mathbb{E}_{X \sim P_{\theta }} [L(A(X),\theta)]
 = \pi_{0}P_{\theta_{0}}(A(X)=1) \cdot c_{\mathrm{FP}} + \pi_{1}P_{\theta_{1}}(A(X)=0) \cdot c_{\mathrm{FN}}.

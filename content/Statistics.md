@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"*Sufficient* of Statistics","created":"2023-10-17T21:41:50","modified":"2025-05-24T19:41:24","cssclasses":"","aliases":null,"type":"index","sup":null,"state":"[[%wip]]","banner":"https://raw.githubusercontent.com/zcysxy/Figurebed/master/img/20231017221426.png","banner_icon":"🔮","reference":"AOS"}
+{"publish":true,"title":"*Sufficient* of Statistics","created":"2023-10-17T21:41:50","modified":"2025-06-01T04:24:12","cssclasses":"","aliases":null,"type":"index","sup":null,"state":"[[%wip]]","banner":"https://raw.githubusercontent.com/zcysxy/Figurebed/master/img/20231017221426.png","banner_icon":"🔮","reference":"AOS"}
 ---
 
 
@@ -26,37 +26,48 @@ AA --- BB --- CC
 
 - [c] Table. Statistics dictionary
 
-| Statistics                      | **[[Machine Learning]]**            |
+| Statistics                      | **[[Machine Learning\|Machine Learning]]**            |
 | ------------------------------- | ----------------------------------- |
 | estimation                      | [[Machine Learning\|learning]]      |
-| [[Regression]]                  | [[Supervised Learning]]             |
-| [[Clustering]]                  | [[Unsupervised Learning]]           |
-| [[Hypothesis Testing\|hypothesis]] | [[Classification]]                  |
+| [[Regression\|regression]]                  | [[Supervised Learning\|supervised learning]]             |
+| [[Clustering\|clustering]]                  | [[Unsupervised Learning\|unsupervised learning]]           |
+| [[Hypothesis Testing\|hypothesis]] | [[Classification\|classification]]                  |
 | covariates                      | features                            |
 | coefficient                     | weight                              |
 | predictor                       | input                               |
 | response                        | output                              |
 | intercept                       | bias                                |
-| derived predictor               | [[Hidden Units]]                    |
+| derived predictor               | [[Hidden Units\|hidden units]]                    |
 | penalty function                | [[L2 Regularization\|weight decay]] |
 
 ## Basic Concepts
 
-- [[Statistical Model]]
-- [[Statistical Decision Theory]]
+- [[Statistical Model\|Statistical Model]]
+- [[Statistical Decision Theory\|Statistical Decision Theory]]
+- [[f-Divergence\|f-Divergence]]
+    - [[Total Variation Distance\|Total Variation Distance]]
+    - [[KL Divergence\|KL Divergence]]
 
 - Estimation
-    - Concepts
-        - [[Likelihood]]
-        - [[Confidence Interval]]
-    - Methods
-        - [[Maximum Likelihood Estimation]]
-        - [[Method of Moments]]
-        - [[Mean Squared Error]]
-- [[Hypothesis Testing]]
-- [[Regression]]
-- [[Variance]]
-    - [[ANOVA]]
+    - Point Estimation
+        - [[Maximum Likelihood Estimation\|Maximum Likelihood Estimation]]
+        - [[Method of Moments\|Method of Moments]]
+        - [[Mean Squared Error\|Mean Squared Error]]
+    - Interval Estimation: [[Confidence Interval\|Confidence Interval]]
+    - Distributional Estimation: [[Bayes Estimator\|Bayes Estimator]]
+- [[Hypothesis Testing\|Hypothesis Testing]]
+    - [[Evaluating a Test\|Evaluating a Test]]
+        - [[Bayes Optimal Test\|Bayes Optimal Test]]
+        - [[Uniformly Most Powerful Test\|Uniformly Most Powerful Test]]
+    - [[p-value\|p-value]]
+    - [[Confidence Interval and Hypothesis Test Duality\|Confidence Interval and Hypothesis Test Duality]]
+- [[Regression\|Regression]]
+    - [[ANOVA\|ANOVA]]
+
+## Advanced Topics
+
+- [[Hardness of Simple Hypothesis Test Through Total Variation\|Hardness of Simple Hypothesis Test Through Total Variation]]
+- [[Hardness of Estimation Through Testing\|Hardness of Estimation Through Testing]]
 
 ## Probability and Statistics
 
@@ -66,7 +77,7 @@ A(Data generating process) --Probability--> B(Observed data)
 B --Statistical inference--> A
 ```
 
-[[Probability Theory]] answers the following question:
+[[Probability Theory\|Probability Theory]] answers the following question:
 
 > [!qn] Given a data generating process, what are the properties of the outcomes?
 

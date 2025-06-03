@@ -23,7 +23,7 @@ For example, the TV distance between a discrete and a continuous distribution is
 > $$
 > \TV(P_{\theta_{1}}^{n}, P_{\theta_{2}}^{n}) \le n\TV(P_{\theta_{1}}, P_{\theta_{2}}).
 > $$
-> Therefore, in practice, it's usually more convenient to calculate other distances that tensorize, such as the [[KL Divergence]], [[Wasserstein Distance]], and [[Hellinger Distance]].
+> Therefore, in practice, it's usually more convenient to calculate other distances that tensorize, such as the [[KL Divergence\|KL Divergence]], [[Wasserstein Distance\|Wasserstein Distance]], and [[Hellinger Distance\|Hellinger Distance]].
 
 ## L1 Norm
 
@@ -126,7 +126,7 @@ $$
 
 Then we can specify the other values of $P$ to make it meet the marginal constraint.
 
-[[!todo]] See also *Hw 3.4*.
+[[!todo\|!todo]] See also *Hw 3.4*.
 
 ## Sample Gain
 

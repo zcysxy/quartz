@@ -1,11 +1,11 @@
 ---
-{"publish":true,"title":"Evaluating a Test","created":"2025-05-30T02:48:39","modified":"2025-05-31T20:32:19","cssclasses":"","state":"done","sup":["[[Hypothesis Testing]]"],"alias":null,"type":"note"}
+{"publish":true,"title":"Evaluating a Test","created":"2025-05-30T02:48:39","modified":"2025-05-31T20:32:19","cssclasses":"","state":"done","sup":["[[Hypothesis Testing\|Hypothesis Testing]]"],"alias":null,"type":"note"}
 ---
 
 
 # Evaluating a Test
 
-Since a [[Hypothesis Testing]] task is a binary decision-making problem, we have two basic metrics for evaluating a test $\psi$:
+Since a [[Hypothesis Testing\|Hypothesis Testing]] task is a binary decision-making problem, we have two basic metrics for evaluating a test $\psi$:
 
 - ==Type I error==, a.k.a ==false positive rate==, is the probability of rejecting $H_{0}$ when it is true: $P_{\theta_{0}}(\psi (X)=1)$.
 - ==Type II error==, a.k.a ==false negative rate==, is the probability of failing to reject $H_{0}$ when it is false: $P_{\theta_{1}}(\psi (X)=0)$.
@@ -22,7 +22,7 @@ The largest Type I error is called the ==size== of the test:
 $$
 \overline{\alpha} _{\psi} = \sup_{\theta_{0}\in\Theta_{0}}\alpha _{\psi}(\theta_{0}).
 $$
-Recall that in [[Hypothesis Testing]], we use data to *disprove* the null. Thus, size evaluates how *confident* the test is. For a test of size $\alpha$, it correctly fails to reject the null with an $(1-\alpha )$ confidence. See also [[Confidence Interval and Hypothesis Test Duality]].
+Recall that in [[Hypothesis Testing]], we use data to *disprove* the null. Thus, size evaluates how *confident* the test is. For a test of size $\alpha$, it correctly fails to reject the null with an $(1-\alpha )$ confidence. See also [[Confidence Interval and Hypothesis Test Duality\|Confidence Interval and Hypothesis Test Duality]].
 
 We say a test has (<span style="color:skyblue">asymptotic</span>) ==level== $\alpha$ if its size is at most $\alpha$:
 $$
@@ -53,11 +53,11 @@ Different situations favors different evaluation metrics. Specifically, one may 
 $$
 R_{B}(\psi,\pi ) = \alpha \cdot \pi_{0} c_{\mathrm{FP}} + \beta \cdot \pi_{1} c_{\mathrm{FN}},
 $$
-where $\pi$ is the prior for $\theta$ and $c_{\mathrm{FP}}$ and $c_{\mathrm{FN}}$ are the costs of Type I and Type II errors, respectively. See [[Bayes Optimal Test]] for the optimal test under this metric.
+where $\pi$ is the prior for $\theta$ and $c_{\mathrm{FP}}$ and $c_{\mathrm{FN}}$ are the costs of Type I and Type II errors, respectively. See [[Bayes Optimal Test\|Bayes Optimal Test]] for the optimal test under this metric.
 
 ### Uniformly Most Powerful Test
 
-[[Uniformly Most Powerful Test]] for a simple alternative hypothesis formulates the problem as a constrained optimization problem:
+[[Uniformly Most Powerful Test\|Uniformly Most Powerful Test]] for a simple alternative hypothesis formulates the problem as a constrained optimization problem:
 $$
 \begin{aligned}
 \max_{\psi} & \quad \pi _{\psi }\\
@@ -71,4 +71,4 @@ $$
 \text{s.t.} & \quad \max_{\theta_{0}\in\Theta_{0}}\alpha _{\psi}(\theta_{0}) \le \alpha .
 \end{aligned}
 $$
-It puts the Type I error as a **size constraint**, and maximizes the **power** (minimizes the Type II error) under this constraint. Similarly, this reflects the *asymmetry* between the null and alternative hypotheses ([[Hypothesis Testing#^d85be2]]). See [[Uniformly Most Powerful Test]] for the optimal test under this metric.
+It puts the Type I error as a **size constraint**, and maximizes the **power** (minimizes the Type II error) under this constraint. Similarly, this reflects the *asymmetry* between the null and alternative hypotheses ([[Hypothesis Testing#^d85be2\|Hypothesis Testing#^d85be2]]). See [[Uniformly Most Powerful Test\|Uniformly Most Powerful Test]] for the optimal test under this metric.

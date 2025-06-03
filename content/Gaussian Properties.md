@@ -6,9 +6,9 @@
 # Gaussian Properties
 
 A real-valued random variable (r.v.) is called a normal/Gaussian r.v. if it admits the following probability density function (PDF):
-![[Normal Distribution#^pdf]]
+![[Normal Distribution#^pdf\|Normal Distribution#^pdf]]
 Generally, a vector-valued r.v. is normal/Gaussian if it has PDF:
-![[Normal Distribution#^vec-pdf]]
+![[Normal Distribution#^vec-pdf\|Normal Distribution#^vec-pdf]]
 
 Normal r.v.s have many nice properties, each of which gives a partial answer to why they are so common in nature.
 
@@ -18,21 +18,21 @@ A ==parametrized model== is a family of probability distributions with its eleme
 Normal distribution is a parametrized model with two parameters: mean $\mu$ and variance $\sigma^2$.
 In other words, once we know the values of $\mu$ and $\sigma^2$, we know everything about the normal distribution.
 
-The parameterization has many implications in [[Statistics]]. For example, suppose the variance $\sigma^{2}$ is known, and we want to do some statistical inference on a normal distribution with i.i.d samples $\{ X_i \}_{i=1}^{n}$. Then, the sample mean $\overline{X} \coloneqq \frac{1}{n}\sum_{i=1}^{n}X_{i}$ is a **[[Sufficient Statistic]]** for the distribution.
+The parameterization has many implications in [[Statistics\|Statistics]]. For example, suppose the variance $\sigma^{2}$ is known, and we want to do some statistical inference on a normal distribution with i.i.d samples $\{ X_i \}_{i=1}^{n}$. Then, the sample mean $\overline{X} \coloneqq \frac{1}{n}\sum_{i=1}^{n}X_{i}$ is a **[[Sufficient Statistic\|sufficient statistic]]** for the distribution.
 That is, we can *compress* the data from an $n$-dimensional vector to a real number, without losing any information about the distribution.
 
 ## Affine Transformation Invariance
 
-Any [[Affine Transformation]] of a normal r.v. is also normal. Specifically,
-![[Normal Distribution#^e2d605]]
+Any [[Affine Transformation\|Affine Transformation]] of a normal r.v. is also normal. Specifically,
+![[Normal Distribution#^e2d605\|Normal Distribution#^e2d605]]
 
-![[Normal Distribution#^bcd246]]
+![[Normal Distribution#^bcd246\|Normal Distribution#^bcd246]]
 
 The affine transformation invariance is central to normal distribution. Actually, normal distribution can be defined through affine transformation.
 We have the following two alternative definitions:
 
-![[Normal Distribution#^7bb02c]]
-![[Normal Distribution#^f2c84a]]
+![[Normal Distribution#^7bb02c\|Normal Distribution#^7bb02c]]
+![[Normal Distribution#^f2c84a\|Normal Distribution#^f2c84a]]
 
 ## Symmetry
 
@@ -90,7 +90,7 @@ $$
 The [[Chernoff Bound#Example - Gaussian\|Chernoff bound]] of normal r.v. gives a slightly looser bound, often referred to as ==sub-Gaussian tail bound==:
 $$P(|Z|\ge t) \le 2\exp(- t^{2} /2).$$
 
-It turns out that such a *light* tail bound (exponential rate) is actually very common, that an important class of r.v. in probability and statistics is called ==[[Sub-Gaussian]]==, defined as r.v.s with a sub-Gaussian tail bound (perhaps with a different constant in the exponent).
+It turns out that such a *light* tail bound (exponential rate) is actually very common, that an important class of r.v. in probability and statistics is called ==[[Sub-Gaussian\|sub-Gaussian]]==, defined as r.v.s with a sub-Gaussian tail bound (perhaps with a different constant in the exponent).
 
 And it turns out that such a sub-Gaussian bound is not much looser than the Mill's Gaussian tail bound. Specifically the following properties are equivalent definitions of sub-Gaussian r.v.s:
 
@@ -106,11 +106,11 @@ $$
 \text{posterior} \propto \text{likelihood} \cdot \text{prior}.
 $$
 A nice thing about normal distribution is that the posterior of a normal prior and a normal likelihood is also normal.
-A specific example in [[Bayesian Linear Regression]] is:
-![[Bayesian Linear Regression#^asmp]]
+A specific example in [[Bayesian Linear Regression\|Bayesian Linear Regression]] is:
+![[Bayesian Linear Regression#^asmp\|Bayesian Linear Regression#^asmp]]
 Then, the posterior is
-![[Bayesian Linear Regression#^post]]
-More importantly, with the help of linear algebra ([[Sherman-Morrison Formula]]) with low-rank update ($X^T_{t+1}X_{t+1} = X^T_{t}X_{t} + x_{t+1}x_{t+1}^T$), we can calculate the normal posterior easily in an online fashion.
+![[Bayesian Linear Regression#^post\|Bayesian Linear Regression#^post]]
+More importantly, with the help of linear algebra ([[Sherman-Morrison Formula\|Sherman-Morrison Formula]]) with low-rank update ($X^T_{t+1}X_{t+1} = X^T_{t}X_{t} + x_{t+1}x_{t+1}^T$), we can calculate the normal posterior easily in an online fashion.
 
-Additionally, other common operations on Gaussian distributions also preserve Gaussianity, including [[Gaussian Properties#Affine Transformation Invariance\|affine transformation]], [[Convolution]], conditioning, and marginalization.
+Additionally, other common operations on Gaussian distributions also preserve Gaussianity, including [[Gaussian Properties#Affine Transformation Invariance\|affine transformation]], [[Convolution\|Convolution]], conditioning, and marginalization.
 As a result, other distributions involved in Bayesian inference using Gaussian models are also Gaussian.

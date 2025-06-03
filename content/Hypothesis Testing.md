@@ -8,14 +8,14 @@
 > [!tldr]- Takeaway Card
 >
 > - Numerous concepts around hypothesis testing (HT) can be confusing. Always locate yourself in the general **[[Statistical Decision Theory\|statistical binary decision-making]]** framework.
-> - Under this framework, the question asked for the task is "[[Hypothesis Testing#how to evaluate a test]]?" All different metrics stem from the two basic ones: Type I error and Type II error. See also the [[Evaluating a Test#^confusion\|confusion matrix]] of an HT. Remember that your evaluation can always balance the two errors, or focus on one of them.
-> - The question asked for the algorithm is "[[Hypothesis Testing#how to construct a test]]?" This statistical procedure is simply a *transformation* of the sample into a binary decision rule. One transformation path is through [[Hypothesis Testing#test statistic and rejection region]]. Another path is through test statistic and [[p-value]].
+> - Under this framework, the question asked for the task is "[[Hypothesis Testing#how to evaluate a test\|#how to evaluate a test]]?" All different metrics stem from the two basic ones: Type I error and Type II error. See also the [[Evaluating a Test#^confusion\|confusion matrix]] of an HT. Remember that your evaluation can always balance the two errors, or focus on one of them.
+> - The question asked for the algorithm is "[[Hypothesis Testing#how to construct a test\|#how to construct a test]]?" This statistical procedure is simply a *transformation* of the sample into a binary decision rule. One transformation path is through [[Hypothesis Testing#test statistic and rejection region\|#test statistic and rejection region]]. Another path is through test statistic and [[p-value\|p-value]].
 > - HT focuses on *disproving* the null hypothesis, resulting in an *asymmetry* between the null and alternative hypotheses. Calculating the Type I error, test statistic (under the null), and p-value only requires the null hypothesis. However, the [[Hypothesis Testing#Role of Alternative\|alternative hypothesis plays a role]] in shaping the belief about the complement of the null and dictating the direction of extremeness.
 
 Hypothesis testing (HT) is a classical [[Statistical Decision Theory\|statistical decision-making]] problem, and can be extended to more general binary statistical decision-making problems. Given sample $X$, we need to make a decision $A(X)$ such that $A(X) \approx \mathbb{1}_{H_{1}}$, where $H_{1}$ is the alternative hypothesis.
-In the context of HT, the statistical procedure $A$ is often called a ==test==, and denoted as $\psi(X)$. A test is a [[Statistic]].
+In the context of HT, the statistical procedure $A$ is often called a ==test==, and denoted as $\psi(X)$. A test is a [[Statistic\|Statistic]].
 
-Formally, given a [[Statistical Model]] $\{ P_{\theta} \}_{\theta\in\Theta }$, we want to test the following hypotheses:
+Formally, given a [[Statistical Model\|Statistical Model]] $\{ P_{\theta} \}_{\theta\in\Theta }$, we want to test the following hypotheses:
 $$
 \begin{cases}
 H_{0}: \theta \in \Theta _{0}, & \text{(null hypothesis)}\\
@@ -38,7 +38,7 @@ We now focus on the test, i.e., the statistical procedure/algorithm/policy $\psi
 
 - [?] What is a good/optimal test?
 
-Please refer to [[Evaluating a Test]] for some answers.
+Please refer to [[Evaluating a Test\|Evaluating a Test]] for some answers.
 
 ## How to Construct a Test
 
@@ -64,8 +64,8 @@ Simple constructions directly map the sample to a decision rule, for example: af
 
 More sophisticated and principled methods are needed. In response, some transformations of the sample (statistics) are introduced to construct the test. We discuss two examples:
 
-- [[Hypothesis Testing#Test Statistic and Rejection Region]]. A test statistic is a statistic of the sample usually with a known distribution **under the null hypothesis**. Then the critical values form a rejection region for the test statistic. The test is then based on whether the test statistic falls into the rejection region.
-- [[Hypothesis Testing#p-value]]. Sometimes critical values are not available, or the rejection region is not easy to construct. The use of p-value eliminates the need for rejection regions. p-value is a statistic of the test statistic (which is a random variable). The test is then based on whether the p-value is smaller than the level $\alpha$.
+- [[Hypothesis Testing#Test Statistic and Rejection Region\|#Test Statistic and Rejection Region]]. A test statistic is a statistic of the sample usually with a known distribution **under the null hypothesis**. Then the critical values form a rejection region for the test statistic. The test is then based on whether the test statistic falls into the rejection region.
+- [[Hypothesis Testing#p-value\|#p-value]]. Sometimes critical values are not available, or the rejection region is not easy to construct. The use of p-value eliminates the need for rejection regions. p-value is a statistic of the test statistic (which is a random variable). The test is then based on whether the p-value is smaller than the level $\alpha$.
     - If we treat p-value as the test statistic, we can see that it gives a principled way of constructing rejection regions: $\mathrm{RR} = \{ p \le \alpha \}$, without the need for other critical values.
 
 ## Test Statistic and Rejection Region
@@ -77,17 +77,17 @@ $$
 where $t$ is called the ==test statistic==, and $c$ is called the ==critical value==.
 If $\{ x_{i} \} \in \mathrm{RR}$ , we **reject** the hypothesis.
 
-See [[Hypothesis Testing#CLT Test Statistic]] for an example of a test statistic.
+See [[Hypothesis Testing#CLT Test Statistic\|#CLT Test Statistic]] for an example of a test statistic.
 
 ### Rejection Region by Confidence Interval
 
 There is a [[Confidence Interval and Hypothesis Test Duality\|duality between confidence interval and hypothesis tests]].
-Suppose we have a level $(1-\alpha)$ [[Confidence Interval]] for $\theta$ given by $[l(\boldsymbol{x}), u(\boldsymbol{x})]$. Then the rule "reject $\mathrm{H}_0: \theta=\theta_{0}$ if $\theta_0 \notin[l(\boldsymbol{x}), u(\boldsymbol{x})]$" has a significance level $\alpha$:
+Suppose we have a level $(1-\alpha)$ [[Confidence Interval\|Confidence Interval]] for $\theta$ given by $[l(\boldsymbol{x}), u(\boldsymbol{x})]$. Then the rule "reject $\mathrm{H}_0: \theta=\theta_{0}$ if $\theta_0 \notin[l(\boldsymbol{x}), u(\boldsymbol{x})]$" has a significance level $\alpha$:
 $$
 P_{\theta_{0}}(\psi(X)=1) = P_{\theta_{0}}\left( [l(X),u(X)]\not\ni\theta_{0}  \right) = \alpha.
 $$
 Therefore, a rejection region can be constructed by the complement of the confidence interval.
-See [[Confidence Interval and Hypothesis Test Duality]] for constructing CIs from HTs.
+See [[Confidence Interval and Hypothesis Test Duality\|Confidence Interval and Hypothesis Test Duality]] for constructing CIs from HTs.
 
 ### Rejection Region by Likelihood Ratio
 
@@ -95,7 +95,7 @@ See [[Confidence Interval and Hypothesis Test Duality]] for constructing CIs fro
 
 ## CLT Test Statistic
 
-Similar to [[Confidence Interval#CLT CI]], [[Central Limit Theorem\|CLT]] is also often used to construct a test statistic, and then the [[Hypothesis Testing#p-value]], especially for HTs about the mean.
+Similar to [[Confidence Interval#CLT CI\|Confidence Interval#CLT CI]], [[Central Limit Theorem\|CLT]] is also often used to construct a test statistic, and then the [[Hypothesis Testing#p-value\|#p-value]], especially for HTs about the mean.
 
 - [*] Recall that a test statistic, or the HT itself, is to disprove null. Thus, a test statistic is often constructed as a function of $\theta_{0}$.
 

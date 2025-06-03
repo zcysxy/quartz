@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Likelihood Hypothesis Test","created":"2023-10-17T19:15:35","modified":"2025-05-31T19:25:24","cssclasses":""}
+{"publish":true,"aliases":"LRT","title":"Likelihood Hypothesis Test","created":"2023-10-17T19:15:35","modified":"2025-05-31T19:25:24","cssclasses":"","type":"note","sup":["[[Hypothesis Testing]]"],"state":"done"}
 ---
 
 
@@ -7,7 +7,7 @@
 
 ## Rejection Region
 
-We can also construct a rejection region using the [[Likelihood]] ratio:
+We can also construct a rejection region using the [[Likelihood\|likelihood]] ratio:
 $$
 \Lambda(\boldsymbol{x}) = \frac{\sup_{\theta \in \Theta_0} L(\theta \mid \boldsymbol{x})}{\sup_{\theta \in \Theta} L(\theta \mid \boldsymbol{x})}
 = \frac{L(\hat{\theta}_{0} )}{L(\hat{\theta}_{\mathrm{MLE}})},
@@ -23,7 +23,7 @@ This method is called the ==likelihood ratio test==.
 
 ## Asymptotic LRT
 
-Under [[Fisher Information#Sufficient Regularity Conditions]], as $n → ∞$, we have
+Under [[Fisher Information#Sufficient Regularity Conditions\|Fisher Information#Sufficient Regularity Conditions]], as $n → ∞$, we have
 $$
 − 2 \log \Lambda  (X) \eqqcolon G^{2} \overset{d}{\to} 𝜒^{2}_{k} ,
 $$

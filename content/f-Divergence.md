@@ -13,9 +13,9 @@ where the second equality holds when $p$ and $q$ are densities of $P$ and $Q$ re
 
 ## Examples
 
-- Letting $f(x) = 1 /2|x-1|$ gives the [[Total Variation Distance]]
-- Letting $f(x) = x \log x$ gives the [[KL Divergence]]
-- Letting $f(x) = 1 /2(\sqrt{ t }-1)^{2}$ gives the squared [[Hellinger Distance]]
+- Letting $f(x) = 1 /2|x-1|$ gives the [[Total Variation Distance\|Total Variation Distance]]
+- Letting $f(x) = x \log x$ gives the [[KL Divergence\|KL Divergence]]
+- Letting $f(x) = 1 /2(\sqrt{ t }-1)^{2}$ gives the squared [[Hellinger Distance\|Hellinger Distance]]
 - Letting $f(x) = (x-1)^{2}$ gives the chi-square divergence
 
 ## Properties

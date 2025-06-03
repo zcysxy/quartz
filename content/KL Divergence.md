@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":["KL"],"created":"2022-05-28T03:34:21","modified":"2025-06-01T03:56:26","cssclasses":"","type":"note","sup":["[[Machine Learning]]","[[Information Theory]]","[[Statistics]]","[[f-Divergence]]"],"state":"done"}
+{"publish":true,"aliases":["KL"],"created":"2022-05-28T03:34:21","modified":"2025-06-01T03:56:26","cssclasses":"","type":"note","sup":["[[Machine Learning]]","[[Information Theory]]","[[Statistics]]","[[f-Divergence\|f-Divergence]]"],"state":"done"}
 ---
 
 
@@ -25,4 +25,4 @@ For discrete variables, KL divergence is the **extra amount of information** nee
 
 - [!] KL divergence is not a metric.
 
-The second and third properties are by [[Jensen Inequality]] and the convexity of $-\log$.
+The second and third properties are by [[Jensen Inequality\|Jensen Inequality]] and the convexity of $-\log$.

@@ -23,7 +23,7 @@ Then, we have
 
 > [!pf]- Proof
 >
-> We know the [[Bayes Optimal Test]] is $A^{*}(x) = \mathbb{1} \{ p_{1}(x) > p_{0}(x) \}$. Obviously, this is also optimal for random tests.
+> We know the [[Bayes Optimal Test\|Bayes Optimal Test]] is $A^{*}(x) = \mathbb{1} \{ p_{1}(x) > p_{0}(x) \}$. Obviously, this is also optimal for random tests.
 > This gives the minimum Bayes risk
 > $$
 > \begin{aligned}

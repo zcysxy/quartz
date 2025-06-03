@@ -6,7 +6,7 @@
 # Risk
 
 Risk is a measure of the performance of a [[Statistical Decision Theory\|statistical procedure]]. It quantifies the expected loss incurred by using a particular procedure to make decisions based on data.
-Formally, given a [[Statistical Model]] parameterized by $\Theta$ and a loss function
+Formally, given a [[Statistical Model\|Statistical Model]] parameterized by $\Theta$ and a loss function
 $$
 L:\mathcal{A} \times \Theta \to \R_{\ge_{0}},
 $$
@@ -16,7 +16,7 @@ R(A, \theta) \coloneqq \mathbb{E}_{X\sim P_{\theta}}[L(A(X),\theta)].
 $$
 
 > [!ex] Loss Function and Risk Function
-> An example for a loss function is the squared error loss $L(\theta ,\delta )=\|\theta -\delta \|^{2}$, and the risk function for this loss is the [[Mean Squared Error]].
+> An example for a loss function is the squared error loss $L(\theta ,\delta )=\|\theta -\delta \|^{2}$, and the risk function for this loss is the [[Mean Squared Error\|Mean Squared Error]].
 
 Unfortunately, in general, the risk cannot be minimized since it depends on the unknown parameter $\theta$ itself (If we knew what was the actual value of $\theta$, we wouldn't need to estimate it). Therefore additional criteria for finding an optimal estimator in some sense are required. One such criterion is the **minimax criterion**.
 
