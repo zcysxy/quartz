@@ -22,6 +22,53 @@ code.mermaid svg,
     "grid-sidebar-left grid-footer grid-sidebar-right" / 320px auto 0px
 }
 
+/* Metadata */
+/* For every class starting with "meta-" */
+[class^="meta-"] {
+  --icon-size: 16px;
+  fill: var(--gray);
+  margin: 0.4rem;
+  &:before {
+    content: "";
+    width: var(--icon-size);
+    height: var(--icon-size);
+    /* flex: 0 0 var(--icon-size); */
+    background-size: var(--icon-size) var(--icon-size);
+    background-position: 50%;
+    display: inline-block;
+    mask-image: var(--meta-icon);
+    mask-size: var(--icon-size) var(--icon-size);
+    background-color: var(--gray);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    margin-right: 0.1rem;
+    margin-bottom: -0.15rem;
+  }
+  &[class$="-created"] {
+    --meta-icon: var(--meta-icon-created);
+  }
+  &[class$="-modified"] {
+    --meta-icon: var(--meta-icon-modified);
+  }
+  &[class$="-status"] {
+    --meta-icon: var(--meta-icon-status);
+  }
+  &[class$="-sup"] {
+    --meta-icon: var(--meta-icon-sup);
+    & a:not(:last-of-type):after {
+      content: " · ";
+      color: var(--gray);
+    }
+  }
+}
+
+/* Custom embedded content */
+.transclude {
+  &>h1, &>h2, &>h3, &>h4, &>h5, &>h6 {
+    display: none;
+  }
+}
+
 /* Custom checkboxes */
 span.custom-checkbox {
   background-color: var(--checkbox-color);
@@ -60,3 +107,12 @@ li:has(span.custom-checkbox[data-task="c"])::marker {
 /* .page>#quartz-body div.left.sidebar { */
 /*   display: none; */
 /* } */
+
+/* Resources */
+* {
+  --meta-icon-created: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNhbGVuZGFyLXBsdXMtaWNvbiBsdWNpZGUtY2FsZW5kYXItcGx1cyI+PHBhdGggZD0iTTE2IDE5aDYiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHBhdGggZD0iTTE5IDE2djYiLz48cGF0aCBkPSJNMjEgMTIuNTk4VjZhMiAyIDAgMCAwLTItMkg1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmg4LjUiLz48cGF0aCBkPSJNMyAxMGgxOCIvPjxwYXRoIGQ9Ik04IDJ2NCIvPjwvc3ZnPg==');
+  --meta-icon-modified: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNhbGVuZGFyLWNsb2NrLWljb24gbHVjaWRlLWNhbGVuZGFyLWNsb2NrIj48cGF0aCBkPSJNMjEgNy41VjZhMiAyIDAgMCAwLTItMkg1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmgzLjUiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHBhdGggZD0iTTggMnY0Ii8+PHBhdGggZD0iTTMgMTBoNSIvPjxwYXRoIGQ9Ik0xNy41IDE3LjUgMTYgMTYuM1YxNCIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjYiLz48L3N2Zz4=');
+  --meta-icon-status: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFjdGl2aXR5LWljb24gbHVjaWRlLWFjdGl2aXR5Ij48cGF0aCBkPSJNMjIgMTJoLTIuNDhhMiAyIDAgMCAwLTEuOTMgMS40NmwtMi4zNSA4LjM2YS4yNS4yNSAwIDAgMS0uNDggMEw5LjI0IDIuMThhLjI1LjI1IDAgMCAwLS40OCAwbC0yLjM1IDguMzZBMiAyIDAgMCAxIDQuNDkgMTJIMiIvPjwvc3ZnPg==');
+  --meta-icon-sup: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNvcm5lci1kb3duLXJpZ2h0LWljb24gbHVjaWRlLWNvcm5lci1kb3duLXJpZ2h0Ij48cGF0aCBkPSJtMTUgMTAgNSA1LTUgNSIvPjxwYXRoIGQ9Ik00IDR2N2E0IDQgMCAwIDAgNCA0aDEyIi8+PC9zdmc+');
+
+}

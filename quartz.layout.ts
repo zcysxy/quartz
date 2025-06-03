@@ -23,10 +23,10 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     })),
-    Component.ConditionalRender({
-      component: Component.Breadcrumbs(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
+    // Component.ConditionalRender({
+    //   component: Component.Breadcrumbs(),
+    //   condition: (page) => page.fileData.slug !== "index",
+    // }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),

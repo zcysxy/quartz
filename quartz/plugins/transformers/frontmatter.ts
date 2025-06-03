@@ -118,6 +118,46 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
             const uniqueSlugs = [...new Set(allSlugs)]
             allSlugs.splice(0, allSlugs.length, ...uniqueSlugs)
 
+						if (data.sup) {
+							/* Apply the following transformations to all elements in the `sup` field: */
+							/* Use index idx and assign it back to the idx element of data.sup */
+							/* Intialize a slug array of the same length as data.sup */
+							data.supslug = []
+							/* transform data.sup to an array if it is not already */
+							if (!Array.isArray(data.sup)) {
+								data.sup = [data.sup]
+							}
+							for (let idx = 0; idx < data.sup.length; idx++) {
+								const sup = data.sup[idx].toString()
+								if (sup.startsWith("[[") && sup.endsWith("]]")) {
+									data.sup[idx] = sup.slice(2, -2)
+									const slug = slugifyFilePath(data.sup[idx] as FilePath)
+									data.supslug[idx] = slug
+								} else {
+									data.supslug[idx] = slugifyFilePath(sup as FilePath)
+								}
+							}
+						}
+
+						if (data.state) {
+							const state = data.state.toString()
+							/* transformation dictionary:
+								* done -> "completed"
+								* [[%wip]] -> "work-in-progress"
+								* [[%todo]] -> "on-hold"
+								* [[%watch]] -> "on-hold"
+								* */
+							if (state === "done") {
+								data.state = "Completed"
+							} else if (state === "[[%wip]]") {
+								data.state = "Work-in-progress"
+							} else if (state === "[[%todo]]" || state === "[[%watch]]") {
+								data.state = "On-hold"
+							} else {
+								data.state = state
+							}
+
+						}
             // fill in frontmatter
             file.data.frontmatter = data as QuartzPluginData["frontmatter"]
           }
@@ -147,6 +187,7 @@ declare module "vfile" {
         cssclasses: string[]
         socialImage: string
         comments: boolean | string
+				supslug: string
       }>
   }
 }
