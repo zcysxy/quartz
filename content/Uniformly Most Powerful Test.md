@@ -6,7 +6,7 @@
 # Uniformly Most Powerful Test
 
 The ==uniformly most powerful (UMP)== test maximizes the power of the test for all values of the alternative hypothesis, given a fixed significance level.
-We start by defining the ==most powerful (MP)== test for a simple alternative hypothesis $\Theta_{1} = \{ \theta_{1} \}$. The MP test solves the following [[Constrained Optimization\|Constrained Optimization]] problem:
+We start by defining the ==most powerful (MP)== test for a simple alternative hypothesis $\Theta_{1} = \{ \theta_{1} \}$. The MP test solves the following [[Constrained Optimization]] problem:
 $$
 \begin{aligned}
 \sup_{A}\ &\  P_{\theta_{1}}(A(X)=1)\\
@@ -25,7 +25,7 @@ $$
 
 ## Neyman-Pearson
 
-For a simple-simple HT, the Neyman-Pearson lemma states that the (U)MP test is a [[Likelihood Ratio Test\|Likelihood Ratio Test]] given by
+For a simple-simple HT, the Neyman-Pearson lemma states that the (U)MP test is a [[Likelihood Ratio Test]] given by
 $$
 A^{(\mathrm{MP})} = A^{(\mathrm{NP})}(X) = \mathbb{1}\left\{ f_{1}(X) /f_{0}(X) > \lambda \right\},
 $$

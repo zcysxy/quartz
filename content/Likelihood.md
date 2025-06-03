@@ -7,14 +7,14 @@
 
 ## Definition: Likelihood and Probability
 
-Consider a [[Statistical Model\|Statistical Model]] parameterized by a parameter $\theta$ and an observation of samples $X \sim P_{\theta}$. We have, the **probability** of observing $X$ under parameter $\theta$ is $\Pr(X \mid \theta)$.
+Consider a [[Statistical Model]] parameterized by a parameter $\theta$ and an observation of samples $X \sim P_{\theta}$. We have, the **probability** of observing $X$ under parameter $\theta$ is $\Pr(X \mid \theta)$.
 For the same value, we define it as the **likelihood** of the true parameter being $\theta$ given observation $X$:
 $$
 L(\theta \given X) = \Pr(X \given \theta).
 $$
 - [~] That is, the likelihood of a parameter is the probability of observing the data given that parameter. Note that the likelihood is a function of the parameter $\theta$.
  
-For continuous [[Random Variable\|Random Variable]]s, sometimes (we will see later) it is more convenient to define the likelihood using the observation's [[Probability Density Function\|Probability Density Function]]:
+For continuous [[Random Variable]]s, sometimes (we will see later) it is more convenient to define the likelihood using the observation's [[Probability Density Function]]:
 $$
 L(\theta \given X) = f(X\mid \theta ).
 $$
@@ -44,6 +44,6 @@ modified: 2025-06-02T20:39:00
 - **Dominance**: there exists an integrable function $D(x)$ such that for any $\theta$, it holds that $|l(x;\theta)| < D(x)$
 - The parameter space $\Theta$ is finite or an open interval; the true parameter $\theta ^{*}$ is not on the boundary of $\Theta$
 - The support of the $f(x;\theta)$ does not depend on $\theta$
-- The [[Fisher Information\|Fisher Information]] matrix is invertible in a neighborhood of $\theta ^{*}$
+- The [[Fisher Information]] matrix is invertible in a neighborhood of $\theta ^{*}$
 
 

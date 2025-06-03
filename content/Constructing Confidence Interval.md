@@ -5,7 +5,7 @@
 
 # Constructing Confidence Interval
 
-This notebook explores methods of constructing [[Confidence Interval\|Confidence Interval]]s. We focus on the following methods:
+This notebook explores methods of constructing [[Confidence Interval]]s. We focus on the following methods:
 
 1. Exact calculation
 2. [[Central Limit Theorem\|CLT]] CI
@@ -37,10 +37,10 @@ sampler = lambda n, p: np.random.binomial(1, p, size=n)
 
 ## Test Statistic and Critical Values
 
-Recall that a [[Statistic\|statistic]] is a function of the observed data, e.g., mean and variance.
+Recall that a [[Statistic]] is a function of the observed data, e.g., mean and variance.
 If a test involves some parameters, a test statistic is often a function of both the sample and the parameter, such that
 
-- the distribution of $t$ is known, e.g., a [[t Distribution\|t Distribution]] or a [[Chi-Square Distribution\|Chi-Square Distribution]], or can be approximated, e.g., using [[Central Limit Theorem\|CLT]] ^known
+- the distribution of $t$ is known, e.g., a [[t Distribution]] or a [[Chi-Square Distribution]], or can be approximated, e.g., using [[Central Limit Theorem\|CLT]] ^known
 - the distribution of $t$ does not depend on the parameter ^unkown
 
 Such a test statistic is also called a *pivot (quantity)*.
@@ -410,7 +410,7 @@ plt.show()
 Summary of the methodology behind the above methods:
 
 - Exact calculation is finite-sample valid, preferred when the test statistic's distribution is known and easy to compute. Not practical for unknown distributions.
-- CLT CI uses [[Central Limit Theorem\|Central Limit Theorem]] and thus is asymptotically valid. It is preferred when the sample size is large. It does not leverage any structural information about the distribution.
+- CLT CI uses [[Central Limit Theorem]] and thus is asymptotically valid. It is preferred when the sample size is large. It does not leverage any structural information about the distribution.
 - Hoeffding CI is one example of a concentration inequality-based CI. This class of CIs is finite-sample valid. Any concentration inequality can be used to construct a CI, and some are more suitable for specific distributions. Generally, concentration inequality-based CIs are more conservative.
 - Wald CI uses the plug-in principle, which is asymptotically valid. It is preferred when the test statistic involves parameters that can be readily estimated; then the estimation is plugged into the CI formula.
 - Wilson score CI constructs the CI by *solving* the inequality by CLT or other concentration inequalities. It leverages the structure of the test statistic but is preferred only when the inequality can be solved easily.

@@ -11,7 +11,7 @@
     $$ 1 - \frac{|S_k|}{n} \le \frac{s^{2}}{a^{2}}. $$
 - **(Sample One-Sided)** Let $N_k = \{ i: x _i-\overline{x} \ge \alpha, 1\le i \le n \}$
     $$ \frac{|N_k|}{n} \le \frac{s^{2}}{\alpha^{2} + s^{2}} = \frac{1}{\frac{\alpha^{2}}{s^{2}}+1}. $$
-- **(Variable)** For a [[Random Variable\|Random Variable]] $X$ with mean $\mu$ and variance $\sigma^{2}$, and for any $a > 0$
+- **(Variable)** For a [[Random Variable]] $X$ with mean $\mu$ and variance $\sigma^{2}$, and for any $a > 0$
     $$P(|X-\mu| \ge a) \le \frac{\sigma^{2}}{a^{2}}$$
 - **(Markov Inequality)** for $l>0$ and $a > 0$
     $$ P(|X| \ge a) \le \frac{\mathbb{E}[|X|^{l}]}{a^{l}} $$

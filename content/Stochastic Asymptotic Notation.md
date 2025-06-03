@@ -5,7 +5,7 @@
 
 # Stochastic Asymptotic Notation
 
-For [[Random Variable\|Random Variable]] sequences $R_n$ and $X_n$, we denote
+For [[Random Variable]] sequences $R_n$ and $X_n$, we denote
 $$
 \begin{cases}
 X_n = o_{P}(R_n) \quad & \text{if } X_n = Y_n R_n \text{ where } Y_n = o_{P} (0), \\
@@ -30,7 +30,7 @@ where $o_{P}(1)$ represents a sequence that [[Convergence of Random Variables#Co
 
 We only prove the last two properties.
 Define $r(h) = R(h) /\|h\|^{p}$ for $h\ne 0$ and $r(0) = 0$.
-For the first property, by the condition, $r$ is continuous at $0$. By [[Convergence of Random Variables#Continuous Mapping Theorem\|Convergence of Random Variables#Continuous Mapping Theorem]], $r(X_n)\overset{ P }{ \to }r(0) = 0$. Then,
+For the first property, by the condition, $r$ is continuous at $0$. By [[Convergence of Random Variables#Continuous Mapping Theorem]], $r(X_n)\overset{ P }{ \to }r(0) = 0$. Then,
 $$
 R(X_n) = r(X_n) \|X_n\|^{p} = o_{P}(\|X_n\|^{p}).
 $$

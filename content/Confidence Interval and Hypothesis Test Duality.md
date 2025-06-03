@@ -13,7 +13,7 @@ Then, we can construct a confidence interval
 $$
 C(X) = \{ \theta: \psi _{\theta}(X) = 0 \}.
 $$
-Recall the definition of the level of a [[Hypothesis Testing\|Hypothesis Testing]]. We have
+Recall the definition of the level of a [[Hypothesis Testing]]. We have
 $$
 P(C(X)\not\ni \theta ) = P_{\theta }(\psi _{\theta}(X) = 1) \le \alpha,
 $$
@@ -36,15 +36,15 @@ One can check that the above method returns a finite-sample valid CI.
 
 ## HT CI for a Few Bernoulli Trials
 
-We construct a [[Confidence Interval\|Confidence Interval]] for the parameter $p$ given a few [[Bernoulli Distribution\|Bernoulli Trial]]s to demonstrate how HT-based CI adapts to the number of samples and is finite-sample valid.
+We construct a [[Confidence Interval]] for the parameter $p$ given a few [[Bernoulli Distribution\|Bernoulli Trial]]s to demonstrate how HT-based CI adapts to the number of samples and is finite-sample valid.
 
-First, we note that when we only have a few samples, it's more likely we observe extreme events like $\overline{X} = 0$ or $\overline{X} = 1$. In such cases, non-inclusive [[Confidence Interval#Wald CI\|Confidence Interval#Wald CI]] gives an degenerated CI:
+First, we note that when we only have a few samples, it's more likely we observe extreme events like $\overline{X} = 0$ or $\overline{X} = 1$. In such cases, non-inclusive [[Confidence Interval#Wald CI]] gives an degenerated CI:
 $$
 C^{(\mathrm{Wald})}(X) = \hat{p} \pm z_{1-\alpha /2} \sqrt{ \frac{\hat{p}(1-\hat{p})}{n} } = \{ \hat{p} \},
 $$
 which is obviously not valid.
 
-We now examine the HT-based CI constructed by [[Confidence Interval and Hypothesis Test Duality#Algorithm for HT to CI\|#Algorithm for HT to CI]] under such extreme events. Consider $n$ trials from $\operatorname{Binom}(n,p)$. Since the [[Binomial Distribution\|Binomial Distribution]] has a monotone likelihood function, we know the [[Uniformly Most Powerful Test\|UMP]] level-$\alpha$ test is
+We now examine the HT-based CI constructed by [[Confidence Interval and Hypothesis Test Duality#Algorithm for HT to CI]] under such extreme events. Consider $n$ trials from $\operatorname{Binom}(n,p)$. Since the [[Binomial Distribution]] has a monotone likelihood function, we know the [[Uniformly Most Powerful Test\|UMP]] level-$\alpha$ test is
 $$
 \psi ^{\uparrow}_{\tilde{\theta}}(X) = \mathbb{1} \{ X > q_{1-\alpha /2}^{\tilde{\theta}} \}, \quad \psi ^{\downarrow}_{\tilde{\theta}}(X) = \mathbb{1} \{ X < q_{\alpha /2}^{\tilde{\theta}} \},
 $$

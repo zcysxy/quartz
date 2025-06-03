@@ -6,7 +6,7 @@
 # Fisher Information
 
 Fisher information is a concept in statistics that measures the amount of information that a random variable carries about an unknown parameter.
-Fisher information of a parameter is the variance of the [[Likelihood#Score Function\|Likelihood#Score Function]]:
+Fisher information of a parameter is the variance of the [[Likelihood#Score Function]]:
 $$
 I(\theta) = \mathbb{E}\left[\left(\frac{\partial}{\partial \theta} \log f(X ; \theta)\right)^{2}\right]
 .$$
@@ -35,8 +35,8 @@ and the expectation of the first term is zero.
 
 ## Fisher Information Matrix
 
-The Fisher information matrix is the [[Covariance\|covariance]] matrix of the score function:
+The Fisher information matrix is the [[Covariance]] matrix of the score function:
 $$
 I(\theta) = \mathbb{E}\left[s(\theta) s(\theta)^{T}\right]
 ,$$
-where $s(\theta)$ is the [[Likelihood#Score Function\|Likelihood#Score Function]].
+where $s(\theta)$ is the [[Likelihood#Score Function]].

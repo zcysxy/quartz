@@ -10,7 +10,7 @@ The ==Kullback-Leibler (KL) divergence==, a.k.a. ==relative entropy==, measures 
 $$
 D_{\mathrm{KL}}(P \| Q)=\mathbb{E}_{\mathrm{x} \sim P}\left[\log \frac{P(x)}{Q(x)} \right]=\mathbb{E}_{\mathrm{x} \sim P}[\log P(x)-\log Q(x)].
 $$
-KL divergence is an example of [[f-Divergence\|f-Divergence]] with $f(x) = x\log x$.
+KL divergence is an example of [[f-Divergence]] with $f(x) = x\log x$.
 
 KL divergence measures how two probability distributions are different from each other: the more similar two distributions are, the smaller their KL divergence is. For example, if two distributions' KL divergence is 0, iff they are almost everywhere the same. ^88c6e5
 
@@ -25,4 +25,4 @@ For discrete variables, KL divergence is the **extra amount of information** nee
 
 - [!] KL divergence is not a metric.
 
-The second and third properties are by [[Jensen Inequality\|Jensen Inequality]] and the convexity of $-\log$.
+The second and third properties are by [[Jensen Inequality]] and the convexity of $-\log$.

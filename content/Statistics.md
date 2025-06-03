@@ -26,48 +26,48 @@ AA --- BB --- CC
 
 - [c] Table. Statistics dictionary
 
-| Statistics                      | **[[Machine Learning\|Machine Learning]]**            |
+| Statistics                      | **[[Machine Learning]]**            |
 | ------------------------------- | ----------------------------------- |
 | estimation                      | [[Machine Learning\|learning]]      |
-| [[Regression\|regression]]                  | [[Supervised Learning\|supervised learning]]             |
-| [[Clustering\|clustering]]                  | [[Unsupervised Learning\|unsupervised learning]]           |
-| [[Hypothesis Testing\|hypothesis]] | [[Classification\|classification]]                  |
+| [[Regression]]                  | [[Supervised Learning]]             |
+| [[Clustering]]                  | [[Unsupervised Learning]]           |
+| [[Hypothesis Testing\|hypothesis]] | [[Classification]]                  |
 | covariates                      | features                            |
 | coefficient                     | weight                              |
 | predictor                       | input                               |
 | response                        | output                              |
 | intercept                       | bias                                |
-| derived predictor               | [[Hidden Units\|hidden units]]                    |
+| derived predictor               | [[Hidden Units]]                    |
 | penalty function                | [[L2 Regularization\|weight decay]] |
 
 ## Basic Concepts
 
-- [[Statistical Model\|Statistical Model]]
-- [[Statistical Decision Theory\|Statistical Decision Theory]]
-- [[f-Divergence\|f-Divergence]]
-    - [[Total Variation Distance\|Total Variation Distance]]
-    - [[KL Divergence\|KL Divergence]]
+- [[Statistical Model]]
+- [[Statistical Decision Theory]]
+- [[f-Divergence]]
+    - [[Total Variation Distance]]
+    - [[KL Divergence]]
 
 - Estimation
     - Point Estimation
-        - [[Maximum Likelihood Estimation\|Maximum Likelihood Estimation]]
-        - [[Method of Moments\|Method of Moments]]
-        - [[Mean Squared Error\|Mean Squared Error]]
-    - Interval Estimation: [[Confidence Interval\|Confidence Interval]]
-    - Distributional Estimation: [[Bayes Estimator\|Bayes Estimator]]
-- [[Hypothesis Testing\|Hypothesis Testing]]
-    - [[Evaluating a Test\|Evaluating a Test]]
-        - [[Bayes Optimal Test\|Bayes Optimal Test]]
-        - [[Uniformly Most Powerful Test\|Uniformly Most Powerful Test]]
-    - [[p-value\|p-value]]
-    - [[Confidence Interval and Hypothesis Test Duality\|Confidence Interval and Hypothesis Test Duality]]
-- [[Regression\|Regression]]
-    - [[ANOVA\|ANOVA]]
+        - [[Maximum Likelihood Estimation]]
+        - [[Method of Moments]]
+        - [[Mean Squared Error]]
+    - Interval Estimation: [[Confidence Interval]]
+    - Distributional Estimation: [[Bayes Estimator]]
+- [[Hypothesis Testing]]
+    - [[Evaluating a Test]]
+        - [[Bayes Optimal Test]]
+        - [[Uniformly Most Powerful Test]]
+    - [[p-value]]
+    - [[Confidence Interval and Hypothesis Test Duality]]
+- [[Regression]]
+    - [[ANOVA]]
 
 ## Advanced Topics
 
-- [[Hardness of Simple Hypothesis Test Through Total Variation\|Hardness of Simple Hypothesis Test Through Total Variation]]
-- [[Hardness of Estimation Through Testing\|Hardness of Estimation Through Testing]]
+- [[Hardness of Simple Hypothesis Test Through Total Variation]]
+- [[Hardness of Estimation Through Testing]]
 
 ## Probability and Statistics
 
@@ -77,7 +77,7 @@ A(Data generating process) --Probability--> B(Observed data)
 B --Statistical inference--> A
 ```
 
-[[Probability Theory\|Probability Theory]] answers the following question:
+[[Probability Theory]] answers the following question:
 
 > [!qn] Given a data generating process, what are the properties of the outcomes?
 

@@ -83,7 +83,7 @@ plt.show()
 
 ## t-Distribution Tail Bound
 
-Gaussian distribution is known to have a *light* tail bound, i.e., an exponential decay in the tail probability. [[t Distribution\|t Distribution]], on the other hand, is known to have a *heavy* tail bound.
+Gaussian distribution is known to have a *light* tail bound, i.e., an exponential decay in the tail probability. [[t Distribution]], on the other hand, is known to have a *heavy* tail bound.
 For example, $t_{1}$, or [[Cauchy Distribution\|Cauchy]], distribution, has a tail bound of
 $$
 P(X \geq x) = \frac{1}{\pi} \arctan x^{-1} \asymp \frac{1}{\pi x}.
@@ -133,7 +133,7 @@ ax.legend()
 
 ## Hoeffding's Inequality
 
-For bounded iid random variables $X_{i}\in [0,1]$, [[Hoeffding's Inequality\|Hoeffding's Inequality]] states that
+For bounded iid random variables $X_{i}\in [0,1]$, [[Hoeffding's Inequality]] states that
 $$
 P\left( \left| \frac{1}{n}\sum_{i=1}^{n}X_{i} - \mathbb{E}[X] \right| \geq t \right) \leq 2e^{-2nt^2}.
 $$

@@ -41,7 +41,7 @@ where $\hat{p}_{\mathrm{data}}$ is the empirical distribution defined by the tra
 
 ## Relation With KL Divergence
 
-Another interpretation of MLE is that it minimizes the [[KL Divergence\|KL Divergence]], or [[Cross-Entropy\|Cross-Entropy]], between $p_{\mathrm{data}}$ and $p_{\mathrm{model}}$, which measures the **similarity** between the two distributions:
+Another interpretation of MLE is that it minimizes the [[KL Divergence]], or [[Cross-Entropy]], between $p_{\mathrm{data}}$ and $p_{\mathrm{model}}$, which measures the **similarity** between the two distributions:
 $$
 \begin{cases}
     D_{\mathrm{KL}}(\hat{p}_{\mathrm{data}}\|p_{\mathrm{model}}) = \mathbb{E}_{x\sim \hat{p}_{\mathrm{data}}}[\log\hat{p}_{\mathrm{data}}(x) - \log p_{\mathrm{model}}(x)]\\[2ex]
@@ -52,7 +52,7 @@ Note that $\mathbb{E}_{\hat{p}_{\mathrm{data}}} \to \mathbb{E}_{p_{\mathrm{data}
 
 ## Conditional Log-Likelihood
 
-The MLE can readily be generalized to the case where our goal is to estimate a conditional probability $P(y|x;θ)$ in order to predict $y$ given $x$. And it forms the basis for most [[Supervised Learning\|Supervised Learning]].
+The MLE can readily be generalized to the case where our goal is to estimate a conditional probability $P(y|x;θ)$ in order to predict $y$ given $x$. And it forms the basis for most [[Supervised Learning]].
 
 $$
 \theta_{ML} = \argmax_\theta P(Y|X;\theta)
@@ -76,17 +76,17 @@ That is, the transformation of a MLE $g(\hat{\theta})$ is still the MSE of $g(\t
 
 The MLE has the property of [[Estimation#Consistency\|consistency]], if 
 - realizability and identifiability: $\exists! \theta^* \in \{\theta\} \text{ s.t. } p_{\mathrm{\mathrm{model}}}(\cdot;\theta) = p_{\mathrm{\mathrm{data}}}$
-- or [[Likelihood#Sufficient Regularity Conditions\|Likelihood#Sufficient Regularity Conditions]] are satisfied
+- or [[Likelihood#Sufficient Regularity Conditions]] are satisfied
 
 ### Best Statistical Efficiency
 
 We say a consistent estimator has better ==statistical efficiency==, if it obtains **lower generalization error** for a **fixed number of samples**, or equivalently, requires fewer examples to obtain a fixed level of generalization error.
 
-The **Cramér-Rao lower bound** shows that no consistent estimator has a lower [[Mean Squared Error\|Mean Squared Error]] than the maximum likelihood estimator for a large number of samples.
+The **Cramér-Rao lower bound** shows that no consistent estimator has a lower [[Mean Squared Error]] than the maximum likelihood estimator for a large number of samples.
 
 ## Asymptotic Normality
 
-If [[Likelihood#Sufficient Regularity Conditions\|Likelihood#Sufficient Regularity Conditions]] are satisfied, then we have
+If [[Likelihood#Sufficient Regularity Conditions]] are satisfied, then we have
 $$
 \frac{\hat{\theta}_{\mathrm{ML}}-\theta}{\sigma_{\mathrm{ML}}} \overset{ d }{ \longrightarrow } \mathcal{N}(0,1),
 $$
@@ -94,8 +94,8 @@ where the **asymptotic variance** is
 $$
 \sigma^{2} _{\mathrm{ML}} = I^{-1}_{n}(\theta),
 $$
-where $I_{n}$ is the [[Fisher Information\|Fisher Information]].
+where $I_{n}$ is the [[Fisher Information]].
 
 - [@] This property can be used to prove [[Central Limit Theorem\|CLT]] when $\theta = \mu$, $\hat{\theta}_{\mathrm{ML}} = \overline{x}$ and $\sigma$ is known.
 
-## Example - [[Linear Regression\|Linear Regression]]
+## Example - [[Linear Regression]]

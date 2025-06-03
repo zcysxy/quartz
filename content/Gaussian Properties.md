@@ -18,12 +18,12 @@ A ==parametrized model== is a family of probability distributions with its eleme
 Normal distribution is a parametrized model with two parameters: mean $\mu$ and variance $\sigma^2$.
 In other words, once we know the values of $\mu$ and $\sigma^2$, we know everything about the normal distribution.
 
-The parameterization has many implications in [[Statistics\|Statistics]]. For example, suppose the variance $\sigma^{2}$ is known, and we want to do some statistical inference on a normal distribution with i.i.d samples $\{ X_i \}_{i=1}^{n}$. Then, the sample mean $\overline{X} \coloneqq \frac{1}{n}\sum_{i=1}^{n}X_{i}$ is a **[[Sufficient Statistic\|sufficient statistic]]** for the distribution.
+The parameterization has many implications in [[Statistics]]. For example, suppose the variance $\sigma^{2}$ is known, and we want to do some statistical inference on a normal distribution with i.i.d samples $\{ X_i \}_{i=1}^{n}$. Then, the sample mean $\overline{X} \coloneqq \frac{1}{n}\sum_{i=1}^{n}X_{i}$ is a **[[Sufficient Statistic]]** for the distribution.
 That is, we can *compress* the data from an $n$-dimensional vector to a real number, without losing any information about the distribution.
 
 ## Affine Transformation Invariance
 
-Any [[Affine Transformation\|Affine Transformation]] of a normal r.v. is also normal. Specifically,
+Any [[Affine Transformation]] of a normal r.v. is also normal. Specifically,
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$ 
 
     - As a special case, any sub-vector of a normal random vector is also normal 
@@ -90,13 +90,13 @@ $$
 > [!rmk] Independent normal components implies jointly normal.
 >
 > The above statement becomes true once we impose the independence condition.
-> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Gaussian Properties#^prop-ind-joint\|#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]].
+> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Gaussian Properties#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem]].
 > By the alternative definition, $X$ is jointly normal.
 
 > [!rmk] Joint normal with zero correlation implies independence.
 >
-> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Gaussian Properties#^prop-ind-joint\|#^prop-ind-joint]], $Y$ is jointly normal.
-> Since $X$ and $Y$ have the same mean and covariance, by Property [[Gaussian Properties#^prop-suff\|#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
+> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Gaussian Properties#^prop-ind-joint]], $Y$ is jointly normal.
+> Since $X$ and $Y$ have the same mean and covariance, by Property [[Gaussian Properties#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
 
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
@@ -120,7 +120,7 @@ $$
 The [[Chernoff Bound#Example - Gaussian\|Chernoff bound]] of normal r.v. gives a slightly looser bound, often referred to as ==sub-Gaussian tail bound==:
 $$P(|Z|\ge t) \le 2\exp(- t^{2} /2).$$
 
-It turns out that such a *light* tail bound (exponential rate) is actually very common, that an important class of r.v. in probability and statistics is called ==[[Sub-Gaussian\|sub-Gaussian]]==, defined as r.v.s with a sub-Gaussian tail bound (perhaps with a different constant in the exponent).
+It turns out that such a *light* tail bound (exponential rate) is actually very common, that an important class of r.v. in probability and statistics is called ==[[Sub-Gaussian]]==, defined as r.v.s with a sub-Gaussian tail bound (perhaps with a different constant in the exponent).
 
 And it turns out that such a sub-Gaussian bound is not much looser than the Mill's Gaussian tail bound. Specifically the following properties are equivalent definitions of sub-Gaussian r.v.s:
 
@@ -136,7 +136,7 @@ $$
 \text{posterior} \propto \text{likelihood} \cdot \text{prior}.
 $$
 A nice thing about normal distribution is that the posterior of a normal prior and a normal likelihood is also normal.
-A specific example in [[Bayesian Linear Regression\|Bayesian Linear Regression]] is:
+A specific example in [[Bayesian Linear Regression]] is:
 $$
 \begin{aligned}
 \text{Likelihood}:& \quad y \sim N\left(X w, \sigma^2 I\right)\\
@@ -148,7 +148,7 @@ $$
 \tag{1}
 p(w|y,X) \sim \mathcal{N}\left( (\lambda\sigma^{2}I + X^TX)^{-1}X^Ty, (\lambda I+\sigma^{-2}X^TX)^{-1}\right).
 $$
-More importantly, with the help of linear algebra ([[Sherman-Morrison Formula\|Sherman-Morrison Formula]]) with low-rank update ($X^T_{t+1}X_{t+1} = X^T_{t}X_{t} + x_{t+1}x_{t+1}^T$), we can calculate the normal posterior easily in an online fashion.
+More importantly, with the help of linear algebra ([[Sherman-Morrison Formula]]) with low-rank update ($X^T_{t+1}X_{t+1} = X^T_{t}X_{t} + x_{t+1}x_{t+1}^T$), we can calculate the normal posterior easily in an online fashion.
 
-Additionally, other common operations on Gaussian distributions also preserve Gaussianity, including [[Gaussian Properties#Affine Transformation Invariance\|affine transformation]], [[Convolution\|Convolution]], conditioning, and marginalization.
+Additionally, other common operations on Gaussian distributions also preserve Gaussianity, including [[Gaussian Properties#Affine Transformation Invariance\|affine transformation]], [[Convolution]], conditioning, and marginalization.
 As a result, other distributions involved in Bayesian inference using Gaussian models are also Gaussian.

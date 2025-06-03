@@ -9,21 +9,21 @@
 
 Types of estimation:
 
-* [[Estimation#Point Estimation\|#Point Estimation]]
-* [[Confidence Interval\|Confidence Interval]]/Region
-* [[Bayes Estimator\|Bayes Estimator]]
+* [[Estimation#Point Estimation]]
+* [[Confidence Interval]]/Region
+* [[Bayes Estimator]]
 
 Methods for estimation:
 
-* [[Method of Moments\|Method of Moments]]
-* [[Maximum Likelihood Estimation\|Maximum Likelihood Estimation]]
+* [[Method of Moments]]
+* [[Maximum Likelihood Estimation]]
 * [[Mean Squared Error\|Least Squares]]
-* [[M-Estimator\|M-Estimator]]
+* [[M-Estimator]]
  
 > [!rmk] Comparison of Estimation Methods  
 > * For quadratic risks, [[Maximum Likelihood Estimation\|MLE]] is more accurate in general
-> * [[Maximum Likelihood Estimation\|MLE]] still gives good results even for misspecified models, while [[Method of Moments\|Method of Moments]] is more sensitive to model misspecification.
-> * Sometimes [[Maximum Likelihood Estimation\|MLE]] can be computationally intractable, and [[Method of Moments\|Method of Moments]] is easier with only polynomial equations.
+> * [[Maximum Likelihood Estimation\|MLE]] still gives good results even for misspecified models, while [[Method of Moments]] is more sensitive to model misspecification.
+> * Sometimes [[Maximum Likelihood Estimation\|MLE]] can be computationally intractable, and [[Method of Moments]] is easier with only polynomial equations.
 
 This note focuses on point estimation.
 
@@ -137,7 +137,7 @@ where $\sigma$ is the **true** standard variance of the data, and $m$ is the num
 
 > [!ex]
 > 
-> The standard error of the mean is very useful in machine learning experiments. We often estimate the **generalization error** by computing the sample mean of the error on the test set. The number of examples in the test set determines the accuracy of this estimate. Taking advantage of the [[Central Limit Theorem\|Central Limit Theorem]], which tells us that the mean will be approximately distributed with a normal distribution, we can use the standard error to compute the probability that the true expectation falls in any chosen interval. For example, the 95% [[Confidence Interval\|confidence interval]] centered on the mean $\hat{\mu}_m$ is
+> The standard error of the mean is very useful in machine learning experiments. We often estimate the **generalization error** by computing the sample mean of the error on the test set. The number of examples in the test set determines the accuracy of this estimate. Taking advantage of the [[Central Limit Theorem]], which tells us that the mean will be approximately distributed with a normal distribution, we can use the standard error to compute the probability that the true expectation falls in any chosen interval. For example, the 95% [[Confidence Interval]] centered on the mean $\hat{\mu}_m$ is
 > $$(\hat{\mu}_m − 1.96\operatorname{SE}(\hat{\mu}_m), \hat{\mu}_m + 1.96\operatorname{SE}(\hat{\mu}_m))$$
 > under the normal distribution with mean $\hat{\mu}_m$ and variance $\operatorname{SE}(\hat{\mu}_m)^2$. In machine learning experiments, it is common to say that algorithm *A* is better than algorithm *B* if the upper bound of the 95% confidence interval for the error of algorithm *A* is less than the lower bound of the 95% confidence interval for the error of algorithm *B*.
 
@@ -145,10 +145,10 @@ where $\sigma$ is the **true** standard variance of the data, and $m$ is the num
 
 Bias and variance measure two different sources of error in an estimator. Two common ways to negotiate the trade-off between two:
 
-* [[Cross-Validation\|Cross-Validation]]
-* [[Mean Squared Error\|Mean Squared Error]]
+* [[Cross-Validation]]
+* [[Mean Squared Error]]
 
-Here is an illustration of the relationship between bias, variance, [[Overfitting and Underfitting\|Overfitting and Underfitting]]
+Here is an illustration of the relationship between bias, variance, [[Overfitting and Underfitting]]
 
 !["20210414231119"|500](https://raw.githubusercontent.com/zcysxy/Figurebed/master/img/20210414231119.png)
 
@@ -163,7 +163,7 @@ $$\text{Consistency} \begin{aligned}\Longrightarrow\\[-2ex] \not\Longleftarrow\e
 > 
 > If $\operatorname{bias}(\hat{\theta}_{n})\to 0$ and $\operatorname{SE}(\hat{\theta}_{n})\to 0$, then $\hat{\theta}_{n}$ is a consistant estimator.
 
-The above can be proved using [[Chebyshev Inequality\|Chebyshev Inequality]] or the [[Convergence of Random Variables#Relation between Convergence Modes\|Convergence of Random Variables#Relation between Convergence Modes]].
+The above can be proved using [[Chebyshev Inequality]] or the [[Convergence of Random Variables#Relation between Convergence Modes]].
 
 ## Risk
 
@@ -172,4 +172,4 @@ $$
 R(\hat{\theta},\theta ) = \mathbb{E}_{X \sim P_{\theta }} \left[ L( \hat{\theta}_{X},\theta  ) \right].
 $$
 
-- [@] For example, [[Mean Squared Error\|Mean Squared Error]] is the quadratic risk using a quadratic loss function $L(\hat{\theta},\theta) = (\hat{\theta} - \theta)^2$.
+- [@] For example, [[Mean Squared Error]] is the quadratic risk using a quadratic loss function $L(\hat{\theta},\theta) = (\hat{\theta} - \theta)^2$.

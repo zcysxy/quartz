@@ -26,7 +26,7 @@ Under the following regularity conditions:
 - $M^{-1}$ is continuously differentiable at $M(\theta)$.
 - The covariance matrix $\Sigma(\theta) = \Cov_{\theta}(X_{1},X_{1}^{2},\dots,X_{1}^{m})$ exists.
 
-Then the multivariate [[Central Limit Theorem\|CLT]] and [[Delta Method\|Delta Method]] yields
+Then the multivariate [[Central Limit Theorem\|CLT]] and [[Delta Method]] yields
 $$
 \sqrt{ n }\left( \theta ^{(\mathrm{MM})}_{n}-\theta \right) \overset{ d }{ \to } \mathcal{N}(0,\Gamma(\theta )),
 $$
@@ -49,11 +49,11 @@ Write $g = (g_{1},\dots,g_{m})$ as a vector-valued function, then $\theta ^{(\ma
 $$
 \mathbb{E}_{\theta}g = \hat{\mathbb{E}}_{n} g
 $$
-Similar results in [[Method of Moments#Asymptotic Normality\|#Asymptotic Normality]] apply.
+Similar results in [[Method of Moments#Asymptotic Normality]] apply.
 
 ## Misspecified Model
 
-[[Method of Moments#Asymptotic Normality\|#Asymptotic Normality]] also holds for misspecified models, i.e., when the true distribution is not in the model family. Suppose $M: \theta \mapsto \mathbb{E}_{\theta}g$ is well-defined, and $M^{-1}$ is continuously differentiable at $\mathbb{E}_{P}g$. Note that we do not need $P \in \{ P_{\theta} \}_{\theta\in \Theta}$.
+[[Method of Moments#Asymptotic Normality]] also holds for misspecified models, i.e., when the true distribution is not in the model family. Suppose $M: \theta \mapsto \mathbb{E}_{\theta}g$ is well-defined, and $M^{-1}$ is continuously differentiable at $\mathbb{E}_{P}g$. Note that we do not need $P \in \{ P_{\theta} \}_{\theta\in \Theta}$.
 Additionally, suppose $\Sigma = \Cov_{P}(g)$ exists. Then we have
 $$
 \sqrt{ n }\left( \theta ^{(\mathrm{MM})}_{n}-\theta ^{*} \right) \overset{ d }{ \to } \mathcal{N}(0,\Gamma),

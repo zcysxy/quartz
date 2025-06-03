@@ -19,7 +19,7 @@ $$
 ## Proof
 
 Define the remainder $R(h) = \phi(\theta+h)-\phi(\theta)-\nabla _{\theta}^T \phi h = o(\|h\|)$.
-Since $r_n\to \infty$, we know $\theta _{n}-\theta \overset{ d }{ \to } T /\infty = 0$. By [[Convergence of Random Variables#Slutsky's Theorem\|Convergence of Random Variables#Slutsky's Theorem]], using the [[Stochastic Asymptotic Notation\|Stochastic Asymptotic Notation]], we have
+Since $r_n\to \infty$, we know $\theta _{n}-\theta \overset{ d }{ \to } T /\infty = 0$. By [[Convergence of Random Variables#Slutsky's Theorem]], using the [[Stochastic Asymptotic Notation]], we have
 $$
 R(\theta _n-\theta ) = o_{P}(\|\theta _n-\theta \|).
 $$

@@ -5,7 +5,7 @@
 
 # Normal Distribution
 
-A [[Random Variable\|Random Variable]] is said to be normally distributed if it has
+A [[Random Variable]] is said to be normally distributed if it has
 
 - Notation
     - $\mathcal{N}(\mu, \sigma^{2})$ ^nota
@@ -16,14 +16,14 @@ A [[Random Variable\|Random Variable]] is said to be normally distributed if it 
     - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$ ^vec-pdf
 - [[Expectation\|Mean]]
     - $\mu$ ^mean
-- [[Variance\|Variance]]
+- [[Variance]]
     - $\sigma^{2}$ ^var
 - [[Moment Generating Function\|MGF]]
     - $e^{\mu t + \sigma^{2}t^{2} /2}$ ^mgf
 - [[Characteristic Function\|CF]]
     - $e^{it\mu - \sigma^{2}t^{2} /2}$ ^cf
 
-Because of the [[Central Limit Theorem\|Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
+Because of the [[Central Limit Theorem]], in practice, many random phenomena obey, at least approximately, a normal probability distribution.
 
 ## Equivalent Definitions for Multivariate Normal Distribution
 
@@ -42,7 +42,7 @@ These two alternative definitions cover *degenerate* normal distribution, i.e., 
 #### First Alternative
 
 By change of variables, we can see that the definition via PDF implies the first alternative definition. We now show that if $D$ is not singular, $X=DW+\mu$ is a nondegenerate normal r.v. with a PDF of the form above.
-By the relationship of [[Derived Distribution\|Derived Distribution]], we have
+By the relationship of [[Derived Distribution]], we have
 $$
 f_{X}(x) = f_{W}(D^{-1}x) \cdot | D^{-1}|.
 $$
@@ -97,26 +97,26 @@ X = \begin{bmatrix} Y\\Z \end{bmatrix}
 
 ## Properties
 
-- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic\|Sufficient Statistic]]. ^prop-suff
+- (**Sufficiency**) The mean and covariance of a multivariate normal distribution consist of a [[Sufficient Statistic]]. ^prop-suff
     - In other words, the distribution of a multivariate normal random vector is completely determined by its mean and covariance
-    - [&] See [[Normal Distribution#Sufficiency\|#Sufficiency]] for proof
-- (**Affine transformation**). The [[Affine Transformation\|Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
+    - [&] See [[Normal Distribution#Sufficiency]] for proof
+- (**Affine transformation**). The [[Affine Transformation]] of a normal random variable $X$: $a + BX$ is also a normal random variable
     - As a special case, any sub-vector of a normal random vector is also normal ^bcd246
         - As a special case, any component of a normal random vector is also normal
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$ ^e2d605
     - [&] The proof follows the alternative definition 1 above
 - (**Independent Gaussians are jointly Gaussian**). The sum of independent normal random variables is also a normal random variable ^prop-ind-joint
-    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]]
+    - [&] Prove this using the [[Moment Generating Function#Inversion Theorem]]
     - [!] Note that this is generally not true for dependent random variables
-    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[Normal Distribution#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [!] More generally, if a random vector with normal components is not **jointly** normal, then its affine transformation is not necessarily normal! See also [[Normal Distribution#Independence, Correlation, and Jointly Normal]]
 - (**Independent iff Uncorrelated**). For a multivariate normal random vector, its components are independent if and only if they are uncorrelated
-    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[Normal Distribution#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [&] We can use the sufficiency property to prove this. For $X$ with uncorrelated components, we can construct $Y$ with independent components that have the same mean and variance. Then $X\overset{ d }{ = }Y$ and thus $X$ has independent components. See also [[Normal Distribution#Independence, Correlation, and Jointly Normal]]
     - [&] For nondegenerate normal random vector, we can also factorize the PDF to show independence.
-    - [!] The statement is not true for general [[Random Variable\|Random Variable]]s for which the mean and variance are not sufficient; see [[Normal Distribution#Independence, Correlation, and Jointly Normal\|#Independence, Correlation, and Jointly Normal]]
+    - [!] The statement is not true for general [[Random Variable]]s for which the mean and variance are not sufficient; see [[Normal Distribution#Independence, Correlation, and Jointly Normal]]
 - Hence, if $X\sim \mathcal{N}(\mu,\sigma^{2})$, then $Z = (X - \mu) /\sigma$ is normal with mean 0 and variance 1; $Z$ is said to have a ==standard== or ==unit== normal distribution
     - We write the CDF of a standard normal distribution $\Phi$
 - (**Symmetry**). $\Phi(-x) = 1 - \Phi(x)$
-- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution\|Chi-Square Distribution]])
+- Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution]])
 
 ### Proofs
 
@@ -144,13 +144,13 @@ As we can see, the mean and variance are sufficient to determine the MGF, and th
 > [!rmk] Independent normal components implies jointly normal.
 >
 > The above statement becomes true once we impose the independence condition.
-> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Normal Distribution#^prop-ind-joint\|#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem\|Moment Generating Function#Inversion Theorem]].
+> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Normal Distribution#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem]].
 > By the alternative definition, $X$ is jointly normal.
 
 > [!rmk] Joint normal with zero correlation implies independence.
 >
-> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Normal Distribution#^prop-ind-joint\|#^prop-ind-joint]], $Y$ is jointly normal.
-> Since $X$ and $Y$ have the same mean and covariance, by Property [[Normal Distribution#^prop-suff\|#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
+> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Normal Distribution#^prop-ind-joint]], $Y$ is jointly normal.
+> Since $X$ and $Y$ have the same mean and covariance, by Property [[Normal Distribution#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
 
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
@@ -205,7 +205,7 @@ This also implies, for any function $g$:
 $$
 \mathbb{E}[(X-\hat{X})g(Y)] = 0.
 $$
-By the [[Conditional Probability#General Definition of Conditional Expectation\|Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
+By the [[Conditional Probability#General Definition of Conditional Expectation]], the above condition says that
 $$
 \mathbb{E}[X\given Y] = \hat{X}.
 $$

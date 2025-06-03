@@ -5,7 +5,7 @@
 
 # Central Limit Theorem
 
-Let $\{ X _i \}_{i=1}^{n}$ be a set of i.i.d. [[Random Variable\|Random Variable]]s with same [[Expectation\|Mean]] $\mu$ and [[Variance\|Variance]] $\sigma^{2} < +\infty$. Denote $\overline{X} = \sum^{n}_{i=1}X _i /n$. Then
+Let $\{ X _i \}_{i=1}^{n}$ be a set of i.i.d. [[Random Variable]]s with same [[Expectation\|Mean]] $\mu$ and [[Variance]] $\sigma^{2} < +\infty$. Denote $\overline{X} = \sum^{n}_{i=1}X _i /n$. Then
 $$
 \frac{\overline{X} - \mu}{\sigma / \sqrt{ n }} \overset{d}{\longrightarrow} Z \sim \mathcal{N}(0,1),
 $$
@@ -15,7 +15,7 @@ where $d$ means **convergence in distribution**.
 
 ## Proof
 
-If $X _i$ has [[Moment Generating Function\|MGF]], we can use MGF to prove the theorem. To be more general, we use [[Characteristic Function\|Characteristic Function]]. WLOG, we can assume $\mu = 0, \sigma = 1$. Let $\phi(t)$ be the characteristic function of $X _i$. Then we have
+If $X _i$ has [[Moment Generating Function\|MGF]], we can use MGF to prove the theorem. To be more general, we use [[Characteristic Function]]. WLOG, we can assume $\mu = 0, \sigma = 1$. Let $\phi(t)$ be the characteristic function of $X _i$. Then we have
 $$
 \phi(0) = 1, \quad \phi'(0) = i\mathbb{E}[X _i] = 0, \quad \phi''(0) = - \mathbb{E}[X _i^{2}] = -1.
 $$
@@ -40,7 +40,7 @@ $$
 \lim_{ n \to \infty } \phi _{\overline{X}}(t) = \lim_{ n \to \infty } \left( 1 - \frac{t^{2}}{2n} \right)^{n} = e^{-\frac{1}{2}t^{2}},
 $$
 
-which is the CF of standard [[Normal Distribution\|Normal Distribution]]. By the inverse property and [[Convergence of Random Variables#Convergence of Characteristic Functions\|Convergence of Random Variables#Convergence of Characteristic Functions]],
+which is the CF of standard [[Normal Distribution]]. By the inverse property and [[Convergence of Random Variables#Convergence of Characteristic Functions]],
 $$
 \sqrt{ n }\overline{X} \overset{d}{\longrightarrow} Z \sim \mathcal{N}(0,1).
 $$
