@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Fisher Information","created":"2023-10-15T23:48:38","modified":"2023-10-19T19:50:10","cssclasses":"","aliases":null,"type":"note","sup":["[[Statistics]]"],"state":"done"}
+{"publish":true,"title":"Fisher Information","created":"2023-10-15T23:48:38","modified":"2023-10-19T19:50:10","cssclasses":""}
 ---
 
 

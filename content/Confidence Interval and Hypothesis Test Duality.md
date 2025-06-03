@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Confidence Interval and Hypothesis Test Duality","created":"2025-05-27T14:51:17","modified":"2025-05-31T23:12:33","cssclasses":"","state":"done","sup":["[[Statistics]]"],"alias":null,"type":"note","related":["[[Confidence Interval\|Confidence Interval]]","[[Hypothesis Testing\|Hypothesis Testing]]"]}
+{"publish":true,"title":"Confidence Interval and Hypothesis Test Duality","created":"2025-05-27T14:51:17","modified":"2025-05-31T23:12:33","cssclasses":""}
 ---
 
 
@@ -13,7 +13,7 @@ Then, we can construct a confidence interval
 $$
 C(X) = \{ \theta: \psi _{\theta}(X) = 0 \}.
 $$
-Recall the definition of the level of a [[Hypothesis Testing]]. We have
+Recall the definition of the level of a [[Hypothesis Testing\|Hypothesis Testing]]. We have
 $$
 P(C(X)\not\ni \theta ) = P_{\theta }(\psi _{\theta}(X) = 1) \le \alpha,
 $$
@@ -36,7 +36,7 @@ One can check that the above method returns a finite-sample valid CI.
 
 ## HT CI for a Few Bernoulli Trials
 
-We construct a [[Confidence Interval]] for the parameter $p$ given a few [[Bernoulli Distribution\|Bernoulli Trial]]s to demonstrate how HT-based CI adapts to the number of samples and is finite-sample valid.
+We construct a [[Confidence Interval\|Confidence Interval]] for the parameter $p$ given a few [[Bernoulli Distribution\|Bernoulli Trial]]s to demonstrate how HT-based CI adapts to the number of samples and is finite-sample valid.
 
 First, we note that when we only have a few samples, it's more likely we observe extreme events like $\overline{X} = 0$ or $\overline{X} = 1$. In such cases, non-inclusive [[Confidence Interval#Wald CI\|Confidence Interval#Wald CI]] gives an degenerated CI:
 $$

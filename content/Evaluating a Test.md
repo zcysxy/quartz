@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Evaluating a Test","created":"2025-05-30T02:48:39","modified":"2025-05-31T20:32:19","cssclasses":"","state":"done","sup":["[[Hypothesis Testing\|Hypothesis Testing]]"],"alias":null,"type":"note"}
+{"publish":true,"title":"Evaluating a Test","created":"2025-05-30T02:48:39","modified":"2025-05-31T20:32:19","cssclasses":""}
 ---
 
 
@@ -22,7 +22,7 @@ The largest Type I error is called the ==size== of the test:
 $$
 \overline{\alpha} _{\psi} = \sup_{\theta_{0}\in\Theta_{0}}\alpha _{\psi}(\theta_{0}).
 $$
-Recall that in [[Hypothesis Testing]], we use data to *disprove* the null. Thus, size evaluates how *confident* the test is. For a test of size $\alpha$, it correctly fails to reject the null with an $(1-\alpha )$ confidence. See also [[Confidence Interval and Hypothesis Test Duality\|Confidence Interval and Hypothesis Test Duality]].
+Recall that in [[Hypothesis Testing\|Hypothesis Testing]], we use data to *disprove* the null. Thus, size evaluates how *confident* the test is. For a test of size $\alpha$, it correctly fails to reject the null with an $(1-\alpha )$ confidence. See also [[Confidence Interval and Hypothesis Test Duality\|Confidence Interval and Hypothesis Test Duality]].
 
 We say a test has (<span style="color:skyblue">asymptotic</span>) ==level== $\alpha$ if its size is at most $\alpha$:
 $$

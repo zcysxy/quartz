@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":["KL"],"created":"2022-05-28T03:34:21","modified":"2025-06-01T03:56:26","cssclasses":"","type":"note","sup":["[[Machine Learning]]","[[Information Theory]]","[[Statistics]]","[[f-Divergence\|f-Divergence]]"],"state":"done"}
+{"publish":true,"created":"2022-05-28T03:34:21","modified":"2025-06-01T03:56:26","cssclasses":""}
 ---
 
 
@@ -10,7 +10,7 @@ The ==Kullback-Leibler (KL) divergence==, a.k.a. ==relative entropy==, measures 
 $$
 D_{\mathrm{KL}}(P \| Q)=\mathbb{E}_{\mathrm{x} \sim P}\left[\log \frac{P(x)}{Q(x)} \right]=\mathbb{E}_{\mathrm{x} \sim P}[\log P(x)-\log Q(x)].
 $$
-KL divergence is an example of [[f-Divergence]] with $f(x) = x\log x$.
+KL divergence is an example of [[f-Divergence\|f-Divergence]] with $f(x) = x\log x$.
 
 KL divergence measures how two probability distributions are different from each other: the more similar two distributions are, the smaller their KL divergence is. For example, if two distributions' KL divergence is 0, iff they are almost everywhere the same. ^88c6e5
 

@@ -1,11 +1,11 @@
 ---
-{"publish":true,"title":"Bayes Optimal Test","created":"2025-05-27T23:48:18","modified":"2025-05-31T20:00:05","cssclasses":"","state":"done","sup":["[[Hypothesis Testing]]","[[Bayes Optimality]]"],"alias":null,"type":"note"}
+{"publish":true,"title":"Bayes Optimal Test","created":"2025-05-27T23:48:18","modified":"2025-05-31T20:00:05","cssclasses":""}
 ---
 
 
 # Bayes Optimal Test
 
-Recall that [[Hypothesis Testing]] is a [[Statistical Decision Theory\|decision-making problem]], where we make a binary decision $A(X)\in \{0,1\}$.
+Recall that [[Hypothesis Testing\|Hypothesis Testing]] is a [[Statistical Decision Theory\|decision-making problem]], where we make a binary decision $A(X)\in \{0,1\}$.
 Therefore, given a loss function $L(a,\theta)$, we can define the [[Risk\|Risk]] of a test, and thus derive the (Bayes) optimal test.
 For a binary HT, the loss function always takes the form
 $$

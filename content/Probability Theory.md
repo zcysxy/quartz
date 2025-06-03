@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":["Probability"],"title":"*Almost All* of Probability","created":"2022-09-25T14:40:01","modified":"2025-05-18T17:51:33","cssclasses":"","id":"Probability Theory","banner":"https://www.artmajeur.com/medias/hero_new/o/l/olimpia-gaia-martinelli/blog/apstrakcija-jpg.jpg","banner_icon":"🎲","dg-publish":false,"state":"done","sup":["[[Math]]"],"type":"index"}
+{"publish":true,"title":"*Almost All* of Probability","created":"2022-09-25T14:40:01","modified":"2025-05-18T17:51:33","cssclasses":""}
 ---
 
 

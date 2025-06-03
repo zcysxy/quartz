@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":["MLE"],"title":"Maximum Likelihood Estimation","created":"2022-05-28T03:34:23","modified":"2025-06-02T20:20:22","cssclasses":"","type":"note","sup":["[[Probability Theory\|Probability Theory]]","[[Statistics]]"],"related":["[[Machine Learning]]"],"state":"done"}
+{"publish":true,"title":"Maximum Likelihood Estimation","created":"2022-05-28T03:34:23","modified":"2025-06-02T20:20:22","cssclasses":""}
 ---
 
 

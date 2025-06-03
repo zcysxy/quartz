@@ -1,11 +1,11 @@
 ---
-{"publish":true,"title":"Constructing Confidence Interval","created":"2025-05-26T20:56:19","modified":"2025-05-27T09:57:09","cssclasses":"","state":"done","sup":["[[Confidence Interval\|Confidence Interval]]"],"alias":null,"type":"output"}
+{"publish":true,"title":"Constructing Confidence Interval","created":"2025-05-26T20:56:19","modified":"2025-05-27T09:57:09","cssclasses":""}
 ---
 
 
 # Constructing Confidence Interval
 
-This notebook explores methods of constructing [[Confidence Interval]]s. We focus on the following methods:
+This notebook explores methods of constructing [[Confidence Interval\|Confidence Interval]]s. We focus on the following methods:
 
 1. Exact calculation
 2. [[Central Limit Theorem\|CLT]] CI
