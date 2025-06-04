@@ -91,7 +91,7 @@ See [[Confidence Interval and Hypothesis Test Duality]] for constructing CIs fro
 
 ### Rejection Region by Likelihood Ratio
 
-<div class="embed">
+<div class="transclude">
 
 ## Rejection Region
 
@@ -141,7 +141,7 @@ where $z_{\beta}$ is the $\beta$-quantile of the standard normal distribution.
 
 ## p-Value
 
-<div class="embed">
+<div class="transclude">
 
 
 
@@ -232,7 +232,7 @@ where the inequality uses [[Chebyshev Inequality\|Markov Inequality]]. See also 
 
 ## Role of Alternative
 
-Recall that <div class="embed">
+Recall that <div class="transclude">
 
 - Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. 
 
