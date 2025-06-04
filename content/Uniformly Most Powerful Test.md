@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":["Neyman-Pearson","UMP"],"title":"Uniformly Most Powerful Test","created":"2025-05-30T02:48:16","modified":"2025-05-31T20:32:34","cssclasses":"","state":"[[%wip]]","sup":["[[Hypothesis Testing]]"],"alias":null,"type":"note"}
+{"publish":true,"aliases":["Neyman-Pearson","UMP"],"title":"Uniformly Most Powerful Test","created":"2025-05-30T02:48:16","modified":"2025-06-04T01:27:00","cssclasses":"","state":"[[%wip]]","sup":["[[Hypothesis Testing]]"],"alias":null,"type":"note"}
 ---
 
 
@@ -34,3 +34,15 @@ $$
 P_{\theta_{0}}(f_{1}(X) / f_{0}(X) > \lambda ) = \alpha.
 $$
 Therefore, the (U)MP test for a simple-simple HT is also called the ==Neyman-Pearson optimal== test.
+
+- [!] In general, if $A^{(\mathrm{MP})} = A^{(\mathrm{NP})}$ depends on $\theta_{1}$, it is not *uniformly* most powerful.
+
+## Monotone Likelihood Ratio and Exponential Family
+
+For certain [[Statistical Model]]s, the NP optimal test evaluated at the *boundary* of $\Theta_{0}$ and $\Theta_{1}$ is UMP.
+We say a model $\mathcal{P}_{\Theta}$ has a ==monotone likelihood ratio== if there exists a statistic $T(X)\in\R$ such that for any $\theta_{0}<\theta_{1}$, $P_{\theta_{0}}$ and $P_{\theta_{1}}$ are distinct and
+$$
+\frac{f_{\theta_{1}}(X)}{f_{\theta_{0}}(X)} = \frac{g_{1}(T(X))}{g_{0}(T(X))}, \quad\text{for some } g_{0},g_{1} \text{ with } g_{1} /g_{0} \text{ non-decreasing}.
+$$
+
+An important class of models with monotone likelihood ratio is the [[Exponential Family]], which includes many common distributions such as the [[Normal Distribution]], [[Poisson Distribution]], and [[Exponential Distribution]].
