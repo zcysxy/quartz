@@ -56,6 +56,7 @@ export function getFullSlug(window: Window): FullSlug {
 
 function sluggify(s: string): string {
   return s
+		.toLowerCase()
     .split("/")
     .map((segment) =>
       segment
