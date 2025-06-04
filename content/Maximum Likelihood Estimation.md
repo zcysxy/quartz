@@ -31,11 +31,13 @@ where $p_{\theta}$ can be a [[Probability Density Function\|PDF]] or a [[Probabi
 
 In practice, we often calculate the MLE by the following equivalences
 
-$$\begin{aligned}
+$$
+\begin{aligned}
     \theta_{ML} &= \argmax_\theta \prod_{i=1}^m p_{\mathrm{model}}(x^i;\theta)\\
     &= \argmax_\theta \sum_{i=1}^m \log p_{\mathrm{model}}(x^i;\theta)\\
     &= \argmax_\theta \mathbb{E}_{x\sim \hat{p}_{\mathrm{data}}} \log p_{\mathrm{model}}(x;\theta)
-\end{aligned}$$
+\end{aligned}
+$$
 
 where $\hat{p}_{\mathrm{data}}$ is the empirical distribution defined by the training data. This is called the ==logarithm trick==.
 
