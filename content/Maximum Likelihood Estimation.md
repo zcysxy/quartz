@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Maximum Likelihood Estimation","created":"2022-05-28T03:34:23","modified":"2025-06-02T20:20:22","cssclasses":""}
+{"publish":true,"aliases":["MLE"],"title":"Maximum Likelihood Estimation","created":"2022-05-28T03:34:23","modified":"2025-06-03T16:50:16","cssclasses":"","type":"note","sup":["[[Estimation]]"],"related":["[[Machine Learning]]"],"state":"done"}
 ---
 
 
@@ -55,7 +55,7 @@ Note that $\mathbb{E}_{\hat{p}_{\mathrm{data}}} \to \mathbb{E}_{p_{\mathrm{data}
 The MLE can readily be generalized to the case where our goal is to estimate a conditional probability $P(y|x;θ)$ in order to predict $y$ given $x$. And it forms the basis for most [[Supervised Learning]].
 
 $$
-\theta_{ML} = \argmax_\theta P(Y|X;\theta)
+\theta_{\mathrm{ML}} = \argmax_\theta P(Y|X;\theta)
 $$
 
 Here $X$ represents the inputs and $Y$ represents the observed targets.
@@ -63,39 +63,92 @@ Here $X$ represents the inputs and $Y$ represents the observed targets.
 If the examples are assumed to be i.i.d., then we have
 
 $$
-\theta_{ML} = \argmax_\theta \sum_i\log P(y^i|x^i;\theta)
+\theta_{\mathrm{ML}} = \argmax_\theta \sum_i\log P(y^i|x^i;\theta)
 $$
 
 ## Properties of MLE
 
+### Misspecification
+
+Without special remark, the following properties hold for misspecified model, i.e., $p_{\mathrm{data}} \not\in \{p_{\theta}  \}_{\theta\in\Theta}$. From now on, we write $\mathbb{E}_{p}$ as the expectation under the data generating distribution $p_{\mathrm{data}}$.
+
 ### Constancy/Invariance
 
-That is, the transformation of a MLE $g(\hat{\theta})$ is still the MSE of $g(\theta)$.
+For any function $g$, the transformation of a MLE $g(\hat{\theta})$ is still the MLE of $g(\theta)$.
 
 ### Consistency
 
-The MLE has the property of [[Estimation#Consistency\|consistency]], if 
-- realizability and identifiability: $\exists! \theta^* \in \{\theta\} \text{ s.t. } p_{\mathrm{\mathrm{model}}}(\cdot;\theta) = p_{\mathrm{\mathrm{data}}}$
-- or [[Likelihood#Sufficient Regularity Conditions]] are satisfied
+We denote $\ell _{\theta} = \log p_{\theta }$ as the log-likelihood, and let $\theta _{*} = \argmax_{\theta\in\Theta} \mathbb{E}_{p}\ell _{\theta }(X)$.
+
+Given [[Likelihood#Sufficient Regularity Conditions]], MLE is [[Estimation#Consistency\|consistent]]: $\hat{\theta}_{\mathrm{ML}} \overset{P}{\longrightarrow} \theta_*$.
+
+Further, if we have realizability and identifiability: $\exists! \theta _{\mathrm{data}} \in \Theta  : p_{\theta _{\mathrm{data}}} = p_{\mathrm{\mathrm{data}}}$, then $\theta _{*} = \theta _{\mathrm{data}}$. This is because of the property of [[KL Divergence]]: $D_{\mathrm{KL}}(p_{\mathrm{data}}\|p_{\theta}) = 0$ if and only if $p_{\theta} = p_{\mathrm{data}}$.
+
+### Asymptotic Normality
+
+Given [[Likelihood#Sufficient Regularity Conditions]], we have
+$$
+\sqrt{ n }\left( \hat{\theta} _{\mathrm{ML}} - \theta _{*} \right)  \overset{ d }{ \to } \mathcal{N}(0, \Sigma _{\mathrm{ML}} )
+$$
+where the **asymptotic variance** is
+$$
+\Sigma _{\mathrm{ML}} = \left( \mathbb{E}_{p} \ddot{\ell}_{\theta _{*}}(X_{i}) \right) ^{-1} \left( \mathbb{E}_{p}\dot{\ell}_{\theta _{*}}(X_i)\dot{\ell}_{\theta _{*}}(X_{i})^T \right)  \left( \mathbb{E}_{p} \ddot{\ell}_{\theta _{*}}(X_{i}) \right) ^{-T},
+$$
+where the derivatives are taken with respect to $\theta$.
+
+Suppose the model is well-specified, then the above variance can be simplified to
+$$
+\hat{\theta}_{\mathrm{ML}} - \theta _{*} \overset{ d }{ \to } \mathcal{N}(0, I_{n}^{-1}),
+$$
+where $I_{n}$ is the [[Fisher Information]].
+
+- [&] This property can be used to prove [[Central Limit Theorem\|CLT]] when $\theta = \mu$, $\hat{\theta}_{\mathrm{ML}} = \overline{x}$ and $\sigma$ is known.
 
 ### Best Statistical Efficiency
 
 We say a consistent estimator has better ==statistical efficiency==, if it obtains **lower generalization error** for a **fixed number of samples**, or equivalently, requires fewer examples to obtain a fixed level of generalization error.
 
+Formally, given two estimators
+$$
+\begin{cases}
+\sqrt{ n }(\hat{\theta}_{1} - \theta) \overset{ d }{ \to } \mathcal{N}(0,\Gamma_{1}),\\
+\sqrt{ n }(\hat{\theta}_{2} - \theta) \overset{ d }{ \to } \mathcal{N}(0,\Gamma_{2}),
+\end{cases}
+$$
+we say $\hat{\theta}_{1}$ is ==asymptotically more efficient== than $\hat{\theta}_{2}$ if $\Gamma_{1} \prec \Gamma_{2}$.
+
 The **Cramér-Rao lower bound** shows that no consistent estimator has a lower [[Mean Squared Error]] than the maximum likelihood estimator for a large number of samples.
 
-## Asymptotic Normality
+To be more specific, we have the following two theorems.
 
-If [[Likelihood#Sufficient Regularity Conditions]] are satisfied, then we have
-$$
-\frac{\hat{\theta}_{\mathrm{ML}}-\theta}{\sigma_{\mathrm{ML}}} \overset{ d }{ \longrightarrow } \mathcal{N}(0,1),
-$$
-where the **asymptotic variance** is
-$$
-\sigma^{2} _{\mathrm{ML}} = I^{-1}_{n}(\theta),
-$$
-where $I_{n}$ is the [[Fisher Information]].
+### Almost Everywhere Convolution Theorem
 
-- [@] This property can be used to prove [[Central Limit Theorem\|CLT]] when $\theta = \mu$, $\hat{\theta}_{\mathrm{ML}} = \overline{x}$ and $\sigma$ is known.
+This theorem states that any consistent estimator converges to $Z_n + W_n$ where $Z_n \sim \mathcal{N}(\theta _{*}, I_n^{-1})$ and $Z_n\Perp W_n$, hence showing that MLE has the best efficiency.
+
+Suppose the model $\mathcal{P}$ contains quadratic mean differentiable (QMD) distributions, and for all $\theta _{*}\in\Theta$[^1], the estimator $\hat{\theta}$ satisfies
+$$
+\sqrt{ n }(\hat{\theta} - \theta _{*}) \overset{ d }{ \to } \mathrm{Law}_{\theta_{*}}
+$$
+Then, for almost all $\theta _{*}\in\Theta$, there exists some distribution $D_{\theta _{*}}$ such that
+$$
+\mathrm{Law}_{\theta _{*}} = \mathcal{N}(0, I_{\theta _{*}}^{-1}) \ast D_{\theta _{*}}.
+$$
+Alternatively, we can write
+$$
+\hat{\theta} \overset{ d }{ \to } \sqrt{ \frac{I_{\theta _{*}}^{-1}}{n} }(Z - \theta _{*}) + \frac{W}{\sqrt{ n }} = \theta _{\mathrm{ML}} + \frac{W}{\sqrt{ n }},
+$$
+where $Z \sim \mathcal{N}(0,I), W \sim D_{\theta _{*}}$, and $\theta _{\mathrm{ML}}$ is the convergence point of MLE.
+Therefore, even if $W$ introduces zero bias, the additional variance introduced by it makes the estimator less efficient than MLE.
+
+### Local Asymptotic Minimax Theorem
+
+Suppose the model is QMD, and the loss function $L:\R^{d}\to\R_{+}$ is bowl-shaped. Then, for any estimator,
+$$
+\sup_{\text{finite } I \subset \R^{d}} \liminf_{ n \to \infty } \sup_{h\in I} \mathbb{E}_{\theta _{*} + \frac{h}{\sqrt{ n }}} L\left( \sqrt{ n }\left( \hat{\theta} - \theta _{*} - \frac{h}{\sqrt{ n }} \right) \right) \ge \mathbb{E}[L(Z)],\quad Z \sim \mathcal{N}(0, I_{\theta _{*}}^{-1}).
+$$
+The first three limiting operations correspond to "local", "asymptotic", and "minimax" respectively; they together characterize a *sufficiently large neighborhood* around $\theta _{*}$.
+Again, it states that the minimum risk achieved by MLE cannot be improved.
 
 ## Example - [[Linear Regression]]
+
+[^1]: That is, the estimator is consistent regardless the location of $\theta_*$. For well-specified model, this is equivalent to that $\hat{\theta}$ is consistent for all data distributions $p_{\theta _{*}}$.

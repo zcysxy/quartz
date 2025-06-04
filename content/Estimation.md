@@ -1,5 +1,5 @@
 ---
-{"publish":true,"created":"2023-08-02T18:42:38","modified":"2025-06-02T22:11:36","cssclasses":""}
+{"publish":true,"created":"2023-08-02T18:42:38","modified":"2025-06-02T22:11:36","cssclasses":"","type":"note","sup":["[[Machine Learning]]","[[Statistics]]"],"state":"done"}
 ---
 
 
@@ -22,7 +22,7 @@ Methods for estimation:
  
 > [!rmk] Comparison of Estimation Methods  
 > * For quadratic risks, [[Maximum Likelihood Estimation\|MLE]] is more accurate in general
-> * [[Maximum Likelihood Estimation\|MLE]] still gives good results even for misspecified models, while [[Method of Moments]] is more sensitive to model misspecification.
+> * [[Maximum Likelihood Estimation#Misspecification\|MLE]] still gives good results even for misspecified models, while [[Method of Moments]] is more sensitive to model misspecification.
 > * Sometimes [[Maximum Likelihood Estimation\|MLE]] can be computationally intractable, and [[Method of Moments]] is easier with only polynomial equations.
 
 This note focuses on point estimation.
