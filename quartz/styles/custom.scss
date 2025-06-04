@@ -21,34 +21,46 @@ code.mermaid svg,
     "grid-sidebar-left grid-center grid-sidebar-right"
     "grid-sidebar-left grid-footer grid-sidebar-right" / 320px auto 0px
 }
+.page-title {
+  &:before {
+    --page-icon-size: 4rem;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: var(--page-icon-size);
+    height: var(--page-icon-size);
+    background-image: var(--page-icon-svg);
+    background-size: var(--page-icon-size) var(--page-icon-size);
+    background-position: 50%;
+    mask-size: var(--page-icon-size) var(--page-icon-size);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    /* margin-top: -2rem; */
+    margin-right: 0.5rem;
 
-.page-title:before {
-  --page-icon-size: 4rem;
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: var(--page-icon-size);
-  height: var(--page-icon-size);
-  background-image: var(--page-icon-svg);
-  background-size: var(--page-icon-size) var(--page-icon-size);
-  background-position: 50%;
-  mask-size: var(--page-icon-size) var(--page-icon-size);
-  mask-position: center;
-  mask-repeat: no-repeat;
-  /* margin-top: -2rem; */
-  margin-right: 0.5rem;
-}
-html[saved-theme="light"] .page-title:before {
-  filter: brightness(0.9);
-  opacity: 0.8;
-}
-html[saved-theme="dark"] .page-title:before {
-  filter: invert(0.7);
-}
-.page-title a {
-  --page-icon-size: 4rem;
-  padding-left: calc(var(--page-icon-size) + 0.5rem);
-  display: inline-block;
+    html[saved-theme="light"] & {
+      filter: brightness(0.9);
+      opacity: 0.8;
+    }
+    html[saved-theme="dark"] & {
+      filter: invert(0.7);
+    }
+  }
+  & a {
+    --page-icon-size: 4rem;
+    padding-left: calc(var(--page-icon-size) + 0.5rem);
+    display: inline-block;
+  }
+  /* Animation */
+  &:hover:before {
+    /* Flip the icon on hover */
+    transform: rotateY(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  &:before {
+    transition: transform 0.3s ease-in-out;
+    transform: rotateY(0deg);
+  }
 }
 
 /* Metadata */
@@ -97,10 +109,13 @@ html[saved-theme="dark"] .page-title:before {
 }
 
 /* Custom embedded content */
-.transclude {
-  &>h1, &>h2, &>h3, &>h4, &>h5, &>h6 {
+.transclude>:first-child {
+  &:is(h1, h2, h3, h4, h5, h6) {
     display: none;
   }
+}
+.transclude-src {
+  display: none;
 }
 
 /* Custom checkboxes */

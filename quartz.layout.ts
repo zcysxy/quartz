@@ -46,12 +46,12 @@ export const defaultContentPageLayout: PageLayout = {
     })),
 		Component.ConditionalRender({
 			component: Component.Explorer(),
-			condition: (page) => page.fileData.slug == "Statistics",
+			condition: (page) => page.fileData.slug == "statistics",
 		}),
     Component.DesktopOnly(Component.TableOfContents()),
 		Component.ConditionalRender({
 			component: Component.Backlinks(),
-			condition: (page) => page.fileData.slug !== "Statistics",
+			condition: (page) => page.fileData.slug !== "statistics",
 		}),
     Component.DesktopOnly(Component.Graph()),
   ],
