@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"title":"Constructing Confidence Interval","created":"2025-05-26T20:56:19","modified":"2025-05-27T09:57:09","cssclasses":"","state":"done","sup":["[[Confidence Interval]]"],"alias":null,"type":"output"}
 ---
 
@@ -421,4 +421,3 @@ The width of the confidence interval, that is, its accuracy depends on:
 - The confidence level: the higher the confidence the wider the CI will be!
 - The standard deviation of the population or SE: the larger the SE the wider the CI will be.
 - The method used to construct the CI
-</div>

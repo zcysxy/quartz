@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"aliases":["Markov Inequality","Probability Inequalities"],"title":"Chebyshev Inequality","created":"2022-12-04T22:31:54","modified":"2024-11-04T04:18:08","cssclasses":"","type":"note","sup":["[[Probability Theory]]"],"state":"done"}
 ---
 
@@ -53,4 +53,3 @@ Let $\beta = s^{2} /\alpha$, then we get
 $$
 \frac{|N_k|}{n} \le \frac{s^{2}}{\alpha^{2} + s^{2}} = \frac{1}{\frac{\alpha^{2}}{s^{2}}+1}.
 $$
-</div>

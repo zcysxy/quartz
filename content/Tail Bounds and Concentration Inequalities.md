@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"title":"Tail Bounds and Concentration Inequalities","created":"2025-05-26T19:28:12","modified":"2025-05-26T23:53:24","cssclasses":"","state":"done","sup":["[[Statistics]]"],"alias":null,"type":"output","related":["[[Concentration Inequality]]"]}
 ---
 
@@ -192,4 +192,3 @@ plt.show()
 - Different distributions have different tail behaviors, with Gaussian having a light tail and Cauchy having a heavy tail. Tight-tailed distributions are easier to control and predict.
 - Different from exact tail bounds, concentration inequalities provide general bounds for a class of random variables, such as Chebyshev's inequality and Hoeffding's inequality.
 - Compared to exact tail bounds, concentration inequalities are often too *conservative* and thus provide looser bounds.
-</div>

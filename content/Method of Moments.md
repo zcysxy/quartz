@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"aliases":["Moment Estimator"],"title":"Method of Moments","created":"2023-10-19T16:39:52","modified":"2025-06-02T22:25:36","cssclasses":"","type":"note","sup":["[[Estimation]]"],"state":"done","related":["[[Moment]]"]}
 ---
 
@@ -62,4 +62,3 @@ where
 $$
 \theta ^{*} = M^{-1}(\mathbb{E}_{P}g), \quad \Gamma = (M^{-1})'(\mathbb{E}_{P}g)^{T}\Sigma (M^{-1})'(\mathbb{E}_{P}g).
 $$
-</div>

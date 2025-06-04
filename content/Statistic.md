@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"title":"Statistic","created":"2025-05-21T19:18:56","modified":"2025-06-03T15:51:27","cssclasses":"","state":"[[%wip]]","sup":["[[Statistics]]"],"aliases":null,"type":"note"}
 ---
 
@@ -41,4 +41,3 @@ Linear statistics have several desirable properties:
    $\text{Var}[T(X_1, X_2, \ldots, X_n)] = \sum_{i=1}^{n} a_i^2 \text{Var}[X_i]$
 
 Linear statistics are particularly important in the context of the [[Gauss-Markov theorem]], which establishes that under certain conditions, linear estimators are optimal among the class of unbiased estimators.
-</div>

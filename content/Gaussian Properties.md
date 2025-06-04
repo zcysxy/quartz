@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"title":"Gaussian Properties","created":"2025-05-20T18:58:54","modified":"2025-05-21T01:13:06","cssclasses":"","state":"[[%wip]]","sup":["[[Normal Distribution]]"],"aliases":null,"type":"note"}
 ---
 
@@ -6,9 +6,9 @@
 # Gaussian Properties
 
 A real-valued random variable (r.v.) is called a normal/Gaussian r.v. if it admits the following probability density function (PDF):
-    - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$ 
+<div class="embed">    - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$ </div>
 Generally, a vector-valued r.v. is normal/Gaussian if it has PDF:
-    - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$ 
+<div class="embed">    - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$ </div>
 
 Normal r.v.s have many nice properties, each of which gives a partial answer to why they are so common in nature.
 
@@ -24,19 +24,19 @@ That is, we can *compress* the data from an $n$-dimensional vector to a real num
 ## Affine Transformation Invariance
 
 Any [[Affine Transformation]] of a normal r.v. is also normal. Specifically,
-    - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$ 
+<div class="embed">    - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$ </div>
 
-    - As a special case, any sub-vector of a normal random vector is also normal 
+<div class="embed">    - As a special case, any sub-vector of a normal random vector is also normal </div>
 
 The affine transformation invariance is central to normal distribution. Actually, normal distribution can be defined through affine transformation.
 We have the following two alternative definitions:
 
-1. Or, if it has the form:
+<div class="embed">1. Or, if it has the form:
 $
 X = DW + \mu,
 $
-for any matrix $D$ and vector $\mu$, where $W$ is a random vector whose components are independent standard normal random variables $\mathcal{N}(0,1)$. 
-2. Or, if for any real vector $a$, the random variable $a^{T}X$ is normal. 
+for any matrix $D$ and vector $\mu$, where $W$ is a random vector whose components are independent standard normal random variables $\mathcal{N}(0,1)$. </div>
+<div class="embed">2. Or, if for any real vector $a$, the random variable $a^{T}X$ is normal. </div>
 
 ## Symmetry
 
@@ -78,7 +78,7 @@ $$
 
 ## Independence, Correlation, and Jointly Normal
 
-## Independence, Correlation, and Jointly Normal
+<div class="embed">## Independence, Correlation, and Jointly Normal
 
 > [!rmk] Normal components does not imply jointly normal.
 >
@@ -104,7 +104,7 @@ $$
 > $
 > \Cov(X,Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y] = \mathbb{E}[X^{3}] - 0 = 0.
 > $
-
+</div>
 
 ## Tail Bound
 
@@ -137,19 +137,18 @@ $$
 $$
 A nice thing about normal distribution is that the posterior of a normal prior and a normal likelihood is also normal.
 A specific example in [[Bayesian Linear Regression]] is:
-$$
+<div class="embed">$$
 \begin{aligned}
 \text{Likelihood}:& \quad y \sim N\left(X w, \sigma^2 I\right)\\
 \text{Prior}:& \quad w \sim N\left(0, \lambda^{-1} I\right)
 \end{aligned}
-$$
+$$</div>
 Then, the posterior is
-$$
+<div class="embed">$$
 \tag{1}
 p(w|y,X) \sim \mathcal{N}\left( (\lambda\sigma^{2}I + X^TX)^{-1}X^Ty, (\lambda I+\sigma^{-2}X^TX)^{-1}\right).
-$$
+$$</div>
 More importantly, with the help of linear algebra ([[Sherman-Morrison Formula]]) with low-rank update ($X^T_{t+1}X_{t+1} = X^T_{t}X_{t} + x_{t+1}x_{t+1}^T$), we can calculate the normal posterior easily in an online fashion.
 
 Additionally, other common operations on Gaussian distributions also preserve Gaussianity, including [[Gaussian Properties#Affine Transformation Invariance\|affine transformation]], [[Convolution]], conditioning, and marginalization.
 As a result, other distributions involved in Bayesian inference using Gaussian models are also Gaussian.
-</div>

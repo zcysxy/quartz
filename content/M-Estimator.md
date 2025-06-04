@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"title":"M-Estimator","created":"2025-06-04T01:17:30","modified":"2025-06-04T02:38:31","cssclasses":"","state":"[[%wip]]","sup":["[[Estimation]]"],"alias":null,"type":"note","related":["[[Maximum Likelihood Estimation]]"]}
 ---
 
@@ -23,4 +23,3 @@ $$
 ## Z-Estimator
 
 M-estimators further give rise to [[Z-Estimator]]s. In many ways, Z-estimators are further generalizations of M-estimators and [[Method of Moments\|Moment Estimator]]s, because they solve the **zero** point of a system. When the $m$ function is differentiable, the zero point of its gradient equates to the M-Estimator. Z-estimators also generalize moment estimators, which solve the zero point of the moment equations.
-</div>

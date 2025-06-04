@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"title":"p-value","created":"2025-05-29T17:32:33","modified":"2025-05-31T22:26:17","cssclasses":"","alias":null,"type":"note","sup":["[[Hypothesis Testing]]"],"state":"done"}
 ---
 
@@ -86,4 +86,3 @@ $$
 P(1 /g(X)\le t) = P(g(X)\ge t^{-1}) \le \frac{\mathbb{E}_{\theta_{0}}[g(X)]}{(t^{-1})^{-1}} = t\int \frac{f_{1}(x)}{f_{0}(x)} f_{0}(x) dx = t,
 $$
 where the inequality uses [[Chebyshev Inequality\|Markov Inequality]]. See also [[Likelihood Ratio Test]] for more general results.
-</div>

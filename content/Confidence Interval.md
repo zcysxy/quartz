@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"title":"Confidence Interval","created":"2023-10-17T22:44:28","modified":"2025-05-27T11:36:43","cssclasses":"","aliases":null,"type":"note","sup":["[[Statistics]]"],"state":"done"}
 ---
 
@@ -130,4 +130,3 @@ The involved inequalities are quadratic in $p$. Solving them gives the Wilson sc
 $$
 \frac{1}{1+\frac{z^2}{n}}\left(\hat{p}+\frac{z^2}{2 n}\right) \pm \frac{z}{1+\frac{z^2}{n}} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}+\frac{z^2}{4 n^2}}.
 $$
-</div>

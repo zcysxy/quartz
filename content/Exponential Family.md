@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"title":"Exponential Family","created":"2023-11-12T21:15:45","modified":"2024-12-10T01:14:08","cssclasses":"","aliases":null,"type":"note","sup":["[[Probability Theory]]"],"state":"[[%wip]]"}
 ---
 
@@ -55,4 +55,3 @@ $$
 \end{aligned}
 $$
 Then, the MLE estimator of $t$, which is the zero of the derivative, satisfies $\mathbb{E}_{\hat{\theta}_{\mathrm{MLE}}}t(X) = t(x)$, indicating that MLE is a [[Method of Moments\|moment estimator]].
-</div>

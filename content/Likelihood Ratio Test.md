@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"aliases":"LRT","title":"Likelihood Hypothesis Test","created":"2023-10-17T19:15:35","modified":"2025-05-31T19:25:24","cssclasses":"","type":"note","sup":["[[Hypothesis Testing]]"],"state":"done"}
 ---
 
@@ -30,4 +30,3 @@ $$
 where the degrees of freedom $k = \operatorname{dim}(\Theta ) – \operatorname{dim}(\Theta_0)$.
 
 - [~] LRT is useful to find a convenient **test statistic**. For instance, we can transform the inequality $\Lambda \le$ into an inequality in $-2 \log \Lambda$, which is a convenient test statistic because of the theorem of asymptotic LRT.
-</div>

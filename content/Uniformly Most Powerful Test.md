@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"aliases":["Neyman-Pearson","UMP"],"title":"Uniformly Most Powerful Test","created":"2025-05-30T02:48:16","modified":"2025-06-04T01:45:31","cssclasses":"","state":"[[%wip]]","sup":["[[Hypothesis Testing]]"],"alias":null,"type":"note"}
 ---
 
@@ -66,9 +66,9 @@ For a statistical model with monotone likelihood ratio and a composite HT $\Thet
 
 An important class of models with monotone likelihood ratio is the [[Exponential Family]], which includes many common distributions such as the [[Normal Distribution]], [[Poisson Distribution]], and [[Exponential Distribution]].
 Recall that a one-parameter exponential family has the form
-$$
+<div class="embed">$$
 f(x ; \theta)=c(\theta) h(x) e^{t(x) q(\theta)}
-$$
+$$</div>
 As a corollary of the above results, if $q(\theta)$ is strictly monotone, then this model admits an UMP test for $\Theta_{0}=(-\infty,\theta_{0}]$, $\Theta_{1}=(\theta_{0},\infty)$.
 Specifically, if $q$ is monotonically increasing, then the UMP test has the same form as $A^{(\mathrm{UMP})}$; if $q$ is monotonically decreasing, then the UMP test has the form of $A^{(\mathrm{UMP})}$ with reversed inequalities.
 
@@ -76,4 +76,3 @@ Specifically, if $q$ is monotonically increasing, then the UMP test has the same
 > We state that an UMP exists for exponential family models. Surprisingly, the other direction is also generally true. Under weak conditions, the exists of UMP for one-sided composite HT of level $\alpha$ and all sample sizes implies an exponential family model.
 
 #### Gaussian
-</div>

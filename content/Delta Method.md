@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"title":"Delta Method","created":"2025-05-21T21:18:39","modified":"2025-06-02T22:58:10","cssclasses":"","state":"done","sup":null,"aliases":null,"type":"note"}
 ---
 
@@ -67,4 +67,3 @@ $$
 \end{pmatrix} \right).
 $$
 Combining CLT and delta method gives the result.
-</div>

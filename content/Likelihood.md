@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"title":"Likelihood","created":"2022-05-18T16:26:34","modified":"2025-06-04T01:07:54","cssclasses":"","aliases":null,"type":"note","sup":["[[Probability Theory]]","[[Statistics]]"],"state":"done","related":["[[Maximum Likelihood Estimation]]"]}
 ---
 
@@ -42,4 +42,3 @@ $$
 - The [[Fisher Information]] matrix is invertible in a neighborhood of $\theta ^{*}$
 
 
-</div>

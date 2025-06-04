@@ -1,4 +1,4 @@
-<div class="embed">---
+---
 {"publish":true,"aliases":["MLE"],"title":"Maximum Likelihood Estimation","created":"2022-05-28T03:34:23","modified":"2025-06-03T16:50:16","cssclasses":"","type":"note","sup":["[[Estimation]]"],"related":["[[Machine Learning]]"],"state":"done"}
 ---
 
@@ -154,4 +154,3 @@ Again, it states that the minimum risk achieved by MLE cannot be improved.
 ## Example - [[Linear Regression]]
 
 [^1]: That is, the estimator is consistent regardless the location of $\theta_*$. For well-specified model, this is equivalent to that $\hat{\theta}$ is consistent for all data distributions $p_{\theta _{*}}$.
-</div>
