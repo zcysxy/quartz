@@ -91,7 +91,7 @@ See [[Confidence Interval and Hypothesis Test Duality]] for constructing CIs fro
 
 ### Rejection Region by Likelihood Ratio
 
-<div class="transclude" data-embed-alias="n-h" data-url="Likelihood Ratio Test.md">
+<div class="transclude" data-embed-alias="n-h" data-url="Likelihood Ratio Test">
 
 ## Rejection Region
 
@@ -111,6 +111,7 @@ This method is called the ==likelihood ratio test==.
 
 
 </div>
+<a href="Likelihood Ratio Test" class="internal transclude-src">Link to original</a>
 
 ## CLT Test Statistic
 
@@ -141,7 +142,7 @@ where $z_{\beta}$ is the $\beta$-quantile of the standard normal distribution.
 
 ## p-Value
 
-<div class="transclude" data-embed-alias="naked n-h" data-url="p-value.md">
+<div class="transclude" data-embed-alias="naked n-h" data-url="p-value">
 
 ## Introduction
 
@@ -177,14 +178,16 @@ In other words, an almost impossible event ($p<\alpha$) happens given H0, thus i
 
 
 </div>
+<a href="p-value" class="internal transclude-src">Link to original</a>
 
 ## Role of Alternative
 
-Recall that <div class="transclude" data-embed-alias="inline" data-url="Hypothesis Testing.md">
+Recall that <div class="transclude" data-embed-alias="inline" data-url="Hypothesis Testing">
 
 - Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. 
 
 </div>
+<a href="Hypothesis Testing" class="internal transclude-src">Link to original</a>
 
 Also notice that in the calculation of the test statistic, critical value, and p-value, we only need the null hypothesis $H_{0}$. This brings up the question:
 
