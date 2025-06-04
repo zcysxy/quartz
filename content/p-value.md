@@ -5,6 +5,8 @@
 
 # p-value
 
+## Introduction
+
 **p-value** is the probability of obtaining a real-valued **test statistic** *at least as* extreme as the one actually obtained under the **null hypothesis**. ^extreme
 
 In other words, (asymptotic) p-value of a test is the smallest (asymptotic) level $\alpha$ at which the test rejects $H_{0}$. ^reject

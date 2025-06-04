@@ -6,13 +6,13 @@
 # Gaussian Properties
 
 A real-valued random variable (r.v.) is called a normal/Gaussian r.v. if it admits the following probability density function (PDF):
-<div class="transclude">
+<div class="transclude" data-embed-alias="" data-url="Normal Distribution.md">
 
     - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$ 
 
 </div>
 Generally, a vector-valued r.v. is normal/Gaussian if it has PDF:
-<div class="transclude">
+<div class="transclude" data-embed-alias="" data-url="Normal Distribution.md">
 
     - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$ 
 
@@ -32,13 +32,13 @@ That is, we can *compress* the data from an $n$-dimensional vector to a real num
 ## Affine Transformation Invariance
 
 Any [[Affine Transformation]] of a normal r.v. is also normal. Specifically,
-<div class="transclude">
+<div class="transclude" data-embed-alias="" data-url="Normal Distribution.md">
 
     - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$ 
 
 </div>
 
-<div class="transclude">
+<div class="transclude" data-embed-alias="" data-url="Normal Distribution.md">
 
     - As a special case, any sub-vector of a normal random vector is also normal 
 
@@ -47,7 +47,7 @@ Any [[Affine Transformation]] of a normal r.v. is also normal. Specifically,
 The affine transformation invariance is central to normal distribution. Actually, normal distribution can be defined through affine transformation.
 We have the following two alternative definitions:
 
-<div class="transclude">
+<div class="transclude" data-embed-alias="" data-url="Normal Distribution.md">
 
 1. Or, if it has the form:
 $
@@ -56,7 +56,7 @@ $
 for any matrix $D$ and vector $\mu$, where $W$ is a random vector whose components are independent standard normal random variables $\mathcal{N}(0,1)$. 
 
 </div>
-<div class="transclude">
+<div class="transclude" data-embed-alias="" data-url="Normal Distribution.md">
 
 2. Or, if for any real vector $a$, the random variable $a^{T}X$ is normal. 
 
@@ -102,7 +102,7 @@ $$
 
 ## Independence, Correlation, and Jointly Normal
 
-<div class="transclude">
+<div class="transclude" data-embed-alias="n-h" data-url="Normal Distribution.md">
 
 ## Independence, Correlation, and Jointly Normal
 
@@ -165,7 +165,7 @@ $$
 $$
 A nice thing about normal distribution is that the posterior of a normal prior and a normal likelihood is also normal.
 A specific example in [[Bayesian Linear Regression]] is:
-<div class="transclude">
+<div class="transclude" data-embed-alias="" data-url="Bayesian Linear Regression.md">
 
 $$
 \begin{aligned}
@@ -176,7 +176,7 @@ $$
 
 </div>
 Then, the posterior is
-<div class="transclude">
+<div class="transclude" data-embed-alias="" data-url="Bayesian Linear Regression.md">
 
 $$
 \tag{1}

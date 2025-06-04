@@ -66,7 +66,7 @@ For a statistical model with monotone likelihood ratio and a composite HT $\Thet
 
 An important class of models with monotone likelihood ratio is the [[Exponential Family]], which includes many common distributions such as the [[Normal Distribution]], [[Poisson Distribution]], and [[Exponential Distribution]].
 Recall that a one-parameter exponential family has the form
-<div class="transclude">
+<div class="transclude" data-embed-alias="" data-url="Exponential Family.md">
 
 $$
 f(x ; \theta)=c(\theta) h(x) e^{t(x) q(\theta)}
