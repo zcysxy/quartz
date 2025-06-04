@@ -78,6 +78,8 @@ const config: QuartzConfig = {
 					"\\Z": "\\mathbb{Z}",
 					"\\N": "\\mathbb{N}",
 					"\\Q": "\\mathbb{Q}",
+					"\\Var": "\\operatorname{Var}",
+					"\\Pr": "\\operatorname{Pr}",
 					"\\Cov": "\\operatorname{Cov}",
 					"\\TV": "\\operatorname{TV}",
 					"\\abs": "\\left|#1\\right|",
