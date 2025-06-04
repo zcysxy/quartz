@@ -9,6 +9,9 @@ A family of univariate [[Probability Density Function\|PDF]]/[[Probability Mass 
 $$
 f(x ; \theta)=c(\theta) h(x) e^{t(x) q(\theta)}
 $$
+
+^4d2c9b
+
 where $c(\theta) \geq 0, h(x) \geq 0$.
 A joint [[Probability Density Function\|PDF]] for a multivariate distribution is called exponential if
 $$
