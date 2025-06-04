@@ -39,6 +39,16 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 				)
 			}
 
+			if (fileData.frontmatter?.related) {
+				segments.push(
+					<span class="meta-related" title="related note">
+						{fileData.frontmatter.related.map((relatedItem: string, idx: number) => (
+							<a href={fileData.frontmatter.relatedslug[idx]}>{relatedItem}</a>
+						))}
+					</span>
+				)
+			}
+
       if (fileData.dates?.created) {
         segments.push(<span class="meta-created" title="created time"><Date date={fileData.dates.created} locale={cfg.locale} /></span>)
       }
