@@ -44,9 +44,15 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     })),
-    // Component.Explorer(),
+		Component.ConditionalRender({
+			component: Component.Explorer(),
+			condition: (page) => page.fileData.slug == "Statistics",
+		}),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.DesktopOnly(Component.Backlinks()),
+		Component.ConditionalRender({
+			component: Component.Backlinks(),
+			condition: (page) => page.fileData.slug !== "Statistics",
+		}),
     Component.DesktopOnly(Component.Graph()),
   ],
   right: [
