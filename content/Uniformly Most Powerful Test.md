@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"aliases":["Neyman-Pearson","UMP"],"title":"Uniformly Most Powerful Test","created":"2025-05-30T02:48:16","modified":"2025-06-04T01:45:31","cssclasses":"","state":"[[%wip]]","sup":["[[Hypothesis Testing]]"],"alias":null,"type":"note"}
 ---
 
@@ -76,3 +76,4 @@ Specifically, if $q$ is monotonically increasing, then the UMP test has the same
 > We state that an UMP exists for exponential family models. Surprisingly, the other direction is also generally true. Under weak conditions, the exists of UMP for one-sided composite HT of level $\alpha$ and all sample sizes implies an exponential family model.
 
 #### Gaussian
+</div>

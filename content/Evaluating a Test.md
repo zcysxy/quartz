@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"title":"Evaluating a Test","created":"2025-05-30T02:48:39","modified":"2025-05-31T20:32:19","cssclasses":"","state":"done","sup":["[[Hypothesis Testing]]"],"alias":null,"type":"note"}
 ---
 
@@ -72,3 +72,4 @@ $$
 \end{aligned}
 $$
 It puts the Type I error as a **size constraint**, and maximizes the **power** (minimizes the Type II error) under this constraint. Similarly, this reflects the *asymmetry* between the null and alternative hypotheses ([[Hypothesis Testing#^d85be2]]). See [[Uniformly Most Powerful Test]] for the optimal test under this metric.
+</div>

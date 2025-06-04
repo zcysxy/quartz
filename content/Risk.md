@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"aliases":["Minimax"],"title":"Risk","created":"2025-05-24T19:42:49","modified":"2025-05-24T20:14:35","cssclasses":"","state":"done","sup":["[[Statistics]]"],"alias":null,"type":"note"}
 ---
 
@@ -28,3 +28,4 @@ Unfortunately, in general, the risk cannot be minimized since it depends on the 
     - Can be understood as the *worst-case* risk.
 
 A Bayes/minimax (optimal) estimator is a procedure that minimizes the Bayes/minimax risk, respectively.
+</div>

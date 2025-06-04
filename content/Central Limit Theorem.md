@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"aliases":["CLT"],"title":"Central Limit Theorem","created":"2022-11-04T12:18:06","modified":"2025-05-22T00:53:11","cssclasses":"","type":"note","sup":["[[Probability Theory]]"],"state":"done"}
 ---
 
@@ -51,3 +51,4 @@ Suppose $\mathbb{E}|X_1|^{3}<+\infty$. Then
 $$
 \sup_{t}\left| P(Z_n\le t)-\Phi(t) \right| \le \frac{33}{4}\frac{\mathbb{E}|X_1-\mu|^{3}}{\sqrt{n}\sigma ^{3}}.
 $$
+</div>

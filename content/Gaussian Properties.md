@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"title":"Gaussian Properties","created":"2025-05-20T18:58:54","modified":"2025-05-21T01:13:06","cssclasses":"","state":"[[%wip]]","sup":["[[Normal Distribution]]"],"aliases":null,"type":"note"}
 ---
 
@@ -152,3 +152,4 @@ More importantly, with the help of linear algebra ([[Sherman-Morrison Formula]])
 
 Additionally, other common operations on Gaussian distributions also preserve Gaussianity, including [[Gaussian Properties#Affine Transformation Invariance\|affine transformation]], [[Convolution]], conditioning, and marginalization.
 As a result, other distributions involved in Bayesian inference using Gaussian models are also Gaussian.
+</div>

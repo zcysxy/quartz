@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"title":"High Dimensional Probability","created":"2023-05-09T19:38:43","modified":"2025-06-04T02:18:27","cssclasses":"","aliases":null,"type":"note","banner":"https://lh3.googleusercontent.com/Rs2iZI77DywOVUtFprm9d5SQqAy-76Q4stgKQ0xS5XO0oqcMfvXUvtoYbRi8txBI26i1L7-4alpYn0CXdnPUyEfaWtriHcNN1lTfZpY=s2500","banner_icon":"🤹","sup":["[[Probability Theory]]","[[Stochastic Process]]","[[Math]]"],"state":"[[%wip]]"}
 ---
 
@@ -55,3 +55,4 @@ Consider the simplest form: $f(x_{1},\dots,x_n) = \frac{1}{n}\sum_{i=1}^{n}x_i$.
 
 > [!thm] Informal Principle
 If $t\mapsto Y_{t}$ is "smooth", then $\mathbb{E}[\sup_{t\in T}Y_t]$  can be controlled by the complexity of $T$.
+</div>

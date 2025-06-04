@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"title":"Fisher Information","created":"2023-10-15T23:48:38","modified":"2025-06-04T01:12:04","cssclasses":"","aliases":null,"type":"note","sup":["[[Statistics]]"],"state":"done"}
 ---
 
@@ -53,3 +53,4 @@ The Fisher information *encodes* information each random variable carries about 
 
 When the Fisher information is small, we have a *flat* log-likelihood curve, making it harder for the stochastic estimator to find the maximum likelihood estimate;
 when the Fisher information is large, we have a *steep* log-likelihood curve, making it easier for the stochastic estimator to find the maximum likelihood estimate.
+</div>

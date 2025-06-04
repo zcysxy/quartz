@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"aliases":["Gauss distribution","Gaussian","Gaussian distribution"],"created":"2022-05-28T03:34:22","modified":"2024-12-16T16:00:42","cssclasses":"","type":"note","sup":["[[Probability Theory]]"],"state":"done"}
 ---
 
@@ -217,3 +217,4 @@ $$
 = \mathbb{E}\left[ (X-\hat{X})X^{T} \right]
 = \Sigma_{XX} - \Sigma_{XY}\Sigma_{YY}^{-1}\Sigma_{YX}.
 $$
+</div>

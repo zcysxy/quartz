@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"title":"Hardness of Simple Hypothesis Test Through Total Variation","created":"2025-05-27T23:43:04","modified":"2025-05-28T00:30:58","cssclasses":"","state":"done","sup":["[[Hypothesis Testing]]"],"alias":null,"type":"note","related":["[[Total Variation Distance]]"]}
 ---
 
@@ -33,3 +33,4 @@ Then, we have
 > =& 1 - \TV(P_{0},P_{1}).
 > \end{aligned}
 > $$
+</div>

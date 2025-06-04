@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"title":"Confidence Interval and Hypothesis Test Duality","created":"2025-05-27T14:51:17","modified":"2025-05-31T23:12:33","cssclasses":"","state":"done","sup":["[[Statistics]]"],"alias":null,"type":"note","related":["[[Confidence Interval]]","[[Hypothesis Testing]]"]}
 ---
 
@@ -69,3 +69,4 @@ $$
 C^{(\mathrm{HT})}(X) = \left[0,1 - \left( \frac{\alpha}{2n} \right)^{1 /n}\right],
 $$
 which is not degenerated and is valid.
+</div>

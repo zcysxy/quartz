@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"title":"Hypothesis Testing","created":"2022-12-07T20:11:12","modified":"2025-05-31T21:04:22","cssclasses":"","type":"note","sup":["[[Statistics]]"],"state":"done"}
 ---
 
@@ -236,3 +236,4 @@ We first remark that we do not expect the alternative to have the same critical 
     - [@] For example, a company want to test their current risk control threshold $\theta_{0}$. Their hypotheses are $H_{0}: \theta = \theta_{0}$ and $H_{1}: \theta > \theta_{0}$. We can see that, they only reject the null if they *believe the risk is higher* then their current threshold. They do not modify the threshold (reject the null) even observing a risk significantly lower than the threshold, as it does no harm.
 - The alternative dictates the direction of extremeness. When calculating the rejection region or p-value, it's important to know what counts as an *extreme* event under the null. The alternative dictates the direction, i.e., right-tail, left-tail, or two-sided.
     - [@] For example, suppose $H_{0}: \text{mean} = \mu_{0}$ and $H_{1} : \text{mean} = \mu_{1}$. Then, if $\mu_{1} > \mu_{0}$, it is extreme(ly unlikely the null is true) when we observe a large sample mean; on the other hand, if $\mu_{1} < \mu_{0}$, a small sample mean is extreme under the null.
+</div>

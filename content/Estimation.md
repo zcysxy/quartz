@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"created":"2023-08-02T18:42:38","modified":"2025-06-02T22:11:36","cssclasses":"","type":"note","sup":["[[Machine Learning]]","[[Statistics]]"],"state":"done"}
 ---
 
@@ -173,3 +173,4 @@ R(\hat{\theta},\theta ) = \mathbb{E}_{X \sim P_{\theta }} \left[ L( \hat{\theta}
 $$
 
 - [@] For example, [[Mean Squared Error]] is the quadratic risk using a quadratic loss function $L(\hat{\theta},\theta) = (\hat{\theta} - \theta)^2$.
+</div>

@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"aliases":["Total-Variation Metric","TV"],"created":"2022-05-28T03:34:22","modified":"2025-06-01T02:55:05","cssclasses":"","type":"note","sup":["[[Probability Theory]]"],"state":"[[%wip]]"}
 ---
 
@@ -161,3 +161,4 @@ $$
 &= \TV(P_{0}\times P_{0},P_{1}\times P_{1}).
 \end{aligned}
 $$
+</div>

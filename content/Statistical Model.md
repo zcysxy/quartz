@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"title":"Statistical Model","created":"2025-05-21T18:14:35","modified":"2025-05-24T23:57:10","cssclasses":"","state":"done","sup":["[[Statistics]]"],"aliases":null,"type":"note"}
 ---
 
@@ -18,3 +18,4 @@ where $\mathcal{X}$ is the sample space, and $\Theta$ is the ==parameter set==.
 - If $\Theta$ is of infinite dimension, then the model is ==non-parametric==.
 - If the underlying probability of the experiment belongs to $\mathcal{P}$, then the model is ==well-specified==.
 - The parameter $\theta$ is called ==identifiable== if $\Theta\ni\theta  \mapsto P_{\theta}$ is injective, i.e., $\theta\ne \theta'\implies P_{\theta}\ne P_{\theta'}$
+</div>

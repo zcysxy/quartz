@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"title":"Stochastic Asymptotic Notation","created":"2024-12-17T15:39:07","modified":"2024-12-17T15:54:21","cssclasses":"","state":"done","sup":["[[Probability Theory]]"],"aliases":null,"type":"note","related":["[[Asymptotic Notation]]"]}
 ---
 
@@ -40,3 +40,4 @@ $$
 P(|g(X_n)|>M) \le P(\|X_n\|>\delta) \to 0,
 $$
 which implies the uniform tightness of $\{ g(X_n) \}$, and thus $R(X_n) = O_{P}(\|X_n\|^{p})$.
+</div>

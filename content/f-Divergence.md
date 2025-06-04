@@ -1,4 +1,4 @@
----
+<div class="embed">---
 {"publish":true,"title":"f-Divergence","created":"2023-05-09T21:45:32","modified":"2025-06-01T03:40:16","cssclasses":"","type":"note","sup":["[[Probability Theory]]"],"state":"[[%wip]]"}
 ---
 
@@ -19,3 +19,4 @@ where the second equality holds when $p$ and $q$ are densities of $P$ and $Q$ re
 - Letting $f(x) = (x-1)^{2}$ gives the chi-square divergence
 
 ## Properties
+</div>
