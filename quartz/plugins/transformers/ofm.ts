@@ -41,8 +41,7 @@ export interface Options {
   enableYouTubeEmbed: boolean
   enableVideoEmbed: boolean
   enableCheckbox: boolean
-	customCheckboxes: boolean
-  customCheckboxMappings: Record<string, string>
+  disableBrokenWikilinks: boolean
 }
 
 const defaultOptions: Options = {
@@ -58,21 +57,8 @@ const defaultOptions: Options = {
   enableYouTubeEmbed: true,
   enableVideoEmbed: true,
   enableCheckbox: false,
-	customCheckboxes: true,
-  customCheckboxMappings: {
-    "+": "👍",
-    "-": "👎",
-    "!": "❗️",
-		"?": "❓",
-    "*": "⭐️",
-    "@": "📗",
-		"~": "💡",
-		"&": "📎",
-  }
+  disableBrokenWikilinks: false,
 }
-
-// Add the following RegEx beneath the other regex definitions:
-const customCheckboxRegex = /^(\s*)[-\*\+] \[([^xX ])\]\s*(.*)$/gm
 
 const calloutMapping = {
   note: "note",
@@ -129,9 +115,9 @@ export const arrowRegex = new RegExp(/(-{1,2}>|={1,2}>|<-{1,2}|<={1,2})/g)
 // \[\[               -> open brace
 // ([^\[\]\|\#]+)     -> one or more non-special characters ([,],|, or #) (name)
 // (#[^\[\]\|\#]+)?   -> # then one or more non-special characters (heading link)
-// (\\?\|[^\[\]\#]+)? -> optional escape \ then | then one or more non-special characters (alias)
+// (\\?\|[^\[\]\#]+)? -> optional escape \ then | then zero or more non-special characters (alias)
 export const wikilinkRegex = new RegExp(
-  /!?\[\[([^\[\]\|\#\\]+)?(#+[^\[\]\|\#\\]+)?(\\?\|[^\[\]\#]+)?\]\]/g,
+  /!?\[\[([^\[\]\|\#\\]+)?(#+[^\[\]\|\#\\]+)?(\\?\|[^\[\]\#]*)?\]\]/g,
 )
 
 // ^\|([^\n])+\|\n(\|) -> matches the header row
@@ -173,17 +159,6 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
   return {
     name: "ObsidianFlavoredMarkdown",
     textTransform(_ctx, src) {
-			// Add the following as part of the `textTransform()` body
-      if (opts.customCheckboxes) {
-        if (src instanceof Buffer) {
-          src = src.toString()
-        }
-
-        src = src.replace(customCheckboxRegex, (match, spaces, checkType, text) => {
-          return "\n" + "\t".repeat((spaces?.length || 0) / 4) + "- <span class='custom-checkbox' data-task='" + checkType + "'>" + (opts.customCheckboxMappings[checkType] || "") + " " + text + "</span>"
-        })
-      }
-
       // do comments at text level
       if (opts.comments) {
         src = src.replace(commentRegex, "")
@@ -233,7 +208,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
 
       return src
     },
-    markdownPlugins(_ctx) {
+    markdownPlugins(ctx) {
       const plugins: PluggableList = []
 
       // regex replacements
@@ -300,6 +275,18 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                   }
 
                   // otherwise, fall through to regular link
+                }
+
+                // treat as broken link if slug not in ctx.allSlugs
+                if (opts.disableBrokenWikilinks) {
+                  const slug = slugifyFilePath(fp as FilePath)
+                  const exists = ctx.allSlugs && ctx.allSlugs.includes(slug)
+                  if (!exists) {
+                    return {
+                      type: "html",
+                      value: `<a class=\"internal broken\">${alias ?? fp}</a>`,
+                    }
+                  }
                 }
 
                 // internal link
