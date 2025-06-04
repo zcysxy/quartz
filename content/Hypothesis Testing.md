@@ -91,7 +91,8 @@ See [[Confidence Interval and Hypothesis Test Duality]] for constructing CIs fro
 
 ### Rejection Region by Likelihood Ratio
 
-<div class="embed">## Rejection Region
+<div class="embed">
+## Rejection Region
 
 We can also construct a rejection region using the [[Likelihood]] ratio:
 $
@@ -106,6 +107,7 @@ $
 where $k$ is chosen such that the test has a significance level $\alpha$.
 
 This method is called the ==likelihood ratio test==.
+
 </div>
 
 ## CLT Test Statistic
@@ -138,6 +140,7 @@ where $z_{\beta}$ is the $\beta$-quantile of the standard normal distribution.
 ## p-Value
 
 <div class="embed">
+
 
 # p-value
 
@@ -220,11 +223,14 @@ $
 P(1 /g(X)\le t) = P(g(X)\ge t^{-1}) \le \frac{\mathbb{E}_{\theta_{0}}[g(X)]}{(t^{-1})^{-1}} = t\int \frac{f_{1}(x)}{f_{0}(x)} f_{0}(x) dx = t,
 $
 where the inequality uses [[Chebyshev Inequality\|Markov Inequality]]. See also [[Likelihood Ratio Test]] for more general results.
+
 </div>
 
 ## Role of Alternative
 
-Recall that <div class="embed">- Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. </div>
+Recall that <div class="embed">
+- Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. 
+</div>
 
 Also notice that in the calculation of the test statistic, critical value, and p-value, we only need the null hypothesis $H_{0}$. This brings up the question:
 
