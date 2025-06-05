@@ -12,6 +12,10 @@ code.mermaid svg,
   margin: 1rem auto;
 }
 
+p:has(img) {
+  text-align: center;
+}
+
 .MathJax, .katex {
   font-size: 1em !important;
   color: var(--text-normal, var(--black));
