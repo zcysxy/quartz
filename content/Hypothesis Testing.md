@@ -91,22 +91,7 @@ See [[Confidence Interval and Hypothesis Test Duality]] for constructing CIs fro
 
 ### Rejection Region by Likelihood Ratio
 
-## Rejection Region
-
-We can also construct a rejection region using the [[Likelihood]] ratio:
-$$
-\Lambda(\boldsymbol{x}) = \frac{\sup_{\theta \in \Theta_0} L(\theta \mid \boldsymbol{x})}{\sup_{\theta \in \Theta} L(\theta \mid \boldsymbol{x})}
-= \frac{L(\hat{\theta}_{0} )}{L(\hat{\theta}_{\mathrm{MLE}})},
-$$
-where $\Theta_0$ is the null hypothesis parameter space.
-Then, the rejection region is given by
-$$
-\mathrm{RR} = \{ \boldsymbol{x} \mid \Lambda(\boldsymbol{x}) \le k \},
-$$
-where $k$ is chosen such that the test has a significance level $\alpha$.
-
-This method is called the ==likelihood ratio test==.
-
+![[Likelihood Ratio Test#Rejection Region\|n-h]]
 
 ## CLT Test Statistic
 
@@ -137,42 +122,11 @@ where $z_{\beta}$ is the $\beta$-quantile of the standard normal distribution.
 
 ## p-Value
 
-## Introduction
-
-**p-value** is the probability of obtaining a real-valued **test statistic** *at least as* extreme as the one actually obtained under the **null hypothesis**. 
-In other words, (asymptotic) p-value of a test is the smallest (asymptotic) level $\alpha$ at which the test rejects $H_{0}$. 
-Consider an observed test-statistic $t$ from unknown distribution $T$. Then the p-value $p$ is what the prior probability would be of observing a test-statistic value at least as "extreme" as $t$ if null hypothesis $H_{0}$ were true. That is:
-
-- $p=\Pr(T≥t|H_0)$ for a one-sided right-tail test, $x$
-- $p=\Pr(T≤t|H_0)$ for a one-sided left-tail test,
-- $p=2\min\{\Pr(T\geq t\mid H_{0}),\Pr(T\leq t\mid H_{0})$ for a two-sided test.
-    - If the distribution of $T$ is symmetric about zero, then $p=\Pr(|T|\geq |t|\mid H_{0})$
-
-> [!ex] [[Hypothesis Testing#CLT Test Statistic]]
->
-> $
-> p =
-> \begin{cases}
-> \Pr\left(T_{n}\geq t\right) & \text{(right-tail test)}\\
-> \Pr\left(T_{n}\leq t\right) & \text{(left-tail test)}\\
-> \Pr\left(\left|T_{n}\right|\geq |t|\right) & \text{(two-sided test)}
-> \end{cases}
-> $
-> where $t$ is the observed test statistic.
-
-- [!] Since the test statistic is random, p-value is also random.
-
-> [!thm] Fundamental rule of statistics
-> $\text{Reject } \mathrm{H}_{0} \iff  p\text{-value} < \alpha$
-
-In other words, an almost impossible event ($p<\alpha$) happens given H0, thus it is rejected.
-
-- [~] The smaller the p-value, the more confidently one can reject $H_{0}$, because the event is too unlikely to happen under null.
-
+![[p-value#Introduction\|naked n-h]]
 
 ## Role of Alternative
 
-Recall that - Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. 
+Recall that ![[Hypothesis Testing#^d85be2\|inline]]
 
 Also notice that in the calculation of the test statistic, critical value, and p-value, we only need the null hypothesis $H_{0}$. This brings up the question:
 

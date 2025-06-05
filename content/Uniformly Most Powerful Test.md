@@ -66,9 +66,7 @@ For a statistical model with monotone likelihood ratio and a composite HT $\Thet
 
 An important class of models with monotone likelihood ratio is the [[Exponential Family]], which includes many common distributions such as the [[Normal Distribution]], [[Poisson Distribution]], and [[Exponential Distribution]].
 Recall that a one-parameter exponential family has the form
-$$
-f(x ; \theta)=c(\theta) h(x) e^{t(x) q(\theta)}
-$$
+![[Exponential Family#^4d2c9b]]
 As a corollary of the above results, if $q(\theta)$ is strictly monotone, then this model admits an UMP test for $\Theta_{0}=(-\infty,\theta_{0}]$, $\Theta_{1}=(\theta_{0},\infty)$.
 Specifically, if $q$ is monotonically increasing, then the UMP test has the same form as $A^{(\mathrm{UMP})}$; if $q$ is monotonically decreasing, then the UMP test has the form of $A^{(\mathrm{UMP})}$ with reversed inequalities.
 

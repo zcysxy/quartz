@@ -13,7 +13,7 @@ In other words, (asymptotic) p-value of a test is the smallest (asymptotic) leve
 
 Consider an observed test-statistic $t$ from unknown distribution $T$. Then the p-value $p$ is what the prior probability would be of observing a test-statistic value at least as "extreme" as $t$ if null hypothesis $H_{0}$ were true. That is:
 
-- $p=\Pr(T≥t|H_0)$ for a one-sided right-tail test, $x$
+- $p=\Pr(T≥t|H_0)$ for a one-sided right-tail test,
 - $p=\Pr(T≤t|H_0)$ for a one-sided left-tail test,
 - $p=2\min\{\Pr(T\geq t\mid H_{0}),\Pr(T\leq t\mid H_{0})$ for a two-sided test.
     - If the distribution of $T$ is symmetric about zero, then $p=\Pr(|T|\geq |t|\mid H_{0})$
