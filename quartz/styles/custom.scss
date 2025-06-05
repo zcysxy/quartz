@@ -151,6 +151,10 @@ span.custom-checkbox[data-task="~"] {
   --checkbox-color: #e0f7fa;
 }
 
+span.custom-checkbox[data-task="&"] {
+  --checkbox-color: #448aff4f;
+}
+
 li:has(span.custom-checkbox[data-task="c"]) {
     text-align: center;
 }
