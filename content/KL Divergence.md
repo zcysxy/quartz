@@ -18,10 +18,10 @@ For discrete variables, KL divergence is the **extra amount of information** nee
 
 ## Properties
 
-1. Generally $D_{\mathrm{KL}}(P||Q) \neq  D_{\mathrm{KL}}(Q||P)$
-2. $D_{\mathrm{KL}} \geq 0$
-3. $D_{\mathrm{KL}}(P||Q) = 0 \Rightarrow P \doteq Q$
-4. Generally $D_{\mathrm{KL}}(P||Q) \not\le D_{\mathrm{KL}}(P\|R) + D_{\mathrm{KL}}(R\| Q)$
+1. Generally $D_{\mathrm{KL}}(P||Q) \neq  D_{\mathrm{KL}}(Q||P)$$
+2. $D_{\mathrm{KL}} \geq 0$$
+3. $D_{\mathrm{KL}}(P||Q) = 0 \Rightarrow P \doteq Q$$
+4. Generally $D_{\mathrm{KL}}(P||Q) \not\le D_{\mathrm{KL}}(P\|R) + D_{\mathrm{KL}}(R\| Q)$$
 
 - [!] KL divergence is not a metric.
 

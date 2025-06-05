@@ -16,15 +16,15 @@ where $o_{P}(1)$ represents a sequence that [[Convergence of Random Variables#Co
 
 ## Arithmetic Properties
 
-- $o_{P}(1)+ o_{P}(1) = o_{P}(1)$
-- $o_{P}(1)+ O_{P}(1) = O_{P}(1)$
-- $o_{P}(1)O_{P}(1) = o_{P}(1)$
-- $(1+o_{P}(1))^{-1} = O_{P}(1)$
-- $o_{P}(R_n) = R_no_{P}(1)$
-- $O_{P}(R_n) = R_nO_{P}(1)$
-- $o_{P}(O_{P}(1)) = o_{P}(1)$
-- $R(h) = o(\|h\|^{p}), h\to 0 \implies R(X_n) =o_{P}(\|X_n\|^{p}), X_n\overset{ P }{ \to }0$, for any $p$
-- $R(h) = O(\|h\|^{p}), h\to 0 \implies R(X_n) =O_{P}(\|X_n\|^{p}), X_n\overset{ P }{ \to }0$, for any $p$
+- $o_{P}(1)+ o_{P}(1) = o_{P}(1)$$
+- $o_{P}(1)+ O_{P}(1) = O_{P}(1)$$
+- $o_{P}(1)O_{P}(1) = o_{P}(1)$$
+- $(1+o_{P}(1))^{-1} = O_{P}(1)$$
+- $o_{P}(R_n) = R_no_{P}(1)$$
+- $O_{P}(R_n) = R_nO_{P}(1)$$
+- $o_{P}(O_{P}(1)) = o_{P}(1)$$
+- $R(h) = o(\|h\|^{p}), h\to 0 \implies R(X_n) =o_{P}(\|X_n\|^{p}), X_n\overset{ P }{ \to }0$, for any $p$$
+- $R(h) = O(\|h\|^{p}), h\to 0 \implies R(X_n) =O_{P}(\|X_n\|^{p}), X_n\overset{ P }{ \to }0$, for any $p$$
 
 ### Proof
 

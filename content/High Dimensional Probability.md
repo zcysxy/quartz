@@ -51,7 +51,7 @@ Consider the simplest form: $f(x_{1},\dots,x_n) = \frac{1}{n}\sum_{i=1}^{n}x_i$.
 
 > [!ex]
 > - L2 error: $\| X - \hat{X} \|_{2} = \sup_{v\in S^{d-1}}\left|\left< v, (X-\hat{X})v \right>\right|$.
-> - Convex conjugate: $f^{*}(x)=\sup_{y\in\R^{n}}\{ \left< y,x \right> - f(y) \}$
+> - Convex conjugate: $f^{*}(x)=\sup_{y\in\R^{n}}\{ \left< y,x \right> - f(y) \}$$
 
 > [!thm] Informal Principle
 If $t\mapsto Y_{t}$ is "smooth", then $\mathbb{E}[\sup_{t\in T}Y_t]$  can be controlled by the complexity of $T$.

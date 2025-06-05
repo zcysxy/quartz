@@ -31,10 +31,10 @@ To verify if some family of distributions is of exponential type, we must be abl
 
 Examples:
 
-- [[Bernoulli Distribution]]: $f(x;p) = (1-p)e^{x \log \frac{p}{1-p}}$
-- [[Binomial Distribution]]: $f(x;n,p) = {n \choose x}p^{x}(1-p)^{n-x}$
-- [[Poisson Distribution]]: $p(n;\lambda) = e ^{-\lambda }(n!)^{-1}e^{n \log \lambda}$
-- [[Normal Distribution]]: $(2\pi)^{-n /2} \sigma ^{-n}e^{n \mu^{2}}e^{-\left( \sum x _i^{2} - 2\left( \sum x_{i} \right)\mu \right) / \sigma^{2}}$
+- [[Bernoulli Distribution]]: $f(x;p) = (1-p)e^{x \log \frac{p}{1-p}}$$
+- [[Binomial Distribution]]: $f(x;n,p) = {n \choose x}p^{x}(1-p)^{n-x}$$
+- [[Poisson Distribution]]: $p(n;\lambda) = e ^{-\lambda }(n!)^{-1}e^{n \log \lambda}$$
+- [[Normal Distribution]]: $(2\pi)^{-n /2} \sigma ^{-n}e^{n \mu^{2}}e^{-\left( \sum x _i^{2} - 2\left( \sum x_{i} \right)\mu \right) / \sigma^{2}}$$
 - [[Exponential Distribution]]
 
 ## MLE for Exponential Family
