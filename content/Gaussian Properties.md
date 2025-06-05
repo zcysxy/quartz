@@ -32,9 +32,9 @@ The affine transformation invariance is central to normal distribution. Actually
 We have the following two alternative definitions:
 
 1. Or, if it has the form:
-$
+$$
 X = DW + \mu,
-$
+$$
 for any matrix $D$ and vector $\mu$, where $W$ is a random vector whose components are independent standard normal random variables $\mathcal{N}(0,1)$. 
 2. Or, if for any real vector $a$, the random variable $a^{T}X$ is normal. 
 
@@ -101,9 +101,9 @@ $$
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
 > For example, let $X \sim \mathrm{Unif}[-1,1]$ and $Y=X^{2}$. Certainly, $X$ and $Y$ are not independent, but they are uncorrelated:
-> $
+> $$
 > \Cov(X,Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y] = \mathbb{E}[X^{3}] - 0 = 0.
-> $
+> $$
 
 
 ## Tail Bound
@@ -137,17 +137,17 @@ $$
 $$
 A nice thing about normal distribution is that the posterior of a normal prior and a normal likelihood is also normal.
 A specific example in [[Bayesian Linear Regression]] is:
-$
+$$
 \begin{aligned}
 \text{Likelihood}:& \quad y \sim N\left(X w, \sigma^2 I\right)\\
 \text{Prior}:& \quad w \sim N\left(0, \lambda^{-1} I\right)
 \end{aligned}
-$
+$$
 Then, the posterior is
-$
+$$
 \tag{1}
 p(w|y,X) \sim \mathcal{N}\left( (\lambda\sigma^{2}I + X^TX)^{-1}X^Ty, (\lambda I+\sigma^{-2}X^TX)^{-1}\right).
-$
+$$
 More importantly, with the help of linear algebra ([[Sherman-Morrison Formula]]) with low-rank update ($X^T_{t+1}X_{t+1} = X^T_{t}X_{t} + x_{t+1}x_{t+1}^T$), we can calculate the normal posterior easily in an online fashion.
 
 Additionally, other common operations on Gaussian distributions also preserve Gaussianity, including [[Gaussian Properties#Affine Transformation Invariance\|affine transformation]], [[Convolution]], conditioning, and marginalization.
