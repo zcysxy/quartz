@@ -20,14 +20,14 @@ Consider an observed test-statistic $t$ from unknown distribution $T$. Then t
 
 > [!ex] [[Hypothesis Testing#CLT Test Statistic]]
 >
-> $$
+> $
 > p =
 > \begin{cases}
 > \Pr\left(T_{n}\geq t\right) & \text{(right-tail test)}\\
 > \Pr\left(T_{n}\leq t\right) & \text{(left-tail test)}\\
 > \Pr\left(\left|T_{n}\right|\geq |t|\right) & \text{(two-sided test)}
 > \end{cases}
-> $$
+> $
 > where $t$ is the observed test statistic.
 
 - [!] Since the test statistic is random, p-value is also random.

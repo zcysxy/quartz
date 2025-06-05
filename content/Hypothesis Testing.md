@@ -94,15 +94,15 @@ See [[Confidence Interval and Hypothesis Test Duality]] for constructing CIs fro
 ## Rejection Region
 
 We can also construct a rejection region using the [[Likelihood]] ratio:
-$$
+$
 \Lambda(\boldsymbol{x}) = \frac{\sup_{\theta \in \Theta_0} L(\theta \mid \boldsymbol{x})}{\sup_{\theta \in \Theta} L(\theta \mid \boldsymbol{x})}
 = \frac{L(\hat{\theta}_{0} )}{L(\hat{\theta}_{\mathrm{MLE}})},
-$$
+$
 where $\Theta_0$ is the null hypothesis parameter space.
 Then, the rejection region is given by
-$$
+$
 \mathrm{RR} = \{ \boldsymbol{x} \mid \Lambda(\boldsymbol{x}) \le k \},
-$$
+$
 where $k$ is chosen such that the test has a significance level $\alpha$.
 
 This method is called the ==likelihood ratio test==.
@@ -150,14 +150,14 @@ Consider an observed test-statistic $t$ from unknown distribution $T$. Then t
 
 > [!ex] [[Hypothesis Testing#CLT Test Statistic]]
 >
-> $$
+> $
 > p =
 > \begin{cases}
 > \Pr\left(T_{n}\geq t\right) & \text{(right-tail test)}\\
 > \Pr\left(T_{n}\leq t\right) & \text{(left-tail test)}\\
 > \Pr\left(\left|T_{n}\right|\geq |t|\right) & \text{(two-sided test)}
 > \end{cases}
-> $$
+> $
 > where $t$ is the observed test statistic.
 
 - [!] Since the test statistic is random, p-value is also random.
