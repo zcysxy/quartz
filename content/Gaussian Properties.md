@@ -6,9 +6,19 @@
 # Gaussian Properties
 
 A real-valued random variable (r.v.) is called a normal/Gaussian r.v. if it admits the following probability density function (PDF):
-![[Normal Distribution#^pdf]]
+<div class="transclude" data-embed-alias="  " data-url="Normal Distribution"> 
+
+    - $\displaystyle f(x)=\frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{2}}$ 
+
+</div>
+ <a href="Normal Distribution" class="internal transclude-src">Link to original</a>
 Generally, a vector-valued r.v. is normal/Gaussian if it has PDF:
-![[Normal Distribution#^vec-pdf]]
+<div class="transclude" data-embed-alias="  " data-url="Normal Distribution"> 
+
+    - $(2 \pi)^{-k / 2} |\boldsymbol{\Sigma}|^{-1 / 2} \exp \left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^{\top} \boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu})\right)$ for $k$-dimensional with PSD $\Sigma$ 
+
+</div>
+ <a href="Normal Distribution" class="internal transclude-src">Link to original</a>
 
 Normal r.v.s have many nice properties, each of which gives a partial answer to why they are so common in nature.
 
@@ -24,15 +34,39 @@ That is, we can *compress* the data from an $n$-dimensional vector to a real num
 ## Affine Transformation Invariance
 
 Any [[Affine Transformation]] of a normal r.v. is also normal. Specifically,
-![[Normal Distribution#^e2d605]]
+<div class="transclude" data-embed-alias="  " data-url="Normal Distribution"> 
 
-![[Normal Distribution#^bcd246]]
+    - If $X \sim \mathcal{N}(\mu,\Sigma)$, then $BX+a \sim \mathcal{N}(B\mu+a,B \Sigma B^{T})$ 
+
+</div>
+ <a href="Normal Distribution" class="internal transclude-src">Link to original</a>
+
+<div class="transclude" data-embed-alias="  " data-url="Normal Distribution"> 
+
+    - As a special case, any sub-vector of a normal random vector is also normal 
+
+</div>
+ <a href="Normal Distribution" class="internal transclude-src">Link to original</a>
 
 The affine transformation invariance is central to normal distribution. Actually, normal distribution can be defined through affine transformation.
 We have the following two alternative definitions:
 
-![[Normal Distribution#^7bb02c]]
-![[Normal Distribution#^f2c84a]]
+<div class="transclude" data-embed-alias="  " data-url="Normal Distribution"> 
+
+1. Or, if it has the form:
+$$
+X = DW + \mu,
+$$
+for any matrix $D$ and vector $\mu$, where $W$ is a random vector whose components are independent standard normal random variables $\mathcal{N}(0,1)$. 
+
+</div>
+ <a href="Normal Distribution" class="internal transclude-src">Link to original</a>
+<div class="transclude" data-embed-alias="  " data-url="Normal Distribution"> 
+
+2. Or, if for any real vector $a$, the random variable $a^{T}X$ is normal. 
+
+</div>
+ <a href="Normal Distribution" class="internal transclude-src">Link to original</a>
 
 ## Symmetry
 
@@ -74,7 +108,38 @@ $$
 
 ## Independence, Correlation, and Jointly Normal
 
-![[Normal Distribution#Independence, Correlation, and Jointly Normal\|n-h]]
+<div class="transclude" data-embed-alias=" n-h " data-url="Normal Distribution"> 
+
+## Independence, Correlation, and Jointly Normal
+
+> [!rmk] Normal components does not imply jointly normal.
+>
+> It is not true that if $X$ and $Y$ are both normal, then the joint distribution of $(X,Y)$ is normal.
+> For example, let $X \sim \mathcal{N}(0,1)$ and $Y=(2B-1)X$, where $B \sim \operatorname{Bern}(0.5)$, i.e., $Y=\pm X$ with equal probability.
+> Then, it is easy to verify that $\Phi$ is also the CDF of $Y$, and thus $Y \sim \mathcal{N}(0,1)$.
+> However, if $(X,Y)$ is jointly normal, we would have $(1,1)(X,Y)^T=X+Y$ is normal, which is not true because $X+Y=2BX$.
+
+> [!rmk] Independent normal components implies jointly normal.
+>
+> The above statement becomes true once we impose the independence condition.
+> We use the second alternative definition above to prove this. Let $X=(X_{1},\dots,X_n)$ with normal components. Then, for any vector $a$, we have $a^{T}X = \sum_{i=1}^{n} a_{i}X_{i}$. Note that $a_iX _i$ are independent normal random variables, and thus their sum is normal by Property [[Gaussian Properties#^prop-ind-joint]], or the [[Moment Generating Function#Inversion Theorem]].
+> By the alternative definition, $X$ is jointly normal.
+
+> [!rmk] Joint normal with zero correlation implies independence.
+>
+> Suppose that the components of $X$ are uncorrelated, i.e., its covariance matrix is a diagonal. Consider another random vector $Y$ such that $Y_i\overset{ d }{ = }X_{i}$ and $Y_i$ are independent. By Property [[Gaussian Properties#^prop-ind-joint]], $Y$ is jointly normal.
+> Since $X$ and $Y$ have the same mean and covariance, by Property [[Gaussian Properties#^prop-suff]], $X$ and $Y$ have the same distribution, and thus the components of $X$ are independent.
+
+> [!rmk] Zero correlation does not imply independence for general random variables.
+>
+> For example, let $X \sim \mathrm{Unif}[-1,1]$ and $Y=X^{2}$. Certainly, $X$ and $Y$ are not independent, but they are uncorrelated:
+> $$
+> \Cov(X,Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y] = \mathbb{E}[X^{3}] - 0 = 0.
+> $$
+
+
+</div>
+ <a href="Normal Distribution" class="internal transclude-src">Link to original</a>
 
 ## Tail Bound
 
@@ -107,9 +172,27 @@ $$
 $$
 A nice thing about normal distribution is that the posterior of a normal prior and a normal likelihood is also normal.
 A specific example in [[Bayesian Linear Regression]] is:
-![[Bayesian Linear Regression#^asmp]]
+<div class="transclude" data-embed-alias="  " data-url="Bayesian Linear Regression"> 
+
+$$
+\begin{aligned}
+\text{Likelihood}:& \quad y \sim N\left(X w, \sigma^2 I\right)\\
+\text{Prior}:& \quad w \sim N\left(0, \lambda^{-1} I\right)
+\end{aligned}
+$$
+
+</div>
+ <a href="Bayesian Linear Regression" class="internal transclude-src">Link to original</a>
 Then, the posterior is
-![[Bayesian Linear Regression#^post]]
+<div class="transclude" data-embed-alias="  " data-url="Bayesian Linear Regression"> 
+
+$$
+\tag{1}
+p(w|y,X) \sim \mathcal{N}\left( (\lambda\sigma^{2}I + X^TX)^{-1}X^Ty, (\lambda I+\sigma^{-2}X^TX)^{-1}\right).
+$$
+
+</div>
+ <a href="Bayesian Linear Regression" class="internal transclude-src">Link to original</a>
 More importantly, with the help of linear algebra ([[Sherman-Morrison Formula]]) with low-rank update ($X^T_{t+1}X_{t+1} = X^T_{t}X_{t} + x_{t+1}x_{t+1}^T$), we can calculate the normal posterior easily in an online fashion.
 
 Additionally, other common operations on Gaussian distributions also preserve Gaussianity, including [[Gaussian Properties#Affine Transformation Invariance\|affine transformation]], [[Convolution]], conditioning, and marginalization.
