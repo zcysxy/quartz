@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { FixBlockLatex } from "./quartz/plugins/transformers/fix_block_latex"
 
 /**
  * Quartz 4 Configuration
@@ -71,6 +72,7 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
+			FixBlockLatex(),
       Plugin.Latex({ 
 				renderEngine: "katex" ,
 				customMacros: {

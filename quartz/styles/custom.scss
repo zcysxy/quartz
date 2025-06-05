@@ -1,4 +1,6 @@
 @use "./base.scss";
+@use "./note-gallery.scss";
+@use "./cards.scss";
 
 // put your custom CSS here!
 div.page-header + article > h1:nth-of-type(1) {
