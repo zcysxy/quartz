@@ -101,9 +101,9 @@ $$
 > [!rmk] Zero correlation does not imply independence for general random variables.
 >
 > For example, let $X \sim \mathrm{Unif}[-1,1]$ and $Y=X^{2}$. Certainly, $X$ and $Y$ are not independent, but they are uncorrelated:
-> $$
+> $
 > \Cov(X,Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y] = \mathbb{E}[X^{3}] - 0 = 0.
-> $$
+> $
 
 
 ## Tail Bound

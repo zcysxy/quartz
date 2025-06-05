@@ -46,8 +46,8 @@ $$\operatorname{bias}(\hat{\theta}_m) = \mathbb{E}(\hat{\theta}_m) - \theta$$
 
 where the expectation is over the **real** data (seen as samples from a random variable) and $\theta$ is the true underlying value of $\boldsymbol{\theta}$ used to define the data generating distribution.
 
-* An estimator $\hat{\theta}_{m}$ is said to be ==unbiased== if $\operatorname{bias}(\hat{\theta}_m)=0,$ which implies that $\mathbb{E}(\hat{\theta}_m)=\theta$$
-* An estimator $\hat{\theta}_m$ is said to be ==asymptotically unbiased== if $\lim_{m \to \infty} \operatorname{bias}(\hat{\theta}_m)=0$$
+* An estimator $\hat{\theta}_{m}$ is said to be ==unbiased== if $\operatorname{bias}(\hat{\theta}_m)=0,$ which implies that $\mathbb{E}(\hat{\theta}_m)=\theta$
+* An estimator $\hat{\theta}_m$ is said to be ==asymptotically unbiased== if $\lim_{m \to \infty} \operatorname{bias}(\hat{\theta}_m)=0$
 
 ### Example 1 - Bernoulli Distribution
 

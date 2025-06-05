@@ -146,24 +146,24 @@ Consider an observed test-statistic $t$ from unknown distribution $T$. Then t
 - $p=\Pr(T≥t|H_0)$ for a one-sided right-tail test,
 - $p=\Pr(T≤t|H_0)$ for a one-sided left-tail test,
 - $p=2\min\{\Pr(T\geq t\mid H_{0}),\Pr(T\leq t\mid H_{0})$ for a two-sided test.
-    - If the distribution of $T$ is symmetric about zero, then $p=\Pr(|T|\geq |t|\mid H_{0})$$
+    - If the distribution of $T$ is symmetric about zero, then $p=\Pr(|T|\geq |t|\mid H_{0})$
 
 > [!ex] [[Hypothesis Testing#CLT Test Statistic]]
 >
-> $$
+> $
 > p =
 > \begin{cases}
 > \Pr\left(T_{n}\geq t\right) & \text{(right-tail test)}\\
 > \Pr\left(T_{n}\leq t\right) & \text{(left-tail test)}\\
 > \Pr\left(\left|T_{n}\right|\geq |t|\right) & \text{(two-sided test)}
 > \end{cases}
-> $$
+> $
 > where $t$ is the observed test statistic.
 
 - [!] Since the test statistic is random, p-value is also random.
 
 > [!thm] Fundamental rule of statistics
-> $\text{Reject } \mathrm{H}_{0} \iff  p\text{-value} < \alpha$$
+> $\text{Reject } \mathrm{H}_{0} \iff  p\text{-value} < \alpha$
 
 In other words, an almost impossible event ($p<\alpha$) happens given H0, thus it is rejected.
 

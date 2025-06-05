@@ -114,8 +114,8 @@ X = \begin{bmatrix} Y\\Z \end{bmatrix}
     - [&] For nondegenerate normal random vector, we can also factorize the PDF to show independence.
     - [!] The statement is not true for general [[Random Variable]]s for which the mean and variance are not sufficient; see [[Normal Distribution#Independence, Correlation, and Jointly Normal]]
 - Hence, if $X\sim \mathcal{N}(\mu,\sigma^{2})$, then $Z = (X - \mu) /\sigma$ is normal with mean 0 and variance 1; $Z$ is said to have a ==standard== or ==unit== normal distribution
-    - We write the CDF of a standard normal distribution $\Phi$$
-- (**Symmetry**). $\Phi(-x) = 1 - \Phi(x)$$
+    - We write the CDF of a standard normal distribution $\Phi$
+- (**Symmetry**). $\Phi(-x) = 1 - \Phi(x)$
 - Let $\R^{p} \ni X \sim \mathcal{N}(\mu,\Sigma)$; then, $(X-\mu)^{T} \Sigma ^{-1}(X-\mu) \sim \chi^{2}_{p}$ (see [[Chi-Square Distribution]])
 
 ### Proofs

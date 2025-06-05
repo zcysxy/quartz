@@ -26,11 +26,11 @@ We give an example algorithm for constructing CI through HT.
 Our goal is to construct a CI with *balanced coverage*: $P(\theta> \sup C(X)) \approx  P(\theta < \inf C(X))$.
 
 > [!algorithm]
-> - Input: level $\alpha$$
+> - Input: level $\alpha$
 > - For $\tilde{\theta}\in\Theta$:
 >     - Generate a $\alpha /2$-test $\psi ^{\uparrow}_{\tilde{\theta}}$ on HT $\Theta_{0}=\{ \tilde{\theta} \}$ against $\Theta_{1} = \{ \theta > \tilde{\theta} \}$.
 >     - Generate a $\alpha /2$-test $\psi ^{\downarrow}_{\tilde{\theta}}$ on HT $\Theta_{0}=\{ \tilde{\theta} \}$ against $\Theta_{1} = \{ \theta < \tilde{\theta} \}$.
-> - Return: $C(X) = \{ \tilde{\theta}\in\Theta : \psi ^{\uparrow}_{\tilde{\theta}}(X) = \psi ^{\downarrow}_{\tilde{\theta}}(X) = 0 \}$$
+> - Return: $C(X) = \{ \tilde{\theta}\in\Theta : \psi ^{\uparrow}_{\tilde{\theta}}(X) = \psi ^{\downarrow}_{\tilde{\theta}}(X) = 0 \}$
 
 One can check that the above method returns a finite-sample valid CI.
 
