@@ -1,9 +1,11 @@
 ---
-{"publish":true,"title":"Evaluating an Estimator","created":"2025-06-06T02:05:38","modified":"2025-06-06T03:34:06","cssclasses":"","state":"done","sup":["[[Estimation]]"],"alias":null,"type":"note"}
+{"publish":true,"title":"Evaluating an Estimator","created":"2025-06-06T02:05:38","modified":"2025-06-06T03:50:21","cssclasses":"","state":"done","sup":["[[Estimation]]"],"alias":null,"type":"note"}
 ---
 
 
 # Evaluating an Estimator
+
+- [!] This note focuses on point estimators.
 
 As with any [[Statistical Decision Theory\|statistical decision-making]] problem, the first step in an estimation task is to define the performance metrics of the estimator.
 Unlike [[Evaluating a Test\|hypothesis testing]], where its binary nature gives simple metrics involving only Type I and II errors, evaluating an estimator involves more considerations.

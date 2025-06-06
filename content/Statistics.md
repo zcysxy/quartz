@@ -50,6 +50,7 @@ AA --- BB --- CC
 
 - Estimation
     - Point Estimation
+        - [[Evaluating an Estimator]]
         - [[Maximum Likelihood Estimation]]
         - [[Method of Moments]]
         - [[Mean Squared Error]]
@@ -60,12 +61,12 @@ AA --- BB --- CC
         - [[Bayes Optimal Test]]
         - [[Uniformly Most Powerful Test]]
     - [[p-value]]
-    - [[Confidence Interval and Hypothesis Test Duality]]
 - [[Regression]]
     - [[ANOVA]]
 
 ## Advanced Topics
 
+- [[Confidence Interval and Hypothesis Test Duality]]
 - [[Hardness of Simple Hypothesis Test Through Total Variation]]
 - [[Hardness of Estimation Through Testing]]
 

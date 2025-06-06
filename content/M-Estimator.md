@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"M-Estimator","created":"2025-06-04T01:17:30","modified":"2025-06-04T02:38:31","cssclasses":"","state":"[[%wip]]","sup":["[[Estimation]]"],"alias":null,"type":"note","related":["[[Maximum Likelihood Estimation]]"]}
+{"publish":true,"title":"M-Estimator","created":"2025-06-04T01:17:30","modified":"2025-06-06T04:11:58","cssclasses":"","state":"[[%wip]]","sup":["[[Estimation]]"],"alias":null,"type":"note","related":["[[Maximum Likelihood Estimation]]"]}
 ---
 
 
@@ -16,9 +16,29 @@ $$
 \hat{\theta} = \argmin_{\theta\in\Theta} M_{n}(\theta).
 $$
 
+- [~] We can see that M-estimators and [[Empirical Risk Minimization]] have the same formulation, one in the context of [[Estimation]] and the other in the context of [[Prediction]]/[[Supervised Learning]].
+
 ## Examples
 
 ## Properties
+
+In this section, we denote
+$$
+\theta ^{*} = \argmin_{\theta\in\Theta} M(\theta).
+$$
+
+### Consistency
+
+By [[Law of Large Numbers\|LLN]], we know that
+$$
+M_n \overset{ P/\text{a.s.} }{ \to } M.
+$$
+We wonder under what conditions the following is also true
+$$
+\hat{\theta} \coloneqq \argmin_{\theta\in\Theta} M_n(\theta) \overset{ P }{ \to } \argmin_{\theta\in\Theta} M(\theta) \eqqcolon \theta ^{*}.
+$$
+
+### Asymptotic Normality
 
 ## Z-Estimator
 
