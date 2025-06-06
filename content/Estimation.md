@@ -1,39 +1,47 @@
 ---
-{"publish":true,"created":"2023-08-02T18:42:38","modified":"2025-06-06T04:14:52","cssclasses":""}
+{"publish":true,"created":"2023-08-02T18:42:38","modified":"2025-06-06T14:59:05","cssclasses":""}
 ---
 
 
 # Estimation
 
 - Types of estimation
-    * [[Estimation#Point Estimation]]
-    * [[Confidence Interval]]/Region
-    * [[Bayes Estimator]]
-* Metric
-    * [[Evaluating an Estimator]]
+    - [[Estimation#Point Estimation]]
+    - [[Confidence Interval]]/Region
+    - [[Bayes Estimator]]
+- Metric
+    - [[Evaluating an Estimator]]
 - Methods
-    * [[Method of Moments]]
-    * [[Maximum Likelihood Estimation]]
-    * [[Mean Squared Error\|Least Squares]]
-    * [[M-Estimator]]
+    - [[Method of Moments]]
+    - [[Maximum Likelihood Estimation]]
+    - [[Mean Squared Error\|Least Squares]]
+    - [[M-Estimator]]
 
 ```mermaid
 flowchart
+subgraph BB[Prediction]
+direction TB
+E["Empirical Risk Minimization"]
+E --"geneneralizes"--> F["Regression"]
+F --"contains"--> FF@{shape: processes, label: "... ...", w: 100px}
+end
 subgraph AA[Estimation]
+direction TB
 A["M-Estimator"] --"generalizes"--> B["Maximum Likelihood Estimator"]
 C["Z-Estimator"] --"generalizes"--> A
 C["Z-Estimator"] --"generalizes"--> D["Moment Estimator"]
 B <--"same for exponential family"--> D
+B --"add a prior"--> M["Maximum a Posteriori "]
+D --"contains"--> D1["Sample Mean"]
+D --"contains"--> D2["Sample Variance"]
 end
-subgraph BB[Prediction]
-E["Empirical Risk Minimization"] <--"same form"--> A
-end
+E  <--"same form"--> A
 ```
 
 > [!rmk] Comparison of Estimation Methods  
-> * For quadratic risks, [[Maximum Likelihood Estimation\|MLE]] is more accurate in general
-> * [[Maximum Likelihood Estimation#Misspecification\|MLE]] still gives good results even for misspecified models, while [[Method of Moments]] is more sensitive to model misspecification.
-> * Sometimes [[Maximum Likelihood Estimation\|MLE]] can be computationally intractable, and [[Method of Moments]] is easier with only polynomial equations.
+> - For quadratic risks, [[Maximum Likelihood Estimation\|MLE]] is more accurate in general
+> - [[Maximum Likelihood Estimation#Misspecification\|MLE]] still gives good results even for misspecified models, while [[Method of Moments]] is more sensitive to model misspecification.
+> - Sometimes [[Maximum Likelihood Estimation\|MLE]] can be computationally intractable, and [[Method of Moments]] is easier with only polynomial equations.
 
 This note focuses on point estimation.
 
