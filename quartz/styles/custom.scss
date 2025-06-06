@@ -15,6 +15,21 @@ code.mermaid svg,
 p:has(img) {
   text-align: center;
 }
+// Styling for Figures
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: .35em;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+figure>img {
+    margin: 0;
+}
 
 .MathJax, .katex {
   font-size: 1em !important;
