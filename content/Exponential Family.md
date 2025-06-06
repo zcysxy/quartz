@@ -10,7 +10,7 @@ $$
 f(x ; \theta)=c(\theta) h(x) e^{t(x) q(\theta)}
 $$
 
-^4d2c9b
+^exp-pdf
 
 where $c(\theta) \geq 0, h(x) \geq 0$.
 A joint [[Probability Density Function\|PDF]] for a multivariate distribution is called exponential if
