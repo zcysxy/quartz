@@ -35,7 +35,9 @@ For example, the TV distance between a discrete and a continuous distribution is
 
 > [!thm]
 > The TV distance is equivalent to the [[L1 Regularization\|L1 norm]].
-> $$\TV(p,q) = \frac{1}{2}\| p-q \| _{1}.$$
+> $$
+> \TV(p,q) = \frac{1}{2}\| p-q \| _{1}.
+> $$
 
 ### First Proof
 
