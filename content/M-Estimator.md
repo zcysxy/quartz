@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"M-Estimator","created":"2025-06-04T01:17:30","modified":"2025-06-06T04:11:58","cssclasses":"","state":"[[%wip]]","sup":["[[Estimation]]"],"alias":null,"type":"note","related":["[[Maximum Likelihood Estimation]]"]}
+{"publish":true,"title":"M-Estimator","created":"2025-06-04T01:17:30","modified":"2025-06-06T04:11:58","cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":["CLT"],"title":"Central Limit Theorem","created":"2022-11-04T12:18:06","modified":"2025-05-22T00:53:11","cssclasses":"","type":"note","sup":["[[Probability Theory]]"],"state":"done"}
+{"publish":true,"title":"Central Limit Theorem","created":"2022-11-04T12:18:06","modified":"2025-05-22T00:53:11","cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":"LRT","title":"Likelihood Hypothesis Test","created":"2023-10-17T19:15:35","modified":"2025-05-31T19:25:24","cssclasses":"","type":"note","sup":["[[Hypothesis Testing]]"],"state":"done"}
+{"publish":true,"title":"Likelihood Hypothesis Test","created":"2023-10-17T19:15:35","modified":"2025-05-31T19:25:24","cssclasses":""}
 ---
 
 

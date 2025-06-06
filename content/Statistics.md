@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":["index"],"title":"*Sufficient* of Statistics","created":"2023-10-17T21:41:50","modified":"2025-06-01T04:24:12","cssclasses":"","type":"index","sup":["[[Math]]"],"state":"[[%wip]]","banner":"https://raw.githubusercontent.com/zcysxy/Figurebed/master/img/20231017221426.png","banner_icon":"🔮","reference":"AOS"}
+{"publish":true,"title":"*Sufficient* of Statistics","created":"2023-10-17T21:41:50","modified":"2025-06-01T04:24:12","cssclasses":""}
 ---
 
 

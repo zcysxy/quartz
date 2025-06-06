@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":["Area","Field"],"title":"Subjects","created":"2021-08-17T21:58:15","modified":"2023-08-15T14:57:02","cssclasses":["cards","cards-cover","cards-2-1","cards-cols-3","note-gallery"],"type":"index","dg-publish":true,"sup":["[[@]]"],"state":"done"}
+{"publish":true,"title":"Subjects","created":"2021-08-17T21:58:15","modified":"2023-08-15T14:57:02","cssclasses":"cards cards-cover cards-2-1 cards-cols-3 note-gallery"}
 ---
 
 
