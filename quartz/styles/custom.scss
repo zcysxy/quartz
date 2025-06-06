@@ -12,7 +12,7 @@ code.mermaid svg,
   margin: 1rem auto;
 }
 
-p:has(img) {
+figure:has(img), p:has(img) {
   text-align: center;
 }
 // Styling for Figures

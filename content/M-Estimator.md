@@ -57,7 +57,7 @@ It turns out that the above consistency holds under two reasonable conditions:
 - **Separation**: For any $\epsilon$, $\inf_{\theta:\|\theta-\theta ^{*}\| > \epsilon}M(\theta) > M(\theta ^{*})$
     - [~] In words, this condition says that only parameters close to $\theta ^*$ may yield a value of $M(\theta)$ close to the minimum $M(\theta ^*)$.
 
-![Example of $M$ function whose point of maximum is not well separated.](excalidraw/m-est-sep.excalidraw.png)
+![Example of $M$ function whose point of maximum is not well separated.](excalidraw/m-est-sep.excalidraw.png "hello everyone")
 
 #### Proof of Consistency
 
