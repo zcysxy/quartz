@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Likelihood","created":"2022-05-18T16:26:34","modified":"2025-06-04T01:07:54","cssclasses":"","aliases":null,"type":"note","sup":["[[Probability Theory]]","[[Statistics]]"],"state":"done","related":["[[Maximum Likelihood Estimation]]"]}
+{"publish":true,"title":"Likelihood","created":"2022-05-18T16:26:34","modified":"2025-06-06T01:34:05","cssclasses":"","aliases":null,"type":"note","sup":["[[Probability Theory]]","[[Statistics]]"],"state":"done","related":["[[Maximum Likelihood Estimation]]"]}
 ---
 
 
@@ -23,16 +23,24 @@ If $\theta$ is the true value of the parameter, $\Pr(X\mid \theta)$ should be la
 
 ## Log-Likelihood
 
-For iid samples $\{ x_i \}$, the likelihood function is of the form $L(\theta) = \prod f(x_{i}\mid \theta)$. Thus, it is usually more convenient to deal with the log of the likelihood function, turning the product into a sum. Since the log function is monotonically increasing, this transformation again does not affect the maximization operation.
+For iid samples $\{ x_i \}$, the likelihood function is of the form $L(\theta) = \prod f(x_{i}\mid \theta)$. Thus, it is usually more convenient to deal with the log of the likelihood function, turning the product into a sum:
+
+$$
+\ell(\theta)\coloneqq \log L(\theta) = \log \prod_{i} f(x_{i}\given \theta) = \sum_{i} \log f(x_{i}\given \theta).
+$$
+
+Since the log function is monotonically increasing, this transformation again does not affect the maximization operation.
 
 ## Score Function
 
-The derivation of the log-likelihood function is called the score function:
+The derivation of the log-likelihood function is called the ==score function==:
 $$
-s(\theta) = \frac{ \mathrm{d} }{ \mathrm{d}\theta  }  \log L(\theta).
+s(\theta) \coloneqq \frac{ \mathrm{d} }{ \mathrm{d}\theta  }  \log L(\theta).
 $$
 
 ## Sufficient Regularity Conditions
+
+
 
 - **Identifiability**: $f(x;\theta_1) \neq f(x;\theta_2) \iff \theta_1 \neq \theta_2$
 - **Continuity**: the log-likelihood function $l$ is twice differentiable and $l'(\theta)=0$ has a unique solution that results in a max
