@@ -35,6 +35,10 @@ figure > img {
   margin: 0;
 }
 
+img[alt="Open In Colab"] + svg {
+  display: none;
+}
+
 .MathJax,
 .katex {
   font-size: 1em !important;
