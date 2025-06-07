@@ -5,6 +5,10 @@
 
 # Constructing Confidence Interval
 
+<a target="_blank" href="https://colab.research.google.com/github/zcysxy/quartz/blob/v4/content/jupyter/Constructing%20Confidence%20Interval.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 This notebook explores methods of constructing [[Confidence Interval]]s. We focus on the following methods:
 
 1. Exact calculation

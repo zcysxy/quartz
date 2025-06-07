@@ -5,6 +5,10 @@
 
 # Tail Bounds and Concentration Inequalities
 
+<a target="_blank" href="https://colab.research.google.com/github/zcysxy/quartz/blob/v4/content/jupyter/Tail%20Bounds%20and%20Concentration%20Inequalities.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 Both tail bounds and concentration inequalities describe the probability that a random variable deviates from some certain value, such as its mean.
 In this notebook, we will explore how tail bounds and concentration inequalities predict the behavior of random variables.
 
