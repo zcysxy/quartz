@@ -1,9 +1,11 @@
 ---
-{"publish":true,"title":"p-value","created":"2025-05-29T17:32:33","modified":"2025-05-31T22:26:17","cssclasses":""}
+{"publish":true,"title":"p-value","created":"2025-05-29T17:32:33","modified":"2025-06-06T14:22:17","cssclasses":""}
 ---
 
 
 # p-value
+
+## Introduction
 
 **p-value** is the probability of obtaining a real-valued **test statistic** *at least as* extreme as the one actually obtained under the **null hypothesis**. ^extreme
 

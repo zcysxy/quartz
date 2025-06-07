@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { FixBlockLatex } from "./quartz/plugins/transformers/fix_block_latex"
 
 /**
  * Quartz 4 Configuration
@@ -8,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Sufficient Statistics",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -71,6 +72,7 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
+			FixBlockLatex(),
       Plugin.Latex({ 
 				renderEngine: "katex" ,
 				customMacros: {
@@ -78,13 +80,17 @@ const config: QuartzConfig = {
 					"\\Z": "\\mathbb{Z}",
 					"\\N": "\\mathbb{N}",
 					"\\Q": "\\mathbb{Q}",
+					"\\Var": "\\operatorname{Var}",
+					"\\Pr": "\\operatorname{Pr}",
 					"\\Cov": "\\operatorname{Cov}",
 					"\\TV": "\\operatorname{TV}",
 					"\\abs": "\\left|#1\\right|",
 					"\\given": "\\mid",
 					"\\d": "\\mathrm{d}",
+					"\\Perp": "\\perp\\!\\!\\!\\perp",
 				},
 			}),
+			Plugin.FigureCaptions(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

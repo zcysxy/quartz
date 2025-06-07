@@ -1,0 +1,25 @@
+@use "./base.scss";
+
+.note-gallery td:nth-child(3) a {
+    background-color: rgba(155,155,155,0.1);
+    border-radius: 5px;
+    padding: 3px;
+    line-height: 2 !important;
+    white-space: nowrap;
+}
+
+.note-gallery table tbody>tr>td:first-child {
+    margin: 0 0 5px 0;
+    width: 100%;
+}
+.note-gallery table tbody>tr>td:first-child span {
+    padding: 0;
+    margin: 0;
+}
+.note-gallery table tbody>tr>td:nth-child(2) {
+    font-weight: bold;
+    font-size: 1em;
+}
+.popover .markdown-embed-content .obsidian-banner-wrapper {
+    margin-top: calc(var(--banner-preview-embed-height) - 60px);
+}

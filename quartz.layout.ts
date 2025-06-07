@@ -1,4 +1,3 @@
-import {copyFile} from "node:fs"
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
@@ -33,7 +32,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.TableOfContents()),
   ],
   left: [
-    // Component.PageTitle(),
+    Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.DesktopOnly(Component.Flex({
       components: [
@@ -45,9 +44,15 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     })),
-    // Component.Explorer(),
+		Component.ConditionalRender({
+			component: Component.Explorer(),
+			condition: (page) => page.fileData.slug == "statistics",
+		}),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.DesktopOnly(Component.Backlinks()),
+		Component.ConditionalRender({
+			component: Component.Backlinks(),
+			condition: (page) => page.fileData.slug !== "statistics",
+		}),
     Component.DesktopOnly(Component.Graph()),
   ],
   right: [

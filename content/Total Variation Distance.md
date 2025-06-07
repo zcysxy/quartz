@@ -1,12 +1,16 @@
 ---
-{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-06-01T02:55:05","cssclasses":""}
+{"publish":true,"created":"2022-05-28T03:34:22","modified":"2025-06-05T22:56:30","cssclasses":""}
 ---
 
 
 # Total Variation Distance
 
 The total variation distance between two probability measures $P$ and $Q$ on a [[Sigma Field\|sigma-algebra]] $\mathcal{F}$ of subsets of the sample space $\Omega$  is defined via
-$$\TV (P,Q)=\sup _{A\in {\mathcal {F}}}\left|P(A)-Q(A)\right|$$
+$$
+\TV (P,Q)=\sup _{A\in {\mathcal {F}}}\left|P(A)-Q(A)\right|
+$$
+^var-rep
+
 Informally, this is the largest possible difference between the probabilities that the two probability distributions can assign to the same event.
 
 One direct implication from the definition is that if two distributions have disjoint support, i.e., $\nu(\operatorname{supp}(P)\cap \operatorname{supp}(Q))=0$, where $m$ is the measure on the sigma field, then their TV distance is 1.
@@ -25,11 +29,15 @@ For example, the TV distance between a discrete and a continuous distribution is
 > $$
 > Therefore, in practice, it's usually more convenient to calculate other distances that tensorize, such as the [[KL Divergence]], [[Wasserstein Distance]], and [[Hellinger Distance]].
 
+^tensorize
+
 ## L1 Norm
 
 > [!thm]
 > The TV distance is equivalent to the [[L1 Regularization\|L1 norm]].
-> $$\TV(p,q) = \frac{1}{2}\| p-q \| _{1}.$$
+> $$
+> \TV(p,q) = \frac{1}{2}\| p-q \| _{1}.
+> $$
 
 ### First Proof
 
