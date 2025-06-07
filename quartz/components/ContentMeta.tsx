@@ -92,12 +92,12 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
           <span class="meta-type">
             <a
               target="_blank"
-              href={`https://colab.research.google.com/github/zcysxy/quartz/blob/v4/content/${fileName}.ipynb`}
+              href={`https://colab.research.google.com/github/zcysxy/quartz/blob/v4/content/jupyter/${fileName}.ipynb`}
             >
               <img
                 src="https://colab.research.google.com/assets/colab-badge.svg"
                 alt="Open In Colab"
-								style="margin: 0; vertical-align: sub"
+								style="margin: 0; vertical-align: sub;"
               />
             </a>
           </span>,
