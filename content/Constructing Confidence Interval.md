@@ -1,9 +1,13 @@
 ---
-{"publish":true,"title":"Constructing Confidence Interval","created":"2025-05-26T20:56:19","modified":"2025-06-07T09:00:06","cssclasses":"","state":"done","sup":["[[Confidence Interval]]"],"alias":null,"type":"jupyter"}
+{"publish":true,"title":"Constructing Confidence Interval","created":"2025-05-26T20:56:19","modified":"2025-06-07T09:16:56","cssclasses":"","state":"done","sup":["[[Confidence Interval]]"],"alias":null,"type":"jupyter"}
 ---
 
 
 # Constructing Confidence Interval
+
+<a target="_blank" href="https://colab.research.google.com/github/zcysxy/quartz/blob/v4/content/jupyter/Constructing%20Confidence%20Interval.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 This notebook explores methods of constructing [[Confidence Interval]]s. We focus on the following methods:
 
