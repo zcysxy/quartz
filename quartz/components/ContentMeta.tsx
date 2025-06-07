@@ -29,31 +29,39 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-			if (fileData.frontmatter?.sup) {
-				segments.push(
-					<span class="meta-sup" title="parent note">
-						{fileData.frontmatter.sup.map((supItem: string, idx: number) => (
-							<a href={fileData.frontmatter.supslug[idx]}>{supItem}</a>
-						))}
-					</span>
-				)
-			}
+      if (fileData.frontmatter?.sup) {
+        segments.push(
+          <span class="meta-sup" title="parent note">
+            {fileData.frontmatter.sup.map((supItem: string, idx: number) => (
+              <a href={fileData.frontmatter.supslug[idx]}>{supItem}</a>
+            ))}
+          </span>,
+        )
+      }
 
-			if (fileData.frontmatter?.related) {
-				segments.push(
-					<span class="meta-related" title="related note">
-						{fileData.frontmatter.related.map((relatedItem: string, idx: number) => (
-							<a href={fileData.frontmatter.relatedslug[idx]}>{relatedItem}</a>
-						))}
-					</span>
-				)
-			}
+      if (fileData.frontmatter?.related) {
+        segments.push(
+          <span class="meta-related" title="related note">
+            {fileData.frontmatter.related.map((relatedItem: string, idx: number) => (
+              <a href={fileData.frontmatter.relatedslug[idx]}>{relatedItem}</a>
+            ))}
+          </span>,
+        )
+      }
 
       if (fileData.dates?.created) {
-        segments.push(<span class="meta-created" title="created time"><Date date={fileData.dates.created} locale={cfg.locale} /></span>)
+        segments.push(
+          <span class="meta-created" title="created time">
+            <Date date={fileData.dates.created} locale={cfg.locale} />
+          </span>,
+        )
       }
       if (fileData.dates?.modified) {
-        segments.push(<span class="meta-modified" title="modified time"><Date date={fileData.dates.modified} locale={cfg.locale} /></span>)
+        segments.push(
+          <span class="meta-modified" title="modified time">
+            <Date date={fileData.dates.modified} locale={cfg.locale} />
+          </span>,
+        )
       }
 
       // Display reading time if enabled
@@ -65,10 +73,36 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(<span>{displayedTime}</span>)
       }
 
-			// Other metadata segments can be added here
-			if (fileData.frontmatter?.state) {
-				segments.push(<span class="meta-status" title="note status">{fileData.frontmatter.state}</span>)
-			}
+      // Other metadata segments can be added here
+      if (fileData.frontmatter?.state) {
+        segments.push(
+          <span class="meta-status" title="note status">
+            {fileData.frontmatter.state}
+          </span>,
+        )
+      }
+
+      if (fileData.frontmatter?.type?.toString() === "jupyter") {
+        const fileName = fileData.filePath
+          ?.replace(/^content\//, "")
+          .replace(/\.md$/, "")
+          .replaceAll(" ", "%20")
+        // const badge = `<a target="_blank" href="https://colab.research.google.com/github/zcysxy/quartz/blob/v4/content/jupyter/${fileName}.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>`
+        segments.push(
+          <span class="meta-type">
+            <a
+              target="_blank"
+              href={`https://colab.research.google.com/github/zcysxy/quartz/blob/v4/content/${fileName}.ipynb`}
+            >
+              <img
+                src="https://colab.research.google.com/assets/colab-badge.svg"
+                alt="Open In Colab"
+								style="margin: 0; vertical-align: sub"
+              />
+            </a>
+          </span>,
+        )
+      }
 
       return (
         <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
