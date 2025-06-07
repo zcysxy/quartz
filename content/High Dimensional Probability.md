@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"High Dimensional Probability","created":"2023-05-09T19:38:43","modified":"2025-06-04T02:18:27","cssclasses":""}
+{"publish":true,"title":"High Dimensional Probability","created":"2023-05-09T19:38:43","modified":"2025-06-04T02:18:27","cssclasses":"","aliases":null,"type":"note","banner":"https://lh3.googleusercontent.com/Rs2iZI77DywOVUtFprm9d5SQqAy-76Q4stgKQ0xS5XO0oqcMfvXUvtoYbRi8txBI26i1L7-4alpYn0CXdnPUyEfaWtriHcNN1lTfZpY=s2500","banner_icon":"🤹","sup":["[[Probability Theory]]","[[Stochastic Process]]","[[Math]]"],"state":"[[%wip]]"}
 ---
 
 

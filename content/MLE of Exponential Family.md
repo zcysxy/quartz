@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"MLE of Exponential Family","created":"2025-06-06T01:37:43","modified":"2025-06-06T02:01:40","cssclasses":""}
+{"publish":true,"title":"MLE of Exponential Family","created":"2025-06-06T01:37:43","modified":"2025-06-06T02:01:40","cssclasses":"","state":"done","sup":["[[Maximum Likelihood Estimation]]"],"alias":null,"type":"note","related":["[[Method of Moments]]"]}
 ---
 
 

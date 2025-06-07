@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Exponential Family","created":"2023-11-12T21:15:45","modified":"2024-12-10T01:14:08","cssclasses":""}
+{"publish":true,"title":"Exponential Family","created":"2023-11-12T21:15:45","modified":"2024-12-10T01:14:08","cssclasses":"","aliases":null,"type":"note","sup":["[[Probability Theory]]"],"state":"[[%wip]]"}
 ---
 
 

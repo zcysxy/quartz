@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"*Almost All* of Probability","created":"2022-09-25T14:40:01","modified":"2025-06-04T21:57:42","cssclasses":""}
+{"publish":true,"aliases":["Probability"],"title":"*Almost All* of Probability","created":"2022-09-25T14:40:01","modified":"2025-06-04T21:57:42","cssclasses":"","id":"Probability Theory","banner":"https://raw.githubusercontent.com/zcysxy/Figurebed/master/img/Apstrakcija.jpg","banner_icon":"🎲","dg-publish":false,"state":"done","sup":["[[Math]]"],"type":"index"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Bayes Optimal Test","created":"2025-05-27T23:48:18","modified":"2025-05-31T20:00:05","cssclasses":""}
+{"publish":true,"title":"Bayes Optimal Test","created":"2025-05-27T23:48:18","modified":"2025-05-31T20:00:05","cssclasses":"","state":"done","sup":["[[Hypothesis Testing]]","[[Bayes Optimality]]"],"alias":null,"type":"note"}
 ---
 
 

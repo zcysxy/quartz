@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Statistical Decision Theory","created":"2025-05-21T18:44:38","modified":"2025-05-24T19:42:37","cssclasses":""}
+{"publish":true,"aliases":["statistical decision-making"],"title":"Statistical Decision Theory","created":"2025-05-21T18:44:38","modified":"2025-05-24T19:42:37","cssclasses":"","state":"done","sup":["[[Statistics]]"],"type":"note"}
 ---
 
 
