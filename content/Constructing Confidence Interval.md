@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Constructing Confidence Interval","created":"2025-05-26T20:56:19","modified":"2025-06-07T09:07:57","cssclasses":"","state":"done","sup":["[[Confidence Interval]]"],"alias":null,"type":"jupyter"}
+{"publish":true,"title":"Constructing Confidence Interval","created":"2025-05-26T20:56:19","modified":"2025-06-07T09:11:53","cssclasses":"","state":"done","sup":["[[Confidence Interval]]"],"alias":null,"type":"jupyter"}
 ---
 
 
