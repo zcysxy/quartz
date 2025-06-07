@@ -415,7 +415,7 @@ Summary of the methodology behind the above methods:
 - Wald CI uses the plug-in principle, which is asymptotically valid. It is preferred when the test statistic involves parameters that can be readily estimated; then the estimation is plugged into the CI formula.
 - Wilson score CI constructs the CI by *solving* the inequality by CLT or other concentration inequalities. It leverages the structure of the test statistic but is preferred only when the inequality can be solved easily.
 
-The width of the confidence interval, that is, its accuracy depends on:
+The width of the confidence interval, that is, its accuracy, depends on:
 
 - The sample size n: the larger the sample size the narrow the width of the CI.
 - The confidence level: the higher the confidence the wider the CI will be!
