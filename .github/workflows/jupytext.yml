@@ -20,3 +20,4 @@ jobs:
           frontmatter_field: type
           frontmatter_value: jupyter
           output_dir: "content/jupyter"
+          target_branch: "v4"
