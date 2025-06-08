@@ -1,5 +1,5 @@
 ---
-{"publish":true,"aliases":["index"],"title":"*Sufficient* of Statistics","created":"2023-10-17T21:41:50","modified":"2025-06-01T04:24:12","cssclasses":"","type":"index","sup":["[[Math]]"],"state":"[[%wip]]","banner":"https://raw.githubusercontent.com/zcysxy/Figurebed/master/img/20231017221426.png","banner_icon":"🔮","reference":"AOS"}
+{"publish":true,"aliases":["index"],"title":"*Sufficient* of Statistics","created":"2023-10-17T21:41:50","modified":"2025-06-07T21:21:57","cssclasses":"","type":"index","sup":["[[Math]]"],"state":"[[%wip]]","banner":"https://raw.githubusercontent.com/zcysxy/Figurebed/master/img/20231017221426.png","banner_icon":"🔮","reference":"AOS"}
 ---
 
 
@@ -26,19 +26,19 @@ AA --- BB --- CC
 
 - [c] Table. Statistics dictionary
 
-| Statistics                      | **[[Machine Learning]]**            |
-| ------------------------------- | ----------------------------------- |
-| estimation                      | [[Machine Learning\|learning]]      |
-| [[Regression]]                  | [[Supervised Learning]]             |
-| [[Clustering]]                  | [[Unsupervised Learning]]           |
+| Statistics                         | **[[Machine Learning]]**            |
+| ---------------------------------- | ----------------------------------- |
+| estimation                         | [[Machine Learning\|learning]]      |
+| [[Regression]]                     | [[Supervised Learning]]             |
+| [[Clustering]]                     | [[Unsupervised Learning]]           |
 | [[Hypothesis Testing\|hypothesis]] | [[Classification]]                  |
-| covariates                      | features                            |
-| coefficient                     | weight                              |
-| predictor                       | input                               |
-| response                        | output                              |
-| intercept                       | bias                                |
-| derived predictor               | [[Hidden Units]]                    |
-| penalty function                | [[L2 Regularization\|weight decay]] |
+| covariates                         | features                            |
+| coefficient                        | weight                              |
+| predictor                          | input                               |
+| response                           | output                              |
+| intercept                          | bias                                |
+| derived predictor                  | [[Hidden Units]]                    |
+| penalty function                   | [[L2 Regularization\|weight decay]] |
 
 ## Basic Concepts
 
@@ -54,6 +54,8 @@ AA --- BB --- CC
         - [[Maximum Likelihood Estimation]]
         - [[Method of Moments]]
         - [[Mean Squared Error]]
+        - [[M-Estimator]]
+        - [[Z-Estimator]]
     - Interval Estimation: [[Confidence Interval]]
     - Distributional Estimation: [[Bayes Estimator]]
 - [[Hypothesis Testing]]
@@ -61,7 +63,7 @@ AA --- BB --- CC
         - [[Bayes Optimal Test]]
         - [[Uniformly Most Powerful Test]]
     - [[p-value]]
-- [[Regression]]
+- [[Prediction]]/[[Regression]]
     - [[ANOVA]]
 
 ## Advanced Topics
@@ -85,3 +87,13 @@ B --Statistical inference--> A
 While statistical inference answers the inverse problem:
 
 > [!qn] Given the outcomes, what can we say about the process that generated the data?
+
+## References
+
+- Textbooks
+    - Larry Wasserman, *All of Statistics*
+    - van der Vaart, *Asymptotic Statistics*
+    - Sheldon Ross, *Introduction to Probability and Statistics for Engineers and Scientists*
+- Courses
+    - Columbia STAT 5701, 5703
+    - MIT 6.S951, 18.6501
