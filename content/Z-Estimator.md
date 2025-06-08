@@ -24,9 +24,9 @@ As we can see, Z-estimators are a class of more general estimators that solve th
 | M-estimators                                     | Z-estimators                               |
 | Optimizing an objective function                 | Solving an equation system                 |
 | Utilize optimization landscape, e.g., gradient   | Utilize system dynamics, e.g., contraction |
-| ![optimization](excalidraw/z-opt.excalidraw.svg1) | ![system](excalidraw/z-sys.excalidraw.svg1) |
+| ![optimization](excalidraw/z-opt.excalidraw.png) | ![system](excalidraw/z-sys.excalidraw.png) |
 |                                                  |                                            |
-![Equivalence of optimization and system solution](excalidraw/z-opt-sys.excalidraw.svg1)
+![Equivalence of optimization and system solution](excalidraw/z-opt-sys.excalidraw.png)
 
 
 ## Properties
