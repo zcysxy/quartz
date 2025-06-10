@@ -47,6 +47,12 @@ figure > img {
     "grid-sidebar-left grid-center grid-sidebar-right"
     "grid-sidebar-left grid-footer grid-sidebar-right" / 320px auto 0px;
 }
+@media (max-width: 800px) {
+  .page > #quartz-body {
+    display: block;
+  }
+}
+
 .page-title {
   &:before {
     --page-icon-size: 4rem;
