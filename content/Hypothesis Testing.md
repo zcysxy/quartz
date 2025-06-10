@@ -91,22 +91,27 @@ See [[Confidence Interval and Hypothesis Test Duality]] for constructing CIs fro
 
 ### Rejection Region by Likelihood Ratio
 
+<div class="transclude" data-embed-alias=" n-h " data-url="Likelihood Ratio Test"> 
+
 ## Rejection Region
 
 We can also construct a rejection region using the [[Likelihood]] ratio:
-$
+$$
 \Lambda(\boldsymbol{x}) = \frac{\sup_{\theta \in \Theta_0} L(\theta \mid \boldsymbol{x})}{\sup_{\theta \in \Theta} L(\theta \mid \boldsymbol{x})}
 = \frac{L(\hat{\theta}_{0} )}{L(\hat{\theta}_{\mathrm{MLE}})},
-$
+$$
 where $\Theta_0$ is the null hypothesis parameter space.
 Then, the rejection region is given by
-$
+$$
 \mathrm{RR} = \{ \boldsymbol{x} \mid \Lambda(\boldsymbol{x}) \le k \},
-$
+$$
 where $k$ is chosen such that the test has a significance level $\alpha$.
 
 This method is called the ==likelihood ratio test==.
 
+
+</div>
+ <a href="Likelihood Ratio Test" class="internal transclude-src">Link to original</a>
 
 ## CLT Test Statistic
 
@@ -136,6 +141,8 @@ $$
 where $z_{\beta}$ is the $\beta$-quantile of the standard normal distribution.
 
 ## p-Value
+
+<div class="transclude" data-embed-alias=" naked n-h " data-url="p-value"> 
 
 ## Introduction
 
@@ -170,9 +177,17 @@ In other words, an almost impossible event ($p<\alpha$) happens given H0, thus i
 - [~] The smaller the p-value, the more confidently one can reject $H_{0}$, because the event is too unlikely to happen under null.
 
 
+</div>
+ <a href="p-value" class="internal transclude-src">Link to original</a>
+
 ## Role of Alternative
 
-Recall that - Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. 
+Recall that <div class="transclude" data-embed-alias=" inline " data-url="Hypothesis Testing"> 
+
+- Asymmetry in $H_{0}$ and $H_{1}$: the data is only used to try to disprove $H_{0}$. The result of an HT is either to **reject** or **fail to reject** the null hypothesis $H_{0}$. 
+
+</div>
+ <a href="Hypothesis Testing" class="internal transclude-src">Link to original</a>
 
 Also notice that in the calculation of the test statistic, critical value, and p-value, we only need the null hypothesis $H_{0}$. This brings up the question:
 

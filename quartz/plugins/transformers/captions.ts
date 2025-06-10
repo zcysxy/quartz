@@ -33,7 +33,7 @@ export const FigureCaptions: QuartzTransformerPlugin = () => {
 						if (firstChild.properties?.title) {
 						caption = firstChild.properties.title;
 						} else if (firstChild.properties?.alt) {
-						caption = firstChild.properties.alt;
+						caption = firstChild.properties.alt.split("|")[0].trim();
 						} else {
 						return;
 						}

@@ -1,0 +1,23 @@
+name: Convert Markdown Notebooks to Jupyter Notebooks
+on: [push]
+
+jobs:
+  build:
+    name: jupytext-action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - name: Jupytext Action 
+        uses: zcysxy/jupytext-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          input_directory: "content"
+          input_format: md
+          output_format: ipynb
+          disable_git_commit: false
+          frontmatter_field: type
+          frontmatter_value: jupyter
+          output_dir: "content/jupyter"
+          target_branch: "v4"
