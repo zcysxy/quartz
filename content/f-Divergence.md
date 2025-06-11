@@ -20,7 +20,7 @@ Intuitively, the expected convex function $\mathbb{E}_{Q}f$ *amplifies* the diff
 - Letting $f(x) = 1 /2(\sqrt{ t }-1)^{2}$ gives the squared [[Hellinger Distance]]
 - Letting $f(x) = (x-1)^{2}$ gives the chi-square divergence
 
-> [!rmk] TV vs. KL
+> [!rmk] TV vs. KL ^rmk-tv-kl
 > - [[Total Variation Distance\|TV]] is a metric, meaning that it's symmetric and satisfies the triangle inequality; [[KL Divergence\|KL]] is not a metric, and does not satisfy these two properties.
 > - [[Total Variation Distance\|TV]] does no "[[Total Variation Distance#^tensorize\|tensorize]]" but [[KL Divergence\|KL]] does. So in practice, KL, or other divergences that tensorize, is usually preferred, as the calculation boils down to calculating the divergence of individual samples.
 > - [[Total Variation Distance\|TV]] is convenient for theoretical analysis, as it has a simple [[Total Variation Distance#^var-rep\|variational representation]], [[Total Variation Distance#L1 Norm\|L1 norm]] equivalence, and [[Total Variation Distance#Optimal Transport Interpretation\|optimal transportation interpretation]]. For example, TV is used to show [[Hardness of Simple Hypothesis Test Through Total Variation\|hardness results of hypothesis testing]].

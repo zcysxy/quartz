@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"M-Estimator","created":"2025-06-04T01:17:30","modified":"2025-06-06T17:38:55","cssclasses":"","state":"done","sup":["[[Estimation]]"],"alias":null,"type":"note","related":["[[Maximum Likelihood Estimation]]"]}
+{"publish":true,"title":"M-Estimator","created":"2025-06-04T01:17:30","modified":"2025-06-10T23:10:03","cssclasses":"","state":"done","sup":["[[Estimation]]"],"alias":null,"type":"note","related":["[[Maximum Likelihood Estimation]]"]}
 ---
 
 
@@ -46,6 +46,7 @@ We wonder under what conditions the following is also true
 $$
 \hat{\theta} \coloneqq \argmin_{\theta\in\Theta} M_n(\theta) \overset{ P }{ \to } \argmin_{\theta\in\Theta} M(\theta) \eqqcolon \theta ^{*}.
 $$
+In the function graph of $M$ and $M_{n}$ (see e.g. [[M-Estimator#^fig-m-graph]]), the question ask what conditions allow to transfer the convergence of *y-axis* to that of *x-axis*.
 
 It turns out that the above consistency holds under two reasonable conditions:
 
@@ -57,7 +58,7 @@ It turns out that the above consistency holds under two reasonable conditions:
 - **Separation**: For any $\epsilon$, $\inf_{\theta:\|\theta-\theta ^{*}\| > \epsilon}M(\theta) > M(\theta ^{*})$
     - [~] In words, this condition says that only parameters close to $\theta ^*$ may yield a value of $M(\theta)$ close to the minimum $M(\theta ^*)$.
 
-![Example of $M$ function whose point of maximum is not well separated.](excalidraw/m-est-sep.excalidraw.png)
+![Example of $M$ function whose point of maximum is not well separated.](excalidraw/m-est-sep.excalidraw.png) ^fig-m-graph
 
 #### Proof of Consistency
 
@@ -99,7 +100,7 @@ Under some regularity conditions:
 
 - $\theta \mapsto m_{\theta}(x)$ is differentiable at $\theta ^*$ $P$-a.s. (for almost every $x$);
 - There exists an $L_{2}$ function $f$, such that $|m_{\theta_{1}}(x)-m_{\theta_{2}}(x)|\le f(x)\|\theta_{1}-\theta_{2}\|$ for all $\theta_{1},\theta_{2}$ in a neighborhood of $\theta ^*$;
-- $e : \theta \mapsto \mathbb{E}m_{\theta}(X)$ is twice differentiable with non-singular second derivative at $\theta ^*$, denoted as $V_{\theta ^*}=\ddot{e}_{\theta ^*}$;
+- $e : \theta \mapsto \mathbb{E}m_{\theta}(X)$ is twice differentiable with a non-singular second derivative at $\theta ^*$, denoted as $V_{\theta ^*}=\ddot{e}_{\theta ^*}$;
 
 we have
 $$
@@ -108,7 +109,34 @@ $$
 
 - [!] Note that we do not require $m_{\theta}$ is twice differentiable. The twice differentiability of $e$ is weaker.
 
-#### Asymptotic Normality of Quantile Regression
+### Proof Sketch
+
+In the proof sketch, we neglect the expectation, and assume that the expectation and derivatives commute. By Taylor expansion,
+$$
+M(\theta) - M(\theta ^*) \approx \dot{M}_{\theta ^*}^T(\theta - \theta ^*) + \frac{1}{2}(\theta - \theta ^*)^T\ddot{M}_{\theta ^*}(\theta - \theta ^*).
+$$
+Denote the RHS as $Q(\theta)$. Then, we have
+$$
+\hat{\theta} \approx \argmin_{\theta}M(\theta ) \approx \argmin_{\theta}Q(\theta).
+$$
+By setting
+$$
+\dot{Q}(\theta) = \dot{M}_{\theta ^*} + \ddot{M}_{\theta ^*}(\theta-\theta ^*) = 0,
+$$
+we get
+$$
+\hat{\theta} - \theta ^* \approx \ddot{M}_{\theta ^*}^{-1} \dot{M}_{\theta ^*}.
+$$
+Thus, the asymptotic variance is approximately
+$$
+\ddot{M}_{\theta ^*}^{-1}\dot{M}_{\theta ^*}\dot{M}_{\theta ^*}^T \ddot{M}_{\theta ^*}^{-1} = V_{\theta ^*}^{-1} \mathbb{E}[\dot{m}_{\theta ^*}\dot{m}_{\theta ^*}^T]V_{\theta ^*}^{-1}.
+$$
+
+
+
+
+
+#### symptotic Normality of Quantile Regression
 
 Treating quantile regression as an M-estimator, we verify the above conditions and establish its asymptotic normality. Recall the pinball loss function:
 $$

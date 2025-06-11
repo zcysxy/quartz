@@ -1,11 +1,11 @@
 ---
-{"publish":true,"title":"Delta Method","created":"2025-05-21T21:18:39","modified":"2025-06-02T22:58:10","cssclasses":"","state":"done","sup":null,"aliases":null,"type":"note"}
+{"publish":true,"title":"Delta Method","created":"2025-05-21T21:18:39","modified":"2025-06-09T21:33:39","cssclasses":"","state":"done","sup":null,"aliases":null,"type":"note"}
 ---
 
 
 # Delta Method
 
-Given a converging sequence of r.v.s and a function, the delta method uses the function's first order derivative to describe the limiting distribution of the transformed sequence after the function.
+Given a converging sequence of r.v.s and a function, the delta method uses the function's first-order derivative to describe the limiting distribution of the transformed sequence after the function.
 
 Formally, suppose there exists a vector $\theta\in\R^{k}$ and a $k$-dimensional r.v. $T$, such that the number sequence $\{ r_n \}$ and the r.v. sequence $\{ \theta _n \}$ satisfy
 $$
@@ -13,10 +13,21 @@ r_n(\theta _n - \theta) \overset{ d }{ \to } T,\quad \text{and}\quad r_n \to \in
 $$
 Additionally, suppose the function $\phi:\R^{k}\to\R^{d}$ is differentiable at $\theta$. Then,
 $$
-r_n\left( \phi(\theta n)-\phi(\theta) \right) \overset{ d }{ \to } \nabla _{\theta}^T \phi\cdot T.
+r_n\left( \phi(\theta_n)-\phi(\theta) \right) \overset{ d }{ \to } \nabla _{\theta}^T \phi\cdot T.
 $$
 
-## Proof
+## Proof Sketch
+
+We can approximate the difference $\phi(\theta _{n})-\phi(\theta)$ using its first-order derivative:
+$$
+\phi(\theta _{n})-\phi (\theta ) \approx \nabla ^T_{\theta} \phi (\theta _n-\theta).
+$$
+Thus,
+$$
+r_n\left( \phi(\theta _{n})-\phi(\theta) \right) \approx \nabla ^T_{\theta} \phi  \left(r_n(\theta _n-\theta)\right) \overset{ d }{ \to } \nabla ^T_{\theta} \phi\cdot T.
+$$
+
+## Formal Proof
 
 Define the remainder $R(h) = \phi(\theta+h)-\phi(\theta)-\nabla _{\theta}^T \phi h = o(\|h\|)$.
 Since $r_n\to \infty$, we know $\theta _{n}-\theta \overset{ d }{ \to } T /\infty = 0$. By [[Convergence of Random Variables#Slutsky's Theorem]], using the [[Stochastic Asymptotic Notation]], we have
@@ -35,6 +46,8 @@ $$
 ## Asymptotic Normality
 
 The delta method is often combined with [[Central Limit Theorem\|CLT]] to establish asymptotic normality. Suppose $\sqrt{ n }(\theta _n-\theta)\overset{ d }{ \to } \mathcal{N}(0,\Sigma)$, then $\sqrt{ n }(\phi(\theta _{n})-\phi(\theta))\overset{ d }{ \to } \mathcal{N}(0, \phi'(\theta)\Sigma \phi'(\theta)^T)$, where $\phi'$ is the Jacobian matrix.
+
+The Jacobian matrix is the transpose of the gradient vector $\nabla_{\theta} \phi$. That is, $\phi'(\theta) = \nabla_{\theta}^T \phi$.
 
 ## Application
 

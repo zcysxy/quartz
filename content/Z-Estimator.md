@@ -31,7 +31,7 @@ As we can see, Z-estimators are a class of more general estimators that solve th
 As we discussed earlier, for convex/concave and differentiable objective functions, optimization is equivalent to solving a system regarding the gradient.
 Conversely, we can also define an objective function for solving a system of equations. For example, for a linear system $Ax=b$, we can define the squared cost $f(x) = \|Ax-b\|_{2}^{2}$, whose minimizer is the solution of the system.
 
-![Equivalence of optimization and system solution|300](excalidraw/z-opt-sys.excalidraw.svg)
+![Equivalence of optimization and system solution.|300](excalidraw/z-opt-sys.excalidraw.svg)
 
 However, different problem formulations offer different insights and solution methods.
 
