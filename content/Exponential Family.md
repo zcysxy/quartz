@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Exponential Family","created":"2023-11-12T21:15:45","modified":"2024-12-10T01:14:08","cssclasses":"","aliases":null,"type":"note","sup":["[[Probability Theory]]"],"state":"[[%wip]]"}
+{"publish":true,"title":"Exponential Family","created":"2023-11-12T21:15:45","modified":"2025-06-11T19:33:18","cssclasses":"","aliases":null,"type":"note","sup":["[[Probability Theory]]"],"state":"done"}
 ---
 
 
@@ -39,7 +39,8 @@ Examples:
 
 ## MLE for Exponential Family
 
-Due to exponential family's special form of the likelihood, the [[Maximum Likelihood Estimation\|MLE]] estimator of $\theta$ enjoys nice properties. Suppose $q(\theta)=\theta\in\R^{k}$.
+Due to the exponential family's special form of the likelihood, the [[Maximum Likelihood Estimation\|MLE]] estimator of $\theta$ coincides with the [[Method of Moments\|moment estimator]] w.r.t. the exponent statistic $t(x)$.
+WLOG, suppose $q(\theta)=\theta\in\R^{k}$.
 We first note that the inverse normalizing constant is infinitely differentiable:
 $$
 \frac{ \partial ^{p} }{ \partial ^{j_{1}}\theta_{1} \dots \partial ^{j_{k}}\theta_{k} } \left( \frac{1}{c(\theta)} \right) =\int h(x)t_{1}^{j_{1}}(x) \dots t_{k}^{j_{k}}(x)e^{\theta^{T}t(x)} \d x,
@@ -49,9 +50,11 @@ Therefore, the derivative of the log-likelihood $\operatorname{LL}(\theta \given
 $$
 \begin{aligned}
 \operatorname{LL}'(\theta) =& \frac{ \mathrm{d} }{ \mathrm{d}\theta } \left( \log \left(c(\theta)h(x)e^{\theta ^Tt(x)} \right) \right ) \\
-=& \frac{c'(\theta)}{c(\theta)} + t(x) = -c(\theta)\frac{ \mathrm{d} }{ \mathrm{d}\theta }\left( \frac{1}{c(\theta)} \right)  + t(x)\\
+=& \frac{c'(\theta)}{c(\theta)} + t(x) \\
+=& -c(\theta)\frac{ \mathrm{d} }{ \mathrm{d}\theta }\left( \frac{1}{c(\theta)} \right)  + t(x)\\
 =& t(x) - \int c(\theta)h(x)t(x)e^{\theta ^Tt(x)} \d x\\
 =& t(x) - \mathbb{E}_{\theta}[t(X)].
 \end{aligned}
 $$
-Then, the MLE estimator of $t$, which is the zero of the derivative, satisfies $\mathbb{E}_{\hat{\theta}_{\mathrm{MLE}}}t(X) = t(x)$, indicating that MLE is a [[Method of Moments\|moment estimator]].
+Then, the MLE estimator of $t$, which is the zero of the derivative, satisfies $\mathbb{E}_{\hat{\theta}_{\mathrm{MLE}}}t(X) = \hat{\mathbb{E}}_{n}t(x)$, indicating that MLE is a [[Method of Moments#General MM Estimator]] w.r.t $t(x)$.
+As a result, the asymptotic normality property of both MLE (M-estimator) and MM (Z-estimator) applies.
