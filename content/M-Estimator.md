@@ -136,7 +136,7 @@ $$
 
 
 
-#### symptotic Normality of Quantile Regression
+#### Asymptotic Normality of Quantile Regression
 
 Treating quantile regression as an M-estimator, we verify the above conditions and establish its asymptotic normality. Recall the pinball loss function:
 $$
