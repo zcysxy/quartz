@@ -51,11 +51,6 @@ img[alt="Open In Colab"] + svg {
     "grid-sidebar-left grid-center grid-sidebar-right"
     "grid-sidebar-left grid-footer grid-sidebar-right" / 320px auto 0px;
 }
-@media (max-width: 800px) {
-  .page > #quartz-body {
-    display: block;
-  }
-}
 
 .page-title {
   &:before {
@@ -99,12 +94,33 @@ img[alt="Open In Colab"] + svg {
   }
 }
 
+@media (max-width: 800px) {
+  .page > #quartz-body {
+    display: block;
+    /* & .left.sidebar { */
+    /*   flex-direction: column; */
+    /* } */
+  }
+  .page-title {
+    /* margin-bottom: 1rem; */
+    &:before {
+      display: none;
+      padding: 0;
+      text-align: center;
+    }
+    & a {
+      padding-left: 0;
+    }
+  }
+}
+
 /* Metadata */
 /* For every class starting with "meta-" */
 [class^="meta-"] {
   --icon-size: 16px;
   fill: var(--gray);
   margin: 0.4rem;
+  white-space: nowrap;
   &:before {
     content: "";
     width: var(--icon-size);

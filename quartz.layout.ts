@@ -49,10 +49,10 @@ export const defaultContentPageLayout: PageLayout = {
 			condition: (page) => page.fileData.slug == "statistics",
 		}),
     Component.DesktopOnly(Component.TableOfContents()),
-		Component.ConditionalRender({
+		Component.DesktopOnly(Component.ConditionalRender({
 			component: Component.Backlinks(),
 			condition: (page) => page.fileData.slug !== "statistics",
-		}),
+		})),
     Component.DesktopOnly(Component.Graph()),
   ],
   right: [
