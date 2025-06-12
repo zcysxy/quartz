@@ -1,5 +1,5 @@
 ---
-{"publish":true,"title":"Best Estimator for Uniform Distribution Parameter","created":"2022-12-06T00:26:27","modified":"2025-06-12T03:05:30","cssclasses":"","aliases":null,"type":"jupyter","sup":["[[Probability Theory]]","[[Uniform Distribution]]"],"state":"done","related":["[[Maximum Likelihood Estimation]]"],"reference":["https://math.unm.edu/~knrumsey/pdfs/projects/Uniform.pdf"]}
+{"publish":true,"title":"Best Estimator for Uniform Distribution Parameter","created":"2022-12-06T00:26:27","modified":"2025-06-12T06:13:33","cssclasses":"","aliases":null,"type":"jupyter","sup":["[[Probability Theory]]","[[Uniform Distribution]]"],"state":"done","related":["[[Maximum Likelihood Estimation]]"],"reference":["https://math.unm.edu/~knrumsey/pdfs/projects/Uniform.pdf"]}
 ---
 
 
@@ -17,7 +17,7 @@ where $\operatorname{Bias}(\hat{\theta}) = \mathbb{E}[\hat{\theta}] - \theta$ is
 
 We will also touch on [[Evaluating an Estimator#Asymptotic Normality]] for certain estimators.
 
-```python
+```run-python
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -64,7 +64,7 @@ Again, the MSE is a constant w.r.t $n$.
 
 We plot the histogram of $\hat{\theta}^{(k)}$ for different $k$ values to see how the distribution changes with sample size.
 
-```python
+```run-python
 def k_sample_estimator(sample,k):
     assert k <= len(sample), "k must be less than or equal to the sample size"
     return 2 * np.mean(sample[:k], axis=0)
@@ -110,7 +110,7 @@ $$
 
 We compare the MSE and histogram of the moment estimator with $\hat{\theta}^{(2)}$:
 
-```python
+```run-python
 def moment_estimator(sample):
 		return 2 * np.mean(sample, axis=0)
 
@@ -197,7 +197,7 @@ Thus, we can say that $\hat{\theta}^{(\mathrm{MLE})} = \max_{i}X _i$ is a better
 
 We compare the MLE with previous estimators.
 
-```python
+```run-python
 def mle_estimator(sample):
     return np.max(sample, axis=0)
 
@@ -239,7 +239,7 @@ $$
 \operatorname{MSE}(\hat{\theta}^{(\mathrm{UMVUE})}) = \operatorname{Var}\left( \frac{n+1}{n}\hat{\theta}^{(\mathrm{MLE})} \right) = \left( \frac{n+1}{n} \right)^{2}\operatorname{Var}(\hat{\theta}^{(\mathrm{MLE})}) = \frac{\theta^{2}}{n(n+2)}.
 $$
 
-```python
+```run-python
 def umvue_estimator(sample):
     n = len(sample)
     return (n+1) / n * np.max(sample, axis=0)
@@ -292,7 +292,7 @@ $$
 
 See [[Best Estimator for Uniform Distribution Parameter#Appendix]] for details of the calculation.
 
-```python
+```run-python
 def jackknife_estimator(sample):
     mle = mle_estimator(sample)
     # Produce leave-one-out MLEs
@@ -351,7 +351,7 @@ $$
 \operatorname{MSE}(\hat{\theta}^{(\mathrm{MMSE})}) = \frac{\theta^{2}}{(n+1)^{2}}.
 $$
 
-```python
+```run-python
 def mmse_estimator(sample):
     n = sample.shape[0]
     return (n + 2) / (n + 1) * np.max(sample, axis=0)
@@ -373,7 +373,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## Conclusion
+## Summary
 
 The following table summarizes the estimators we have discussed.
 
@@ -388,7 +388,7 @@ The following table summarizes the estimators we have discussed.
 
 Finally, we plot the histograms of all estimators separately to compare their distributions, and calculate their empirical mean squared errors.
 
-```python
+```run-python
 # Plot histograms of all estimators separately
 num_bins = 20
 range_bins = (0.8, 1.2)
@@ -412,9 +412,9 @@ plt.tight_layout()
 plt.show()
 ```
 
-```python
+```run-python
 # Calculate empirical MSE for each estimator
-num_simulations = int(1e)
+num_simulations = int(1e3)
 mse_empirical = np.empty((len(estimators), len(sample_sizes), num_simulations))
 mse_empirical[:] = np.nan
 for n in sample_sizes:
@@ -424,7 +424,7 @@ for n in sample_sizes:
         mse_empirical[i, sample_sizes.index(n), :] = (estimator(samples) - theta_true)**2
 ```
 
-```python
+```run-python
 # Plot empirical MSE with 0.95 confidence region using fill_between for each estimator in a single plot
 plt.figure()
 for i, (name, estimator) in enumerate(estimators.items()):
@@ -446,6 +446,194 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 ```
+
+## Beyond MSE
+
+So far, we have focused on the MSE as the metric for evaluating estimators. In this section, we first explore a new risk, and then discuss the statistical properties of MLE for the uniform distribution.
+
+### Zero-One Loss
+
+Recall that MSE is the risk associated with the squared error loss function $L(\hat{\theta},\theta) = (\hat{\theta} - \theta)^{2}$.
+
+Consider a new loss function:
+$$
+L(\hat{\theta},\theta) = \mathbb{1}\left\{ |\hat{\theta}-\theta| > \epsilon \right\}.
+$$
+This zero-one loss function is often used in binary decision-making problems. In the context of parameter estimation, it finds applications in catastrophic risk assessment, where any estimation error beyond a certain threshold $\epsilon$ is catastrophic. Then, the corresponding risk
+$$
+R(\hat{\theta},\theta) = \mathbb{E}_{\theta}L(\hat{\theta},\theta) = P_{\theta}\left( |\hat{\theta}-\theta| > \epsilon \right)
+$$
+is the probability of catastrophe.
+
+Again, let's consider an estimator of the general form $\hat{\theta}^{(\mathrm{ZO})} = cX_{(n)}$, and try to minimize the zero-one risk. We have
+$$
+\begin{aligned}
+  R(\hat{\theta}^{(\mathrm{ZO})} ,\theta) =& P_{\theta}\left( |cX_{(n)} - \theta| > \epsilon \right) \\
+  =& P_{\theta}\left( cX_{(n)} - \theta > \epsilon \right) + P_{\theta}\left( cX_{(n)} - \theta < -\epsilon \right) \\
+  =& P_{\theta}\left( X_{(n)} >c^{-1} (\theta + \epsilon)\right) + P_{\theta}\left( X_{(n)} < c^{-1} (\theta - \epsilon)\right) \\
+  =& 1-F_{X_{(n)}}\left( c^{-1} (\theta + \epsilon) \right) + F_{X_{(n)}}\left( c^{-1} (\theta - \epsilon) \right)
+.\end{aligned}
+$$
+We have already derived the CDF of $X_{(n)}$ in [[Best Estimator for Uniform Distribution Parameter#Maximum Likelihood Estimation]], which gives
+$$
+\begin{aligned}
+R(\hat{\theta}^{(\mathrm{ZO})} ,\theta) =& \begin{cases}
+1 - \left( \frac{c^{-1} (\theta + \epsilon)}{\theta} \right)^{n} + \left( \frac{c^{-1} (\theta - \epsilon)}{\theta} \right)^{n}
+, \quad &1 + \epsilon /\theta < c\\
+\left( \frac{c^{-1} (\theta - \epsilon)}{\theta} \right)^{n}
+= c^{-n}(1- \epsilon/\theta)^{n} , \quad & 1 - \epsilon /\theta \le c \le 1 + \epsilon /\theta \\
+1, \quad & 1 - \epsilon /\theta > c  \\
+\end{cases}\\
+=& \begin{cases}
+1 - c^{-n} \left( (1+ \epsilon/\theta)^{n} - (1- \epsilon/\theta)^{n} \right), \quad & 1 + \epsilon /\theta < c \\
+c^{-n}(1- \epsilon/\theta)^{n} , \quad & 1 - \epsilon /\theta \le c \le 1 + \epsilon /\theta \\
+1, \quad & 1 - \epsilon /\theta > c  \\
+\end{cases}
+\end{aligned}
+$$
+For a fixed $\theta$, we usually consider a small threshold $\epsilon$. In such scenario,
+$$
+(1+\epsilon /\theta)^{n} \approx 1 + n\epsilon /\theta, \quad \text{and} \quad (1-\epsilon /\theta)^{n} \approx 1 - n\epsilon /\theta.
+$$
+Using the above approximation, one can easily verify that $c = 1 + \epsilon /\theta$ minimizes the zero-one risk.
+
+Note that the estimator should not depend on the true parameter $\theta$. Thus, we consider a zero-one loss based on the relative distance:
+$$
+R(\hat{\theta},\theta) = P_{\theta}\left( |\hat{\theta} - \theta| > \delta  \theta \right) ,
+$$
+whose corresponding optimal estimator is
+$$
+\hat{\theta}^{(\mathrm{ZO})} = \left( 1 + \delta \right) X_{(n)}.
+$$
+
+We plot the histogram of the zero-one estimator for different $\delta$ values, and compare it with the MLE estimator on both the MSE and zero-one risk.
+
+```run-python
+def zero_one_estimator(sample, delta):
+    return (1 + delta) * np.max(sample, axis=0)
+
+# Plot histograms of the zero-one estimator for different delta values
+delta_values = [0.05, 0.1, 0.2, 0.5]
+num_simulations = 100000
+estimates_zo = np.empty((len(delta_values), num_simulations))
+for i, delta in enumerate(delta_values):
+    estimates_zo[i, :] = zero_one_estimator(samples_hist, delta)
+
+plt.figure()
+for i, delta in enumerate(delta_values):
+    sns.histplot(estimates_zo[i, :], stat='density', label=f'$\\delta={delta}$', bins=20, binrange=(0.8,1.6), alpha=0.5)
+# Plot MLE estimator for comparison
+mle_estimates = mle_estimator(samples_hist)
+sns.histplot(mle_estimates, stat='density', label='MLE', bins=20, binrange=(0.8,1.6), alpha=0.5)
+plt.axvline(theta_true, color='red', linestyle='--', label='True $\\theta$')
+plt.title('Histograms of Zero-One Estimator for Different $\\delta$ Values')
+plt.xlabel('$\\hat{\\theta}$')
+plt.ylabel('Density')
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
+
+```run-python
+# Calculate the empirical risks and zero-one risk for the zero-one estimator and MMSE
+num_simulations = int(1e3)
+delta = 5e-3
+risk_empirical = np.empty((2, 2, len(sample_sizes), num_simulations)) # 2 risks (MSE and zero-one), 2 estimators (MMSE and zero-one), sample sizes, simulations
+risk_empirical[:] = np.nan
+for n in sample_sizes:
+    samples = np.random.uniform(0, theta_true, size=(n, num_simulations))
+    # Minimum MSE Estimator
+    estimates_mmse = mmse_estimator(samples)
+    risk_empirical[0, 0, sample_sizes.index(n), :] = (estimates_mmse - theta_true)**2
+    risk_empirical[1, 0, sample_sizes.index(n), :] = np.abs(estimates_mmse - theta_true) > delta * theta_true
+    # Zero-One Estimator
+    estimates_zo = zero_one_estimator(samples, delta)
+    risk_empirical[0, 1, sample_sizes.index(n), :] = (estimates_zo - theta_true)**2
+    risk_empirical[1, 1, sample_sizes.index(n), :] = np.abs(estimates_zo - theta_true) > delta * theta_true
+
+# Plot empirical MSE for the zero-one estimator and MMSE
+fig, ax = plt.subplots(1, 2, figsize=(12, 6))
+plt.subplot(1, 2, 1)
+mean_mse_mmse = np.mean(risk_empirical[0, 0, :, :], axis=1)
+ci_mse_mmse = 1.96 * np.std(risk_empirical[0, 0, :, :], axis=1) / np.sqrt(num_simulations)
+plt.plot(sample_sizes, mean_mse_mmse, label='MMSE')
+plt.fill_between(sample_sizes, mean_mse_mmse - ci_mse_mmse, mean_mse_mmse + ci_mse_mmse, alpha=0.2)
+
+mean_mse_zo = np.mean(risk_empirical[0, 1, :, :], axis=1)
+ci_mse_zo = 1.96 * np.std(risk_empirical[0, 1, :, :], axis=1) / np.sqrt(num_simulations)
+plt.plot(sample_sizes, mean_mse_zo, label='Zero-One')
+plt.fill_between(sample_sizes, mean_mse_zo - ci_mse_zo, mean_mse_zo + ci_mse_zo, alpha=0.2)
+plt.xscale('log')
+plt.legend()
+plt.title('Empirical MSE')
+
+# Plot empirical zero-one risk for the zero-one estimator and MMSE
+plt.subplot(1, 2, 2)
+mean_risk_mmse = np.mean(risk_empirical[1, 0, :, :], axis=1)
+ci_risk_mmse = 1.96 * np.std(risk_empirical[1, 0, :, :], axis=1) / np.sqrt(num_simulations)
+plt.plot(sample_sizes, mean_risk_mmse, label='MMSE')
+plt.fill_between(sample_sizes, mean_risk_mmse - ci_risk_mmse, mean_risk_mmse + ci_risk_mmse, alpha=0.2)
+mean_risk_zo = np.mean(risk_empirical[1, 1, :, :], axis=1)
+ci_risk_zo = 1.96 * np.std(risk_empirical[1, 1, :, :], axis=1) / np.sqrt(num_simulations)
+plt.plot(sample_sizes, mean_risk_zo, label='Zero-One')
+plt.fill_between(sample_sizes, mean_risk_zo - ci_risk_zo, mean_risk_zo + ci_risk_zo, alpha=0.2)
+plt.title('Empirical Zero-One Risk')
+# plt.xlim(sample_sizes[0], sample_sizes[-2])
+
+plt.setp(fig.axes, yscale='log')
+fig.supxlabel('Sample Size n')
+fig.supylabel('Risk')
+plt.show()
+```
+
+### Statistical Properties of MLE for Uniform Distribution
+
+[[Maximum Likelihood Estimation\|MLE]] is known to be the *best* estimator, in terms of statistical properties, such as consistency and asymptotic normality, under mild conditions. However, in this note, we have shown that the MLE for the uniform distribution is biased and has a larger MSE than some other estimators. Do our findings contradict the properties of MLE?
+
+We first verify the consistency. In the previous section, we show that for $c=1$ and any $\epsilon\in(0,\theta)$,
+$$
+P_{\theta}(|\hat{\theta}^{(\mathrm{MLE})} - \theta| > \epsilon) = (1-\epsilon /\theta)^{n}\to 0.
+$$
+Thus, $\hat{\theta}^{(\mathrm{MLE})}$ is consistent.
+
+For asymptotic normality, we notice that
+$$
+\operatorname{supp}(\sqrt{n}(\hat{\theta}^{(\mathrm{MLE})} - \theta)) = ( -\sqrt{n}\theta,0) \to (-\infty,0) \ne \mathbb{R}.
+$$
+Thus, $\hat{\theta}^{(\mathrm{MLE})}$ cannot be asymptotically normal.
+Specifically, the uniform distribution fails to meet the regularity condition that the support of the distribution should not depend on the parameter $\theta$.
+
+Moreover, we actually have
+$$
+P_{\theta}(n(\theta-\hat{\theta}^{(\mathrm{MLE})} ) \le t) = 1 - P_{\theta}(\hat{\theta}^{(MLE)} \le \theta - t/n) = 1 - (1 - t /(n\theta))^{n} \to 1-e^{-t /\theta},
+$$
+indicating that
+$$
+n (\theta-\hat{\theta}^{(\mathrm{MLE})} ) \overset{d}{\to} \mathrm{Exp}(1 /\theta).
+$$
+Note that the exponential tail bound is significantly heavier than the Gaussian tail bound ($e^{-nt}$ vs. $e^{-nt^{2}}$). We verify this by simulation.
+
+```run-python
+n = 1000
+samples = np.random.uniform(0, theta_true, size=(n, 10000))
+mle_estimates = mle_estimator(samples)
+asymptotic_distribution = n*(theta_true - mle_estimates)
+plt.figure()
+sns.histplot(asymptotic_distribution, stat='density', alpha=0.5, label='empirical')
+x = np.linspace(0, plt.xlim()[1], 1000)
+plt.plot(x, (1/theta_true) * np.exp(-x/theta_true), label='Exp(1)', color='red', linestyle='--')
+# Plot theoretical standard normal distribution for comparison
+plt.plot(x, (1/(np.sqrt(2 * np.pi))) * np.exp(-(x)**2 / (2 )), label='Normal', color='green', linestyle='--')
+plt.title(f'Empirical distribution of $n(\\theta - \\hat{{\\theta}}^{{(MLE)}})$ with $n={n}$')
+plt.xlabel('')
+plt.ylabel('')
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
+
+Finally, we remark that either MSE or asymptotic normality is just one of the many criteria for evaluating estimators. One estimator with smaller MSE may underestimate other risks. One asymptotically normal estimator may have larger MSE than another estimator. At the end of the day, we should choose the estimator that best fits our specific problem and risk criteria.
+
 
 ## Appendix
 
