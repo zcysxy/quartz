@@ -83,6 +83,9 @@ img[alt="Open In Colab"] + svg {
   &:has(a[href$="probability-theory"]):before {
     background-image: var(--prob-page-icon-svg);
   }
+  &:has(a[href$="matlab"]):before {
+    background-image: var(--base-page-icon-svg);
+  }
   &:before {
     --page-icon-size: 4rem;
     content: "";
